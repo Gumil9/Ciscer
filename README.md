@@ -37,3 +37,5 @@ _**Замечание.** Компьютерные сети - крайне важ
 Например,
 `add('full operating system > flash');`
 `add('limited operating system > ROM');`
+
+Вопросы и ответы к тестам можно найти, например, на сайте ccna5.net.
