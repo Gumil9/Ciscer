@@ -11,7 +11,7 @@ document.onclick = function handleClick() {
     label.setText(tests.getAnswer(window.getSelection().toString()));
 };
 
-document.onkeydown = function handleKeyCombination(e) {
+document.body.onkeydown = function handleKeyCombination(e) {
 
     //Ctrl + Alt + (↑ or ↓)
     if (e.ctrlKey && e.altKey && (e.keyCode == 38 || e.keyCode == 40)) {
@@ -28,12 +28,12 @@ document.onkeydown = function handleKeyCombination(e) {
         label.setText(prompts.getNext());
     }
 
-    //Ctrl+Shift
+    //Ctrl + Shift
     if (e.ctrlKey && e.shiftKey) {
         selection.changeSelectionColor();
     }
 
-    //Ctrl+Space
+    //Ctrl + Space
     if (e.ctrlKey && e.keyCode == 32) {
         answerSigner.run();
     }
