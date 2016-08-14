@@ -116,7 +116,6 @@ function Label() {
     div.style.color = COLOR;
     div.style.zIndex = 1000000;
     div.style.display = 'block';
-    div.style.opacity = 0;
     document.body.appendChild(div);
     var above = false;
 
