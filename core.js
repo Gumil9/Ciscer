@@ -11,7 +11,7 @@ document.onclick = function handleClick() {
     label.setText(tests.getAnswer(window.getSelection().toString()));
 };
 
-document.body.onkeydown = function handleKeyCombination(e) {
+document.onkeydown = function handleKeyCombination(e) {
 
     //Ctrl + Alt + (↑ or ↓)
     if (e.ctrlKey && e.altKey && (e.keyCode == 38 || e.keyCode == 40)) {

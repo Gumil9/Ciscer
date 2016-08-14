@@ -7,44 +7,43 @@
 // ==/UserScript==
 
 var TIMEOUT = 5000; //In milliseconds
+var PATH = "https://raw.githubusercontent.com/Gumil9/Ciscer/master/";
 
 document.onkeydown = function (e) {
     if (e.ctrlKey && e.keyCode == 32) {
-        var loadScript = new Promise(function (resolve, reject) {
+        var loadCore = new Promise(function (resolve, reject) {
             GM_xmlhttpRequest({
                 method: "GET",
-                url: "http://umath.ru/cs.js",
+                url: PATH + "core.js",
                 onload: function (response) {
                     resolve(response.responseText);
                 },
                 onerror: function (response) {
-                    //alert("unable to load script");
-                    reject();
+                    reject("core load error");
                 },
-                timeout: 5000,
+                timeout: TIMEOUT,
                 ontimeout: function () {
-                    //alert("connection timeout");
+                    reject("core connection timeout");
                 }
             });
         });
         var loadAnswers = new Promise(function (resolve, reject) {
             GM_xmlhttpRequest({
                 method: "GET",
-                url: "http://example.com/",
+                url: PATH + "answers.js",
                 onload: function (response) {
                     resolve(response.responseText);
                 },
                 onerror: function (response) {
-                    //alert("unable to load answers");
-                    reject();
+                    reject("answers load error");
                 },
-                timeout: 5000,
+                timeout: TIMEOUT,
                 ontimeout: function () {
-                    //alert("Connection timeout");
+                    reject("answers connection timeout");
                 }
             });
         });
-        Promise.all([loadScript, loadAnswers]).then(function (result) {
+        Promise.all([loadCore, loadAnswers]).then(function (result) {
             eval(result.join(""));
         }).catch(function (error) {
             alert(error);
