@@ -11,29 +11,29 @@ document.onclick = function handleClick() {
     label.setText(tests.getAnswer(window.getSelection().toString()));
 };
 
-document.onkeydown = function handleKeyCombination(e) {
+document.body.onkeydown = function handleKeyCombination(e) {
 
-    //Ctrl + Alt + (↑ or ↓)
-    if (e.ctrlKey && e.altKey && (e.keyCode == 38 || e.keyCode == 40)) {
+    //Ctrl + Shift + (↑ or ↓)
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 38 || e.keyCode == 40)) {
         label.changeDisposition();
     }
 
-    //Ctrl + Alt + ←
-    if (e.ctrlKey && e.altKey && e.keyCode == 37) {
+    //Ctrl + Shift + ←
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 37) {
         label.setText(prompts.getPrevious());
     }
 
-    //Ctrl + Alt + →
-    if (e.ctrlKey && e.altKey && e.keyCode == 39) {
+    //Ctrl + Shift + →
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 39) {
         label.setText(prompts.getNext());
     }
 
-    //Ctrl+Shift
-    if (e.ctrlKey && e.shiftKey) {
+    //Ctrl + Alt
+    if (e.ctrlKey && e.altKey) {
         selection.changeSelectionColor();
     }
 
-    //Ctrl+Space
+    //Ctrl + Space
     if (e.ctrlKey && e.keyCode == 32) {
         answerSigner.run();
     }
