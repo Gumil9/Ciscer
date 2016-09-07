@@ -46,8 +46,7 @@ document.onkeydown = function (e) {
         Promise.all([loadCore, loadAnswers]).then(function (result) {
             eval(result.join(""));
         }).catch(function (error) {
-            Console.log(error);
-            alert("Unable to load resources. See console for more information.");
+            alert("Unable to load resources.");
         });
     }
 };
