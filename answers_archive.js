@@ -60,56 +60,56 @@ add('Which two characters are allowed as part of the hostname of a Cisco device?
     '<br>underline');
 add('A new network administrator has been asked to enter a banner message on a Cisco device. What is the fastest way a network administrator could test whether the banner is properly configured?',
     'Exit enable mode and press Enter.' +
-    '<br>Exit privileged EXEC mode and press Enter. *TRUE*');
+    '<br>Exit privileged EXEC mode and press Enter.');
 add('Which two characters are allowed as part of the hostname of a Cisco device? (Choose two.)',
-    'dash *TRUE*' +
-    '<br>numbers *TRUE*');
+    'dash' +
+    '<br>numbers');
 
 /*TEST 3*/
 add('Which PDU format is used when bits are received from the network medium by the NIC of a host?',
-    'frame*');
+    'frame');
 add('A user sends an HTTP request to a web server on a remote network. During encapsulation for this request, what information is added to the address field of a frame to indicate the destination?',
-    'the MAC address of the default gateway*');
+    'the MAC address of the default gateway');
 add('What is a benefit of using a layered model for network communications?',
-    'fostering competition among device and software vendors by enforcing the compatibility of their products*');
+    'fostering competition among device and software vendors by enforcing the compatibility of their products');
 add('What method can be used by two computers to ensure that packets are not dropped because too much data is being sent too quickly?',
-    'flow control*');
+    'flow control');
 add('A web client is sending a request for a webpage to a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to prepare the request for transmission?',
-    'HTTP, TCP, IP, Ethernet*');
+    'HTTP, TCP, IP, Ethernet');
 add('Which statement accurately describes a TCP/IP encapsulation process when a PC is sending data to the network?',
-    'Segments are sent from the transport layer to the internet layer.*');
+    'Segments are sent from the transport layer to the internet layer.');
 add('Which protocol is responsible for controlling the size and rate of the HTTP messages exchanged between server and client?',
-    'TCP*');
+    'TCP');
 add('Launch PT Hide and Save PT. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Based on the configured network, what IP address would PC1 and PC2 use as their default gateway?',
-    '192.168.1.1*');
+    '192.168.1.1');
 add('A computer in a given network is communicating with a specific group of computers. What type of communication is this?',
-    'multicast*');
+    'multicast');
 add('What is a function of Layer 4 of the OSI model?',
-    'to describe the ordered and reliable delivery of data between source and destination*');
+    'to describe the ordered and reliable delivery of data between source and destination');
 add('What is an advantage of network devices using open standard protocols?',
-    'A client host and a server running different operating systems can successfully exchange data.*');
+    'A client host and a server running different operating systems can successfully exchange data.');
 add('Which IEEE standard enables a wireless NIC to connect to a wireless AP that is made by a different manufacturer?',
-    '802.11*');
+    '802.11');
 add('If the default gateway is configured incorrectly on the host, what is the impact on communications?',
-    'The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.*');
+    'The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.');
 add('What statement describes the function of the Address Resolution Protocol?',
-    'ARP is used to discover the MAC address of any host on the local network.*');
+    'ARP is used to discover the MAC address of any host on the local network.');
 add('At which layer of the OSI model would a logical address be encapsulated?',
-    'network layer*');
+    'network layer');
 add('What is the general term that is used to describe a piece of data at any layer of a networking model?',
-    'protocol data unit*');
+    'protocol data unit');
 add('Which statement is true about the TCP/IP and OSI models?​',
-    'The TCP/IP transport layer and OSI Layer 4 provide similar services and functions.*');
+    'The TCP/IP transport layer and OSI Layer 4 provide similar services and functions.');
 add('Which address provides a unique host address for data communications at the internet layer?',
-    'logical address*');
+    'logical address');
 add('A user is viewing an HTML document located on a web server. What protocol segments the messages and manages the segments in the individual conversation between the web server and the web client?',
-    'TCP*');
+    'TCP');
 add('Which address does a NIC use when deciding whether to accept a frame?',
-    'destination MAC address*');
+    'destination MAC address');
 add('What are proprietary protocols?',
-    'protocols developed by organizations who have control over their definition and operation*');
+    'protocols developed by organizations who have control over their definition and operation');
 add('Which protocol is used by a computer to find the MAC address of the default gateway on an Ethernet network?',
-    '**ARP**');
+    'ARP');
 add('Refer to the exhibit. PC-A and PC-B are both in VLAN 60. PC-A is unable to communicate with PC-B. What is the problem?',
     '?(new question)');
 add('Which command is used to remove only VLAN 20 from a switch?',
