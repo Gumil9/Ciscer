@@ -6,123 +6,145 @@ var add = tests.add;
  add(question, answer0 [, answer1, ...]);
  */
 
-/*TEST 2*/
-add('Refer to the exhibit. A switch was configured as shown. A ping to the default gateway was issued, but the ping was not successful. Other switches in the same network can ping this gateway. What is a possible reason for this?',
-    'The no shutdown command was not issued for VLAN 1.');
-add('While trying to solve a network issue, a technician made multiple changes to the current router configuration file. The changes did not solve the problem and were not saved. What action can the technician take to discard the changes and work with the file in NVRAM?',
-    'Issue the reload command without saving the running configuration.');
-add('Why is it important to configure a hostname on a device?',
-    'to identify the device during remote access (SSH or telnet)');
-add('Which procedure is used to access a Cisco 2960 switch when performing an initial configuration in a secure environment?',
-    'Use the console port to locally access the switch from a serial or USB interface of the PC.');
-add('What criterion must be followed in the design of an IPv4 addressing scheme for end devices?',
-    'Each IP address must be unique within the local network.');
-add('A network administrator needs to keep the user ID, password, and session contents private when establishing remote CLI connectivity with a switch to manage it. Which access method should be chosen?',
-    'SSH');
-add('Which interface allows remote management of a Layer 2 switch?',
-    'the switch virtual interface');
-add('What is a result of using the service password-encryption command on a Cisco network device?',
-    'All passwords in the configuration are not shown in clear text when viewing the configuration.');
-add('Match the definitions to their respective CLI hot keys and shortcuts.',
-    'Tab -> Completes abbreviated commands and parameters' +
-    '<br>Ctrl-R -> returns directly to the privileged EXEC mode' +
-    '<br>Up Arrow -> scrolls backwards through previously entered commands' +
-    '<br>Ctrl-Z -> cancels any command currently being entered and returns directly to privileged EXEC mode' +
-    '<br>Ctrl-C -> Redisplays, on a new line, the command currently being typed' +
-    '<br>Other answer.' +
-    '<br>The shortcuts with their functions are as follows:' +
-    '<br>Tab –> Completes the remainder of a partially typed command or keyword' +
-    '<br>Space bar –> displays the next screen' +
-    '<br>? –> provides context-sensitive help' +
-    '<br>Up Arrow –> Allows user to scroll backward through former commands' +
-    '<br>Ctrl-C –> cancels any command currently being entered and returns directly to privileged EXEC mode' +
-    '<br>Ctrl-Shift-6 –> Allows the user to interrupt an IOS process such as ping or traceroute');
-add('A network administrator is planning an IOS upgrade on several of the head office routers and switches. Which three questions must be answered before continuing with the IOS selection and upgrade? (Choose three.)',
-    'What models of routers and switches require upgrades?',
-    'Do the routers and switches have enough RAM and flash memory for the proposed IOS versions?',
-    'What features are required for the devices?');
-add('What benefit does DHCP provide to a network?',
-    'Hosts can connect to the network and get an IP address without manual configuration.');
-add('Which two functions are provided to users by the context-sensitive help feature of the Cisco IOS CLI? (Choose two.)',
-    'displaying a list of all available commands within the current mode',
-    'determining which option, keyword, or argument is available for the entered command ');
-add('A router has a valid operating system and a configuration stored in NVRAM. When the router boots up, which mode will display?',
-    'user EXEC mode');
-add('Which two features are characteristics of flash memory? (Choose two.)',
-    'Flash provides nonvolatile storage',
-    'The contents of flash may be overwritten');
-add('Passwords can be used to restrict access to all or parts of the Cisco IOS. Select the modes and interfaces that can be protected with passwords. (Choose three.)',
-    'privileged EXEC mode' +
-    '<br>VTY interface' +
-    '<br>console interface');
-add('Why would a Layer 2 switch need an IP address?',
-    'to enable the switch to be managed remotely');
-add('What is a user trying to determine when issuing a ping 10.1.1.1 command on a PC?',
-    'if there is connectivity with the destination device');
-add('What command can be used on a Windows PC to see the IP configuration of that computer?',
-    'ipconfig');
-add('Which statement is true about the running configuration file in a Cisco IOS device?',
-    'It affects the operation of the device immediately when modified.');
-add('Which two characters are allowed as part of the hostname of a Cisco device? (Choose two.)',
-    'numbers' +
-    '<br>underline');
-add('A new network administrator has been asked to enter a banner message on a Cisco device. What is the fastest way a network administrator could test whether the banner is properly configured?',
-    'Exit enable mode and press Enter.' +
-    '<br>Exit privileged EXEC mode and press Enter. *TRUE*');
-add('Which two characters are allowed as part of the hostname of a Cisco device? (Choose two.)',
-    'dash *TRUE*' +
-    '<br>numbers *TRUE*');
-
-/*TEST 3*/
-add('Which PDU format is used when bits are received from the network medium by the NIC of a host?',
-    'frame*');
-add('A user sends an HTTP request to a web server on a remote network. During encapsulation for this request, what information is added to the address field of a frame to indicate the destination?',
-    'the MAC address of the default gateway*');
-add('What is a benefit of using a layered model for network communications?',
-    'fostering competition among device and software vendors by enforcing the compatibility of their products*');
-add('What method can be used by two computers to ensure that packets are not dropped because too much data is being sent too quickly?',
-    'flow control*');
-add('A web client is sending a request for a webpage to a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to prepare the request for transmission?',
-    'HTTP, TCP, IP, Ethernet*');
-add('Which statement accurately describes a TCP/IP encapsulation process when a PC is sending data to the network?',
-    'Segments are sent from the transport layer to the internet layer.*');
-add('Which protocol is responsible for controlling the size and rate of the HTTP messages exchanged between server and client?',
-    'TCP*');
-add('Launch PT Hide and Save PT. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Based on the configured network, what IP address would PC1 and PC2 use as their default gateway?',
-    '192.168.1.1*');
-add('A computer in a given network is communicating with a specific group of computers. What type of communication is this?',
-    'multicast*');
-add('What is a function of Layer 4 of the OSI model?',
-    'to describe the ordered and reliable delivery of data between source and destination*');
-add('What is an advantage of network devices using open standard protocols?',
-    'A client host and a server running different operating systems can successfully exchange data.*');
-add('Which IEEE standard enables a wireless NIC to connect to a wireless AP that is made by a different manufacturer?',
-    '802.11*');
-add('If the default gateway is configured incorrectly on the host, what is the impact on communications?',
-    'The host can communicate with other hosts on the local network, but is unable to communicate with hosts on remote networks.*');
-add('What statement describes the function of the Address Resolution Protocol?',
-    'ARP is used to discover the MAC address of any host on the local network.*');
-add('At which layer of the OSI model would a logical address be encapsulated?',
-    'network layer*');
-add('What is the general term that is used to describe a piece of data at any layer of a networking model?',
-    'protocol data unit*');
-add('Which statement is true about the TCP/IP and OSI models?​',
-    'The TCP/IP transport layer and OSI Layer 4 provide similar services and functions.*');
-add('Which address provides a unique host address for data communications at the internet layer?',
-    'logical address*');
-add('A user is viewing an HTML document located on a web server. What protocol segments the messages and manages the segments in the individual conversation between the web server and the web client?',
-    'TCP*');
-add('Which address does a NIC use when deciding whether to accept a frame?',
-    'destination MAC address*');
-add('What are proprietary protocols?',
-    'protocols developed by organizations who have control over their definition and operation*');
-add('Which protocol is used by a computer to find the MAC address of the default gateway on an Ethernet network?',
-    '**ARP**');
-add('Refer to the exhibit. PC-A and PC-B are both in VLAN 60. PC-A is unable to communicate with PC-B. What is the problem?',
-    '?(new question)');
-add('Which command is used to remove only VLAN 20 from a switch?',
-    'no vlan 20');
-
+/*TEST 4*/
+add('What are two reasons for physical layer protocols to use frame encoding techniques? (Choose two.)',
+    'to identify where the frame starts and ends<br>to distinguish data bits from control bits');
+add('Which statement is correct about multimode fiber?',
+    'SC-SC patch cords are used with multimode fiber cables.');
+add('Which layer of the OSI model is responsible for specifying the encapsulation method used for specific types of media?',
+    'data link');
+add('The throughput of a FastEthernet network is 80 Mb/s. The traffic overhead for establishing sessions, acknowledgments, and encapsulation is 15 Mb/s for the same time period. What is the goodput for this network?',
+    '65 Mb/s');
+add('A network administrator notices that some newly installed Ethernet cabling is carrying corrupt and distorted data signals. The new cabling was installed in the ceiling close to fluorescent lights and electrical equipment. Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two.)',
+    'RFI​, EMI');
+add('What is the purpose of the FCS field in a frame?',
+    'to determine if errors occurred in the transmission and reception');
+add('As data travels on the media in a stream of 1s and 0s how does a receiving node identify the beginning and end of a frame?​',
+    'The transmitting node inserts start and stop bits into the frame.');
+add('Which statement describes signaling at the physical layer?',
+    'Sending the signals asynchronously means that they are transmitted without a clock signal.');
+add('A network administrator is designing the layout of a new wireless network. Which three areas of concern should be accounted for when building a wireless network? (Choose three.)',
+    'coverage area<br>interference<br>security');
+add('What is one main characteristic of the data link layer?',
+    'It shields the upper layer protocol from being aware of the physical medium to be used in the communication.');
+add('What is one advantage of using fiber optic cabling rather than copper cabling?',
+    'It is able to carry signals much farther than copper cabling.');
+add('What acronym is used to reference the data link sublayer that identifies the network layer protocol encapsulated in the frame?',
+    'LLC');
+add('Why are two strands of fiber used for a single fiber optic connection?',
+    'They allow for full-duplex connectivity.');
+add('Refer to the exhibit. The PC is connected to the console port of the switch. All the other connections are made through FastEthernet links. Which types of UTP cables can be used to connect the devices?​',
+    '1 – rollover, 2 – straight-through, 3 – crossover');
+add('What is true concerning physical and logical topologies?',
+    'Logical topologies determine the media access control method used.');
+add('The term “Bandwidth” indicates the capacity of a medium to carry data and it is typically measured in kilobits per second (kb/s) or megabits per second (Mb/s).',
+    'Bandwidth');
+add('Refer to the exhibit. What is wrong with the displayed termination?',
+    'The untwisted length of each wire is too long.');
+add('10,000,000,000 b/s can also be written as “10” Gb/s.',
+    '10');
+add('What are two characteristics of 802.11 wireless networks? (Choose two.)',
+    'Collisions can exist in the networks.<br>They use CSMA/CA technology.');
+add('A network administrator is required to upgrade wireless access to end users in a building. To provide data rates up to 1.3 Gb/s and still be backward compatible with older devices, which wireless standard should be implemented?',
+    '802.11ac');
+add('How is the magnetic field cancellation effect enhanced in UTP cables?',
+    'by increasing and varying the number of twists in each wire pair');
+add('The physical layer encodes the frames',
+    'Step 1');
+add('The physical layer creates the signals that represent the bits in each frame',
+    'Step 2');
+add('The signals are sent on the media one at a time.',
+    'Step 3');
+add('The physical layer retrieves the individual signals from the media',
+    'Step 4');
+add('The physical layer restores the individual signals to their bit representations',
+    'Step 5');
+add('The physical layer passes the packets up to the internet layer.',
+    'Без соответствия');
+/*TEST 5*/
+add('cut-through',
+    'has low latency',
+    'may forward runt frames',
+    'begins forwarding when the destination address is received');
+add('store-and-forward',
+    'always stores the entire frame' +
+    '<br>checks the CRC before forwarding' +
+    '<br>checks the frame length before forwarding');
+add('A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in its ARP cache. How will the device obtain a destination MAC address?',
+    'It will send an ARP request for the MAC address of the default gateway.');
+add('Which address or combination of addresses does a Layer 3 switch use to make forwarding decisions?',
+    'MAC and IP addresses');
+add('What are two potential network problems that can result from ARP operation? (Choose two.)',
+    'On large networks with low bandwidth, multiple ARP broadcasts could cause data communication delays.',
+    'Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent of intercepting network traffic.');
+add('Launch PT Hide and Save PT' +
+    'Open the PT Activity. Perform the tasks in the activity instruction and then answer the question.' +
+    'What destination address will PC1 include in the destination address field of the Ethernet frame that it sends to PC2?',
+    '0030.a3e5.0401');
+add('How does adding an Ethernet line card affect the form factor of a switch?',
+    'by expanding the port density');
+add('Which two statements are correct about MAC and IP addresses during data transmission if NAT is not involved? (Choose two.)',
+    'Destination and source MAC addresses have local significance and change every time a frame goes from one LAN to another',
+    'Destination IP addresses in a packet header remain constant along the entire path to a target host');
+add('What is the Layer 2 multicast MAC address that corresponds to the Layer 3 IPv4 multicast address 224.139.34.56?',
+    '01-00-5E-0B-22-38');
+add('What is the purpose of the preamble in an Ethernet frame?',
+    'is used for timing synchronization');
+add('A Layer 2 switch is used to switch incoming frames from a 1000BASE-T port to a port connected to a 100Base-T network. Which method of memory buffering would work best for this task?',
+    'shared memory buffering');
+add('A network administrator is connecting two modern switches using a straight-through cable. The switches are new and have never been configured. Which three statements are correct about the final result of the connection? (Choose three.)',
+    'The auto-MDIX feature will configure the interfaces eliminating the need for a crossover cable',
+    'The link between switches will work as full-duplex',
+    'The link between the switches will work at the fastest speed that is supported by both switches');
+add('Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC2. In this scenario, what will happen next?​',
+    'PC2 will send an ARP reply with its MAC address.');
+add('What is a characteristic of a contention-based access method?',
+    'It is a nondeterministic method.');
+add('What statement illustrates a drawback of the CSMA/CD access method?',
+    'Collisions can decrease network performance.');
+add('When would a switch record multiple entries for a single switch port in its MAC address table?',
+    'when another switch is connected to the switch port');
+add('Which two statements describe a fixed configuration Ethernet switch? (Choose two.)',
+    'A fixed configuration switch may be stackable.',
+    'The number of ports on the switch cannot be increased.');
+add('Which two statements describe features or functions of the logical link control sublayer in Ethernet standards? (Choose two.)',
+    'Logical link control is implemented in software.',
+    'The data link layer uses LLC to communicate with the upper layers of the protocol suite.');
+add('A network administrator issues the following commands on a Layer 3 switch:' +
+    '<br>DLS1(config)# interface f0/3' +
+    '<br>DLS1(config-if)# no switchport' +
+    '<br>DLS1(config-if)# ip address 172.16.0.1 255.255.255.0' +
+    '<br>DLS1(config-if)# no shutdown' +
+    '<br>DLS1(config-if)# end' +
+    '<br>What is the administrator configuring?',
+    'a routed port');
+add('Which statement is true about MAC addresses?',
+    'The first three bytes are used by the vendor assigned OUI');
+add('Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?',
+    'The switch will forward the frame to all ports except port 4.');
+add('The binary number 0000 1010 can be expressed as “A” in hexadecimal.',
+    'A');
+add('What are two features of ARP? (Choose two.)',
+    'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.',
+    'If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
+add('Start Frame Delimiter',
+    'Field 2');
+add('Source MAC Address',
+    'Field 4');
+add('Encapsulated Data',
+    'Field 6');
+add('Flag',
+    'Нет соответствия');
+add('Preamble',
+    'Beginning of frame - Field 1');
+add('Destination MAC Address',
+    'Field 3');
+add('Length/Type',
+    'Field 5');
+add('Frame Check Sequence',
+    'End of frame - Field 7');
+add('Session ID',
+    'Нет соответсвия');
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
