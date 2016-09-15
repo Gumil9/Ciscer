@@ -176,3 +176,5 @@ add('buffering > 1');
 add('full-duplex > 2');
 add('collision domain > 3');
 add('MAC address table > 4');
+
+// WTF?!
