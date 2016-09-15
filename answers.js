@@ -49,27 +49,30 @@ add('A network administrator is required to upgrade wireless access to end users
     '802.11ac');
 add('How is the magnetic field cancellation effect enhanced in UTP cables?',
     'by increasing and varying the number of twists in each wire pair');
-add('The physical layer encodes the frames',
-    'Step 1');
-add('The physical layer creates the signals that represent the bits in each frame',
-    'Step 2');
-add('The signals are sent on the media one at a time.',
-    'Step 3');
-add('The physical layer retrieves the individual signals from the media',
-    'Step 4');
-add('The physical layer restores the individual signals to their bit representations',
-    'Step 5');
-add('The physical layer passes the packets up to the internet layer.',
-    'Без соответствия');
+add('What is true concerning physical and logical topologies?',
+    'Logical topologies refer to how a network transfers data between devices.');
+add('What is indicated by the term throughput?',
+    'the measure of the bits transferred across the media over a given period of time');
+add('Which characteristic describes crosstalk?',
+    'the distortion of the transmitted messages from signals carried in adjacent wires');
+add('What technique is used with UTP cable to help protect against signal interference from crosstalk?',
+    'twisting the wires together into pairs');
+add('Which type of connector does a network interface card use?',
+    'RJ-45');
+add('What are two services performed by the data link layer of the OSI model? (Choose two.)',
+	'It accepts Layer 3 packets and encapsulates them into frames.<br>It provides media access control and performs error detection.',);
+add('Which method of data transfer allows information to be sent and received at the same time?',
+	'full duplex');
+add('Which statement describes an extended star topology?',
+	'End devices connect to a central intermediate device, which in turn connects to other central intermediate devices.');
+add('Which statement describes the media access control methods that are used by the networks in the exhibit?',
+	'Network 1 uses CSMA/CD and Network 3 uses CSMA/CA.');
+add('What is contained in the trailer of a data-link frame?',
+	'error detection');
+add('What is the function of the CRC value that is found in the FCS field of a frame?',
+	'to verify the integrity of the received frame');
+
 /*TEST 5*/
-add('cut-through',
-    'has low latency',
-    'may forward runt frames',
-    'begins forwarding when the destination address is received');
-add('store-and-forward',
-    'always stores the entire frame' +
-    '<br>checks the CRC before forwarding' +
-    '<br>checks the frame length before forwarding');
 add('A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in its ARP cache. How will the device obtain a destination MAC address?',
     'It will send an ARP request for the MAC address of the default gateway.');
 add('Which address or combination of addresses does a Layer 3 switch use to make forwarding decisions?',
@@ -127,24 +130,39 @@ add('The binary number 0000 1010 can be expressed as “A” in hexadecimal.',
 add('What are two features of ARP? (Choose two.)',
     'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.',
     'If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
-add('Start Frame Delimiter',
-    'Field 2');
-add('Source MAC Address',
-    'Field 4');
-add('Encapsulated Data',
-    'Field 6');
-add('Flag',
-    'Нет соответствия');
-add('Preamble',
-    'Beginning of frame - Field 1');
-add('Destination MAC Address',
-    'Field 3');
-add('Length/Type',
-    'Field 5');
-add('Frame Check Sequence',
-    'End of frame - Field 7');
-add('Session ID',
-    'Нет соответсвия');
+add('What happens to runt frames received by a Cisco Ethernet switch?',
+	'The frame is dropped.');
+add('What are the two sizes (minimum and maximum) of an Ethernet frame? (Choose two.)',
+	'64 bytes<br>1518 bytes');
+add('What statement describes Ethernet?',
+	'It defines the most common LAN type in the world.');
+add('What statement describes a characteristic of MAC addresses?',
+	'They must be globally unique.');
+add('Which destination address is used in an ARP request frame?',
+	'FFFF.FFFF.FFFF');
+add('What addressing information is recorded by a switch to build its MAC address table?',
+	'the source Layer 2 address of incoming frames');
+add('Which switching method uses the CRC value in a frame?',
+	'store-and-forward');
+add('What is auto-MDIX?',
+	'a feature that detects Ethernet cable typ​e');
+add('When a device is sending data to another device on a remote network, the Ethernet frame is sent to the MAC address of the default gateway.',
+	'true');
+add('The ARP table in a switch maps which two types of address together?',
+	'Layer 3 address to a Layer 2 address');
+add('A switch with a default configuration connects four hosts. The ARP table for host A is shown. What happens when host A wants to send an IP packet to host D?',
+	'Host A sends out a broadcast of FF:FF:FF:FF:FF:FF. Every other host connected to the switch receives the broadcast and host D responds with its MAC address.');
+add('The switches are in their default configuration. Host A needs to communicate with host D, but host A does not have the MAC address for its default gateway. Which network hosts will receive the ARP request sent by host A?',
+	'only hosts B, C, and router R1');
+add('Which statement describes the treatment of ARP requests on the local link?',
+	'They are received and processed by every device on the local network.');
+add('A collision fragment, also known as a __RUNT__ frame, is a frame of fewer than 64 bytes in length.​',
+	'RUNT');
+add('On a Cisco switch, __port-based__ memory buffering is used to buffer frames in queues linked to specific incoming and outgoing ports.',
+	'port-based');
+add('ARP __spoofing__ is a technique that is used to send fake ARP messages to other hosts in the LAN. The aim is to associate IP addresses to the wrong MAC addresses.',
+	'spoofing');
+
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
@@ -155,26 +173,34 @@ add = prompts.add;
  add('helper label');
  */
 
-add('step 5 => R1 replaces the address 192.168.10.10 with a translated inside global address.');
-add('step 2 => R1 checks the NAT configuration to determine if this packet should be translated.');
-add('step 4 => R1 selects an available global address from the dynamic address pool.');
-add('step 1 => The cost sends packets that request a connection to the server at the address 209.165.200.254');
-add('step 3 => If there is no translation entry for this IP address, R1 determines that the source address 192.168.10.10 must be translated.');
+ /*TEST 4*/
+add('Step 1 => The physical layer encodes the frames');
+add('Step 2 => The physical layer creates the signals that represent the bits in each frame');
+add('Step 3 => The signals are sent on the media one at a time.');
+add('Step 4 => The physical layer retrieves the individual signals from the media');
+add('Step 5 => The physical layer restores the individual signals to their bit representations');
 
-add('full operating system > flash');
-add('limited operating system > ROM');
-add('routing table > RAM');
-add('startup configuration file > NVRAM');
+add('Multimode Fiber => LED as light source');
+add('Multimode Fiber => several paths of light into the fiber');
+add('Multimode Fiber => generally used with LANs');
+add('Single-mode Fiber => only one ray of light into the fiber');
+add('Single-mode Fiber => generally used for campus backbone');
+add('Single-mode Fiber => laser as light source');
 
-add('Each router is responsible for “saying hello” to its neighbors on directly connected networks. > step 2');
-add('Each router builds a Link-State Packet (LSP) containing the state of each directly connected link > step 3');
-add('Each router learns about its own directly connected networks. > step 1');
-add('Each router floods the LSP to all neighbors, who then store all LSPs received in a database > step 4');
-add('Each router uses the database to construct a complete map of the topology and computes the best > step 5');
+/*TEST 5*/
+add('cut-through => has low latency');
+add('cut-through => may forward runt frames');
+add('cut-through => begins forwarding when the destination address is received');
+add('store-and-forward => always stores the entire frame');
+add('store-and-forward => checks the CRC before forwarding');
+add('store-and-forward => checks the frame length before forwarding');
 
-add('buffering > 1');
-add('full-duplex > 2');
-add('collision domain > 3');
-add('MAC address table > 4');
+add('Beginning of frame - Field 1 => Preamble');
+add('Field 2 => Start Frame Delimiter');
+add('Field 3 => Destination MAC Address');
+add('Field 4 => Source MAC Address');
+add('Field 5 => Length/Type');
+add('Field 6 => Encapsulated Data');
+add('End of frame - Field 7 => Frame Check Sequence');
 
-// WTF?!
+
