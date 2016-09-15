@@ -181,14 +181,14 @@ function AnswerSigner(tests) {
 
 function Selection() {
     var secretSelection = false;
-    this.setSecretSelection = function () {
+    this.enableSecretSelection = function () {
         if (!secretSelection) {
             document.styleSheets[0].insertRule(
                 '::-moz-selection {background: #fcfcfc !important;}', 0);
             secretSelection = true;
         }
     };
-    this.cancelSecretSelection = function () {
+    this.disableSecretSelection = function () {
         if (secretSelection) {
             document.styleSheets[0].deleteRule(0);
             secretSelection = false;
@@ -196,9 +196,9 @@ function Selection() {
     };
     this.changeSelectionColor = function () {
         if (secretSelection) {
-            this.cancelSecretSelection();
+            this.disableSecretSelection();
         } else {
-            this.setSecretSelection();
+            this.enableSecretSelection();
         }
     };
 }
