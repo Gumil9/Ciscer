@@ -8,7 +8,7 @@ var add = tests.add;
 
 /*TEST 4*/
 add('What are two reasons for physical layer protocols to use frame encoding techniques? (Choose two.)',
-    'to identify where the frame starts and ends<br>to distinguish data bits from control bits');
+    'to identify where the frame starts and ends', 'to distinguish data bits from control bits');
 add('Which statement is correct about multimode fiber?',
     'SC-SC patch cords are used with multimode fiber cables.');
 add('Which layer of the OSI model is responsible for specifying the encapsulation method used for specific types of media?',
@@ -24,7 +24,7 @@ add('As data travels on the media in a stream of 1s and 0s how does a receiving 
 add('Which statement describes signaling at the physical layer?',
     'Sending the signals asynchronously means that they are transmitted without a clock signal.');
 add('A network administrator is designing the layout of a new wireless network. Which three areas of concern should be accounted for when building a wireless network? (Choose three.)',
-    'coverage area<br>interference<br>security');
+    'coverage area', 'interference', 'security');
 add('What is one main characteristic of the data link layer?',
     'It shields the upper layer protocol from being aware of the physical medium to be used in the communication.');
 add('What is one advantage of using fiber optic cabling rather than copper cabling?',
@@ -44,7 +44,7 @@ add('Refer to the exhibit. What is wrong with the displayed termination?',
 add('10,000,000,000 b/s can also be written as “10” Gb/s.',
     '10');
 add('What are two characteristics of 802.11 wireless networks? (Choose two.)',
-    'Collisions can exist in the networks.<br>They use CSMA/CA technology.');
+    'Collisions can exist in the networks.', 'They use CSMA/CA technology.');
 add('A network administrator is required to upgrade wireless access to end users in a building. To provide data rates up to 1.3 Gb/s and still be backward compatible with older devices, which wireless standard should be implemented?',
     '802.11ac');
 add('How is the magnetic field cancellation effect enhanced in UTP cables?',
@@ -60,17 +60,18 @@ add('What technique is used with UTP cable to help protect against signal interf
 add('Which type of connector does a network interface card use?',
     'RJ-45');
 add('What are two services performed by the data link layer of the OSI model? (Choose two.)',
-	'It accepts Layer 3 packets and encapsulates them into frames.<br>It provides media access control and performs error detection.',);
+    'It accepts Layer 3 packets and encapsulates them into frames.',
+    'It provides media access control and performs error detection.');
 add('Which method of data transfer allows information to be sent and received at the same time?',
-	'full duplex');
+    'full duplex');
 add('Which statement describes an extended star topology?',
-	'End devices connect to a central intermediate device, which in turn connects to other central intermediate devices.');
+    'End devices connect to a central intermediate device, which in turn connects to other central intermediate devices.');
 add('Which statement describes the media access control methods that are used by the networks in the exhibit?',
-	'Network 1 uses CSMA/CD and Network 3 uses CSMA/CA.');
+    'Network 1 uses CSMA/CD and Network 3 uses CSMA/CA.');
 add('What is contained in the trailer of a data-link frame?',
-	'error detection');
+    'error detection');
 add('What is the function of the CRC value that is found in the FCS field of a frame?',
-	'to verify the integrity of the received frame');
+    'to verify the integrity of the received frame');
 
 /*TEST 5*/
 add('A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in its ARP cache. How will the device obtain a destination MAC address?',
@@ -131,38 +132,37 @@ add('What are two features of ARP? (Choose two.)',
     'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.',
     'If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
 add('What happens to runt frames received by a Cisco Ethernet switch?',
-	'The frame is dropped.');
+    'The frame is dropped.');
 add('What are the two sizes (minimum and maximum) of an Ethernet frame? (Choose two.)',
-	'64 bytes<br>1518 bytes');
+    '64 bytes', '1518 bytes');
 add('What statement describes Ethernet?',
-	'It defines the most common LAN type in the world.');
+    'It defines the most common LAN type in the world.');
 add('What statement describes a characteristic of MAC addresses?',
-	'They must be globally unique.');
+    'They must be globally unique.');
 add('Which destination address is used in an ARP request frame?',
-	'FFFF.FFFF.FFFF');
+    'FFFF.FFFF.FFFF');
 add('What addressing information is recorded by a switch to build its MAC address table?',
-	'the source Layer 2 address of incoming frames');
+    'the source Layer 2 address of incoming frames');
 add('Which switching method uses the CRC value in a frame?',
-	'store-and-forward');
+    'store-and-forward');
 add('What is auto-MDIX?',
-	'a feature that detects Ethernet cable typ​e');
+    'a feature that detects Ethernet cable typ​e');
 add('When a device is sending data to another device on a remote network, the Ethernet frame is sent to the MAC address of the default gateway.',
-	'true');
+    'true');
 add('The ARP table in a switch maps which two types of address together?',
-	'Layer 3 address to a Layer 2 address');
+    'Layer 3 address to a Layer 2 address');
 add('A switch with a default configuration connects four hosts. The ARP table for host A is shown. What happens when host A wants to send an IP packet to host D?',
-	'Host A sends out a broadcast of FF:FF:FF:FF:FF:FF. Every other host connected to the switch receives the broadcast and host D responds with its MAC address.');
+    'Host A sends out a broadcast of FF:FF:FF:FF:FF:FF. Every other host connected to the switch receives the broadcast and host D responds with its MAC address.');
 add('The switches are in their default configuration. Host A needs to communicate with host D, but host A does not have the MAC address for its default gateway. Which network hosts will receive the ARP request sent by host A?',
-	'only hosts B, C, and router R1');
+    'only hosts B, C, and router R1');
 add('Which statement describes the treatment of ARP requests on the local link?',
-	'They are received and processed by every device on the local network.');
+    'They are received and processed by every device on the local network.');
 add('A collision fragment, also known as a __RUNT__ frame, is a frame of fewer than 64 bytes in length.​',
-	'RUNT');
+    'RUNT');
 add('On a Cisco switch, __port-based__ memory buffering is used to buffer frames in queues linked to specific incoming and outgoing ports.',
-	'port-based');
+    'port-based');
 add('ARP __spoofing__ is a technique that is used to send fake ARP messages to other hosts in the LAN. The aim is to associate IP addresses to the wrong MAC addresses.',
-	'spoofing');
-
+    'spoofing');
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
@@ -173,7 +173,7 @@ add = prompts.add;
  add('helper label');
  */
 
- /*TEST 4*/
+/*TEST 4*/
 add('Step 1 => The physical layer encodes the frames');
 add('Step 2 => The physical layer creates the signals that represent the bits in each frame');
 add('Step 3 => The signals are sent on the media one at a time.');
