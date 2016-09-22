@@ -6,163 +6,176 @@ var add = tests.add;
  add(question, answer0 [, answer1, ...]);
  */
 
-/*TEST 4*/
-add('What are two reasons for physical layer protocols to use frame encoding techniques? (Choose two.)',
-    'to identify where the frame starts and ends', 'to distinguish data bits from control bits');
-add('Which statement is correct about multimode fiber?',
-    'SC-SC patch cords are used with multimode fiber cables.');
-add('Which layer of the OSI model is responsible for specifying the encapsulation method used for specific types of media?',
-    'data link');
-add('The throughput of a FastEthernet network is 80 Mb/s. The traffic overhead for establishing sessions, acknowledgments, and encapsulation is 15 Mb/s for the same time period. What is the goodput for this network?',
-    '65 Mb/s');
-add('A network administrator notices that some newly installed Ethernet cabling is carrying corrupt and distorted data signals. The new cabling was installed in the ceiling close to fluorescent lights and electrical equipment. Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two.)',
-    'RFI​, EMI');
-add('What is the purpose of the FCS field in a frame?',
-    'to determine if errors occurred in the transmission and reception');
-add('As data travels on the media in a stream of 1s and 0s how does a receiving node identify the beginning and end of a frame?​',
-    'The transmitting node inserts start and stop bits into the frame.');
-add('Which statement describes signaling at the physical layer?',
-    'Sending the signals asynchronously means that they are transmitted without a clock signal.');
-add('A network administrator is designing the layout of a new wireless network. Which three areas of concern should be accounted for when building a wireless network? (Choose three.)',
-    'coverage area', 'interference', 'security');
-add('What is one main characteristic of the data link layer?',
-    'It shields the upper layer protocol from being aware of the physical medium to be used in the communication.');
-add('What is one advantage of using fiber optic cabling rather than copper cabling?',
-    'It is able to carry signals much farther than copper cabling.');
-add('What acronym is used to reference the data link sublayer that identifies the network layer protocol encapsulated in the frame?',
-    'LLC');
-add('Why are two strands of fiber used for a single fiber optic connection?',
-    'They allow for full-duplex connectivity.');
-add('Refer to the exhibit. The PC is connected to the console port of the switch. All the other connections are made through FastEthernet links. Which types of UTP cables can be used to connect the devices?​',
-    '1 – rollover, 2 – straight-through, 3 – crossover');
-add('What is true concerning physical and logical topologies?',
-    'Logical topologies determine the media access control method used.');
-add('The term “Bandwidth” indicates the capacity of a medium to carry data and it is typically measured in kilobits per second (kb/s) or megabits per second (Mb/s).',
-    'Bandwidth');
-add('Refer to the exhibit. What is wrong with the displayed termination?',
-    'The untwisted length of each wire is too long.');
-add('10,000,000,000 b/s can also be written as “10” Gb/s.',
-    '10');
-add('What are two characteristics of 802.11 wireless networks? (Choose two.)',
-    'Collisions can exist in the networks.', 'They use CSMA/CA technology.');
-add('A network administrator is required to upgrade wireless access to end users in a building. To provide data rates up to 1.3 Gb/s and still be backward compatible with older devices, which wireless standard should be implemented?',
-    '802.11ac');
-add('How is the magnetic field cancellation effect enhanced in UTP cables?',
-    'by increasing and varying the number of twists in each wire pair');
-add('What is true concerning physical and logical topologies?',
-    'Logical topologies refer to how a network transfers data between devices.');
-add('What is indicated by the term throughput?',
-    'the measure of the bits transferred across the media over a given period of time');
-add('Which characteristic describes crosstalk?',
-    'the distortion of the transmitted messages from signals carried in adjacent wires');
-add('What technique is used with UTP cable to help protect against signal interference from crosstalk?',
-    'twisting the wires together into pairs');
-add('Which type of connector does a network interface card use?',
-    'RJ-45');
-add('What are two services performed by the data link layer of the OSI model? (Choose two.)',
-    'It accepts Layer 3 packets and encapsulates them into frames.',
-    'It provides media access control and performs error detection.');
-add('Which method of data transfer allows information to be sent and received at the same time?',
-    'full duplex');
-add('Which statement describes an extended star topology?',
-    'End devices connect to a central intermediate device, which in turn connects to other central intermediate devices.');
-add('Which statement describes the media access control methods that are used by the networks in the exhibit?',
-    'Network 1 uses CSMA/CD and Network 3 uses CSMA/CA.');
-add('What is contained in the trailer of a data-link frame?',
-    'error detection');
-add('What is the function of the CRC value that is found in the FCS field of a frame?',
-    'to verify the integrity of the received frame');
+/*TEST 6*/
+add('After troubleshooting a router, the network administrator wants to save the router configuration so that it will be used automatically the next time that the router reboots. What command should be issued?',
+    'copy running-config startup-config');
+add('Which IPv4 header field is responsible for defining the priority of the packet?',
+    'differentiated services');
+add('When connectionless protocols are implemented at the lower layers of the OSI model, what are usually used to acknowledge the data receipt and request the retransmission of missing data?',
+    'upper-layer connection-oriented protocols');
+add('Why is NAT not needed in IPv6?',
+    'Any host or user can get a public IPv6 network address because the number of available IPv6 addresses is extremely large.');
+add('A packet leaving PC-1 has to traverse “three” hops to reach PC-4',
+    'three');
+add('Which two interfaces will allow access via the VTY lines to configure the router? (Choose two.)',
+    'WAN interfaces','LAN interfaces');
+add('A technician is manually configuring a computer with the necessary IP parameters to communicate over the corporate network. The computer already has an IP address, a subnet mask, and a DNS server. What else has to be configured for Internet access?',
+    'the default gateway address');
+add('Which three commands are used to set up a password for a person who attaches a cable to a new router so that an initial configuration can be performed? (Choose three.)',
+    'password cisco','line console 0','login');
+add('Which statement about router interfaces is true?',
+    'A configured and activated router interface must be connected to another device in order to operate.');
+add('A technician is configuring a router that is actively running on the network. Suddenly, power to the router is lost. If the technician has not saved the configuration, which two types of information will be lost? (Choose two.)',
+    'routing table','ARP cache');
+add('How do hosts ensure that their packets are directed to the correct network destination?',
+    'They have to keep their own local routing table that contains a route to the loopback interface, a local network route, and a remote default route.');
+add('What is a service provided by the Flow Label field of the IPv6 header?',
+    'It informs network devices to maintain the same path for real-time application packets.');
+add('During the process of forwarding traffic, what will the router do immediately after matching the destination IP address to a network on a directly connected routing table entry?',
+    'switch the packet to the directly connected interface');
+add('In a router, “ROM ” is the nonvolatile memory where the diagnostic software, the bootup instructions, and a limited IOS are stored.',
+    'ROM');
+add('Which two commands can be used on a Windows host to display the routing table? (Choose two.)',
+    'route print','netstat -r');
+add('A computer has to send a packet to a destination host in the same LAN. How will the packet be sent?',
+    'The packet will be sent directly to the destination host.');
+add('Which command displays a summary chart of all router interfaces, their IP addresses, and their current operational status?',
+    'show ip interface brief');
+add('Which two files, if found, are copied into RAM as a router with the default configuration register setting boots up? (Choose two.)',
+    'startup configuration','IOS image file');
+add('Does the router have enough RAM and flash memory to support the new IOS?',
+    'The router has enough RAM and flash memory for the IOS upgrade.');
+add('When would the Cisco IOS image held in ROM be used to boot the router?',
+    'when the full IOS cannot be found');
+add('Which type of static route that is configured on a router uses only the exit interface?',
+    'directly connected static route');
+add('Which characteristic of the network layer in the OSI model allows carrying packets for multiple types of communications among many hosts?',
+    'the ability to operate without regard to the data that is carried in each packet');
+add('What are two characteristics of IP? (Choose two.)',
+    'does not require a dedicated end-to-end connection','operates independently of the network media');
+add('When a connectionless protocol is in use at a lower layer of the OSI model, how is missing data detected and retransmitted if necessary?',
+    'Upper-layer connection-oriented protocols keep track of the data received and can request retransmission from the upper-level protocols on the sending host.');
+add('Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?',
+    'Time-to-Live');
+add('What IPv4 header field identifies the upper layer protocol carried in the packet?',
+    'Protocol');
+add('What is one advantage that the IPv6 simplified header offers over IPv4?',
+    'efficient packet handling');
+add('Refer to the exhibit. Which route from the PC1 routing table will be used to reach PC2?',
+    'Network Destination 192.168.10.0 Netmask 255.255.255.0');
+add('Refer to the exhibit. R1 receives a packet destined for the IP address 192.168.2.10. Out which interface will R1 forward the packet?',
+    'Serial0/0/1');
+add('What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?',
+    'directly connected route');
+add('What routing table entry has a next hop address associated with a destination network?',
+    'remote routes');
+add('Which statement describes a hardware feature of a Cisco 1941 router that has the default hardware configuration?',
+    'It has two types of ports that can be used to access the console.');
+add('Following default settings, what is the next step in the router boot sequence after the IOS loads from flash?',
+    'Locate and load the startup-config file from NVRAM.');
+add('What are two types of router interfaces? (Choose two.)',
+    'LAN','WAN');
+add('Which two pieces of information are in the RAM of a Cisco router during normal operation? (Choose two.)',
+    'Cisco IOS','IP routing table');
+add('A router boots and enters setup mode. What is the reason for this?',
+    'The configuration file is missing from NVRAM.');
+add('What is the purpose of the startup configuration file on a Cisco router?',
+    'to contain the commands that are used to initially configure a router on startup');
+add('Which three commands are used to set up secure access to a router through a connection to the console interface? (Choose three.)',
+    'line console 0','login','password cisco');
+add('Which characteristic describes an IPv6 enhancement over IPv4?',
+    'The IPv6 header is simpler than the IPv4 header is, which improves packet handling.');
+add('Open the PT Activity. The enable password on all devices is cisco. Perform the tasks in the activity instructions and then answer the question. For what reason is the failure occurring?​',
+    'SW1 does not have a default gateway configured.');
 
-/*TEST 5*/
-add('A host is trying to send a packet to a device on a remote LAN segment, but there are currently no mappings in its ARP cache. How will the device obtain a destination MAC address?',
-    'It will send an ARP request for the MAC address of the default gateway.');
-add('Which address or combination of addresses does a Layer 3 switch use to make forwarding decisions?',
-    'MAC and IP addresses');
-add('What are two potential network problems that can result from ARP operation? (Choose two.)',
-    'On large networks with low bandwidth, multiple ARP broadcasts could cause data communication delays.',
-    'Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent of intercepting network traffic.');
-add('Launch PT Hide and Save PT' +
-    'Open the PT Activity. Perform the tasks in the activity instruction and then answer the question.' +
-    'What destination address will PC1 include in the destination address field of the Ethernet frame that it sends to PC2?',
-    '0030.a3e5.0401');
-add('How does adding an Ethernet line card affect the form factor of a switch?',
-    'by expanding the port density');
-add('Which two statements are correct about MAC and IP addresses during data transmission if NAT is not involved? (Choose two.)',
-    'Destination and source MAC addresses have local significance and change every time a frame goes from one LAN to another',
-    'Destination IP addresses in a packet header remain constant along the entire path to a target host');
-add('What is the Layer 2 multicast MAC address that corresponds to the Layer 3 IPv4 multicast address 224.139.34.56?',
-    '01-00-5E-0B-22-38');
-add('What is the purpose of the preamble in an Ethernet frame?',
-    'is used for timing synchronization');
-add('A Layer 2 switch is used to switch incoming frames from a 1000BASE-T port to a port connected to a 100Base-T network. Which method of memory buffering would work best for this task?',
-    'shared memory buffering');
-add('A network administrator is connecting two modern switches using a straight-through cable. The switches are new and have never been configured. Which three statements are correct about the final result of the connection? (Choose three.)',
-    'The auto-MDIX feature will configure the interfaces eliminating the need for a crossover cable',
-    'The link between switches will work as full-duplex',
-    'The link between the switches will work at the fastest speed that is supported by both switches');
-add('Refer to the exhibit. PC1 issues an ARP request because it needs to send a packet to PC2. In this scenario, what will happen next?​',
-    'PC2 will send an ARP reply with its MAC address.');
-add('What is a characteristic of a contention-based access method?',
-    'It is a nondeterministic method.');
-add('What statement illustrates a drawback of the CSMA/CD access method?',
-    'Collisions can decrease network performance.');
-add('When would a switch record multiple entries for a single switch port in its MAC address table?',
-    'when another switch is connected to the switch port');
-add('Which two statements describe a fixed configuration Ethernet switch? (Choose two.)',
-    'A fixed configuration switch may be stackable.',
-    'The number of ports on the switch cannot be increased.');
-add('Which two statements describe features or functions of the logical link control sublayer in Ethernet standards? (Choose two.)',
-    'Logical link control is implemented in software.',
-    'The data link layer uses LLC to communicate with the upper layers of the protocol suite.');
-add('A network administrator issues the following commands on a Layer 3 switch:' +
-    '<br>DLS1(config)# interface f0/3' +
-    '<br>DLS1(config-if)# no switchport' +
-    '<br>DLS1(config-if)# ip address 172.16.0.1 255.255.255.0' +
-    '<br>DLS1(config-if)# no shutdown' +
-    '<br>DLS1(config-if)# end' +
-    '<br>What is the administrator configuring?',
-    'a routed port');
-add('Which statement is true about MAC addresses?',
-    'The first three bytes are used by the vendor assigned OUI');
-add('Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?',
-    'The switch will forward the frame to all ports except port 4.');
-add('The binary number 0000 1010 can be expressed as “A” in hexadecimal.',
-    'A');
-add('What are two features of ARP? (Choose two.)',
-    'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.',
-    'If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
-add('What happens to runt frames received by a Cisco Ethernet switch?',
-    'The frame is dropped.');
-add('What are the two sizes (minimum and maximum) of an Ethernet frame? (Choose two.)',
-    '64 bytes', '1518 bytes');
-add('What statement describes Ethernet?',
-    'It defines the most common LAN type in the world.');
-add('What statement describes a characteristic of MAC addresses?',
-    'They must be globally unique.');
-add('Which destination address is used in an ARP request frame?',
-    'FFFF.FFFF.FFFF');
-add('What addressing information is recorded by a switch to build its MAC address table?',
-    'the source Layer 2 address of incoming frames');
-add('Which switching method uses the CRC value in a frame?',
-    'store-and-forward');
-add('What is auto-MDIX?',
-    'a feature that detects Ethernet cable typ​e');
-add('When a device is sending data to another device on a remote network, the Ethernet frame is sent to the MAC address of the default gateway.',
-    'true');
-add('The ARP table in a switch maps which two types of address together?',
-    'Layer 3 address to a Layer 2 address');
-add('A switch with a default configuration connects four hosts. The ARP table for host A is shown. What happens when host A wants to send an IP packet to host D?',
-    'Host A sends out a broadcast of FF:FF:FF:FF:FF:FF. Every other host connected to the switch receives the broadcast and host D responds with its MAC address.');
-add('The switches are in their default configuration. Host A needs to communicate with host D, but host A does not have the MAC address for its default gateway. Which network hosts will receive the ARP request sent by host A?',
-    'only hosts B, C, and router R1');
-add('Which statement describes the treatment of ARP requests on the local link?',
-    'They are received and processed by every device on the local network.');
-add('A collision fragment, also known as a __RUNT__ frame, is a frame of fewer than 64 bytes in length.​',
-    'RUNT');
-add('On a Cisco switch, __port-based__ memory buffering is used to buffer frames in queues linked to specific incoming and outgoing ports.',
-    'port-based');
-add('ARP __spoofing__ is a technique that is used to send fake ARP messages to other hosts in the LAN. The aim is to associate IP addresses to the wrong MAC addresses.',
-    'spoofing');
+
+/*TEST 7*/
+add('A PC is downloading a large file from a server. The TCP window is 1000 bytes. The server is sending the file using 100-byte segments. How many segments will the server send before it requires an acknowledgment from the PC?',
+    '10 segments');
+add('A host device needs to send a large video file across the network while providing data communication to other users. Which feature will allow different communication streams to occur at the same time, without having a single data stream using all available bandwidth?',
+    'multiplexing');
+add('A technician wishes to use TFTP to transfer a large file from a file server to a remote router. Which statement is correct about this scenario?',
+    'The file is segmented and then reassembled in the correct order at the destination, if necessary, by the upper-layer protocol.');
+add('Which scenario describes a function provided by the transport layer?',
+    'A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.');
+add('Which transport layer feature is used to guarantee session establishment?',
+    'TCP 3-way handshake');
+add('What is the complete range of TCP and UDP well-known ports?',
+    '0 to 1023');
+add('Which two TCP header fields are used to confirm receipt of data?',
+    'acknowledgment number',
+    'sequence number');
+add('​What is a beneficial feature of the UDP transport protocol?',
+    'fewer delays in transmission');
+add('Which two flags in the TCP header are used in a TCP three-way handshake to establish connectivity between two network devices? (Choose two.)',
+    'SYN','ACK');
+add('What happens if the first packet of a TFTP transfer is lost?',
+    'The TFTP application will retry the request if a reply is not received.');
+add('Compared to UDP, what factor causes additional network overhead for TCP communication?',
+    'network traffic that is caused by retransmissions');
+add('Which factor determines TCP window size?',
+    'the amount of data the destination can process at one time');
+add('During a TCP session, a destination device sends an acknowledgment number to the source device. What does the acknowledgment number represent?',
+    'the next byte that the destination expects to receive');
+add('What is a socket?',
+    'the combination of a source IP address and port number or a destination IP address and port number');
+add('During a TCP session, the “SYN” field is used by the client to request communication with the server.',
+    'SYN');
+add('A total of 4 messages are exchanged during the TCP session termination process between the client and the server',
+    '4');
+add('A host device sends a data packet to a web server via the HTTP protocol. What is used by the transport layer to pass the data stream to the proper application on the server?',
+    'destination port number');
+add('What does a client do when it has UDP datagrams to send?',
+    'It just sends the datagrams.');
+add('What does a client application select for a TCP or UDP source port number?',
+    'a random value in the range of the registered ports');
+add('How many bits are in an IPv4 address?',
+    '32');
+add('Which two parts are components of an IPv4 address? (Choose two.)',
+    'network portion',
+    'host portion');
+add('What does the IP address 172.17.4.250/24 represent?',
+    'host address');
+add('What is the purpose of the subnet mask in conjunction with an IP address?',
+    'to determine the subnet to which the host belongs');
+add('What subnet mask is represented by the slash notation /20?',
+    '255.255.240.0');
+add('A message is sent to all hosts on a remote network. Which type of message is it?',
+    'directed broadcast');
+add('What are three characteristics of multicast transmission? (Choose three.)',
+    'A single packet can be sent to a group of hosts.',
+    'Multicast transmission can be used by routers to exchange routing information.',
+    'The range of 224.0.0.0 to 224.0.0.255 is reserved to reach multicast groups on a local network.');
+add('Which three IP addresses are private ? (Choose three.)',
+    '10.1.1.1','172.16.4.4','192.168.5.5');
+add('Which two IPv4 to IPv6 transition techniques manage the interconnection of IPv6 domains? (Choose two.)',
+    'dual stack','tunneling');
+add('Which of these addresses is the shortest abbreviation for the IP address: 3FFE : 1044 : 0000 : 0000 : 00AB : 0000 : 0000 : 0057?',
+    '3FFE : 1044 : 0 : 0 : AB :: 57');
+add('What type of address is automatically assigned to an interface when IPv6 is enabled on that interface?',
+    'link-local');
+add('What are two types of IPv6 unicast addresses? (Choose two.)',
+    'loopback','link-local');
+add('What are three parts of an IPv6 global unicast address? (Choose three.)',
+    'a subnet ID that is used to identify networks inside of the local enterprise site','an interface ID that is used to identify the local host on the network');
+add('An administrator wants to configure hosts to automatically assign IPv6 addresses to themselves by the use of Router Advertisement messages, but also to obtain the DNS server address from a DHCPv6 server. Which address assignment method should be configured?',
+    'stateless DHCPv6');
+add('Which protocol supports Stateless Address Autoconfiguration (SLAAC) for dynamic assignment of IPv6 addresses to a host?',
+    'ICMPv6');
+add('Which two things can be determined by using the ping command? (Choose two.)',
+    'for the response to return to the source','the destination device is reachable through the network');
+add('What is indicated by a successful ping to the ::1 IPv6 address?',
+    'IP is properly installed on the host.');
+add('A user is executing a tracert to a remote device. At what point would a router, which is in the path to the destination device, stop forwarding the packet?',
+    'when the value in the TTL field reaches zero');
+add('What field content is used by ICMPv6 to determine that a packet has expired?',
+    'Hop Limit field');
+add('The decimal equivalent of the binary number 10010101 is',
+    '149');
+add('he binary equivalent of the decimal number 232 is ',
+    '11101000');
+add('What is the decimal equivalent of the hex number 0x3F?',
+    '63');
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
@@ -173,34 +186,52 @@ add = prompts.add;
  add('helper label');
  */
 
-/*TEST 4*/
-add('Step 1 => The physical layer encodes the frames');
-add('Step 2 => The physical layer creates the signals that represent the bits in each frame');
-add('Step 3 => The signals are sent on the media one at a time.');
-add('Step 4 => The physical layer retrieves the individual signals from the media');
-add('Step 5 => The physical layer restores the individual signals to their bit representations');
+/*TEST 6*/
+add('enable -> R1>');
+add('copy running-config startup-config -> R1#');
+add('login -> R1(config-line)#');
+add('interface fastethernet 0/0 -> R1(config)#');
 
-add('Multimode Fiber => LED as light source');
-add('Multimode Fiber => several paths of light into the fiber');
-add('Multimode Fiber => generally used with LANs');
-add('Single-mode Fiber => only one ray of light into the fiber');
-add('Single-mode Fiber => generally used for campus backbone');
-add('Single-mode Fiber => laser as light source');
+add('FastEthernet0/0 -> packets with destination of 172.17.6.15');
+add('FastEthernet0/1 -> packets with destination of 172.17.14.8');
+add('FastEthernet1/0 -> packets with destination of 172.17.12.10');
+add('FastEthernet1/1 -> packets with destination of 172.17.10.5');
+add('Serial0/0/0 -> packets with destination of 172.17.8.20');
 
-/*TEST 5*/
-add('cut-through => has low latency');
-add('cut-through => may forward runt frames');
-add('cut-through => begins forwarding when the destination address is received');
-add('store-and-forward => always stores the entire frame');
-add('store-and-forward => checks the CRC before forwarding');
-add('store-and-forward => checks the frame length before forwarding');
+add('IP v4 Header (A) -> Flags (A)');
+add('IP v4 Header (B) -> Total Length (B)');
+add('IP v6 Header (C) ->Traffic Class (C)');
+add('IP v6 Header (D) -> Flow Label (D)');
 
-add('Beginning of frame - Field 1 => Preamble');
-add('Field 2 => Start Frame Delimiter');
-add('Field 3 => Destination MAC Address');
-add('Field 4 => Source MAC Address');
-add('Field 5 => Length/Type');
-add('Field 6 => Encapsulated Data');
-add('End of frame - Field 7 => Frame Check Sequence');
+add('R1(config)# -> service password-encrytion');
+add('R1> -> enable');
+add('R1# -> copy running-config startup-config');
+add('R1(config-line)# -> login');
+add('R1(config-if)# -> ip address 192.168.4.4 255.255.255.0');
+
+/*TEST 7*/
+add('192.168.1.2 -> source IP address');
+add('192.168.2.2 -> destination IP address');
+add('2578 -> source port number');
+add('80 -> destination port number');
+
+add('TCP  ->  window size');
+add('TCP  -> 3-way handshake');
+add('UDP -> connectionless');
+add('UDP -> best for VoIP');
+add('Both UDP and TCP -> checksum');
+add('Both UDP and TCP -> port number');
+
+add('TCP  -> HTTP');
+add('TCP  -> FTP ');
+add('TCP  -> TELNET');
+add('UDP  -> TFTP');
+add('UDP  -> DHCP ');
+
+add('169.254.1.5 -> a link-local address');
+add('192.0.2.123 -> a TEST-NET address');
+add('240.2.6.255 -> an experimental address');
+add('172.19.20.5 -> a private address');
+add('127.0.0.1 -> a loopback address');
 
 
