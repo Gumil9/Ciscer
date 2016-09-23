@@ -234,4 +234,24 @@ add('240.2.6.255 -> an experimental address');
 add('172.19.20.5 -> a private address');
 add('127.0.0.1 -> a loopback address');
 
+add('LAB');
+add('en');
+add('conf terminal');
+add('line console 0');
+add('vty 0 4');
+add('password');
+add('login');
+add('exit');
+add('interface vlan 1');
+add('ip address /ip/ /mask/');
+add('description');
+add('no shutdown');
+add('exit');
+add('do write');
+add('interface gigbitEthernet 0/0 or 0/1');
+add('def');
+add('exit');
+add('do write');
+
+
 
