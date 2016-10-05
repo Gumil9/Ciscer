@@ -85,6 +85,9 @@ add('What is the acronym for the protocol that is used when securely communicati
     'HTTPS');
 add('The HTTP message type used by the client to request data from the web server is the  message',
     'GET');
+add('What command was used to resolve a given host name by querying the name servers?)',
+    'NSLOOKUP');
+
 
 /*TEST 11*/
 
