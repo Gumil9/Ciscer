@@ -1080,3 +1080,22 @@ add('locale and load the Cisco IOS software -> phase 2');
 add('locate and load the startup configuration file -> phase 3');
 add('perform the POST and load the bootstrap program -> phase 1');
 
+/*final test ccna7*/
+
+add('packets with destination of 172.17.6.15 -> 1');
+add('packets with destination of 172.17.14.8 -> 2');
+add('packets with destination of 172.17.12.10 -> 3');
+add('packets with destination of 172.17.10.5 -> 4');
+add('packets with destination of 172.17.8.20 -> 5');
+add('nothing -> 6');
+
+add('physical topology diagram -> location of a desktop PC in a classroom');
+add('physical topology diagram -> path of cables that connect rooms to wiring closets');
+add('logical topology diagram -> IP address of a server');
+
+add('Copper cables -> horizontal cabling structure');
+add('Copper cables -> desktop PCs in an enterpise office');
+add('Fiber Optic -> backbone cabling in an enterprise');
+add('Fiber Optic -> long-haul networks');
+add('wireless -> guest access in a coffee shop');
+add('wireless -> waiting rooms in a hospital');
