@@ -629,7 +629,7 @@ add('Which type of wireless security makes use of dynamic encryption keys each t
 	'WPA');
 add('During data communications, a host may need to send a single message to a specific group of destination hosts simultaneously. This message is in the form of a message.',
 	'Multicast');
-add('Open the PT activity. Perform the tasks in the activity instructions and then fill in the blank. The Server0 message is'
+add('Open the PT activity. Perform the tasks in the activity instructions and then fill in the blank. The Server0 message is',
 	'winner');
 add('A PC is configured to obtain an IP address automatically from network 192.168.1.0/24. The network administrator issues the arp –a command and notices an entry of 192.168.1.255 ff-ff-ff-ff-ff-ff. Which statement describes this entry?',
 	'This is a static map entry.');
@@ -901,7 +901,7 @@ add('global unicast -> 2001:DB8:A1:0B:C78::1');
 add('Stage 1 – perform the post');
 add('Stage 2 – load the bootstrap program');
 add('Stage 3 – Locate and load the Cisco IOS');
-add('Stage 4 – locate and load the configuration file')ж
+add('Stage 4 – locate and load the configuration file');
 
 add('PDU encapsulation -> frame header');
 
