@@ -1246,7 +1246,7 @@ add('default gateway: 192.168.1.158');
 
 add('IPv6');
 
-Iadd('Pv6 address: 2001:DB8:ACAD:B::15/64');
+add('Pv6 address: 2001:DB8:ACAD:B::15/64');
 
 add('default gateway: FE80::1');
 
