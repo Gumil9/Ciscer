@@ -1099,3 +1099,165 @@ add('Fiber Optic -> backbone cabling in an enterprise');
 add('Fiber Optic -> long-haul networks');
 add('wireless -> guest access in a coffee shop');
 add('wireless -> waiting rooms in a hospital');
+
+add('_________________________________________________');
+add('conf CS Department Router');
+add('_________________________________________________');
+add('enable');
+add('configure terminal');
+add('interface g0/0');
+add('ip address 192.168.1.126 255.255.255.224');
+add('description Lab 124 LAN');
+add('no shutdown');
+add('exit');
+
+add('interface g0/1');
+add('ip address 192.168.1.158 255.255.255.240');
+add('description Lab 214 LAN');
+add('no shutdown');
+add('exit');
+
+add('ipv6 unicast-routing');
+add('interface g0/0');
+add('ipv6 address 2001:db8:acad:A::1/64');
+add('ipv6 address FE80::1 link-local');
+add('no shutdown');
+add('exit');
+
+add('interface g0/1');
+add('ipv6 address 2001:db8:acad:B::1/64');
+add('ipv6 address FE80::1 link-local');
+add('no shutdown');
+add('exit');
+
+add('conf terminal');
+add('hostname Middle');
+add('Enable secret class12345');
+add('line console 0');
+add('password ccnanetacad2016');
+add('login');
+add('exit');
+
+add('line vty 0 15');
+add('password ccnanetacad2016');
+add('login');
+add('exit');
+add('line aux 0');
+add('password ccnanetacad2016');
+add('login');
+add('exit');
+
+add('Banner motd # Sorry! Authorized Access Only” #');
+add('security password min-length 10');
+add('service password-encryption');
+add('ip domain-name ccnanetacad2016.net');
+add('username netadmin privilege 15 secret Cisco_CCNA5');
+add('crypto key generate rsa');
+add('1024');
+
+add('line vty 0 15');
+add('login local');
+add('transport input ssh');
+add('end');
+
+add('copy running-config startup-config');
+
+add('_________________________________________________');
+add('++++++++++++++++++++++++++++++++++++++++++++++++');
+add('Conf lab 214 switchv');
+add('_________________________________________________');
+add('conf t');
+add('ip default-gateway 192.168.1.158');
+add('int vlan 1');
+add('ip address 192.168.1.157 255.255.255.240');
+add('no shutdown');
+add('line vty 0 4');
+add('password class');
+add('login');
+
+add('end');
+add('copy running-config startup-config');
+
+add('++++++++++++++++++++++++++++++++++++++++++++++++');
+add('-=================================================');
+add('_________________________________________________');
+add('124-1');
+add('++++++++++++++++++++++++++++++++++++++++++++++++');
+
+add('IPv4');
+
+add('IP address: 192.168.1.97');
+
+add('Mask: 255.255.255.224');
+
+add('default gateway: 192.168.1.126');
+
+add('IPv6');
+
+add('IPv6 address: 2001:DB8:ACAD:A::FF/64');
+
+add('default gateway: FE80::1');
+
+add('—————————————–');
+
+add('124-5');
+add('+++++++++++++++++++++++++++++++++');
+add('IPv4');
+
+add('IP address: 192.168.1.98');
+
+add('Mask: 255.255.255.224');
+
+add('default gateway: 192.168.1.126');
+
+add('IPv6');
+
+add('IPv6 address: 2001:DB8:ACAD:A::15/64');
+
+add('default gateway: FE80::1');
+
+add('—————————————–');
+add('214-1');
+add('+++++++++++++++++++++++++++++++++++++++');
+add('IPv4');
+
+add('IP address: 192.168.1.145');
+
+add('Mask: 255.255.255.240');
+
+add('default gateway: 192.168.1.158');
+
+add('IPv6');
+
+add('IPv6 address: 2001:DB8:ACAD:B::FF/64');
+
+add('default gateway: FE80::1');
+
+add('—————————————–');
+add('SERVER TFTP');
+add('+++++++++++++++++++++++++++++++++++++++++++++');
+add('IPv4');
+
+add('IP address: 192.168.1.146');
+
+add('Mask: 255.255.255.240');
+
+add('default gateway: 192.168.1.158');
+
+add('IPv6');
+
+Iadd('Pv6 address: 2001:DB8:ACAD:B::15/64');
+
+add('default gateway: FE80::1');
+
+add('++++++++++++++++++++++++++++++++++++++++++++++++++');
+add('Backup the Configuration of the Router to TFTP.');
+add('++++++++++++++++++++++++++++++++++++++++++++++++++');
+
+add('copy running-config tftp');
+
+add('192.168.1.146');
+
+add('end');
+add('_________________________________________________');
+
