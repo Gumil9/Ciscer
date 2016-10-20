@@ -38,7 +38,11 @@ add('Refer to the exhibit. How many broadcast domains are displayed?', '4 16 8* 
 add('Refer to the exhibit. Fill in the blank. How many collision domains are shown in the topology? __2__', 'Core layer [*] provides high-speed backbone connectivity [*] functions as an aggregator for all the campus blocks');
 add('37.Which network device can be used to eliminate collisions on an Ethernet network?', 'switch*');
 add('Refer to the exhibit. Consider that the main power has just been restored. PC3 issues a broadcast IPv4 DHCP request. To which port will SW1 forward this request?', 'to Fa0/1, Fa0/2, and Fa0/3 only*');
-add('There are "12" collision domains in the topology.​', '12');
+add('There are 12 collision domains in the topology.​', '12');
+add('A converged network is one that uses the same infrastructure to carry voice, data, and video signals', 'converged');
+add('There are 5  broadcast domains in the topology.​', '5');
+add('How many collision domains are shown in the topology?', '2');
+
 
 /* TEST 2 */
 
@@ -73,6 +77,9 @@ add('32.In which situation would a technician use the show interfaces switch com
 add('33. Which statement describes the port speed LED on the Cisco Catalyst 2960 switch? If the LED is off, the port is not operating. If the LED is blinking green, the port is operating at 10 Mb/s. If the LED is green, the port is operating at 100 Mb/s.* If the LED is amber, the port is operating at 1000 Mb/s.');
 add('35.What is a function of the switch boot loader?', 'to provide security for the vulnerable state when the switch is booting to control how much RAM is available to the switch during the boot process to speed up the boot process to provide an environment to operate in when the switch operating system cannot be found*');
 add('Full-duplex communication allows both ends of a connection to transmit and receive data simultaneously', 'Full-duplex');
+add('Do not use abbreviations.What is the missing command on S1? ip address 192.168.99.2 255.255.255.0  The ip address 192.168.99.2 255.255.255.0 command is missing on interface vlan 99, the management VLAN.​', 'ip address 192.168.99.2 255.255.255.0');
+add('Full-duplex communication allows both ends of a connection to transmit and receive data simultaneously. Full-duplex communication improves the performance of a switched LAN, increasing effective bandwidth by allowing both ends of a connection to transmit and receive data simultaneously.', 'Full-duplex');
+add('When port security is enabled, a switch port uses the default violation mode of shutdown until specifically configured to use a different violation mode.', 'shutdown');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
