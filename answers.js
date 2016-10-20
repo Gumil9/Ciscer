@@ -82,238 +82,58 @@ add = prompts.add;
  add('helper label');
  */
 
-/*Final exam*/
+add('cut-throught:');
+add('+appropriate for high perfomance computing applications');
+add('+forwarding process can be begin after receiving the destination address');
+add('+may forward invalid frames');
 
-add('link-local -> FE80:0:56BA:FFEE:A0B4:47FF:FE36:532B');
-add('link-local -> FE80::1');
-add('Multicast -> FF02::2');
-add('Multicast -> FF02::1:FF3A:25C9');
-add('global unicast -> 2001:DB8:10::12');
-add('global unicast -> 2001:DB8:A1:0B:C78::1');
+add('store-and-forward:');
+add('#error checking before forwarding');
+add('#forwarding process only begins after receiving the entire frame');
+add('#only forwards valid frames');
 
-add('Stage 1 – perform the post');
-add('Stage 2 – load the bootstrap program');
-add('Stage 3 – Locate and load the Cisco IOS');
-add('Stage 4 – locate and load the configuration file');
+add('Layer 2 switches');
+add('[+] typically used in the access layer of a switched network');
+add('[+] forward traffic based on information in the Ethernet header');
 
-add('PDU encapsulation -> frame header');
+add('Multilayer switches');
+add('[#] can build a routing table');
+add('[#] supports a few routing protocols');
 
-add('POP -> does not require a centralized backup solution');
-add('pop -> mail is deleted as it is downloaded');
-add('pop -> desirable for an ISP or large business');
-add('imap -> downloads copies of email messages to the client');
-add('imap -> original messages must be manually deleted');
-add('imap -> require a larger amount of disk space');
+add('Access layer');
+add('[+] represents the network edge');
+add('[+] provides network access to the user');
 
-add('user EXEC mode -> limited number os basic monitoring commands');
-add('user EXEC mode -> the first entrance into the CLI of an IOS device');
-add('privileged EXEC mode -> accessed by entering the enable command');
-add('privileged EXEC mode -> identified by a prompt ending with the # character');
-add('global configuration mode -> changes made affect the operation of the device as a whole');
-add('global configuration mode -> accessed by entering the congigure terminal command');
+add('Distribution layer');
+add('[#] implements network access policy');
+add('[#] establishes Layer 3 routing boundaries');
 
-add('1 -> remote access method that uses encryption');
-add('2 -> preferred out-of-band access method');
-add('4 -> remote access via a dialup connection');
-add('5 -> unsecure remote access');
+add('Core layer');
+add('[*] provides high-speed backbone connectivity');
+add('[*] functions as an aggregator for all the campus blocks');
 
-add('Protect the network from unauthorized access. -> security');
-add('Provide redundant links and devices. -> fault tolerance');
-add('Expand the network without degrading the service for existing users. -> scalability');
+add('allows intelligent traffic load sharing by using all network resources -> flexibility');
+add('facilitates understanding the role of each device at every tier, simplifies deployment, operation, management, and reduces fault domains at every tier -> hierarchical');
+add('allows seamless network expansion and integrated service enablement on an on-demand basis -> modularity');
+add('satisfies user expectations for keeping the network always on -> resiliency');
 
-add('CLI -> users interact with the operating system by typing commands');
-add('GUI -> enables the user to interact with the operating system by pointing and clicking');
-add('kernel -> the part of the OS that interacts directly with the device hardware');
-add('shell -> the part of the operating system that interfaces with applications and the user');
+add('step 3');
+add('– not scored –');
+add('step 1');
+add('step 4');
+add('step 2');
+add('step 5');
+add('step 6');
 
-add('Application layer -> HTTP and FTP');
-add('Application layer -> end user program functionality');
-add('Presentation layer -> compression');
-add('Presentation layer -> common format');
-add('Session layer -> dialog maintenance');
+add('[+] Create a local user.');
+add('[+] Generate RSA keys.');
+add('[+] Configure a domain name.')
+add('[+] Use the login local command.');
+add('[+] Use the transport input ssh command.');
+add('[+] Order does not matter within this group.');
 
-add('locale and load the Cisco IOS software -> phase 2');
-add('locate and load the startup configuration file -> phase 3');
-add('perform the POST and load the bootstrap program -> phase 1');
-
-/*final test ccna7*/
-
-add('packets with destination of 172.17.6.15 -> 1');
-add('packets with destination of 172.17.14.8 -> 2');
-add('packets with destination of 172.17.12.10 -> 3');
-add('packets with destination of 172.17.10.5 -> 4');
-add('packets with destination of 172.17.8.20 -> 5');
-add('nothing -> 6');
-
-add('physical topology diagram -> location of a desktop PC in a classroom');
-add('physical topology diagram -> path of cables that connect rooms to wiring closets');
-add('logical topology diagram -> IP address of a server');
-
-add('Copper cables -> horizontal cabling structure');
-add('Copper cables -> desktop PCs in an enterpise office');
-add('Fiber Optic -> backbone cabling in an enterprise');
-add('Fiber Optic -> long-haul networks');
-add('wireless -> guest access in a coffee shop');
-add('wireless -> waiting rooms in a hospital');
-
-add('_________________________________________________');
-add('conf CS Department Router');
-add('_________________________________________________');
-add('enable');
-add('configure terminal');
-add('interface g0/0');
-add('ip address 192.168.1.126 255.255.255.224');
-add('description Lab 124 LAN');
-add('no shutdown');
-add('exit');
-
-add('interface g0/1');
-add('ip address 192.168.1.158 255.255.255.240');
-add('description Lab 214 LAN');
-add('no shutdown');
-add('exit');
-
-add('ipv6 unicast-routing');
-add('interface g0/0');
-add('ipv6 address 2001:db8:acad:A::1/64');
-add('ipv6 address FE80::1 link-local');
-add('no shutdown');
-add('exit');
-
-add('interface g0/1');
-add('ipv6 address 2001:db8:acad:B::1/64');
-add('ipv6 address FE80::1 link-local');
-add('no shutdown');
-add('exit');
-
-add('conf terminal');
-add('hostname Middle');
-add('Enable secret class12345');
-add('line console 0');
-add('password ccnanetacad2016');
-add('login');
-add('exit');
-
-add('line vty 0 15');
-add('password ccnanetacad2016');
-add('login');
-add('exit');
-add('line aux 0');
-add('password ccnanetacad2016');
-add('login');
-add('exit');
-
-add('Banner motd # Sorry! Authorized Access Only” #');
-add('security password min-length 10');
-add('service password-encryption');
-add('ip domain-name ccnanetacad2016.net');
-add('username netadmin privilege 15 secret Cisco_CCNA5');
-add('crypto key generate rsa');
-add('1024');
-
-add('line vty 0 15');
-add('login local');
-add('transport input ssh');
-add('end');
-
-add('copy running-config startup-config');
-
-add('_________________________________________________');
-add('++++++++++++++++++++++++++++++++++++++++++++++++');
-add('Conf lab 214 switchv');
-add('_________________________________________________');
-add('conf t');
-add('ip default-gateway 192.168.1.158');
-add('int vlan 1');
-add('ip address 192.168.1.157 255.255.255.240');
-add('no shutdown');
-add('line vty 0 4');
-add('password class');
-add('login');
-
-add('end');
-add('copy running-config startup-config');
-
-add('++++++++++++++++++++++++++++++++++++++++++++++++');
-add('-=================================================');
-add('_________________________________________________');
-add('124-1');
-add('++++++++++++++++++++++++++++++++++++++++++++++++');
-
-add('IPv4');
-
-add('IP address: 192.168.1.97');
-
-add('Mask: 255.255.255.224');
-
-add('default gateway: 192.168.1.126');
-
-add('IPv6');
-
-add('IPv6 address: 2001:DB8:ACAD:A::FF/64');
-
-add('default gateway: FE80::1');
-
-add('—————————————–');
-
-add('124-5');
-add('+++++++++++++++++++++++++++++++++');
-add('IPv4');
-
-add('IP address: 192.168.1.98');
-
-add('Mask: 255.255.255.224');
-
-add('default gateway: 192.168.1.126');
-
-add('IPv6');
-
-add('IPv6 address: 2001:DB8:ACAD:A::15/64');
-
-add('default gateway: FE80::1');
-
-add('—————————————–');
-add('214-1');
-add('+++++++++++++++++++++++++++++++++++++++');
-add('IPv4');
-
-add('IP address: 192.168.1.145');
-
-add('Mask: 255.255.255.240');
-
-add('default gateway: 192.168.1.158');
-
-add('IPv6');
-
-add('IPv6 address: 2001:DB8:ACAD:B::FF/64');
-
-add('default gateway: FE80::1');
-
-add('—————————————–');
-add('SERVER TFTP');
-add('+++++++++++++++++++++++++++++++++++++++++++++');
-add('IPv4');
-
-add('IP address: 192.168.1.146');
-
-add('Mask: 255.255.255.240');
-
-add('default gateway: 192.168.1.158');
-
-add('IPv6');
-
-add('Pv6 address: 2001:DB8:ACAD:B::15/64');
-
-add('default gateway: FE80::1');
-
-add('++++++++++++++++++++++++++++++++++++++++++++++++++');
-add('Backup the Configuration of the Router to TFTP.');
-add('++++++++++++++++++++++++++++++++++++++++++++++++++');
-
-add('copy running-config tftp');
-
-add('192.168.1.146');
-
-add('end');
-add('_________________________________________________');
-
+add('disable -> admin down');
+add('Layer 1 problem -> down/down');
+add('– not scored –');
+add('Layer 2 problem -> up/down');
+add('operational -> up/up');
