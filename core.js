@@ -83,7 +83,7 @@ function Tests() {
                 answer = test.answers.join('<br>');
             }
         });
-        return 'not found' || answer;
+        return answer || 'not found';
     };
     this.getTests = function () {
         return testsArray;
