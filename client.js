@@ -10,7 +10,10 @@ var TIMEOUT = 5000; //In milliseconds
 var PATH = "https://raw.githubusercontent.com/Gumil9/Ciscer/master/";
 
 var loaded = false;
-document.onkeydown = function (e) {
+
+document.addEventListener("keydown", handleKeyDown);
+
+function handleKeyDown(e) {
     if (!loaded && e.ctrlKey && e.keyCode == 32) {
         var loadCore = new Promise(function (resolve, reject) {
             GM_xmlhttpRequest({
@@ -51,5 +54,4 @@ document.onkeydown = function (e) {
             alert("Unable to load resources.");
         });
     }
-};
-
+}
