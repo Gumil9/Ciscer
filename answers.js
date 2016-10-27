@@ -5,7 +5,6 @@ var add = tests.add;
  template:
  add(question, answer0 [, answer1, ...]);
  */
-<<<<<<< HEAD
 /* TEST 3 */
 add('A network administrator is determining the best placement of VLAN trunk links. Which two types of point-to-point connections utilize VLAN trunking?​ (Choose two.)',
 	'between a switch and a server that has an 802.1Q NIC','between two switches that utilize multiple VLANs');
@@ -213,7 +212,7 @@ add('What is the problem with this configuration, based on the output of the rou
 add('A network administrator is verifying the configuration of inter-VLAN routing. Based on the partial output that is displayed by the use of the show vlan command, which conclusion can be drawn for the Gi1/1 interface?',
 	'It is configured as trunk mode.');
 
-=======
+//=======
 /*TEST 3*/
 add('A network administrator is determining the best placement of VLAN trunk links. Which two types of point-to-point connections utilize VLAN trunking? Choose two.', 'between a switch and a server that has an 802.1Q NIC', 'between two switches that utilize multiple VLANs');
 add('What happens to a port that is associated with VLAN 10 when the administrator deletes VLAN 10 from the switch?', 'The port goes back to the default VLAN.');
@@ -315,7 +314,6 @@ add('28. What is a characteristic of legacy inter-VLAN routing?', 'The router re
 add('In what switch mode should port G0/1 be assigned if Cisco best practices are being used?', 'trunk');
 add('What is the problem with this configuration, based on the output of the router?', 'The encapsulation has not been configured on the subinterface.');
 add('A network administrator is verifying the configuration of inter-VLAN routing. Based on the partial output that is displayed by the use of the show vlan command, which conclusion can be drawn for the Gi1/1 interface?', 'It is configured as trunk mode.');
->>>>>>> origin/master
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -325,7 +323,6 @@ add = prompts.add;
  add('helper label');
  */
 
-<<<<<<< HEAD
 add('– not scored –');
 add('dynamic auto');
 add('nonegotiate');
@@ -347,7 +344,6 @@ add('D -> route  source protocol');
 
 add('router-on-a-stick -> creation of subinterfaces');
 add('Layer 3 with SVIs -> routing at wire speeds');
-=======
 add('cut-throught:');
 add('+appropriate for high perfomance computing applications');
 add('+forwarding process can be begin after receiving the destination address');
@@ -400,6 +396,5 @@ add('[+] Order does not matter within this group.');
 
 add('disable -> admin down');
 add('Layer 1 problem -> down/down');
->>>>>>> origin/master
 add('– not scored –');
 add('Layer 3 with routed ports -> need to issue the no switchport command');
