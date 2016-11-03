@@ -100,6 +100,69 @@ add('Refer to the exhibit. A network administrator issued the command show ip os
 add('33.What command would be used to determine if a routing protocol-initiated relationship had been made with an adjacent router?', 'show ip ospf neighbor');
 add('What are two reasons that will prevent two routers from forming an OSPFv2 adjacency?', 'mismatched OSPF Hello or Dead timers', 'mismatched subnet masks on the link interfaces');
 
+/* TEST 5 */
+add('A network engineer is troubleshooting the configuration of new VLANs on a network. ​Which command is used to display the list of VLANs that exists on the switch? show vlan',
+    'show vlan');
+add('What is a disadvantage of using multilayer switches for inter-VLAN routing?',
+    'Multilayer switches are more expensive than router-on-a-stick implementations.');
+add('Refer to the exhibit. A router-on-a-stick configuration was implemented for VLANs 15, 30, and 45, according to the show running-config command output. PCs on VLAN 45 that are using the 172.16.45.0 /24 network are having trouble connecting to PCs on VLAN 30 in the 172.16.30.0 /24 network. Which error is most likely causing this problem?​',
+    'There is an incorrect IP address configured on GigabitEthernet 0/0.30.');
+add('Refer to the exhibit. A network administrator has configured router CiscoVille with the above commands to provide inter-VLAN routing. What command will be required on a switch that is connected to the Gi0/0 interface on router CiscoVille to allow inter-VLAN routing?​',
+    'switchport mode trunk');
+add('Refer to the exhibit. The switch does the routing for the hosts that connect to VLAN 5. If the PC accesses a web server from the Internet, at what point will a VLAN number be added to the frame?',
+    'No VLAN number is added to the frame in this design.');
+add('Inter-VLAN communication is not occurring in a particular building of a school. Which two commands could the network administrator use to verify that inter-VLAN communication was working properly between a router and a Layer 2 switch when the router-on-a-stick design method is implemented? (Choose two.)',
+    'From the switch, issue the show interface trunk command.','From the router, issue the show ip route command.');
+add('Refer to the exhibit. Router RA receives a packet with a source address of 192.168.1.35 and a destination address of 192.168.1.85. What will the router do with this packet?',
+    'The router will forward the packet out interface FastEthernet 0/1.2.');
+add('What condition is required to enable Layer 3 switching?',
+    'The Layer 3 switch must have IP routing enabled.');
+add('Which type of inter-VLAN communication design requires the configuration of multiple subinterfaces?',
+    'router on a stick');
+add('Refer to the exhibit. A network administrator is configuring RT1 for inter-VLAN routing. The switch is configured correctly and is functional. Host1, Host2, and Host3 cannot communicate with each other. Based on the router configuration, what is causing the problem?',
+    'IP addresses on the subinterfaces are incorrectly matched to the VLANs.');
+add('How is traffic routed between multiple VLANs on a multilayer switch?',
+    'Traffic is routed via internal VLAN interfaces.');
+add('Refer to the exhibit. Communication between the VLANs is not occurring. What could be the issue?',
+    'The Gi1/1 switch port is not in trunking mode.');
+add('What is a disadvantage of using router-on-a-stick inter-VLAN routing?',
+    'does not scale well beyond 50 VLANs');
+add('Which statement describes a disadvantage of using router subinterfaces for inter-VLAN routing?',
+    'Routed traffic must contend for bandwidth on a single router interface.');
+add('While configuring inter-VLAN routing on a multilayer switch, a/an is used as a virtual-routed VLAN interface.',
+    'SVI');
+add('Refer to the exhibit. A network administrator is verifying the configuration of inter-VLAN routing. Users complain that PC2 cannot communicate with PC1. Based on the output, what is the possible cause of the problem?',
+    'The encapsulation dot1Q 5 command contains the wrong VLAN.');
+add('Refer to the exhibit. A network administrator is verifying the configuration of inter-VLAN routing. Users complain that PCs on different VLANs cannot communicate. Based on the output, what are two configuration errors on switch interface Gi1/1? (Choose two.)',
+    'Gi1/1 is configured as trunk mode.','Gi1/1 is in the default VLAN.');
+add('While configuring inter-VLAN routing on a multilayer switch, a network administrator issues the no switchport command on an interface that is connected to another switch. What is the purpose of this command?',
+    'to create a routed port for a single network');
+add('Which command is missing on the Layer 3 switch to restore the full connectivity between PC1 and the web server?',
+    'ip address 192.168.20.1 255.255.255.0 ');
+add('A small college uses VLAN 10 for the classroom network and VLAN 20 for the office network. What is needed to enable communication between these two VLANs while using legacy inter-VLAN routing?',
+    'A router with at least two LAN interfaces should be used.');
+add('Refer to the exhibit. After attempting to enter the configuration that is shown in router RTA, an administrator receives an error and users on VLAN 20 report that they are unable to reach users on VLAN 30. What is causing the problem?',
+    'RTA is using the same subnet for VLAN 20 and VLAN 30.');
+add('Refer to the exhibit. A network administrator needs to configure router-on-a-stick for the networks that are shown. How many subinterfaces will have to be created on the router if each VLAN that is shown is to be routed and each VLAN has its own subinterface?',
+    '4');
+add('Refer to the exhibit. Which command can the administrator issue to change the VLAN10 status to up?​',
+    'Switch1(config)# vlan 10');
+add('How are IP addressing designs affected by VLAN implementations?',
+    'Each VLAN must have a different network number.');
+add('What is a characteristic of a routed port on a Layer 3 switch?',
+    'It is not assigned to a VLAN.');
+add('An administrator is attempting to configure a static route on a Cisco 2960 series switch. After the administrator types the command ip route 0.0.0.0 0.0.0.0 10.1.1.1, an error message appears stating that the command is not recognized. What must the administrator do so that this command is accepted?',
+    'Enter the command sdm prefer lanbase-routing and reload.');
+add('Refer to the exhibit. In this network design, which connection or connections if any, add the VLAN ID number if host H1 sends information to host H2?',
+    'no link');
+add('What is a characteristic of legacy inter-VLAN routing?',
+    'The router requires one Ethernet link for each VLAN.');
+add('In what switch mode should port G0/1 be assigned if Cisco best practices are being used?',
+    'trunk');
+add('What is the problem with this configuration, based on the output of the router?',
+    'The encapsulation has not been configured on the subinterface.');
+add('A network administrator is verifying the configuration of inter-VLAN routing. Based on the partial output that is displayed by the use of the show vlan command, which conclusion can be drawn for the Gi1/1 interface?',
+    'It is configured as trunk mode.');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -154,4 +217,11 @@ add('fourth state  ->  Exstart state');
 add('third state  ->  Two-way state');
 add('sixth state  ->  Loading state');
 
+//Test 5
 
+add('router-on-a-stick -> creation of subinterfaces');
+add('Layer 3 with SVIs -> routing at wire speeds');
+add('cut-throught:');
+add('+appropriate for high perfomance computing applications');
+add('+forwarding process can be begin after receiving the destination address');
+add('+may forward invalid frames');
