@@ -176,12 +176,10 @@ function AnswerSigner(tests) {
 
             Array.prototype.forEach.call(labelElements, function (element) {
                 if (element.textContent == answer) {
-                    console.log(element);
-                    element.innerHTML = '<span style="color: ' + COLOR + ' !important;">·</span>' + element.innerHTML;
+                    element.innerHTML = '·' + element.innerHTML;
                 }
                 if (element.innerHTML.indexOf('·') == -1) {
-                    element.innerHTML = element.innerHTML.replace(regExp,
-                        '<span style="color: ' + COLOR + ' !important;">·</span>' + answer);
+                    element.innerHTML = element.innerHTML.replace(regExp, '·' + answer);
                 }
             });
         }
