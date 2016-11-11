@@ -40,12 +40,14 @@ add('R1 receives a packet destined for the IP address 192.168.2.10. Out which in
 
 add('What is the purpose of the passive-interface command?', 'allows a router to receive routing updates on an interface but not send updates via that interface');
 add('What two tasks do dynamic routing protocols perform? Choose two.', 'network discovery', 'update and maintain routing tables');
+add('The command   “version 2”   is used in RIP router configuration mode to enable the sending of subnet masks with the routing updates.','version 2');
 add('Refer to the exhibit. OSPF is used in the network. Which path will be chosen by OSPF to send data packets from Net A to Net B?', 'R1, R3, R5, R7');
 add('Which two statements are true regarding classless routing protocols? Choose two.', 'allows for use of both 192.168.1.0/30 and 192.168.1.16/28 subnets in the same topology', 'sends subnet mask information in routing updates');
 add('What two actions result from entering the network 192.168.1.0 command in RIP configuration mode on a router? Choose two.', 'Routing updates are sent through all the interfaces belonging to 192.168.1.0.', 'The network address 192.168.1.0 is advertised to the neighbor routers.');
 add('Refer to the exhibit. Based on the partial output from the show ip route command, what two facts can be determined about the RIP routing protocol? Choose two.', 'The command no auto-summary has been used on the RIP neighbor router.', 'RIP version 2 is running on this router and its RIP neighbor.');
 add('In the context of routing protocols, what is a definition for time to convergence?', 'the amount of time for the routing tables to achieve a consistent state after a topology change');
 add('A destination route in the routing table is indicated with a code D. Which kind of route entry is this?', 'a route dynamically learned through the EIGRP routing protocol');
+add('When configuring RIPng, the ” default-information originate ” command instructs the router to propagate a static default route.​','default-information originate');
 add('Refer to the exhibit. Which interface will be the exit interface to forward a data packet with the destination IP address 172.16.0.66?', 'Serial0/0/1');
 add('Which route is the best match for a packet entering a router with a destination address of 10.16.0.2?', 'S 10.16.0.0/24 [1/0] via 192.168.0.9');
 add('Which two requirements are necessary before a router configured with a link-state routing protocol can build and send its link-state packets? Choose two.', 'The router has determined the costs associated with its active links.', 'The router has established its adjacencies.');
