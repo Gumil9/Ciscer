@@ -111,3 +111,241 @@ add('Each router builds a Link-State Packet (LSP) containing the state of each d
 add('Each router learns about its own directly connected networks. > step 1');
 add('Each router floods the LSP to all neighbors, who then store all LSPs received in a database > step 4');
 add('Each router uses the database to construct a complete map of the topology and computes the best > step 5');
+
+add('PT');
+add('------------------------SITE1----------------------------');
+add('enable');
+add('configure terminal');
+add('hostname SITE1');
+add('no ip domain-lookup');
+add('enable secret class');
+add('line console 0');
+add('password cisco');
+add('login');
+add('logging synchronous');
+add('exit');
+add('line vty 0 15');
+add('password cisco');
+add('login');
+add('logging synchronous');
+add('exit');
+add('service password-encryption');
+add('banner motd %Precaucion%');
+
+add('interface s0/0/0');
+add('ip addres 192.168.10.105 255.255.255.252');
+add('clock rate 128000');
+add('bandwidth 128');
+add('ip ospf cost 7500');
+add('no shutdown');
+add('exit');
+add('interface g0/0');
+add('no shutdown');
+add('exit');
+add('interface g0/0.45');
+add('encapsulation dot1Q 45'); 
+add('ip address 192.168.45.1 255.255.255.0');
+add('no shutdown');
+add('exit');
+add('interface g0/0.47');
+add('encapsulation dot1Q 47');
+add('ip address 192.168.47.1 255.255.255.0');
+add('no shutdown');
+add('exit');
+add('interface g0/0.101');
+add('encapsulation dot1Q 101');
+add('ip address 192.168.101.1 255.255.255.0');
+add('interface g0/0');
+add('no shutdown');
+add('exit');
+
+add('ip route 0.0.0.0 0.0.0.0 s0/0/0');
+add('router ospf 10');
+add('router-id 1.1.1.1');
+add('network 192.168.10.104 0.0.0.3 area 0');
+add('network 192.168.45.0 0.0.0.255 area 0');
+add('network 192.168.47.0 0.0.0.255 area 0');
+add('network 192.168.101.0 0.0.0.255 area 0');
+add('passive-interface g0/0.45');
+add('passive-interface g0/0.47');
+add('passive-interface g0/0.101');
+
+add('ip dhcp excluded-address 192.168.45.1 192.168.45.20');
+add('ip dhcp excluded-address 192.168.47.1 192.168.47.20');
+add('ip dhcp pool vlan45');
+add('default-router 192.168.45.1');
+add('dns-server 192.168.18.100');
+add('network 192.168.45.0 255.255.255.0');
+add('ip dhcp pool vlan47');
+add('default-router 192.168.47.1');
+add('dns-server 192.168.18.100');
+add('network 192.168.47.0 255.255.255.0');
+add('end');
+
+add('-------------------------HQ------------------------------');
+add('enable');
+add('configure terminal');
+
+add('line vty 0 15');
+add('access-class MANAGE in');
+add('password cisco');
+add('login');
+add('logging synchronous');
+add('exit');
+
+add('interface s0/0/0');
+add('ip addres 192.168.10.106 255.255.255.252');
+add('bandwidth 128');
+add('ip ospf cost 7500');
+add('no shutdown');
+add('exit');
+add('interface s0/0/1');
+add('ip addres 192.168.10.113 255.255.255.252');
+add('bandwidth 128');
+add('clock rate 128000');
+add('no shutdown');
+add('exit');
+add('interface s0/1/0');
+add('ip addres 198.51.100.1 255.255.255.240');
+add('bandwidth 128');
+add('no shutdown');
+add('exit');
+add('interface g0/0');
+add('ip addres 192.168.18.41 255.255.255.248');
+add('bandwidth 128');
+add('no shutdown');
+add('exit');
+
+add('ip route 0.0.0.0 0.0.0.0 s0/1/0');
+add('ip route 192.168.200.0 255.255.252.0 s0/0/1');
+
+add('router ospf 10');
+add('router-id 2.2.2.2');
+add('network 192.168.10.104 0.0.0.3 area 0');
+add('network 192.168.10.112 0.0.0.3 area 0');
+add('network 192.168.18.40 0.0.0.7 area 0');
+add('passive-interface g0/0');
+add('exit');
+
+add('ip nat inside source static 192.168.18.46 198.51.100.14');
+add('int s0/1/0');
+add('ip nat outside');
+add('exit');
+add('int g0/0');
+add('ip nat inside');
+add('exit');
+ 
+add('ip nat pool INTERNET 198.51.100.3 198.51.100.13 netmask 255.255.255.240');
+add('ip nat inside source list 1 pool INTERNET');
+add('access-list 1 permit 192.168.45.0 0.0.0.255');
+add('access-list 1 permit 192.168.47.0 0.0.0.255');
+add('access-list 1 permit 192.168.200.0 0.0.3.255');
+
+add('ip access-list standard MANAGE');
+add('permit host 203.0.113.18');
+add('access-list 101 permit ip host 203.0.113.18 any');
+add('access-list 101 permit tcp any host 198.51.100.14 eq www');
+add('access-list 101 permit tcp any any established ');
+add('access-list 101 deny ip any any ');
+add('int s0/1/0');
+add('ip access-group 101 in');
+add('end');
+
+add('------------------------SITE2----------------------------');
+add('enable');
+add('configure terminal');
+
+add('interface s0/0/0');
+add('ip addres 192.168.10.126 255.255.255.252');
+add('bandwidth 128');
+add('clock rate 128000');
+add('no shutdown');
+add('exit');
+add('interface s0/0/1');
+add('ip addres 192.168.10.114 255.255.255.252');
+add('bandwidth 128');
+add('clock rate 128000');
+add('no shutdown');
+add('exit');
+
+add('ip route 0.0.0.0 0.0.0.0 s0/0/1');
+add('ip route 192.168.200.0 255.255.252.0 s0/0/0');
+
+add('router ospf 10');
+add('router-id 3.3.3.3');
+add('network 192.168.10.112 0.0.0.3 area 0');
+add('exit');
+
+
+add('----------------------SITE1-SW1--------------------------');
+add('enable');
+add('configure terminal');
+
+
+add('interface vlan 101');
+add('ip addres 192.168.101.11 255.255.255.0');
+add('no shutdown');
+add('exit');
+
+add('vlan 45');
+add('name finance');
+add('vlan 47');
+add('name sales');
+add('vlan 101');
+add('name netadmin');
+add('exit');
+add('interface range g0/1-2');
+add('switchport mode trunk');
+add('no shutdown');
+add('exit');
+add('interface f0/10');
+add('switchport mode access');
+add('switchport access vlan 45');
+add('no shutdown');
+add('exit');
+add('interface f0/15');
+add('switchport mode access');
+add('switchport access vlan 47');
+add('no shutdown');
+add('exit');
+add('ip default-gateway 192.168.101.1');
+add('interface range f0/1-9,f0/11-14, f0/16-24');
+add('switchport mode access');
+add('shutdown');
+add('end');
+
+add('----------------------SITE1-SW2--------------------------');
+add('enable');
+add('configure terminal ');
+
+add('interface vlan 101');
+add('ip addres 192.168.101.22 255.255.255.0');
+add('no shutdown');
+add('exit');
+
+add('vlan 45');
+add('name finance');
+add('vlan 47');
+add('name sales');
+add('vlan 101');
+add('name netadmin');
+add('exit');
+add('interface g0/1');
+add('switchport mode trunk');
+add('no shutdown');
+add('exit');
+add('interface f0/3');
+add('switchport mode access');
+add('switchport access vlan 45');
+add('no shutdown');
+add('exit');
+add('interface f0/21');
+add('switchport mode access');
+add('switchport access vlan 47');
+add('no shutdown');
+add('exit');
+add('ip default-gateway 192.168.101.1');
+add('interface range f0/1-2, f0/4-20, f0/22-24');
+add('switchport mode access');
+add('shutdown');
+add('end');
