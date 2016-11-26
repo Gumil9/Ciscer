@@ -19,22 +19,22 @@ function handleKeyDown(event) {
 
     //Ctrl + Alt + (↑ or ↓)
     if (event.ctrlKey && event.altKey && (event.keyCode == 38 || event.keyCode == 40)) {
-        label.changeDisposition();
+        label.togglePosition();
     }
 
     //Ctrl + Alt + ←
     if (event.ctrlKey && event.altKey && event.keyCode == 37) {
-        label.setText(prompts.getPrevious());
+        label.setText(prompts.previous());
     }
 
     //Ctrl + Alt + →
     if (event.ctrlKey && event.altKey && event.keyCode == 39) {
-        label.setText(prompts.getNext());
+        label.setText(prompts.next());
     }
 
     //Ctrl + Shift
     if (event.ctrlKey && event.shiftKey) {
-        selection.changeSelectionColor();
+        selection.toggleColor();
     }
 
     //Ctrl + Space
@@ -47,14 +47,16 @@ function handleWheel(event) {
     if (event.ctrlKey && event.altKey) {
         var delta = event.deltaY || event.detail || event.wheelDelta;
         if (delta > 0) {
-            label.setText(prompts.getNext());
+            label.setText(prompts.next());
         } else if (delta < 0) {
-            label.setText(prompts.getPrevious());
+            label.setText(prompts.previous());
         }
     }
 }
 
-/*Stores and finds answers to multiple choice and fill-in-the-blank questions*/
+/*
+ * Stores answers to multiple choice and fill-in-the-blank questions.
+ */
 function Tests() {
     var testsArray = []; //array with questions and answers
     this.add = function (question) {
@@ -70,14 +72,14 @@ function Tests() {
 
     /*
      * Following constant defines minimum length of question (selected text) to search answers to.
-     * It is required for secrecy with outside users.
+     * Required for exact answer search.
      */
     var QUESTION_MIN_LENGTH = 10;
     this.getAnswer = function (question) {
         if (question.length < QUESTION_MIN_LENGTH) {
             return '';
         }
-        var answer;
+        var answer = null;
         testsArray.forEach(function (test) {
             if (~test.question.indexOf(question)) {
                 answer = test.answers.join('<br>');
@@ -91,18 +93,18 @@ function Tests() {
 }
 
 /*
- * Stores prompts for drag-and-drop (matching) questions and Packet Tracer Labs
+ * Stores prompts for drag-and-drop (matching) questions and Packet Tracer Labs.
  */
 function Prompts() {
     var promptsArray = [];
     var selectedIndex = -1;
 
-    this.getNext = function () {
+    this.next = function () {
         selectedIndex = (selectedIndex + 1) % promptsArray.length;
         return promptsArray[selectedIndex];
     };
 
-    this.getPrevious = function () {
+    this.previous = function () {
         selectedIndex = (--selectedIndex >= 0) ? selectedIndex : selectedIndex + promptsArray.length;
         return promptsArray[selectedIndex];
     };
@@ -113,6 +115,9 @@ function Prompts() {
 
 }
 
+/*
+ * Represents text label for answer showing.
+ */
 function Label() {
     var div = document.createElement('div'); //div block with answers
     div.setAttribute('id', 'mipt_ans');
@@ -123,33 +128,37 @@ function Label() {
     div.style.zIndex = 1000000;
     div.style.display = 'block';
     document.body.appendChild(div);
-    var topPosition = false;
+    var isAbove = false;
 
     this.setText = function (answer) {
         div.innerHTML = answer;
     };
 
-    this.displayAbove = function () {
+    this.moveUp = function () {
         div.style.top = '40px';
         div.style.bottom = null;
     };
 
-    this.displayBelow = function () {
+    this.moveDown = function () {
         div.style.top = null;
         div.style.bottom = '100px';
     };
 
-    this.changeDisposition = function () {
-        if (topPosition) {
-            topPosition = false;
-            this.displayBelow();
+    this.togglePosition = function () {
+        if (isAbove) {
+            isAbove = false;
+            this.moveDown();
         } else {
-            topPosition = true;
-            this.displayAbove();
+            isAbove = true;
+            this.moveUp();
         }
     };
 }
 
+/*
+ * Finds and signs by '·' right answers. Algorithm is trivial,
+ * so in some cases works incorrectly. Need to be improved.
+ */
 function AnswerSigner(tests) {
     var ANSWER_MIN_LENGTH = 5; //This constant defines minimum length of answers to mark.
 
@@ -186,6 +195,9 @@ function AnswerSigner(tests) {
     };
 }
 
+/*
+ * Manages secret selection.
+ */
 function Selection() {
     var secretSelection = false;
     this.enableSecretSelection = function () {
@@ -201,7 +213,7 @@ function Selection() {
             secretSelection = false;
         }
     };
-    this.changeSelectionColor = function () {
+    this.toggleColor = function () {
         if (secretSelection) {
             this.disableSecretSelection();
         } else {

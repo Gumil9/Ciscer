@@ -2,8 +2,8 @@
 var add = tests.add;
 
 /*
- template:
- add(question, answer0 [, answer1, ...]);
+ * template:
+ * add(question, answer0 [, answer1, ...]);
  */
 
 // TEST 11
@@ -96,8 +96,8 @@ add('The default administrative distance for a static route is ', '1');
 add = prompts.add;
 
 /*
- template:
- add('helper label');
+ * template:
+ * add('helper label');
  */
 
 add('step 5 => R1 replaces the address 192.168.10.10 with a translated inside global address.');
@@ -143,7 +143,7 @@ add('interface g0/0');
 add('no shutdown');
 add('exit');
 add('interface g0/0.45');
-add('encapsulation dot1Q 45'); 
+add('encapsulation dot1Q 45');
 add('ip address 192.168.45.1 255.255.255.0');
 add('no shutdown');
 add('exit');
@@ -234,7 +234,7 @@ add('exit');
 add('int g0/0');
 add('ip nat inside');
 add('exit');
- 
+
 add('ip nat pool INTERNET 198.51.100.3 198.51.100.13 netmask 255.255.255.240');
 add('ip nat inside source list 1 pool INTERNET');
 add('access-list 1 permit 192.168.45.0 0.0.0.255');
