@@ -125,6 +125,12 @@ add('The OSPF Type 1 packet is the ​hello packet.', 'hello');
 add('The default administrative distance for a static route is ', '1');
 add('The acronym describes the type of traffic that has strict QoS requirements and utilizes a one-way overall delay less than 150 ms across the network. ', 'VoIP');
 
+add('Refer to the exhibit. What is the OSPF cost to reach the R2 LAN 172.16.2.0/24 from R1?', '74');
+add('Static routes are configured by the use of the global configuration command.', 'ip route');
+add('A network administrator is configuring an ACL with the command access-list 10 permit 172.16.32.0 0.0.15.255. Which IPv4 address matches the ACE?', '172.16.20.2');
+add('What are two reasons that will prevent two routers from forming an OSPFv2 adjacency? (Choose two.)', 'mismatched subnet masks on the link interfaces', 'mismatched OSPF Hello or Dead timers');
+add('A network administrator is configuring port security on a Cisco switch. The company security policy specifies that when a violation occurs, packets with unknown source addresses should be dropped and no notification? ', 'protect ');
+
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
 
