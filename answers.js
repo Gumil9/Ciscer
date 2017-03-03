@@ -85,7 +85,6 @@ add = prompts.add;
  * add('helper label');
  */
 
-/*
 add('Надеюсь, что делал это не просто так. И хоть кто-нибудь проставит мне хотя бы шоколадку');
 add('Прости, Олег, но, похоже, нет...');
 
@@ -96,15 +95,14 @@ add('store-and-forward > always stores the entire frame');
 add('store-and-forward > checks the CRC before forwarding');
 add('store-and-forward > checks the frame length before forwarding');
 
-add('R1(config)# > service password-encrytion');
+add('R1config# > service password-encrytion');
 add('R1> > enable');
 add('R1# > copy running-config startup-config');
-add('R1(config-line)# > login');
-add('R1(config-if)# > ip address 192.168.4.4 255.255.255.0');
+add('R1config-line# > login');
+add('R1config-if# > ip address 192.168.4.4 255.255.255.0');
 
 add('169.254.1.5 > a link-local address');
 add('192.0.2.123 > a TEST-NET address');
 add('240.2.6.255 > an experimental address');
 add('172.19.20.5 > a private address');
 add('127.0.0.1 > a loopback address');
-*/
