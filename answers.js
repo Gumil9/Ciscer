@@ -37,8 +37,8 @@ add('3. When a connectionless protocol is in use at a lower layer of the OSI mod
 add('4. Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?', 'Time-to-Live');
 add('5. What IPv4 header field identifies the upper layer protocol carried in the packet?', 'Protocol');
 add('6. What is one advantage that the IPv6 simplified header offers over IPv4?', 'efficient packet handling');
-add('7. Refer to the exhibit. Which route from the PC1 routing table will be used to reach PC2?', '192.168.10.0', '255.255.255.0', 'On-link', '192.168.10.10', '281);
-add('8. Refer to the exhibit. R1 receives a packet destined for the IP address 192.168.2.10. Out which interface will R1 forward the packet?', 'Serial0/0/1);
+add('7. Refer to the exhibit. Which route from the PC1 routing table will be used to reach PC2?', '192.168.10.0', '255.255.255.0', 'On-link', '192.168.10.10', '281');
+add('8. Refer to the exhibit. R1 receives a packet destined for the IP address 192.168.2.10. Out which interface will R1 forward the packet?', 'Serial0/0/1');
 add('9. What type of route is indicated by the code C in an IPv4 routing table on a Cisco router?', 'directly connected route');
 add('10. What routing table entry has a next hop address associated with a destination network?', 'remote routes');
 add('11. Which statement describes a hardware feature of a Cisco 1941 router that has the default hardware configuration?', 'It has two types of ports that can be used to access the console');
