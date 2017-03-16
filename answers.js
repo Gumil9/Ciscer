@@ -6,51 +6,57 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-//TEST8
-add('1. What is a result of connecting two or more switches together?', 'The size of the broadcast domain is increased.');
-add('2. Refer to the exhibit. How many broadcast domains are there?', '4');
-add('3. What are two reasons a network administrator might want to create subnets? Choose two.', 'improves network performance', 'easier to implement security policies');
-add('4. Refer to the exhibit. A company uses the address block of 128.107.0.0/16 for its network. What subnet mask would provide the maximum number of equal size subnets while providing enough host addresses for each subnet in the exhibit?', '255.255.255.128');
-add('5. Refer to the exhibit. The network administrator has assigned the LAN of LBMISS an address range of 192.168.10.0. This address range has been subnetted using a /29 prefix. In order to accommodate a new building, the technician has decided to use the fifth subnet for configuring the new network (subnet zero is the first subnet). By company policies, the router interface is always assigned the first usable host address and the workgroup server is given the last usable host address. Which configuration should be entered into the properties of the workgroup server to allow connectivity to the Internet?', 'IP address: 192.168.10.38 subnet mask: 255.255.255.248, default gateway: 192.168.10.33');
-add('6. If a network device has a mask of /28, how many IP addresses are available for hosts on this network?', '14');
-add('7. Which subnet mask would be used if 5 host bits are available?', '255.255.255.224');
-add('8. How many host addresses are available on the network 172.16.128.0 with a subnet mask of 255.255.252.0?', '1022');
-add('9. How many bits must be borrowed from the host portion of an address to accommodate a router with five connected networks?', 'three');
-add('10. A network administrator wants to have the same network mask for all networks at a particular small site. The site has the following networks and number of devices: IP phones – 22 addresses PCs – 20 addresses needed Printers – 2 addresses needed Scanners – 2 addresses needed The network administrator has deemed that 192.168.10.0/24 is to be the network used at this site. Which single subnet mask would make the most efficient use of the available addresses to use for the four subnetworks?', '255.255.255.224');
-add('11. A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? Choose two.', '192.168.1.64/27', '192.168.1.96/28');
-add('12. A network administrator is variably subnetting a network. The smallest subnet has a mask of 255.255.255.248. How many usable host addresses will this subnet provide?', '6');
-add('13. Refer to the exhibit. Given the network address of 192.168.5.0 and a subnet mask of 255.255.255.224, how many total host addresses are unused in the assigned subnets?', '72');
-add('14. Refer to the exhibit. Considering the addresses already used and having to remain within the 10.16.10.0/24 network range, which subnet address could be assigned to the network containing 25 hosts?', '10.16.10.64/27');
-add('15. A network administrator needs to monitor network traffic to and from servers in a data center. Which features of an IP addressing scheme should be applied to these devices?', 'predictable static IP addresses for easier identification');
-add('16. Which two reasons generally make DHCP the preferred method of assigning IP addresses to hosts on large networks? Choose two.', 'It eliminates most address configuration errors.', 'It reduces the burden on network support staff.');
-add('17. A DHCP server is used to assign IP addresses dynamically to the hosts on a network. The address pool is configured with 192.168.10.0/24. There are 3 printers on this network that need to use reserved static IP addresses from the pool. How many IP addresses in the pool are left to be assigned to other hosts?', '251');
-add('18. Refer to the exhibit. A company is deploying an IPv6 addressing scheme for its network. The company design document indicates that the subnet portion of the IPv6 addresses is used for the new hierarchical network design, with the site subsection to represent multiple geographical sites of the company, the sub-site section to represent multiple campuses at each site, and the subnet section to indicate each network segment separated by routers. With such a scheme, what is the maximum number of subnets achieved per sub-site?', '16');
-add('19. What is the prefix for the host address 2001:DB8:BC15:A:12AB::1/64?', '2001:DB8:BC15:A');
-add('20. Consider the following range of addresses: 2001:0DB8:BC15:00A0:0000:: 2001:0DB8:BC15:00A1:0000:: 2001:0DB8:BC15:00A2:0000:: … 2001:0DB8:BC15:00AF:0000:: The prefix-length for the range of addresses is /60', '/60');
+//TEST10
+add('1. Which two definitions accurately describe the associated application layer protocol? Choose two.', 'Telnet – provides remote access to servers and networking devices', 'DNS – resolves Internet names to IP addresses');
+add('2. The application layer of the TCP/IP model performs the functions of what three layers of the OSI model? Choose three.', 'session', 'presentation', 'application');
+add('3. Which layer in the TCP/IP model is used for formatting, compressing, and encrypting data?', 'application');
+add('4. What are two characteristics of the application layer of the TCP/IP model? Choose two.', 'the creation and maintenance of dialogue between source and destination applications', 'closest to the end user');
+add('5. A manufacturing company subscribes to certain hosted services from its ISP. The services that are required include hosted world wide web, file transfer, and e-mail. Which protocols represent these three key applications? Choose three.', 'FTP', 'HTTP', 'SMTP');
+add('6. What is an example of network communication that uses the client-server model?', 'A workstation initiates a DNS request when the user types www.cisco.com in the address bar of a web browser.');
+add('7. Two students are working on a network design project. One student is doing the drawing, while the other student is writing the proposal. The drawing is finished and the student wants to share the folder that contains the drawing so that the other student can access the file and copy it to a USB drive. Which networking model is being used?', 'peer-to-peer');
+add('8. What do the client/server and peer-to-peer network models have in common?', 'Both models support devices in server and client roles.');
+add('9. What is an advantage for small organizations of adopting IMAP instead of POP?', 'Messages are kept in the mail servers until they are manually deleted from the email client');
+add('10. Which application layer protocol uses message types such as GET, PUT, and POST?', 'HTTP');
+add('11. When retrieving email messages, which protocol allows for easy, centralized storage and backup of emails that would be desirable for a small- to medium-sized business?', 'IMAP');
+add('12. Which three statements describe a DHCP Discover message? Choose three.', 'The destination IP address is 255.255.255.255.', 'The message comes from a client seeking an IP address', 'All hosts receive the message, but only a DHCP server replies');
+add('13. What part of the URL, http://www.cisco.com/index.html, represents the top-level DNS domain?', '.com');
+add('14. Which two tasks can be performed by a local DNS server? Choose two.', 'mapping name-to-IP addresses for internal hosts', 'forwarding name resolution requests between servers');
+add('15. Which phrase describes an FTP daemon?', 'a program that is running on an FTP server');
+add('16. Which statement is true about FTP?', 'The client can download data from or upload data to the server.');
+add('17. What is true about the Server Message Block protocol?', 'Clients establish a long term connection to servers.');
+add('18. Which application layer protocol is used to provide file-sharing and print services to Microsoft applications?', 'SMB');
+add('What is the acronym for the protocol that is used when securely communicating with a web server?', 'HTTPS');
+add('The HTTP message type used by the client to request data from the web server is the GET message.', 'GET');
+add('Refer to the exhibit. What command was used to resolve a given host name by querying the name servers?', 'NSLOOKUP');
+add('24. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which PC or PCs are sending FTP packets to the server?', 'PC_2');
 
-//TEST9
-add('1. Which two characteristics are associated with UDP sessions? Choose two.', 'Destination devices receive traffic with minimal delay.', 'Received data is unacknowledged.');
-add('2. What happens if part of an FTP message is not delivered to the destination?', 'The part of the FTP message that was lost is re-sent.');
-add('3. A host device needs to send a large video file across the network while providing data communication to other users. Which feature will allow different communication streams to occur at the same time, without having a single data stream using all available bandwidth?', 'multiplexing');
-add('4. What kind of port must be requested from IANA in order to be used with a specific application?', 'registered port');
-add('5. What type of information is included in the transport header?', 'destination and source port numbers');
-add('6. What is a socket?', 'the combination of a source IP address and port number or a destination IP address and port number');
-add('7. What is the complete range of TCP and UDP well-known ports?', '0 to 1023');
-add('8. Which flag in the TCP header is used in response to a received FIN in order to terminate connectivity between two network devices?', 'ACK');
-add('9. What is a characteristic of a TCP server process?', 'There can be many ports open simultaneously on a server, one for each active server application.');
-add('10. Which two flags in the TCP header are used in a TCP three-way handshake to establish connectivity between two network devices? Choose two.', 'ACK', 'SYN');
-add('11. A PC is downloading a large file from a server. The TCP window is 1000 bytes. The server is sending the file using 100-byte segments. How many segments will the server send before it requires an acknowledgment from the PC?', '10 segments');
-add('12. Which factor determines TCP window size?', 'the amount of data the destination can process at one time');
-add('13. During a TCP session, a destination device sends an acknowledgment number to the source device. What does the acknowledgment number represent?', 'the next byte that the destination expects to receive');
-add('14. What information is used by TCP to reassemble and reorder received segments?', 'sequence numbers');
-add('15. What does TCP do if the sending source detects network congestion on the path to the destination?', 'The source will decrease the amount of data that it sends before it must receive acknowledgements from the destination.');
-add('16. What is a characteristic of UDP?', 'UDP reassembles the received datagrams in the order they were received.');
-add('17. What does a client do when it has UDP datagrams to send?', 'It just sends the datagrams.');
-add('18. What happens if the first packet of a TFTP transfer is lost?', 'The TFTP application will retry the request if a reply is not received.');
-add('19. A host device is receiving live streaming video. How does the device account for video data that is lost during transmission?', 'The device will continue receiving the streaming video, but there may be a momentary disruption');
-add('20. Why does HTTP use TCP as the transport layer protocol?', 'because HTTP requires reliable delivery');
-add('21. When is UDP preferred to TCP?', 'when an application can tolerate some loss of data during transmission');
-add('22. Which three application layer protocols use TCP? Choose three.', 'SMTP', 'FTP', 'HTTP');
+//TEST11
+add('1. A newly hired network technician is given the task of ordering new hardware for a small business with a large growth forecast. Which primary factor should the technician be concerned with when choosing the new devices?', 'devices with support for modularity');
+add('2. Which network design consideration would be more important to a large corporation than to a small business?', 'redundancy');
+add('3. Which two traffic types require delay sensitive delivery? Choose two.', 'voice', 'video');
+add('4. A network administrator for a small company is contemplating how to scale the network over the next three years to accommodate projected growth. Which three types of information should be used to plan for network growth? Choose three.', 'documentation of the current physical and logical topologies', 'analysis of the network traffic based on protocols, applications, and services used on the network', 'inventory of the devices that are currently used on the network');
+add('5. Which two statements describe how to assess traffic flow patterns and network traffic types using a protocol analyzer? Choose two.', 'Capture traffic during peak utilization times to get a good representation of the different traffic types.', 'Perform the capture on different network segments.');
+add('6. Some routers and switches in a wiring closet malfunctioned after an air conditioning unit failed. What type of threat does this situation describe?', 'environmental');
+add('7. Which type of network threat is intended to prevent authorized users from accessing resources?', 'DoS attacks');
+add('8. Which two actions can be taken to prevent a successful network attack on an email server account? Choose two.', 'Never send the password through the network in a clear text.', 'Limit the number of unsuccessful attempts to log in to the server.');
+add('9. Which firewall feature is used to ensure that packets coming into a network are legitimate responses initiated from internal hosts?', 'stateful packet inspection');
+add('10. What is the purpose of the network security authentication function?', 'to require users to prove who they are');
+add('11. A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?', 'a user who is trying to guess a password to access the router');
+add('12. What is the purpose of using SSH to connect to a router?', 'It allows a secure remote connection to the router command line interface.');
+add('13. Which two steps are required before SSH can be enabled on a Cisco router? Choose two.', 'Give the router a host name and domain name.', 'Generate a set of secret keys to be used for encryption and decryption.');
+add('14. What is the purpose of issuing the commands cd nvram: then dir at the privilege exec mode of a router?', 'to list the content of the NVRAM');
+add('15. Which command will backup the configuration that is stored in NVRAM to a TFTP server?', 'copy startup-config tftp');
+add('16. Refer to the exhibit. Baseline documentation for a small company had ping round trip time statistics of 36/97/132 between hosts H1 and H3. Today the network administrator checked connectivity by pinging between hosts H1 and H3 that resulted in a round trip time of 1458/2390/6066. What does this indicate to the network administrator?', 'Something is causing a time delay between the networks.');
+add('17. When should an administrator establish a network baseline?', 'at regular intervals over a period of time');
+add('18. Refer to the exhibit. An administrator is trying to troubleshoot connectivity between PC1 and PC2 and uses the tracert command from PC1 to do it. Based on the displayed output, where should the administrator begin troubleshooting?', 'R1');
+add('19. Which statement is true about CDP on a Cisco device?', 'CDP can be disabled globally or on a specific interface.');
+add('20. A network administrator for a small campus network has issued the show ip interface brief command on a switch. What is the administrator verifying with this command?', 'the status of the switch interfaces and the address configured on interface vlan 1');
+add('21. A network technician issues the arp -d * command on a PC after the router that is connected to the LAN is reconfigured. What is the result after this command is issued?', 'The ARP cache is cleared.');
+add('22. A network technician issues the C:\> tracert -6 www.cisco.com command on a Windows PC. What is the purpose of the -6 command option?', 'It forces the trace to use IPv6.');
+add('23. Which command should be used on a Cisco router or switch to allow log messages to be displayed on remotely connected sessions using Telnet or SSH?', 'terminal monitor');
+add('VoIP defines the protocols and technologies that implement the transmission of voice data over an IP network', 'VoIP', 'Buy me some Ritter Sport please');
+add('The show file systems command provides information about the amount of free nvram and flash memory with the permissions for reading or writing data.', 'file systems');
+add('The show version command that is issued on a router is used to verify the value of the software configuration register.', 'show version');
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
@@ -64,16 +70,19 @@ add = prompts.add;
 add('Надеюсь, что делал это не просто так. И хоть кто-нибудь проставит мне хотя бы шоколадку');
 add('Прости, Олег, но, похоже, нет...');
 
-add('192.168.1.68 > 192.168.1.64/27');
-add('192.168.1.48 > 192.168.1.32/27');
-add('192.168.1.121 > 192.168.1.96/27');
+add('no dedicated server is required > peer-to-peer network');
+add('client and server roles are set on a per request basis > peer-to-peer network');
+add('requires a specific user interface > peer-to-peer aplication');
+add('a background service is required > peer-to-peer aplication');
 
-add('192.168.0.192/27   > Network C');
-add('192.168.0.0/25     > Network A');
-add('192.168.0.224/30   > Network D');
-add('192.168.0.128/26   > Network B');
+add('DHCP > dynamically assigns IP address to clients');
+add('DNS > maps URLs to numerical addresses');
+add('IMAP > allows viewing of messages on email clients');
+add('HTTP > displays web pages');
+add('SMTP > sends email messages');
 
-add('destination IP address > 192.168.2.2');
-add('destinatiop port number > 80');
-add('source IP address > 192.168.1.2');
-add('source port number > 2578');
+add('installing virus code to destroy surveillance recordings for certain days > data loss');
+add('pretending to be someone else by using stolen personal information to apply for a credit card > identity theft');
+add('preventing userd from accessing a website by sending a large number of link requests in a short period > disruption of service');
+add('obtaining trade secret documents illegally > information theft');
+
