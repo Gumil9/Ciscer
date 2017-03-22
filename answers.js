@@ -6,58 +6,55 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-//TEST10
-add('1. Which two definitions accurately describe the associated application layer protocol? Choose two.', 'Telnet – provides remote access to servers and networking devices', 'DNS – resolves Internet names to IP addresses');
-add('2. The application layer of the TCP/IP model performs the functions of what three layers of the OSI model? Choose three.', 'session', 'presentation', 'application');
-add('3. Which layer in the TCP/IP model is used for formatting, compressing, and encrypting data?', 'application');
-add('4. What are two characteristics of the application layer of the TCP/IP model? Choose two.', 'the creation and maintenance of dialogue between source and destination applications', 'closest to the end user');
-add('5. A manufacturing company subscribes to certain hosted services from its ISP. The services that are required include hosted world wide web, file transfer, and e-mail. Which protocols represent these three key applications? Choose three.', 'FTP', 'HTTP', 'SMTP');
-add('6. What is an example of network communication that uses the client-server model?', 'A workstation initiates a DNS request when the user types www.cisco.com in the address bar of a web browser.');
-add('7. Two students are working on a network design project. One student is doing the drawing, while the other student is writing the proposal. The drawing is finished and the student wants to share the folder that contains the drawing so that the other student can access the file and copy it to a USB drive. Which networking model is being used?', 'peer-to-peer');
-add('8. What do the client/server and peer-to-peer network models have in common?', 'Both models support devices in server and client roles.');
-add('9. What is an advantage for small organizations of adopting IMAP instead of POP?', 'Messages are kept in the mail servers until they are manually deleted from the email client');
-add('10. Which application layer protocol uses message types such as GET, PUT, and POST?', 'HTTP');
-add('11. When retrieving email messages, which protocol allows for easy, centralized storage and backup of emails that would be desirable for a small- to medium-sized business?', 'IMAP');
-add('12. Which three statements describe a DHCP Discover message? Choose three.', 'The destination IP address is 255.255.255.255.', 'The message comes from a client seeking an IP address', 'All hosts receive the message, but only a DHCP server replies');
-add('13. What part of the URL, http://www.cisco.com/index.html, represents the top-level DNS domain?', '.com');
-add('14. Which two tasks can be performed by a local DNS server? Choose two.', 'mapping name-to-IP addresses for internal hosts', 'forwarding name resolution requests between servers');
-add('15. Which phrase describes an FTP daemon?', 'a program that is running on an FTP server');
-add('16. Which statement is true about FTP?', 'The client can download data from or upload data to the server.');
-add('17. What is true about the Server Message Block protocol?', 'Clients establish a long term connection to servers.');
-add('18. Which application layer protocol is used to provide file-sharing and print services to Microsoft applications?', 'SMB');
-add('What is the acronym for the protocol that is used when securely communicating with a web server?', 'HTTPS');
-add('The HTTP message type used by the client to request data from the web server is the GET message.', 'GET');
-add('Refer to the exhibit. What command was used to resolve a given host name by querying the name servers?', 'NSLOOKUP');
-add('24. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which PC or PCs are sending FTP packets to the server?', 'PC_2');
-
-//TEST11
-add('1. A newly hired network technician is given the task of ordering new hardware for a small business with a large growth forecast. Which primary factor should the technician be concerned with when choosing the new devices?', 'devices with support for modularity');
-add('2. Which network design consideration would be more important to a large corporation than to a small business?', 'redundancy');
-add('3. Which two traffic types require delay sensitive delivery? Choose two.', 'voice', 'video');
-add('4. A network administrator for a small company is contemplating how to scale the network over the next three years to accommodate projected growth. Which three types of information should be used to plan for network growth? Choose three.', 'documentation of the current physical and logical topologies', 'analysis of the network traffic based on protocols, applications, and services used on the network', 'inventory of the devices that are currently used on the network');
-add('5. Which two statements describe how to assess traffic flow patterns and network traffic types using a protocol analyzer? Choose two.', 'Capture traffic during peak utilization times to get a good representation of the different traffic types.', 'Perform the capture on different network segments.');
-add('6. Some routers and switches in a wiring closet malfunctioned after an air conditioning unit failed. What type of threat does this situation describe?', 'environmental');
-add('7. Which type of network threat is intended to prevent authorized users from accessing resources?', 'DoS attacks');
-add('8. Which two actions can be taken to prevent a successful network attack on an email server account? Choose two.', 'Never send the password through the network in a clear text.', 'Limit the number of unsuccessful attempts to log in to the server.');
-add('9. Which firewall feature is used to ensure that packets coming into a network are legitimate responses initiated from internal hosts?', 'stateful packet inspection');
-add('10. What is the purpose of the network security authentication function?', 'to require users to prove who they are');
-add('11. A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?', 'a user who is trying to guess a password to access the router');
-add('12. What is the purpose of using SSH to connect to a router?', 'It allows a secure remote connection to the router command line interface.');
-add('13. Which two steps are required before SSH can be enabled on a Cisco router? Choose two.', 'Give the router a host name and domain name.', 'Generate a set of secret keys to be used for encryption and decryption.');
-add('14. What is the purpose of issuing the commands cd nvram: then dir at the privilege exec mode of a router?', 'to list the content of the NVRAM');
-add('15. Which command will backup the configuration that is stored in NVRAM to a TFTP server?', 'copy startup-config tftp');
-add('16. Refer to the exhibit. Baseline documentation for a small company had ping round trip time statistics of 36/97/132 between hosts H1 and H3. Today the network administrator checked connectivity by pinging between hosts H1 and H3 that resulted in a round trip time of 1458/2390/6066. What does this indicate to the network administrator?', 'Something is causing a time delay between the networks.');
-add('17. When should an administrator establish a network baseline?', 'at regular intervals over a period of time');
-add('18. Refer to the exhibit. An administrator is trying to troubleshoot connectivity between PC1 and PC2 and uses the tracert command from PC1 to do it. Based on the displayed output, where should the administrator begin troubleshooting?', 'R1');
-add('19. Which statement is true about CDP on a Cisco device?', 'CDP can be disabled globally or on a specific interface.');
-add('20. A network administrator for a small campus network has issued the show ip interface brief command on a switch. What is the administrator verifying with this command?', 'the status of the switch interfaces and the address configured on interface vlan 1');
-add('21. A network technician issues the arp -d * command on a PC after the router that is connected to the LAN is reconfigured. What is the result after this command is issued?', 'The ARP cache is cleared.');
-add('22. A network technician issues the C:\> tracert -6 www.cisco.com command on a Windows PC. What is the purpose of the -6 command option?', 'It forces the trace to use IPv6.');
-add('23. Which command should be used on a Cisco router or switch to allow log messages to be displayed on remotely connected sessions using Telnet or SSH?', 'terminal monitor');
-add('VoIP defines the protocols and technologies that implement the transmission of voice data over an IP network', 'VoIP', 'Buy me some Ritter Sport please');
-add('The show file systems command provides information about the amount of free nvram and flash memory with the permissions for reading or writing data.', 'file systems');
-add('The show version command that is issued on a router is used to verify the value of the software configuration register.', 'show version');
-
+//FINAL TEST
+add('1. Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?', 'extranet');
+add('2. A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?', 'DSL');
+add('3. Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?', 'The administrator must first enter privileged EXEC mode before issuing the command.');
+add('4. Which keys act as a hot key combination that is used to interrupt an IOS process?', 'Ctrl-Shift-6');
+add('5. Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses Telnet to connect to the switch, which password is needed to access user EXEC mode?', 'linevtyin');
+add('6. A network administrator enters the service password-encryption command into the configuration mode of a router. What does this command accomplish?', 'This command prevents someone from viewing the running configuration passwords.');
+add('7. What is the purpose of the SVI on a Cisco switch?', 'The SVI provides a virtual interface for remote access to the switch.');
+add('8. Which message delivery option is used when all devices need to receive the same message simultaneously?', 'broadcast');
+add('9. Which two protocols function at the internet layer? Choose two.', 'ICMP', 'IP');
+add('10. What PDU is associated with the transport layer?', 'segment');
+add('11. What is done to an IP packet before it is transmitted over the physical medium?', 'It is encapsulated in a Layer 2 frame.');
+add('12. What type of communication medium is used with a wireless LAN connection?', 'radio waves');
+add('13. In addition to the cable length, what two factors could interfere with the communication carried over UTP cables? Choose two.', 'crosstalk', 'electromagnetic interference');
+add('14. What are the two sublayers of the OSI model data link layer? Choose two.', 'LLC', 'MAC');
+add('15. A technician has been asked to develop a physical topology for a network that provides a high level of redundancy. Which physical topology requires that every node is attached to every other node on the network?', 'mesh');
+add('16. What type of communication rule would best describe CSMA/CD?', 'access method');
+add('17. If data is being sent over a wireless network, then connects to an Ethernet network, and eventually connects to a DSL connection, which header will be replaced each time the data travels through a network infrastructure device?', 'data link');
+add('18. What best describes the destination IPv4 address that is used by multicasting?', 'a single IP multicast address that is used by all destinations in a group');
+add('19. In an Ethernet network, when a device receives a frame of 1200 bytes, what will it do?', 'process the frame as it is');
+add('20. What important information is examined in the Ethernet frame header by a Layer 2 device in order to forward the data onward?', 'destination MAC address');
+add('21. What will a Layer 2 switch do when the destination MAC address of a received frame is not in the MAC table?', 'It forwards the frame out of all ports except for the port at which the frame was received.');
+add('22. What are two features of ARP? Choose two.', 'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.', 'If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
+add('23. Which two services are required to enable a computer to receive dynamic IP addresses and access the Internet using domain names? Choose two.', 'DNS', 'DHCP');
+add('24. What is a basic characteristic of the IP protocol?', 'connectionless');
+add('25. Refer to the exhibit. A user issues the command netstat –r on a workstation. Which IPv6 address is one of the link-local addresses of the workstation?', 'fe80::30d0:115:3f57:fe4c/128');
+add('26. Which two statements correctly describe a router memory type and its contents? Choose two.', 'RAM is volatile and stores the IP routing table.', 'ROM is nonvolatile and contains basic diagnostic software.');
+add('27. What three blocks of addresses are defined by RFC 1918 for private network use? Choose three.', '10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16');
+add('28. What is the valid most compressed format possible of the IPv6 address 2001:0DB8:0000:AB00:0000:0000:0000:1234?', '2001:DB8:0:AB00::1234');
+add('29. At a minimum, which address is required on IPv6-enabled interfaces?', 'link-local');
+add('30. An IPv6 enabled device sends a data packet with the destination address of FF02::2. What is the target of this packet?', 'all IPv6 configured routers on the local link');
+add('31. What is the purpose of ICMP messages?', 'to provide feedback of IP packet transmissions');
+add('32. Which statement describes a characteristic of the traceroute utility?', 'It identifies the routers in the path from a source host to a destination host.');
+add('33. What is the usable number of host IP addresses on a network that has a /26 mask?', '62');
+add('34. Refer to the exhibit. An administrator must send a message to everyone on the router A network. What is the broadcast address for network 172.16.16.0/22?', '172.16.19.255');
+add('35. A network administrator is variably subnetting a given block of IPv4 addresses. Which combination of network addresses and prefix lengths will make the most efficient use of addresses when the need is for 2 subnets capable of supporting 10 hosts and 1 subnet that can support 6 hosts?', '10.1.1.128/28, 10.1.1.144/28, 10.1.1.160/29');
+add('36. Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that is created if the subnet prefix is changed to /52?', '2001:db8:0:f000::/52');
+add('37. A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?', 'The data flow is being tracked based on the source port number utilized by each application.');
+add('38. What three services are provided by the transport layer? Choose three.', 'flow control', 'connection establishment', 'error recovery');
+add('39. An Internet television transmission is using UDP. What happens when part of the transmission is not delivered to the destination?', 'The transmission continues without the missing portion.');
+add('40. Which two OSI model layers are considered to be included in the top layer of the TCP/IP protocol stack? Choose two.', 'presentation', 'session');
+add('41. An author is uploading one chapter document from a personal computer to a file server of a book publisher. What role is the personal computer assuming in this network model?', 'client');
+add('42. Which two automatic addressing assignments are supported by DHCP? Choose two.', 'subnet mask', 'default gateway address');
+add('43. When a network administrator is trying to manage network traffic on a growing network, when should traffic flow patterns be analyzed?', 'during times of peak utilization');
+add('44. What is the objective of a network reconnaissance attack?', 'discovery and mapping of systems');
+add('45. What will be the result of failed login attempts if the following command is entered into a router? login block-for 150 attempts 4 within 90', 'All login attempts will be blocked for 150 seconds if there are 4 failed attempts within 90 seconds.');
+add('46. A user reports a lack of network connectivity. The technician takes control of the user machine and attempts to ping other computers on the network and these pings fail. The technician pings the default gateway and that also fails. What can be determined for sure by the results of these tests?', 'Nothing can be determined for sure at this point.');
+add('47. For Cisco IOS, which escape sequence allows terminating a traceroute operation?', 'Ctrl+Shift+6');
+add('48. What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?', 'The transfer of the files does not rely on network connectivity.');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -70,19 +67,21 @@ add = prompts.add;
 add('Надеюсь, что делал это не просто так. И хоть кто-нибудь проставит мне хотя бы шоколадку');
 add('Прости, Олег, но, похоже, нет...');
 
-add('no dedicated server is required > peer-to-peer network');
-add('client and server roles are set on a per request basis > peer-to-peer network');
-add('requires a specific user interface > peer-to-peer aplication');
-add('a background service is required > peer-to-peer aplication');
+add('Protect the network from unauthorized access. -> security');
+add('Provide redundant links and devices. -> fault tolerance');
+add('Expand the network without degrading the service for existing users. -> scalability');
 
-add('DHCP > dynamically assigns IP address to clients');
-add('DNS > maps URLs to numerical addresses');
-add('IMAP > allows viewing of messages on email clients');
-add('HTTP > displays web pages');
-add('SMTP > sends email messages');
+add('CLI -> users interact with the operating system by typing commands');
+add('GUI -> enables the user to interact with the operating system by pointing and clicking');
+add('kernel -> the part of the OS that interacts directly with the device hardware');
+add('shell -> the part of the operating system that interfaces with applications and the user');
 
-add('installing virus code to destroy surveillance recordings for certain days > data loss');
-add('pretending to be someone else by using stolen personal information to apply for a credit card > identity theft');
-add('preventing userd from accessing a website by sending a large number of link requests in a short period > disruption of service');
-add('obtaining trade secret documents illegally > information theft');
+add('Application layer -> HTTP and FTP, end user program functionality');
+add('Presentation layer -> compression, common format');
+add('Session layer -> dialog maintenance');
+
+add('locale and load the Cisco IOS software -> phase 2');
+add('locate and load the startup configuration file -> phase 3');
+add('perform the POST and load the bootstrap program -> phase 1');
+
 
