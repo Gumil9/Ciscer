@@ -839,6 +839,7 @@ add('A network administrator is upgrading a small business network to give high 
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
+/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
@@ -855,7 +856,6 @@ add('What is the purpose of the SVI on a Cisco switch?',
 	'The SVI provides a virtual interface for remote access to the switch.');
 add('Which message delivery option is used when all devices need to receive the same message simultaneously?',
 	'broadcast');
-/*
 add('Which two protocols function at the internet layer? Choose two.',
 	'ICMP','IP');
 add('What PDU is associated with the transport layer?',
@@ -914,7 +914,6 @@ add('Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that 
 	'2001:db8:0:f000::/52');
 add('A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?',
 	'The data flow is being tracked based on the source port number utilized by each application');
-*/
 add('What three services are provided by the transport layer? Choose three.',
 	'flow control','connection establishment','error recovery');
 add('An Internet television transmission is using UDP. What happens when part of the transmission is not delivered to the destination?',
@@ -933,6 +932,7 @@ add('What will be the result of failed login attempts if the following command i
 	'All login attempts will be blocked for 150 seconds if there are 4 failed attempts within 90 seconds.');
 add('What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?',
 	'The transfer of the files does not rely on network connectivity');
+*/
 
 
 
