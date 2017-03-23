@@ -499,6 +499,7 @@ add('Which two statements describe the characteristics of fiber-optic cabling? C
 	'Fiber-optic cabling does not conduct electricity.','Fiber-optic cabling is primarily used as backbone cabling.');
 add('What is contained in the trailer of a data-link frame?',
 	'error detection');
+/*
 add('What is the auto-MDIX feature on a switch',
 	'crossover Ethernet cable connection');
 add('Refer to the exhibit. A ping to PC3 is issued from PC0, PC1, and PC2 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
@@ -837,6 +838,7 @@ add('What are two services provided by the OSI network layer? Choose two.',
 	'encapsulating PDUs from the transport layer','routing packets toward the destination');
 add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
 	'voice','video');
+*/
 
 /*V5.1 Practice Final Exam*/
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
