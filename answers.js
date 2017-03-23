@@ -897,6 +897,7 @@ add('What is the valid most compressed format possible of the IPv6 address 2001:
 	'2001:DB8:0:AB00::1234');
 add('At a minimum, which address is required on IPv6-enabled interfaces?',
 	'link-local');
+/*
 add('An IPv6 enabled device sends a data packet with the destination address of FF02::2. What is the target of this packet?',
 	'all IPv6 configured routers on the local link');
 add('What is the purpose of ICMP messages?',
@@ -913,7 +914,7 @@ add('Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that 
 	'2001:db8:0:f000::/52');
 add('A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?',
 	'The data flow is being tracked based on the source port number utilized by each application');
-/*
+*/
 add('What three services are provided by the transport layer? Choose three.',
 	'flow control','connection establishment','error recovery');
 add('An Internet television transmission is using UDP. What happens when part of the transmission is not delivered to the destination?',
@@ -932,7 +933,6 @@ add('What will be the result of failed login attempts if the following command i
 	'All login attempts will be blocked for 150 seconds if there are 4 failed attempts within 90 seconds.');
 add('What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?',
 	'The transfer of the files does not rely on network connectivity');
-*/
 
 
 
