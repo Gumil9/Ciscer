@@ -55,7 +55,6 @@ add('45. What will be the result of failed login attempts if the following comma
 add('46. A user reports a lack of network connectivity. The technician takes control of the user machine and attempts to ping other computers on the network and these pings fail. The technician pings the default gateway and that also fails. What can be determined for sure by the results of these tests?', 'Nothing can be determined for sure at this point.');
 add('47. For Cisco IOS, which escape sequence allows terminating a traceroute operation?', 'Ctrl+Shift+6');
 add('48. What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?', 'The transfer of the files does not rely on network connectivity.');
-alert('1');
 
 /*FINAL TEST*/
 add('Which communication tool allows real-time collaboration?',
@@ -840,7 +839,6 @@ add('A network administrator is upgrading a small business network to give high 
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
-/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
@@ -899,6 +897,7 @@ add('What is the valid most compressed format possible of the IPv6 address 2001:
 	'2001:DB8:0:AB00::1234');
 add('At a minimum, which address is required on IPv6-enabled interfaces?',
 	'link-local');
+/*
 add('An IPv6 enabled device sends a data packet with the destination address of FF02::2. What is the target of this packet?',
 	'all IPv6 configured routers on the local link');
 add('What is the purpose of ICMP messages?',
