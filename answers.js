@@ -59,7 +59,7 @@ add('48. What is an advantage of storing configuration files to a USB flash driv
 /*FINAL TEST*/
 add('Which communication tool allows real-time collaboration?',
    'instant messaging');
-add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
    'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
 add('A home user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
    'DSL');
@@ -899,7 +899,6 @@ add('An IPv6 enabled device sends a data packet with the destination address of 
 	'all IPv6 configured routers on the local link');
 add('What is the purpose of ICMP messages?',
 	'to provide feedback of IP packet transmissions');
-/*
 add('Which statement describes a characteristic of the traceroute utility?',
 	'It identifies the routers in the path from a source host to a destination host.');
 add('What is the usable number of host IP addresses on a network that has a /26 mask?', '62');
@@ -909,7 +908,6 @@ add('A network administrator is variably subnetting a given block of IPv4 addres
 	'10.1.1.128/28','10.1.1.144/28','10.1.1.160/29');
 add('Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that is created if the subnet prefix is changed to /52?',
 	'2001:db8:0:f000::/52');
-*/
 add('A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?',
 	'The data flow is being tracked based on the source port number utilized by each application');
 add('What three services are provided by the transport layer? Choose three.',
