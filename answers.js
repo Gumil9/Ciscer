@@ -471,7 +471,6 @@ add('Refer to the exhibit. An administrator wants to change the name of a brand 
 	'Switch config #?');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses Telnet to connect to the switch, which password is needed to access user EXEC mode?',
 	'linevtyin');
-/*
 add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
 	'The new configuration will be loaded if the switch is restarted.');
 add('Refer to the exhibit. Which action will be successful?',
