@@ -472,6 +472,7 @@ add('Refer to the exhibit. An administrator wants to change the name of a brand 
 	'Switch config #?');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses Telnet to connect to the switch, which password is needed to access user EXEC mode?',
 	'linevtyin');
+/*
 add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
 	'The new configuration will be loaded if the switch is restarted.');
 add('Refer to the exhibit. Which action will be successful?',
@@ -839,7 +840,6 @@ add('A network administrator is upgrading a small business network to give high 
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
-/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
@@ -933,7 +933,6 @@ add('What will be the result of failed login attempts if the following command i
 add('What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?',
 	'The transfer of the files does not rely on network connectivity');
 */
-
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
