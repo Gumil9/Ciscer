@@ -449,7 +449,6 @@ add('A network administrator is upgrading a small business network to give high 
    'voice','video');
 
 /*Final exam*/
-/*
 add('Which communication tool allows real-time collaboration?',
 	'instant messaging');
 add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
