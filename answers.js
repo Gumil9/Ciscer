@@ -501,7 +501,6 @@ add('What is the auto-MDIX feature on a switch',
 	'crossover Ethernet cable connection');
 add('Refer to the exhibit. A ping to PC3 is issued from PC0, PC1, and PC2 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
 	'just PC0 and PC1 MAC addresses');
-/*
 add('How does a Layer 3 switch differ from a Layer 2 switch?',
 	'An IP address can be assigned to a physical port of a Layer 3 switch. However, this is not supported in Layer 2 switches.');
 add('What is the purpose of the routing process?',
@@ -518,7 +517,7 @@ add('In which default order will a router search for startup configuration infor
 	'NVRAM, TFTP, setup mode');
 add('What happens when part of an Internet VoIP transmission is not delivered to the destination?',
 	'The transmission continues without the missing portion.');
-*/
+/*
 add('Which three IP addresses are private ? Choose three.',
 	'10.172.168.1','172.20.4.4','192.168.5.254');
 add('How many bits make up the single IPv6 hextet :10CD:?',
@@ -539,6 +538,7 @@ add('Refer to the exhibit. Which IP addressing scheme should be changed?',
 	'Site 2');
 add('Which two notations are useable nibble boundaries when subnetting in IPv6? Choose two.',
 	'/64','/68');
+*/
 add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? Choose two.',
 	'DHCPDISCOVER','DHCPREQUEST');
 add('What is the purpose of the network security accounting function?',
