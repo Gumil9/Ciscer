@@ -499,7 +499,7 @@ add('Which two statements describe the characteristics of fiber-optic cabling? C
 	'Fiber-optic cabling does not conduct electricity.','Fiber-optic cabling is primarily used as backbone cabling.');
 add('What is contained in the trailer of a data-link frame?',
 	'error detection');
-/*
+
 add('What is the auto-MDIX feature on a switch',
 	'crossover Ethernet cable connection');
 add('Refer to the exhibit. A ping to PC3 is issued from PC0, PC1, and PC2 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
