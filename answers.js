@@ -518,6 +518,7 @@ add('In which default order will a router search for startup configuration infor
 	'NVRAM, TFTP, setup mode');
 add('What happens when part of an Internet VoIP transmission is not delivered to the destination?',
 	'The transmission continues without the missing portion.');
+*/
 add('Which three IP addresses are private ? Choose three.',
 	'10.172.168.1','172.20.4.4','192.168.5.254');
 add('How many bits make up the single IPv6 hextet :10CD:?',
@@ -538,7 +539,6 @@ add('Refer to the exhibit. Which IP addressing scheme should be changed?',
 	'Site 2');
 add('Which two notations are useable nibble boundaries when subnetting in IPv6? Choose two.',
 	'/64','/68');
-*/
 add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? Choose two.',
 	'DHCPDISCOVER','DHCPREQUEST');
 add('What is the purpose of the network security accounting function?',
