@@ -838,9 +838,9 @@ add('What are two services provided by the OSI network layer? Choose two.',
 	'encapsulating PDUs from the transport layer','routing packets toward the destination');
 add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
 	'voice','video');
-*/
 
 /*V5.1 Practice Final Exam*/
+/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
@@ -933,7 +933,7 @@ add('What will be the result of failed login attempts if the following command i
 	'All login attempts will be blocked for 150 seconds if there are 4 failed attempts within 90 seconds.');
 add('What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?',
 	'The transfer of the files does not rely on network connectivity');
-
+*/
 
 
 
