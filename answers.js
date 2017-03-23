@@ -76,7 +76,7 @@ add('An administrator uses the Ctrl-Shift-6 key combination on a switch after is
 add('What function does pressing the Tab key have when entering a command in IOS?',
    'It completes the remainder of a partially typed word in a command.');
 add('Refer to the exhibit. An administrator wants to change the name of a brand new switch, using the hostname command as shown. What prompt will display after the command is issued?',
-   'Switch(config)#?');
+   'Switch config #?');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses Telnet to connect to the switch, which password is needed to access user EXEC mode?',
    'linevtyin');
 add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
@@ -85,9 +85,9 @@ add('Refer to the exhibit. Which action will be successful?',
    'PC2 can send a ping to 192.168.1.1.');
 add('Which IPv4 address can be pinged to test the internal TCP/IP operation of a host?',
    '127.0.0.1');
-add('What three application layer protocols are part of the TCP/IP protocol suite? (Choose three.)',
+add('What three application layer protocols are part of the TCP/IP protocol suite? Choose three.',
    'DHCP','DNS','FTP');
-add('Which two protocols function at the internet layer? (Choose two.)',
+add('Which two protocols function at the internet layer? Choose two.',
    'ICMP','IP');
 add('Which publicly available resources describe protocols, processes, and technologies for the Internet but do not give implementation details?',
    'Request for Comments');
@@ -101,7 +101,7 @@ add('What is an important function of the physical layer of the OSI model?',
    'It encodes frames into electrical, optical, or radio wave signals.');
 add('Which procedure is used to reduce the effect of crosstalk in copper cables?',
    'twisting opposing circuit wire pairs together');
-add('Which two statements describe the characteristics of fiber-optic cabling? (Choose two.)',
+add('Which two statements describe the characteristics of fiber-optic cabling? Choose two.)',
    'Fiber-optic cabling does not conduct electricity.','Fiber-optic cabling is primarily used as backbone cabling.');
 add('What is contained in the trailer of a data-link frame?',
    'error detection');
@@ -117,15 +117,15 @@ add('Which technology provides a solution to IPv4 address depletion by allowing 
    'NAT');
 add('Refer to the exhibit. Consider the IP address configuration shown from PC1. What is a description of the default gateway address?',
    'It is the IP address of the Router1 interface that connects the PC1 LAN to Router1.');
-add('Which of the following are primary functions of a router? (Choose two.)',
+add('Which of the following are primary functions of a router? Choose two.',
    'packet switching','path selection');
-add('Which two statements correctly describe a router memory type and its contents? (Choose two.)',
+add('Which two statements correctly describe a router memory type and its contents? Choose two.',
    'RAM is volatile and stores the running configuration.','ROM is nonvolatile and stores bootup information.');
 add('In which default order will a router search for startup configuration information?',
    'NVRAM, TFTP, setup mode');
 add('What happens when part of an Internet VoIP transmission is not delivered to the destination?',
    'The transmission continues without the missing portion.');
-add('Which three IP addresses are private ? (Choose three.)',
+add('Which three IP addresses are private ? Choose three.',
    '10.172.168.1','172.20.4.4','192.168.5.254');
 add('How many bits make up the single IPv6 hextet :10CD:?',
    '16');
@@ -143,9 +143,9 @@ add('A network administrator needs to monitor network traffic to and from server
    'predictable static IP addresses for easier identification');
 add('Refer to the exhibit. Which IP addressing scheme should be changed?',
    'Site 2');
-add('Which two notations are useable nibble boundaries when subnetting in IPv6? (Choose two.)',
+add('Which two notations are useable nibble boundaries when subnetting in IPv6? Choose two.',
    '/64','/68');
-add(' A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? (Choose two.)',
+add(' A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? Choose two.',
    'DHCPDISCOVER','DHCPREQUEST');
 add('What is the purpose of the network security accounting function?',
    'to keep track of the actions of a user');
@@ -155,17 +155,17 @@ add('A particular website does not appear to be responding on a Windows 7 comput
    'ipconfig /displaydns');
 add('Refer to the exhibit. The network administrator enters these commands into the R1 router:R1# copy running-config tftp Address or name of remote host [ ]? When the router prompts for an address or remote host name, what IP address should the administrator enter at the prompt?',
    '192.168.11.252');
-add('What two preconfigured settings that affect security are found on most new wireless routers? (Choose two.)',
+add('What two preconfigured settings that affect security are found on most new wireless routers? Choose two.',
    'broadcast SSID','default administrator password');
 add(' Which type of wireless security generates dynamic encryption keys each time a client associates with an AP?',
    'WPA');
 add('Fill in the blank. is a best-effort, connectionless application layer protocol that is used to transfer files.',
    'TFTP');
-add('Which two components are necessary for a wireless client to be installed on a WLAN? (Choose two.)',
+add('Which two components are necessary for a wireless client to be installed on a WLAN? Choose two.',
    'wireless NIC','wireless client software');
 add('Consider the following range of addresses: 2001:0DB8:BC15:00A0:0000:: 2001:0DB8:BC15:00A1:0000::2001:0DB8:BC15:00A2:0000::2001:0DB8:BC15:00AF:0000::The prefix-length for the range of addresses is.',
    '/60');
-add('A host is accessing an FTP server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+add('A host is accessing an FTP server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
    'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
 add('When is a dial-up connection used to connect to an ISP?',
    'when a regular telephone line is used');
@@ -178,7 +178,7 @@ add('Which connection provides a secure CLI session with encryption to a Cisco s
 add('Which keys act as a hot key combination that is used to interrupt an IOS process?',
    'Ctrl-Shift-6');
 add('Refer to the exhibit. An administrator wants to change the name of a brand new switch, using the hostname command as shown. What prompt will display after the command is issued??',
-   'Switch(config)#?');
+   'Switch config#?');
 add('After making configuration changes on a Cisco switch, a network administrator issues a copy running-config startup-config command. What is the result of issuing this command?',
    'The new configuration will be loaded if the switch is restarted.');
 add('On which switch interface would an administrator configure an IP address so that the switch can be managed remotely?',
@@ -187,11 +187,11 @@ add('A technician uses the ping 127.0.0.1 command. What is the technician testin
    'the TCP/IP stack on a network host');
 add('Which device should be used for enabling a host to communicate with another host on a different network?',
    'router');
-add('A network technician is measuring the transfer of bits across the company backbone for a mission critical application. The technician notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)',
+add('A network technician is measuring the transfer of bits across the company backbone for a mission critical application. The technician notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? Choose three.',
    'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
-add('Which characteristics describe fiber optic cable? (Choose two.)',
+add('Which characteristics describe fiber optic cable? Choose two.',
    'It is not affected by EMI or RFI.','It is the most expensive type of LAN cabling');
-add('What are two features of a physical, star network topology? (Choose two.)',
+add('What are two features of a physical, star network topology? Choose two.',
    'It is straightforward to troubleshoot.','It is easy to add and remove end devices.');
 add('A frame is transmitted from one networking device to another. Why does the receiving device check the FCS field in the frame?',
    'to check the frame for possible transmission errors');
@@ -201,7 +201,7 @@ add('Which switching method has the lowest level of latency?',
    'fast-forward');
 add('Which parameter does the router use to choose the path to the destination when there are multiple routes available?',
    'the lower metric value that is associated with the destination network');
-add('Which two statements describe the functions or characteristics of ROM in a router? (Choose two.)',
+add('Which two statements describe the functions or characteristics of ROM in a router? Choose two.',
    'maintains instructions for POST diagnostics','stores bootstrap program');
 add('Which statement describes a characteristic of the Cisco router management ports?',
    'A console port is not used for packet forwarding.');
@@ -209,13 +209,13 @@ add('What happens when part of an Internet radio transmission is not delivered t
    'The transmission continues without the missing portion.');
 add('What is the dotted decimal representation of the IPv4 address 11001011.00000000.01110001.11010011?',
    '203.0.113.211');
-add(' Which three IP addresses are private ? (Choose three.)',
+add(' Which three IP addresses are private ? Choose three.',
    '10.20.30.1','172.30.5.3','192.168.5.5');
 add('What types of addresses make up the majority of addresses within the /8 block IPv4 bit space?',
    'public addresses');
 add('Refer to the exhibit. What is the maximum TTL value that is used to reach the destination www.cisco.com??',
    '13');
-add('A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? (Choose two.)',
+add('A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? Choose two.',
    '192.168.1.64/27','192.168.1.96/28');
 add('In a network that uses IPv4, what prefix would best fit a subnet containing 100 hosts?',
    '/25');
@@ -223,13 +223,13 @@ add('Which protocol supports rapid delivery of streaming media?',
    'Real-Time Transport Protocol');
 add('Why would a network administrator use the tracert utility?',
    'to identify where a packet was lost or delayed on a network');
-add('Refer to the exhibit. What is the significance of the asterisk (*) in the exhibited output?',
+add('Refer to the exhibit. What is the significance of the asterisk * in the exhibited output?',
    'The asterisk designates which file system is the default file system.');
 add('Which WLAN security protocol generates a new dynamic key each time a client establishes a connection with the AP?',
    'WPA');
 add('Fill in the blank. Point-to-point communications where both devices can transmit and receive on the medium at the same time are known as .',
    'full-duplex');
-add('A host is accessing a Telnet server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+add('A host is accessing a Telnet server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
    'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
 add('Refer to the exhibit. Which area would most likely be an extranet for the company network that is shown?',
    'area C');
@@ -255,8 +255,8 @@ add('What is the auto-MDIX feature on a switch?',
    'the automatic configuration of an interface for a straight-through or a crossover Ethernet cable connection');
 add('Which frame forwarding method receives the entire frame and performs a CRC check to detect errors before forwarding the frame?',
    'store-and-forward switching');
-add('What are the two main components of Cisco Express Forwarding (CEF)? (Choose two.)',
-   'adjacency tables','forwarding information base (FIB)');
+add('What are the two main components of Cisco Express Forwarding CEF? Choose two.',
+   'adjacency tables','forwarding information base FIB');
 add('Which statement describes the sequence of processes executed by a router when it receives a packet from a host to be delivered to a host on another network?',
    'It de-encapsulates the packet, selects the appropriate path, and encapsulates the packet to forward it toward','the destination host.');
 add('Which technology provides a solution to IPv4 address depletion by allowing multiple devices to share one public IP address?',
@@ -265,21 +265,21 @@ add('Refer to the exhibit. Router R1 has two interfaces that were configured wit
    'The no shutdown command was not issued on these interfaces.');
 add('What happens when part of an Internet television transmission is not delivered to the destination?',
    'The transmission continues without the missing portion.');
-add('Which three statements characterize the transport layer protocols? (Choose three.)',
+add('Which three statements characterize the transport layer protocols? Choose three.',
    'TCP and UDP port numbers are used by application layer protocols.','TCP uses windowing and sequencing to provide reliable transfer of data.','TCP is a connection-oriented protocol. UDP is a connectionless protocol.');
 add('A user opens three browsers on the same PC to access www.cisco.com to search for certification course information. The Cisco web server sends a datagram as a reply to the request from one of the web browsers. Which information is used by the TCP/IP protocol stack in the PC to identify the destination web browser?',
    'the destination port number');
 add('Which statement is true regarding the UDP client process during a session with a server?',
    'Datagrams that arrive in a different order than that in which they were sent are not placed in order.');
-add('Which two components are configured via software in order for a PC to participate in a network environment? (Choose two.)',
+add('Which two components are configured via software in order for a PC to participate in a network environment? Choose two.',
    'IP address','subnet mask');
-add('What are three characteristics of multicast transmission? (Choose three.)',
+add('What are three characteristics of multicast transmission? Choose three.',
    'A single packet can be sent to a group of hosts.','Multicast transmission can be used by routers to exchange routing information.','Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.');
-add('Which two reasons generally make DHCP the preferred method of assigning IP addresses to hosts on large networks? (Choose two.)',
+add('Which two reasons generally make DHCP the preferred method of assigning IP addresses to hosts on large networks? Choose two.',
    'It eliminates most address configuration errors.','It reduces the burden on network support staff.');
 add('What is the subnet address for the address 2001:DB8:BC15:A:12AB::1/64?',
    '2001:DB8:BC15:A::0');
-add('Which two tasks are functions of the presentation layer? (Choose two.)',
+add('Which two tasks are functions of the presentation layer? Choose two.',
    'compression','encryption');
 add('What is the purpose of the network security authentication function?',
    'to require users to prove who they are');
@@ -302,11 +302,11 @@ add('Three bank employees are using the corporate network. The first employee us
    'audio conference, financial transactions, web page');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator has already logged into a Telnet session on the switch, which password is needed to access privileged EXEC mode?',
    'secretin');
-add('What are the three primary functions provided by Layer 2 data encapsulation? (Choose three.)',
+add('What are the three primary functions provided by Layer 2 data encapsulation? Choose three.',
    'data link layer addressing','detection of errors through CRC calculations','delimiting groups of bits into frames');
-add('What must be configured to enable Cisco Express Forwarding (CEF) on most Cisco devices that perform Layer 3 switching?',
+add('What must be configured to enable Cisco Express Forwarding CEF on most Cisco devices that perform Layer 3 switching?',
    'CEF is enabled by default, so no configuration is necessary.');
-add('What is the purpose of adjacency tables as used in Cisco Express Forwarding (CEF)?',
+add('What is the purpose of adjacency tables as used in Cisco Express Forwarding CEF?',
    'to maintain Layer 2 next-hop addresses');
 add('Which statement describes a characteristic of the network layer in the OSI model?',
    'Its protocols specify the packet structure and processing used to carry the data from one host to another.');
@@ -332,7 +332,7 @@ add('A network technician is investigating network connectivity from a PC to a r
    'tracert 10.1.1.5');
 add('Fill in the blank. To prevent faulty network devices from carrying dangerous voltage levels, equipment must be correctly',
    'grounded');
-add('A network engineer is measuring the transfer of bits across the company backbone for a mission critical database application. The engineer notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)',
+add('A network engineer is measuring the transfer of bits across the company backbone for a mission critical database application. The engineer notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? Choose three.',
    'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
 add('What is a possible hazard that can be caused by network cables in a fire?',
    'The cable insulation could be flammable.');
@@ -350,7 +350,7 @@ add('Which router interface should be used for direct remote access to the route
    'an AUX port');
 add('A technician is configuring a router to allow for all forms of management access. As part of each different type of access, the technician is trying to type the command login. Which configuration mode should be entered to do this task?',
    'any line configuration mode');
-add('Which three statements characterize the transport layer protocols? (Choose three.)',
+add('Which three statements characterize the transport layer protocols? Choose three.',
    'TCP and UDP port numbers are used by application layer protocols.','TCP uses windowing and sequencing to provide reliable transfer of data.','TCP is a connection-oriented protocol. UDP is a connectionless protocol.');
 add('Refer to the exhibit. A TCP segment from a server has been captured by Wireshark, which is running on a host. What acknowledgement number will the host return for the TCP segment that has been received?',
    '306');
@@ -372,11 +372,11 @@ add('An administrator issued the service password-encryption command to apply en
    'It will not reverse any encryption.');
 add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
    'The new configuration will be loaded if the switch is restarted.');
-add('What are two features of ARP? (Choose two.)',
+add('What are two features of ARP? Choose two.',
    'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.','If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
-add('What are two examples of the cut-through switching method? (Choose two.)',
+add('What are two examples of the cut-through switching method? Choose two.',
    'fast-forward switching','fragment-free switching');
-add(' A network administrator is enabling services on a newly installed server. Which two statements describe how services are used on a server? (Choose two.)',
+add(' A network administrator is enabling services on a newly installed server. Which two statements describe how services are used on a server? Choose two.',
    'A port is considered to be open when it has an active server application that is assigned to it.','Server security can be improved by closing ports that are associated with unused services.');
 add('Why does a Layer 3 device perform the ANDing process on a destination IP address and subnet mask?',
    'to identify the network address of the destination network');
@@ -392,7 +392,7 @@ add('Which statement is true about DHCP operation?',
    'When a device that is configured to use DHCP boots, the client broadcasts a DHCPDISCOVER message to identify any available DHCP servers on the networK.');
 add('Which type of wireless security is easily compromised?',
    'WEP');
-add('A network administrator notices that the throughput on the network appears lower than expected when compared to the end-to-end network bandwidth. Which three factors can explain this difference? (Choose three.)',
+add('A network administrator notices that the throughput on the network appears lower than expected when compared to the end-to-end network bandwidth. Which three factors can explain this difference? Choose three.',
    'the amount of traffic','the type of traffic','the number and type of network devices that the data is crossing');
 add('A host PC is attempting to lease an address through DHCP. What message is sent by the server to the client know it is able to use the provided IP information?',
    'DHCPOFFER');
@@ -420,15 +420,15 @@ add('What type of IPv6 address is FE80::1?',
    'link-local');
 add('Which statement describes data throughput?',
    'It is the measure of the bits transferred across the media over a given period of time.');
-add('Fill in the blank. Use a number.IPv4 multicast addresses are directly mapped to IEEE 802 (Ethernet) MAC addresses using the last ______ of the 28 available bits in the IPv4 multicast group address.',
+add('Fill in the blank. Use a number.IPv4 multicast addresses are directly mapped to IEEE 802 Ethernet MAC addresses using the last ______ of the 28 available bits in the IPv4 multicast group address.',
    '4');
-add('How could a faulty network device create a source of hazard for a user? (Choose two.)',
+add('How could a faulty network device create a source of hazard for a user? Choose two.',
    'It could stop functioning.','It could explode.');
-add('What are three important considerations when planning the structure of an IP addressing scheme? (Choose three.)',
+add('What are three important considerations when planning the structure of an IP addressing scheme? Choose three.',
    'preventing duplication of addresses','providing and controlling access','conserving addresses');
 add('What is the metric value that is used to reach the 10.1.1.0 network in the following routing table entry? D 10.1.1.0/24 [90/2170112] via 209.165.200.226, 00:00:05, Serial0/0/0',
    '2170112');
-add('Which two services or protocols use the preferred UDP protocol for fast transmission and low overhead? (Choose two)',
+add('Which two services or protocols use the preferred UDP protocol for fast transmission and low overhead? Choose two',
    'VoIP','DNS');
 add('What action does a DHCPv4 client take if it receives more than one DHCPOFFER from multiple DHCP servers?',
    'It sends a DHCPREQUEST that identifies which lease offer the client is accepting.');
@@ -442,17 +442,17 @@ add('What is a characteristic of DNS?',
    'DNS servers can cache recent queries to reduce DNS query traffic.');
 add('What is the prefix for the host address 2001:DB8:BC15:A:12AB::1/64?',
    '2001:DB8:BC15:A');
-add('What are two services provided by the OSI network layer? (Choose two.)',
+add('What are two services provided by the OSI network layer? Choose two.',
    'encapsulating PDUs from the transport layer','routing packets toward the destination');
 add('What information is maintained in the CEF adjacency table?',
    'Layer 2 next hops NOT SURE NO ANSWER');
-add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? (Choose two.)',
+add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
    'voice','video');
 
 /*Final exam*/
 add('Which communication tool allows real-time collaboration?',
 	'instant messaging');
-add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
 	'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
 add('A home user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
 	'DSL');
@@ -469,7 +469,7 @@ add('An administrator uses the Ctrl-Shift-6 key combination on a switch after is
 add('What function does pressing the Tab key have when entering a command in IOS?',
 	'It completes the remainder of a partially typed word in a command.');
 add('Refer to the exhibit. An administrator wants to change the name of a brand new switch, using the hostname command as shown. What prompt will display after the command is issued?',
-	'Switch(config)#?');
+	'Switch config #?');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses Telnet to connect to the switch, which password is needed to access user EXEC mode?',
 	'linevtyin');
 add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
@@ -478,9 +478,9 @@ add('Refer to the exhibit. Which action will be successful?',
 	'PC2 can send a ping to 192.168.1.1.');
 add('Which IPv4 address can be pinged to test the internal TCP/IP operation of a host?',
 	'127.0.0.1');
-add('What three application layer protocols are part of the TCP/IP protocol suite? (Choose three.)',
+add('What three application layer protocols are part of the TCP/IP protocol suite? Choose three.',
 	'DHCP','DNS','FTP');
-add('Which two protocols function at the internet layer? (Choose two.)',
+add('Which two protocols function at the internet layer? Choose two.',
 	'ICMP','IP');
 add('Which publicly available resources describe protocols, processes, and technologies for the Internet but do not give implementation details?',
 	'Request for Comments');
@@ -494,7 +494,7 @@ add('What is an important function of the physical layer of the OSI model?',
 	'It encodes frames into electrical, optical, or radio wave signals.');
 add('Which procedure is used to reduce the effect of crosstalk in copper cables?',
 	'twisting opposing circuit wire pairs together');
-add('Which two statements describe the characteristics of fiber-optic cabling? (Choose two.)',
+add('Which two statements describe the characteristics of fiber-optic cabling? Choose two.',
 	'Fiber-optic cabling does not conduct electricity.','Fiber-optic cabling is primarily used as backbone cabling.');
 add('What is contained in the trailer of a data-link frame?',
 	'error detection');
@@ -510,15 +510,15 @@ add('Which technology provides a solution to IPv4 address depletion by allowing 
 	'NAT');
 add('Refer to the exhibit. Consider the IP address configuration shown from PC1. What is a description of the default gateway address?',
 	'It is the IP address of the Router1 interface that connects the PC1 LAN to Router1.');
-add('Which of the following are primary functions of a router? (Choose two.)',
+add('Which of the following are primary functions of a router? Choose two.',
 	'packet switching','path selection');
-add('Which two statements correctly describe a router memory type and its contents? (Choose two.)',
+add('Which two statements correctly describe a router memory type and its contents? Choose two.',
 	'RAM is volatile and stores the running configuration.','ROM is nonvolatile and stores bootup information.');
 add('In which default order will a router search for startup configuration information?',
 	'NVRAM, TFTP, setup mode');
 add('What happens when part of an Internet VoIP transmission is not delivered to the destination?',
 	'The transmission continues without the missing portion.');
-add('Which three IP addresses are private ? (Choose three.)',
+add('Which three IP addresses are private ? Choose three.',
 	'10.172.168.1','172.20.4.4','192.168.5.254');
 add('How many bits make up the single IPv6 hextet :10CD:?',
 	'16');
@@ -536,9 +536,9 @@ add('A network administrator needs to monitor network traffic to and from server
 	'predictable static IP addresses for easier identification');
 add('Refer to the exhibit. Which IP addressing scheme should be changed?',
 	'Site 2');
-add('Which two notations are useable nibble boundaries when subnetting in IPv6? (Choose two.)',
+add('Which two notations are useable nibble boundaries when subnetting in IPv6? Choose two.',
 	'/64','/68');
-add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? (Choose two.)',
+add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? Choose two.',
 	'DHCPDISCOVER','DHCPREQUEST');
 add('What is the purpose of the network security accounting function?',
 	'to keep track of the actions of a user');
@@ -548,17 +548,17 @@ add('A particular website does not appear to be responding on a Windows 7 comput
 	'ipconfig /displaydns');
 add('When the router prompts for an address or remote host name, what IP address should the administrator enter at the prompt?',
 	'192.168.11.252');
-add('What two preconfigured settings that affect security are found on most new wireless routers? (Choose two.)',
+add('What two preconfigured settings that affect security are found on most new wireless routers? Choose two.',
 	'broadcast SSID','default administrator password');
 add('Which type of wireless security generates dynamic encryption keys each time a client associates with an AP?',
 	'WPA');
 add('is a best-effort, connectionless application layer protocol that is used to transfer files.',
 	'TFTP');
-add('Which two components are necessary for a wireless client to be installed on a WLAN? (Choose two.)',
+add('Which two components are necessary for a wireless client to be installed on a WLAN? Choose two.',
 	'wireless NIC','wireless client software');
 add('The prefix-length for the range of addresses is',
 	'/60 ');
-add('A host is accessing an FTP server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+add('A host is accessing an FTP server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
 	'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
 add('When is a dial-up connection used to connect to an ISP?',
 	'when a regular telephone line is used');
@@ -571,7 +571,7 @@ add('Which connection provides a secure CLI session with encryption to a Cisco s
 add('Which keys act as a hot key combination that is used to interrupt an IOS process?',
 	'Ctrl-Shift-6');
 add('Refer to the exhibit. An administrator wants to change the name of a brand new switch, using the hostname command as shown. What prompt will display after the command is issued?',
-	'Switch(config)#?');
+	'Switch config#?');
 add('After making configuration changes on a Cisco switch, a network administrator issues a copy running-config startup-config command. What is the result of issuing this command?',
 	'The new configuration will be loaded if the switch is restarted.');
 add('On which switch interface would an administrator configure an IP address so that the switch can be managed remotely?',
@@ -580,11 +580,11 @@ add('A technician uses the ping 127.0.0.1 command. What is the technician testin
 	'the TCP/IP stack on a network host');
 add('Which device should be used for enabling a host to communicate with another host on a different network?',
 	'router');
-add('A network technician is measuring the transfer of bits across the company backbone for a mission critical application. The technician notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)',
+add('A network technician is measuring the transfer of bits across the company backbone for a mission critical application. The technician notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? Choose three.',
 	'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
-add('Which characteristics describe fiber optic cable? (Choose two.)',
+add('Which characteristics describe fiber optic cable? Choose two.',
 	'It is not affected by EMI or RFI.','It is the most expensive type of LAN cabling');
-add('What are two features of a physical, star network topology? (Choose two.)',
+add('What are two features of a physical, star network topology? Choose two.',
 	'It is straightforward to troubleshoot.','It is easy to add and remove end devices.');
 add('A frame is transmitted from one networking device to another. Why does the receiving device check the FCS field in the frame?',
 	'to check the frame for possible transmission errors');
@@ -594,7 +594,7 @@ add('Which switching method has the lowest level of latency?',
 	'fast-forward');
 add('Which parameter does the router use to choose the path to the destination when there are multiple routes available?',
 	'the lower metric value that is associated with the destination network');
-add('Which two statements describe the functions or characteristics of ROM in a router? (Choose two.)',
+add('Which two statements describe the functions or characteristics of ROM in a router? Choose two.',
 	'maintains instructions for POST diagnostics','stores bootstrap program');
 add('Which statement describes a characteristic of the Cisco router management ports?',
 	'A console port is not used for packet forwarding.');
@@ -602,13 +602,13 @@ add('What happens when part of an Internet radio transmission is not delivered t
 	'The transmission continues without the missing portion.');
 add('What is the dotted decimal representation of the IPv4 address 11001011.00000000.01110001.11010011?',
 	'203.0.113.211');
-add('Which three IP addresses are private ? (Choose three.)',
+add('Which three IP addresses are private ? Choose three.',
 	'10.20.30.1','172.30.5.3','192.168.5.5');
 add('What types of addresses make up the majority of addresses within the /8 block IPv4 bit space?',
 	'public addresses');
 add('Refer to the exhibit. What is the maximum TTL value that is used to reach the destination www.cisco.com?',
 	'13');
-add('A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? (Choose two.)',
+add('A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? Choose two.',
 	'192.168.1.64/27','192.168.1.96/28');
 add('In a network that uses IPv4, what prefix would best fit a subnet containing 100 hosts?',
 	'/25');
@@ -616,13 +616,13 @@ add('Which protocol supports rapid delivery of streaming media?',
 	'Real-Time Transport Protocol');
 add('Why would a network administrator use the tracert utility?',
 	'to identify where a packet was lost or delayed on a network');
-add('Refer to the exhibit. What is the significance of the asterisk (*) in the exhibited output?',
+add('Refer to the exhibit. What is the significance of the asterisk * in the exhibited output?',
 	'The asterisk designates which file system is the default file system.');
 add('Which WLAN security protocol generates a new dynamic key each time a client establishes a connection with the AP?',
 	'WPA');
 add('Point-to-point communications where both devices can transmit and receive on the medium at the same time are known as',
 	'full-duplex');
-add('A host is accessing a Telnet server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+add('A host is accessing a Telnet server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
 	'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
 add('Refer to the exhibit. Which area would most likely be an extranet for the company network that is shown?',
 	'area C');
@@ -648,8 +648,8 @@ add('What is the auto-MDIX feature on a switch?',
 	'the automatic configuration of an interface for a straight-through or a crossover Ethernet cable connection');
 add('Which frame forwarding method receives the entire frame and performs a CRC check to detect errors before forwarding the frame?',
 	'store-and-forward switching');
-add('What are the two main components of Cisco Express Forwarding (CEF)? (Choose two.)',
-	'adjacency tables','forwarding information base (FIB)');
+add('What are the two main components of Cisco Express Forwarding CEF? Choose two.',
+	'adjacency tables','forwarding information base FIB');
 add('Which statement describes the sequence of processes executed by a router when it receives a packet from a host to be delivered to a host on another network?',
 	'It de-encapsulates the packet, selects the appropriate path, and encapsulates the packet to forward it toward','the destination host.');
 add('Which technology provides a solution to IPv4 address depletion by allowing multiple devices to share one public IP address?',
@@ -658,21 +658,21 @@ add('Refer to the exhibit. Router R1 has two interfaces that were configured wit
 	'The no shutdown command was not issued on these interfaces.');
 add('What happens when part of an Internet television transmission is not delivered to the destination?',
 	'The transmission continues without the missing portion.');
-add('Which three statements characterize the transport layer protocols? (Choose three.)',
+add('Which three statements characterize the transport layer protocols? Choose three.',
 	'TCP and UDP port numbers are used by application layer protocols.','TCP uses windowing and sequencing to provide reliable transfer of data.','TCP is a connection-oriented protocol. UDP is a connectionless protocol.');
 add('A user opens three browsers on the same PC to access www.cisco.com to search for certification course information. The Cisco web server sends a datagram as a reply to the request from one of the web browsers. Which information is used by the TCP/IP protocol stack in the PC to identify the destination web browser?',
 	'the destination port number');
 add('Which statement is true regarding the UDP client process during a session with a server?',
 	'Datagrams that arrive in a different order than that in which they were sent are not placed in order.');
-add('Which two components are configured via software in order for a PC to participate in a network environment? (Choose two.)',
+add('Which two components are configured via software in order for a PC to participate in a network environment? Choose two.',
 	'IP address','subnet mask');
-add('What are three characteristics of multicast transmission? (Choose three.)',
+add('What are three characteristics of multicast transmission? Choose three.',
 	'A single packet can be sent to a group of hosts.','Multicast transmission can be used by routers to exchange routing information.','Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.');
-add('Which two reasons generally make DHCP the preferred method of assigning IP addresses to hosts on large networks? (Choose two.)',
+add('Which two reasons generally make DHCP the preferred method of assigning IP addresses to hosts on large networks? Choose two.',
 	'It eliminates most address configuration errors.','It reduces the burden on network support staff.');
 add('What is the subnet address for the address 2001:DB8:BC15:A:12AB::1/64?',
 	'2001:DB8:BC15:A::0');
-add('Which two tasks are functions of the presentation layer? (Choose two.)',
+add('Which two tasks are functions of the presentation layer? Choose two.',
 	'compression','encryption');
 add('What is the purpose of the network security authentication function?',
 	'to require users to prove who they are');
@@ -692,11 +692,11 @@ add('Three bank employees are using the corporate network. The first employee us
 	'audio conference, financial transactions, web page');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator has already logged into a Telnet session on the switch, which password is needed to access privileged EXEC mode?',
 	'secretin');
-add('What are the three primary functions provided by Layer 2 data encapsulation? (Choose three.)',
+add('What are the three primary functions provided by Layer 2 data encapsulation? Choose three.',
 	'data link layer addressing','detection of errors through CRC calculations','delimiting groups of bits into frames');
-add('What must be configured to enable Cisco Express Forwarding (CEF) on most Cisco devices that perform Layer 3 switching?',
+add('What must be configured to enable Cisco Express Forwarding CEF on most Cisco devices that perform Layer 3 switching?',
 	'CEF is enabled by default, so no configuration is necessary.');
-add('What is the purpose of adjacency tables as used in Cisco Express Forwarding (CEF)?',
+add('What is the purpose of adjacency tables as used in Cisco Express Forwarding CEF?',
 	'to maintain Layer 2 next-hop addresses');
 add('Which statement describes a characteristic of the network layer in the OSI model?',
 	'Its protocols specify the packet structure and processing used to carry the data from one host to another.');
@@ -722,7 +722,7 @@ add('A network technician is investigating network connectivity from a PC to a r
 	'tracert 10.1.1.5');
 add('To prevent faulty network devices from carrying dangerous voltage levels, equipment must be correctly',
 	'grounded');
-add('A network engineer is measuring the transfer of bits across the company backbone for a mission critical database application. The engineer notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)',
+add('A network engineer is measuring the transfer of bits across the company backbone for a mission critical database application. The engineer notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? Choose three.',
 	'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
 add('What is a possible hazard that can be caused by network cables in a fire?',
 	'The cable insulation could be flammable.');
@@ -740,7 +740,7 @@ add('Which router interface should be used for direct remote access to the route
 	'an AUX port');
 add('A technician is configuring a router to allow for all forms of management access. As part of each different type of access, the technician is trying to type the command login. Which configuration mode should be entered to do this task?',
 	'any line configuration mode');
-add('Which three statements characterize the transport layer protocols? (Choose three.)',
+add('Which three statements characterize the transport layer protocols? Choose three.',
 	'TCP and UDP port numbers are used by application layer protocols.','TCP uses windowing and sequencing to provide reliable transfer of data.','TCP is a connection-oriented protocol. UDP is a connectionless protocol.');
 add('Refer to the exhibit. A TCP segment from a server has been captured by Wireshark, which is running on a host. What acknowledgement number will the host return for the TCP segment that has been received?',
 	'306');
@@ -762,11 +762,11 @@ add('An administrator issued the service password-encryption command to apply en
 	'It will not reverse any encryption.');
 add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
 	'The new configuration will be loaded if the switch is restarted.');
-add('What are two features of ARP? (Choose two.',
+add('What are two features of ARP? Choose two.',
 	'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.','If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
-add('What are two examples of the cut-through switching method? (Choose two.)',
+add('What are two examples of the cut-through switching method? Choose two.',
 	'fast-forward switching','fragment-free switching');
-add('A network administrator is enabling services on a newly installed server. Which two statements describe how services are used on a server? (Choose two.)',
+add('A network administrator is enabling services on a newly installed server. Which two statements describe how services are used on a server? Choose two.',
 	'A port is considered to be open when it has an active server application that is assigned to it.','Server security can be improved by closing ports that are associated with unused services.');
 add('Why does a Layer 3 device perform the ANDing process on a destination IP address and subnet mask?',
 	'to identify the network address of the destination network');
@@ -782,7 +782,7 @@ add('Which statement is true about DHCP operation?',
 	'When a device that is configured to use DHCP boots, the client broadcasts a DHCPDISCOVER message to identify any available DHCP servers on the networK.');
 add('Which type of wireless security is easily compromised?',
 	'WEP');
-add('A network administrator notices that the throughput on the network appears lower than expected when compared to the end-to-end network bandwidth. Which three factors can explain this difference? (Choose three.)',
+add('A network administrator notices that the throughput on the network appears lower than expected when compared to the end-to-end network bandwidth. Which three factors can explain this difference? Choose three.',
 	'the amount of traffic','the type of traffic','the number and type of network devices that the data is crossing');
 add('A host PC is attempting to lease an address through DHCP. What message is sent by the server to the client know it is able to use the provided IP information?',
 	'DHCPOFFER');
@@ -810,15 +810,15 @@ add('What type of IPv6 address is FE80::1?',
 	'link-local');
 add('Which statement describes data throughput?',
 	'It is the measure of the bits transferred across the media over a given period of time.');
-add('IPv4 multicast addresses are directly mapped to IEEE 802 (Ethernet) MAC addresses using the last of the 28 available bits in the IPv4 multicast group address.',
+add('IPv4 multicast addresses are directly mapped to IEEE 802 Ethernet MAC addresses using the last of the 28 available bits in the IPv4 multicast group address.',
 	'4');
-add('How could a faulty network device create a source of hazard for a user? (Choose two.)',
+add('How could a faulty network device create a source of hazard for a user? Choose two.',
 	'It could stop functioning.','It could explode.');
-add('What are three important considerations when planning the structure of an IP addressing scheme? (Choose three.)',
+add('What are three important considerations when planning the structure of an IP addressing scheme? Choose three.',
 	'preventing duplication of addresses','providing and controlling access','conserving addresses');
 add('What is the metric value that is used to reach the 10.1.1.0 network in the following routing table entry? D 10.1.1.0/24 [90/2170112] via 209.165.200.226, 00:00:05, Serial0/0/0',
 	'2170112');
-add('Which two services or protocols use the preferred UDP protocol for fast transmission and low overhead? (Choose two)',
+add('Which two services or protocols use the preferred UDP protocol for fast transmission and low overhead? Choose two',
 	'VoIP','DNS');
 add('What action does a DHCPv4 client take if it receives more than one DHCPOFFER from multiple DHCP servers?',
 	'It sends a DHCPREQUEST that identifies which lease offer the client is accepting.');
@@ -832,9 +832,9 @@ add('What is a characteristic of DNS?',
 	'DNS servers can cache recent queries to reduce DNS query traffic.');
 add('What is the prefix for the host address 2001:DB8:BC15:A:12AB::1/64?',
 	'2001:DB8:BC15:A');
-add('What are two services provided by the OSI network layer? (Choose two.)',
+add('What are two services provided by the OSI network layer? Choose two.',
 	'encapsulating PDUs from the transport layer','routing packets toward the destination');
-add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? (Choose two.)',
+add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
@@ -854,7 +854,7 @@ add('What is the purpose of the SVI on a Cisco switch?',
 	'The SVI provides a virtual interface for remote access to the switch.');
 add('Which message delivery option is used when all devices need to receive the same message simultaneously?',
 	'broadcast');
-add('Which two protocols function at the internet layer? (Choose two.)',
+add('Which two protocols function at the internet layer? Choose two.',
 	'ICMP','IP');
 add('What PDU is associated with the transport layer?',
 	'segment');
@@ -862,9 +862,9 @@ add('What is done to an IP packet before it is transmitted over the physical med
 	'It is encapsulated in a Layer 2 frame.');
 add('What type of communication medium is used with a wireless LAN connection?',
 	'radio waves');
-add('In addition to the cable length, what two factors could interfere with the communication carried over UTP cables? (Choose two.)',
+add('In addition to the cable length, what two factors could interfere with the communication carried over UTP cables? Choose two.',
 	'crosstalk','electromagnetic interference');
-add('What are the two sublayers of the OSI model data link layer? (Choose two.)',
+add('What are the two sublayers of the OSI model data link layer? Choose two.',
 	'LLC','MAC');
 add('A technician has been asked to develop a physical topology for a network that provides a high level of redundancy. Which physical topology requires that every node is attached to every other node on the network?',
 	'mesh');
@@ -880,17 +880,17 @@ add('What important information is examined in the Ethernet frame header by a La
 	'destination MAC address');
 add('What will a Layer 2 switch do when the destination MAC address of a received frame is not in the MAC table?',
 	'It forwards the frame out of all ports except for the port at which the frame was received.');
-add('What are two features of ARP? (Choose two.)',
+add('What are two features of ARP? Choose two.',
 	'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.','If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
-add('Which two services are required to enable a computer to receive dynamic IP addresses and access the Internet using domain names? (Choose two.)',
+add('Which two services are required to enable a computer to receive dynamic IP addresses and access the Internet using domain names? Choose two.',
 	'DNS','DHCP');
 add('What is a basic characteristic of the IP protocol?',
 	'connectionless');
 add('Refer to the exhibit. A user issues the command netstat –r on a workstation. Which IPv6 address is one of the link-local addresses of the workstation?',
 	'fe80::30d0:115:3f57:fe4c/128');
-add('Which two statements correctly describe a router memory type and its contents? (Choose two.)',
+add('Which two statements correctly describe a router memory type and its contents? Choose two.',
 	'RAM is volatile and stores the IP routing table.','ROM is nonvolatile and contains basic diagnostic software.');
-add('What three blocks of addresses are defined by RFC 1918 for private network use? (Choose three.)',
+add('What three blocks of addresses are defined by RFC 1918 for private network use? Choose three.',
 	'10.0.0.0/8','172.16.0.0/12','192.168.0.0/16');
 add('What is the valid most compressed format possible of the IPv6 address 2001:0DB8:0000:AB00:0000:0000:0000:1234?',
 	'2001:DB8:0:AB00::1234');
@@ -912,15 +912,15 @@ add('Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that 
 	'2001:db8:0:f000::/52');
 add('A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?',
 	'The data flow is being tracked based on the source port number utilized by each application');
-add('What three services are provided by the transport layer? (Choose three.)',
+add('What three services are provided by the transport layer? Choose three.',
 	'flow control','connection establishment','error recovery');
 add('An Internet television transmission is using UDP. What happens when part of the transmission is not delivered to the destination?',
 	'The transmission continues without the missing portion.');
-add('Which two OSI model layers are considered to be included in the top layer of the TCP/IP protocol stack? (Choose two.)',
+add('Which two OSI model layers are considered to be included in the top layer of the TCP/IP protocol stack? Choose two.',
 	'presentation','session');
 add('An author is uploading one chapter document from a personal computer to a file server of a book publisher. What role is the personal computer assuming in this network model?',
 	'client');
-add('Which two automatic addressing assignments are supported by DHCP? (Choose two.)',
+add('Which two automatic addressing assignments are supported by DHCP? Choose two.',
 	'subnet mask','default gateway address');
 add('When a network administrator is trying to manage network traffic on a growing network, when should traffic flow patterns be analyzed?',
 	'during times of peak utilization');
