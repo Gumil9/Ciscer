@@ -973,7 +973,7 @@ add('global unicast -> 2001:DB8:A1:0B:C78::1');
 add('Stage 1 – perform the post');
 add('Stage 2 – load the bootstrap program');
 add('Stage 3 – Locate and load the Cisco IOS');
-add('Stage 4 – locate and load the configuration file')ж
+add('Stage 4 – locate and load the configuration file');
 
 add('PDU encapsulation -> frame header');
 
