@@ -501,6 +501,7 @@ add('What is the auto-MDIX feature on a switch',
 	'crossover Ethernet cable connection');
 add('Refer to the exhibit. A ping to PC3 is issued from PC0, PC1, and PC2 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
 	'just PC0 and PC1 MAC addresses');
+/*
 add('How does a Layer 3 switch differ from a Layer 2 switch?',
 	'An IP address can be assigned to a physical port of a Layer 3 switch. However, this is not supported in Layer 2 switches.');
 add('What is the purpose of the routing process?',
@@ -837,7 +838,6 @@ add('A network administrator is upgrading a small business network to give high 
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
-/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
