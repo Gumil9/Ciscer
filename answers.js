@@ -57,6 +57,7 @@ add('47. For Cisco IOS, which escape sequence allows terminating a traceroute op
 add('48. What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?', 'The transfer of the files does not rely on network connectivity.');
 
 /*FINAL TEST*/
+/*
 add('Which communication tool allows real-time collaboration?',
    'instant messaging');
 add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
@@ -297,7 +298,7 @@ add('Open the PT Activity. Perform the tasks in the activity instructions and th
    '2001:db8:abc:5::1');
 
 /*Updated DIC .2, 2015*/
-
+/*
 add('Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?',
    'audio conference, financial transactions, web page');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator has already logged into a Telnet session on the switch, which password is needed to access privileged EXEC mode?',
@@ -450,6 +451,7 @@ add('A network administrator is upgrading a small business network to give high 
    'voice','video');
 
 /*Final exam*/
+/*
 add('Which communication tool allows real-time collaboration?',
 	'instant messaging');
 add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
@@ -499,7 +501,6 @@ add('Which two statements describe the characteristics of fiber-optic cabling? C
 	'Fiber-optic cabling does not conduct electricity.','Fiber-optic cabling is primarily used as backbone cabling.');
 add('What is contained in the trailer of a data-link frame?',
 	'error detection');
-
 add('What is the auto-MDIX feature on a switch',
 	'crossover Ethernet cable connection');
 add('Refer to the exhibit. A ping to PC3 is issued from PC0, PC1, and PC2 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
@@ -840,6 +841,7 @@ add('A network administrator is upgrading a small business network to give high 
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
+/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
