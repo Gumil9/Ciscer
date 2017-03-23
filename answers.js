@@ -855,6 +855,7 @@ add('What is the purpose of the SVI on a Cisco switch?',
 	'The SVI provides a virtual interface for remote access to the switch.');
 add('Which message delivery option is used when all devices need to receive the same message simultaneously?',
 	'broadcast');
+/*
 add('Which two protocols function at the internet layer? Choose two.',
 	'ICMP','IP');
 add('What PDU is associated with the transport layer?',
@@ -897,7 +898,6 @@ add('What is the valid most compressed format possible of the IPv6 address 2001:
 	'2001:DB8:0:AB00::1234');
 add('At a minimum, which address is required on IPv6-enabled interfaces?',
 	'link-local');
-/*
 add('An IPv6 enabled device sends a data packet with the destination address of FF02::2. What is the target of this packet?',
 	'all IPv6 configured routers on the local link');
 add('What is the purpose of ICMP messages?',
