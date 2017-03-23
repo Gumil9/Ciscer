@@ -538,6 +538,7 @@ add('Refer to the exhibit. Which IP addressing scheme should be changed?',
 	'Site 2');
 add('Which two notations are useable nibble boundaries when subnetting in IPv6? Choose two.',
 	'/64','/68');
+*/
 add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? Choose two.',
 	'DHCPDISCOVER','DHCPREQUEST');
 add('What is the purpose of the network security accounting function?',
@@ -584,7 +585,6 @@ add('A network technician is measuring the transfer of bits across the company b
 	'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
 add('Which characteristics describe fiber optic cable? Choose two.',
 	'It is not affected by EMI or RFI.','It is the most expensive type of LAN cabling');
-*/
 add('What are two features of a physical, star network topology? Choose two.',
 	'It is straightforward to troubleshoot.','It is easy to add and remove end devices.');
 add('A frame is transmitted from one networking device to another. Why does the receiving device check the FCS field in the frame?',
