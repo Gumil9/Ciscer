@@ -55,6 +55,7 @@ add('45. What will be the result of failed login attempts if the following comma
 add('46. A user reports a lack of network connectivity. The technician takes control of the user machine and attempts to ping other computers on the network and these pings fail. The technician pings the default gateway and that also fails. What can be determined for sure by the results of these tests?', 'Nothing can be determined for sure at this point.');
 add('47. For Cisco IOS, which escape sequence allows terminating a traceroute operation?', 'Ctrl+Shift+6');
 add('48. What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?', 'The transfer of the files does not rely on network connectivity.');
+alert('1');
 
 /*FINAL TEST*/
 add('Which communication tool allows real-time collaboration?',
