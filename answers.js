@@ -517,7 +517,6 @@ add('In which default order will a router search for startup configuration infor
 	'NVRAM, TFTP, setup mode');
 add('What happens when part of an Internet VoIP transmission is not delivered to the destination?',
 	'The transmission continues without the missing portion.');
-/*
 add('Which three IP addresses are private ? Choose three.',
 	'10.172.168.1','172.20.4.4','192.168.5.254');
 add('How many bits make up the single IPv6 hextet :10CD:?',
@@ -538,7 +537,6 @@ add('Refer to the exhibit. Which IP addressing scheme should be changed?',
 	'Site 2');
 add('Which two notations are useable nibble boundaries when subnetting in IPv6? Choose two.',
 	'/64','/68');
-*/
 add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? Choose two.',
 	'DHCPDISCOVER','DHCPREQUEST');
 add('What is the purpose of the network security accounting function?',
@@ -901,16 +899,17 @@ add('An IPv6 enabled device sends a data packet with the destination address of 
 	'all IPv6 configured routers on the local link');
 add('What is the purpose of ICMP messages?',
 	'to provide feedback of IP packet transmissions');
+/*
 add('Which statement describes a characteristic of the traceroute utility?',
 	'It identifies the routers in the path from a source host to a destination host.');
-add('What is the usable number of host IP addresses on a network that has a /26 mask?',
-	'62');
+add('What is the usable number of host IP addresses on a network that has a /26 mask?', '62');
 add('Refer to the exhibit. An administrator must send a message to everyone on the router A network. What is the broadcast address for network 172.16.16.0/22?',
 	'172.16.19.255');
 add('A network administrator is variably subnetting a given block of IPv4 addresses. Which combination of network addresses and prefix lengths will make the most efficient use of addresses when the need is for 2 subnets capable of supporting 10 hosts and 1 subnet that can support 6 hosts?',
 	'10.1.1.128/28','10.1.1.144/28','10.1.1.160/29');
 add('Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that is created if the subnet prefix is changed to /52?',
 	'2001:db8:0:f000::/52');
+*/
 add('A technician with a PC is using multiple applications while connected to the Internet. How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?',
 	'The data flow is being tracked based on the source port number utilized by each application');
 add('What three services are provided by the transport layer? Choose three.',
