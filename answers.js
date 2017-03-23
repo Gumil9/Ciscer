@@ -838,6 +838,7 @@ add('A network administrator is upgrading a small business network to give high 
 	'voice','video');
 
 /*V5.1 Practice Final Exam*/
+/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
