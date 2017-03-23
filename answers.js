@@ -397,6 +397,7 @@ add('A host PC is attempting to lease an address through DHCP. What message is s
    'DHCPOFFER');
 add('A network administrator is configuring access control to switch SW1. If the administrator uses console line to connect to the switch, which password is needed to access user EXEC mode?',
    'lineconin');
+/*
 add('What is a characteristic of UTP cabling?',
    'cancellation');
 add('How many bits would need to be borrowed if a network admin were given the IP addressing scheme of 172.16.0.0/16 and needed no more than 16 subnet with equal number of hosts?',
@@ -447,8 +448,10 @@ add('What information is maintained in the CEF adjacency table?',
    'Layer 2 next hops NOT SURE NO ANSWER');
 add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
    'voice','video');
+   */
 
 /*Final exam*/
+/*
 add('Which communication tool allows real-time collaboration?',
 	'instant messaging');
 add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
@@ -835,8 +838,10 @@ add('What are two services provided by the OSI network layer? Choose two.',
 	'encapsulating PDUs from the transport layer','routing packets toward the destination');
 add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
 	'voice','video');
+*/
 
 /*V5.1 Practice Final Exam*/
+/*
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
@@ -928,6 +933,7 @@ add('What will be the result of failed login attempts if the following command i
 	'All login attempts will be blocked for 150 seconds if there are 4 failed attempts within 90 seconds.');
 add('What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?',
 	'The transfer of the files does not rely on network connectivity');
+    */
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
