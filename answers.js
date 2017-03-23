@@ -397,7 +397,6 @@ add('A host PC is attempting to lease an address through DHCP. What message is s
    'DHCPOFFER');
 add('A network administrator is configuring access control to switch SW1. If the administrator uses console line to connect to the switch, which password is needed to access user EXEC mode?',
    'lineconin');
-/*
 add('What is a characteristic of UTP cabling?',
    'cancellation');
 add('How many bits would need to be borrowed if a network admin were given the IP addressing scheme of 172.16.0.0/16 and needed no more than 16 subnet with equal number of hosts?',
@@ -448,10 +447,9 @@ add('What information is maintained in the CEF adjacency table?',
    'Layer 2 next hops NOT SURE NO ANSWER');
 add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
    'voice','video');
-   */
 
 /*Final exam*/
-/*
+
 add('Which communication tool allows real-time collaboration?',
 	'instant messaging');
 add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? Choose three.',
@@ -682,8 +680,7 @@ add('Which type of wireless security makes use of dynamic encryption keys each t
 	'WPA');
 add('During data communications, a host may need to send a single message to a specific group of destination hosts simultaneously. This message is in the form of a message.',
 	'Multicast');
-add('Open the PT activity. Perform the tasks in the activity instructions and then fill in the blank. The Server0 message is'
-	'winner');
+add('Open the PT activity. Perform the tasks in the activity instructions and then fill in the blank. The Server0 message is winner');
 add('A PC is configured to obtain an IP address automatically from network 192.168.1.0/24. The network administrator issues the arp –a command and notices an entry of 192.168.1.255 ff-ff-ff-ff-ff-ff. Which statement describes this entry?',
 	'This is a static map entry.');
 add('Which field in an IPv4 packet header will typically stay the same during its transmission?',
@@ -838,10 +835,9 @@ add('What are two services provided by the OSI network layer? Choose two.',
 	'encapsulating PDUs from the transport layer','routing packets toward the destination');
 add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? Choose two.',
 	'voice','video');
-*/
 
 /*V5.1 Practice Final Exam*/
-/*
+
 add('Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?',
 	'extranet');
 add('A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
@@ -933,7 +929,7 @@ add('What will be the result of failed login attempts if the following command i
 	'All login attempts will be blocked for 150 seconds if there are 4 failed attempts within 90 seconds.');
 add('What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?',
 	'The transfer of the files does not rely on network connectivity');
-    */
+
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
