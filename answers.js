@@ -297,7 +297,6 @@ add('Open the PT Activity. Perform the tasks in the activity instructions and th
    '2001:db8:abc:5::1');
 
 /*Updated DIC .2, 2015*/
-/*
 add('Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?',
    'audio conference, financial transactions, web page');
 add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator has already logged into a Telnet session on the switch, which password is needed to access privileged EXEC mode?',
