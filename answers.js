@@ -57,7 +57,6 @@ add('47. For Cisco IOS, which escape sequence allows terminating a traceroute op
 add('48. What is an advantage of storing configuration files to a USB flash drive instead of to a TFTP server?', 'The transfer of the files does not rely on network connectivity.');
 
 /*FINAL TEST*/
-/*
 add('Which communication tool allows real-time collaboration?',
    'instant messaging');
 add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
