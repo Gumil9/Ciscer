@@ -67,6 +67,6 @@ add('limited operating system > ROM');
 
 Если вы знаете JavaScript, и вам самим хочется что-то поменять/добавить в коде (`core.js`, `client.js`), то делайте fork репозитория, редактируйте и создавайте pull request.
 
-##FAQ
+## FAQ
 
 1. [Почему при загрузке ответов появляется сообщение "Unable to load resources"?](https://github.com/Gumil9/Ciscer/issues/1#issuecomment-289246163)
