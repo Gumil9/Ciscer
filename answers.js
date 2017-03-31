@@ -91,7 +91,7 @@ add(' Full-duplex communication allows both ends of a connection to transmit and
 add(' When port security is enabled, a switch port uses the default violation mode of shutdown until specifically configured to use a different violation mode.', 'shutdown');
 add(' Refer to the exhibit. Which S1 switch port interface or interfaces should be configured with the ip dhcp snooping trust command if best practices are implemented?', 'only the G0/1 and G0/24 ports');
 add(' What impact does the use of the mdix auto configuration command have on an Ethernet interface on a switch?', 'automatically detects copper cable type');
-add(' Which command displays information about the auto-MDIX setting for a specific interface?​', 'show controllers');
+add(' Which command displays information about the auto-MDIX setting for a specific interface?', 'show controllers');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
