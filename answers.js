@@ -60,6 +60,26 @@ add('24. Refer to the exhibit. The network engineer for the company that is show
 add('25. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Why are the pings from PC0 to Server0 not successful?', 'The static route to network 192.168.2.0 is misconfigured on Router1.​');
 add('26. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. What IPv6 static route can be configured on router R1 to make a fully converged network?', 'ipv6 route 2001:db8:10:12::/64 S0/0/1')
 
+add('1. What is a basic function of the Cisco Borderless Architecture access layer?', 'provides access to the user');
+add('2.What is a basic function of the Cisco Borderless Architecture distribution layer?', 'aggregating Layer 3 routing boundaries');
+add('3. A network designer must provide a rationale to a customer for a design which will move an enterprise from a flat network topology to a hierarchical network topology. Which two features of the hierarchical design make it the better choice? Choose two.', 'easier to provide redundant links to ensure higher availability', 'simpler deployment for additional switch equipment');
+add('4. What is a collapsed core in a network design?', 'a combination of the functionality of the distribution and core layers');
+add('5. What are two advantages of modular switches over fixed-configuration switches? Choose two.', 'increased scalability', 'need for fewer power outlets');
+add('6. Which switch form factor should be used when large port density, fault tolerance, and low price are important factors?', 'stackable switch');
+add('7. An administrator purchases new Cisco switches that have a feature called StackPower. What is the purpose of this feature?', 'It enables the sharing of power among multiple stackable switches.');
+add('8. What is one advantage of using the cut-through switching method instead of the store-and-forward switching method?', 'has a lower latency appropriate for high-performance computing applications');
+add('9. Which type of transmission does a switch use when the destination MAC address is not contained in the MAC address table?', 'broadcast');
+add('10. Refer to the exhibit. Consider that the main power has just been restored. PC1 asks the DHCP server for IPv4 addressing. The DHCP server sends it an IPv4 address. While PC2 is still booting up, PC3 issues a broadcast IPv4 DHCP request. To which port will SW1 forward this request?', 'to Fa0/1, Fa0/2, and Fa0/3 only');
+add('11. What information is added to the switch table from incoming frames?', 'source MAC address and incoming port number');
+add('12. What is one function of a Layer 2 switch?', 'determines which interface is used to forward a frame based on the destination MAC address');
+add('13. Refer to the exhibit. How is a frame sent from PCA forwarded to PCC if the MAC address table on switch SW1 is empty?', 'SW1 floods the frame on all ports on SW1, excluding the port through which the frame entered the switch.');
+add('14. What does the term “port density” represent for an Ethernet switch?', 'the number of available ports');
+add('15. ABC, Inc. has about fifty hosts in one LAN. The administrator would like to increase the throughput of that LAN. Which device will increase the number of collision domains and thereby increase the throughput of the LAN?', 'switch');
+add('16. What are two reasons a network administrator would segment a network with a Layer 2 switch?', 'to enhance user bandwidth', 'to isolate traffic between segments');
+add('A converged network is one that uses the same infrastructure to carry voice, data, and video signals.', 'converged');
+add('18. Refer to the exhibit. Fill in the blank. There are 12 collision domains in the topology.', '12');
+add('19. Refer to the exhibit. Fill in the blank. There are five  broadcast domains in the topology.', 'five');
+
 //FINAL TEST
 add('1. Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?', 'extranet');
 add('2. A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?', 'DSL');
