@@ -80,6 +80,29 @@ add('A converged network is one that uses the same infrastructure to carry voice
 add('18. Refer to the exhibit. Fill in the blank. There are 12 collision domains in the topology.', '12');
 add('19. Refer to the exhibit. Fill in the blank. There are five  broadcast domains in the topology.', 'five');
 
+add('Which interface is the default location that would contain the IP address used to manage a 24-port Ethernet switch?', ' VLAN 1');
+add('A production switch is reloaded and finishes with a Switch> prompt. What two facts can be determined? ', 'POST occurred normally.', 'A full version of the Cisco IOS was located and loaded.');
+add('Which two statements are true about using full-duplex Fast Ethernet?', 'Performance is improved with bidirectional data flow', 'Full-duplex Fast Ethernet offers 100 percent efficiency in both directions.');
+add('Which statement describes the port speed LED on the Cisco Catalyst 2960 switch?', ' If the LED is green, the port is operating at 100 Mb/s.');
+add('What is a function of the switch boot loader?', 'to provide an environment to operate in when the switch operating system cannot be found');
+add('In which situation would a technician use the show interfaces switch command?', 'when packets are being dropped from a particular directly attached host');
+add('Refer to the exhibit. A network technician is troubleshooting connectivity issues in an Ethernet network with the command show interfaces fastEthernet 0/0. What conclusion can be drawn based on the partial output in the exhibit?', 'A malfunctioning NIC can cause frames to be transmitted that are longer than the allowed maximum length. ');
+add('Refer to the exhibit. The network administrator wants to configure Switch1 to allow SSH connections and prohibit Telnet connections. How should the network administrator change the displayed configuration to satisfy the requirement?', 'Modify the transport input command.');
+add('What is one difference between using Telnet or SSH to connect to a network device for management purposes?', 'Telnet sends a username and password in plain text, whereas SSH encrypts the username and password.');
+add('In which type of attack does a malicious node request all available IP addresses in the address pool of a DHCP server in order to prevent legitimate hosts from obtaining network access?', 'DHCP starvation');
+add('Which method would mitigate a MAC address flooding attack?', 'configuring port security');
+add('Which two features on a Cisco Catalyst switch can be used to mitigate DHCP starvation and DHCP spoofing attacks?', 'port security', 'DHCP snooping');
+add('Which two basic functions are performed by network security tools?', 'revealing the type of information an attacker is able to gather from monitoring network traffic', 'simulating attacks against the production network to determine any existing vulnerabilities');
+add('An administrator wants to use a network security auditing tool on a switch to verify which ports are not protected against a MAC flooding attack. For the audit to be successful, what important factor must the administrator consider?', 'the aging-out period of the MAC address table');
+add('Which action will bring an error-disabled switch port back to an operational state?', 'Issue the shutdown and then no shutdown interface commands. ');
+add('Refer to the exhibit. Port Fa0/2 has already been configured appropriately. The IP phone and PC work properly. Which switch configuration would be most appropriate for port Fa0/2 if the network administrator has the following goals?', 'SWA config-if # switchport port-security SWA config-if # switchport port-security maximum 2 SWA config-if # switchport port-security mac-address sticky');
+add('Which two statements are true regarding switch port security?', 'Dynamically learned secure MAC addresses are lost when the switch reboots.', 'If fewer than the maximum number of MAC addresses for a port are configured statically, dynamically learned addresses are added to CAM until the maximum number is reached.');
+add('A network administrator configures the port security feature on a switch. The security policy specifies that each access port should allow up to two MAC addresses. When the maximum number of MAC addresses is reached, a frame with the unknown source MAC address is dropped and a notification is sent to the syslog server. Which security violation mode should be configured for each access port?', 'restrict');
+add('Refer to the exhibit. What can be determined about port security from the information that is shown?', 'The port violation mode is the default for any port that has port security enabled.');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Fill in the blank. Do not use abbreviations. What is the missing command on S1?', 'ip address 192.168.99.2 255.255.255.0');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which event will take place if there is a port security violation on switch S1 interface Fa0/1?', 'Packets with unknown source addresses will be dropped.');
+
+
 //FINAL TEST
 add('1. Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?', 'extranet');
 add('2. A small business user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?', 'DSL');
