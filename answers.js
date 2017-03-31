@@ -57,7 +57,7 @@ add('21. Refer to the exhibit. The small company shown uses static routing. User
 add('22. Which three IOS troubleshooting commands can help to isolate problems with a static route? Choose three.', 'ping', 'show ip route', 'show ip interface brief');
 add('23. An administrator issues the ipv6 route 2001:db8:acad:1::/32 gigabitethernet0/0 2001:db8:acad:6::1 100 command on a router. What administrative distance is assigned to this route?', '100');
 add('24. Refer to the exhibit. The network engineer for the company that is shown wants to use the primary ISP connection for all external connectivity. The backup ISP connection is used only if the primary ISP connection fails. Which set of commands would accomplish this goal?', 'ip route 0.0.0.0 0.0.0.0 s0/0/0 ip route 0.0.0.0 0.0.0.0 s0/1/0 10');
-add('25. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Why are the pings from PC0 to Server0 not successful?', 'The static route to network 192.168.2.0 is misconfigured on Router1.​');
+add('25. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Why are the pings from PC0 to Server0 not successful?', 'The static route to network 192.168.2.0 is misconfigured on Router1.');
 add('26. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. What IPv6 static route can be configured on router R1 to make a fully converged network?', 'ipv6 route 2001:db8:10:12::/64 S0/0/1')
 
 //TEST1 v5
@@ -75,10 +75,30 @@ add('32. Which two previously independent technologies should a network administ
 add('Refer to the exhibit. How many broadcast domains are displayed?', '8');
 add('Refer to the exhibit. Fill in the blank. How many collision domains are shown in the topology?', '2');
 add('37. Which network device can be used to eliminate collisions on an Ethernet network?', 'switch');
-add('Refer to the exhibit. Consider that the main power has just been restored. PC3 issues a broadcast IPv4 DHCP request. To which port will SW1 forward this request?​', 'to Fa0/1, Fa0/2, and Fa0/3 only');
+add('Refer to the exhibit. Consider that the main power has just been restored. PC3 issues a broadcast IPv4 DHCP request. To which port will SW1 forward this request?', 'to Fa0/1, Fa0/2, and Fa0/3 only');
+add(' What is one advantage of using the cut-through switching method instead of the store-and-forward switching method?', 'has a lower latency appropriate for high-performance computing applications​');
+add(' A network designer must provide a rationale to a customer for a design which will move an enterprise from a flat network topology to a hierarchical network topology. Which two features of the hierarchical design make it the better choice?', 'simpler deployment for additional switch equipment', 'easier to provide redundant links to ensure higher availability');
+add(' What are two advantages of modular switches over fixed-configuration switches?', 'need for fewer power outlets', 'increased scalability');
+add(' Refer to the exhibit. Consider that the main power has just been restored. PC1 asks the DHCP server for IPv4 addressing. The DHCP server sends it an IPv4 address. While PC2 is still booting up, PC3 issues a broadcast IPv4 DHCP request. To which port will SW1 forward this request?​', 'to Fa0/1, Fa0/2, and Fa0/3 only');
+add(' What is one function of a Layer 2 switch?', 'determines which interface is used to forward a frame based on the destination MAC address');
+add('Refer to the exhibit. Fill in the blank. There are 12 collision domains in the topology.​', '12');
+add(' What is a collapsed core in a network design?', 'a combination of the functionality of the distribution and core layers');
+add(' What are two reasons a network administrator would segment a network with a Layer 2 switch?', 'to enhance user bandwidth', 'to isolate traffic between segments');
+add('Refer to the exhibit. How is a frame sent from PCA forwarded to PCC if the MAC address table on switch SW1 is empty?', 'SW1 floods the frame on all ports on SW1, excluding the port through which the frame entered the switch.');
+add(' What is a basic function of the Cisco Borderless Architecture distribution layer?', 'aggregating Layer 3 routing boundaries');
+add(' ABC, Inc. has about fifty hosts in one LAN. The administrator would like to increase the throughput of that LAN. Which device will increase the number of collision domains and thereby increase the throughput of the LAN?', 'switch');
+add(' What does the term “port density” represent for an Ethernet switch?', 'the number of available ports');
+add(' Which type of transmission does a switch use when the destination MAC address is not contained in the MAC address table?', 'broadcast');
+add(' What is a basic function of the Cisco Borderless Architecture access layer?', 'provides access to the user');
+add(' What information is added to the switch table from incoming frames?', 'source MAC address and incoming port number');
+add(' A converged network is one that uses the same infrastructure to carry voice, data, and video signals.', 'converged');
+add(' An administrator purchases new Cisco switches that have a feature called StackPower. What is the purpose of this feature?', 'It enables the sharing of power among multiple stackable switches.');
+add(' Which switch form factor should be used when large port density, fault tolerance, and low price are important factors?', 'stackable switch');
+add('Refer to the exhibit. Fill in the blank. There are 5 broadcast domains in the topology.​', '5');
 
 //TEST2 v5
 add('Which type of cable does a network administrator need to connect a PC to a switch to recover it after the Cisco IOS software fails to load?', 'a console cable');
+add(' Which two basic functions are performed by network security tools?', 'revealing the type of information an attacker is able to gather from monitoring network traffic', 'simulating attacks against the production network to determine any existing vulnerabilities');
 add('While troubleshooting a connectivity problem, a network administrator notices that a switch port status LED is alternating between green and amber. What could this LED indicate?', 'The port is experiencing errors.');
 add('Refer to the exhibit. The network administrator wants to configure Switch1 to allow SSH connections and prohibit Telnet connections. How should the network administrator change the displayed configuration to satisfy the requirement?', 'Modify the transport input command.');
 add('Which three statements are true about using full-duplex Fast Ethernet?', 'Performance is improved with bidirectional data flow.', 'Full-duplex Fast Ethernet offers 100 percent efficiency in both directions.', 'Performance is improved because the collision detect function is disabled on the device.');
@@ -92,6 +112,23 @@ add(' When port security is enabled, a switch port uses the default violation mo
 add(' Refer to the exhibit. Which S1 switch port interface or interfaces should be configured with the ip dhcp snooping trust command if best practices are implemented?', 'only the G0/1 and G0/24 ports');
 add(' What impact does the use of the mdix auto configuration command have on an Ethernet interface on a switch?', 'automatically detects copper cable type');
 add(' Which command displays information about the auto-MDIX setting for a specific interface?', 'show controllers');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Fill in the blank. Do not use abbreviations.What is the missing command on S1?', 'ip address 192.168.99.2 255.255.255.0');
+add(' In which type of attack does a malicious node request all available IP addresses in the address pool of a DHCP server in order to prevent legitimate hosts from obtaining network access?', 'DHCP starvation');
+add(' Which two statements are true regarding switch port security?', 'Dynamically learned secure MAC addresses are lost when the switch reboots.', 'If fewer than the maximum number of MAC addresses for a port are configured statically, dynamically learned addresses are added to CAM until the maximum number is reached.');
+add(' Which method would mitigate a MAC address flooding attack?', 'configuring port security');
+add(' Which interface is the default location that would contain the IP address used to manage a 24-port Ethernet switch?', 'VLAN 1');
+add('  Which action will bring an error-disabled switch port back to an operational state?', 'Issue the shutdown and then no shutdown interface commands.');
+add(' Refer to the exhibit. What can be determined about port security from the information that is shown?', 'The port violation mode is the default for any port that has port security enabled.');
+add('  A production switch is reloaded and finishes with a Switch> prompt. What two facts can be determined?', 'A full version of the Cisco IOS was located and loaded.', 'POST occurred normally.');
+add(' 25. Which two statements are true about using full-duplex Fast Ethernet?', 'Performance is improved with bidirectional data flow.', 'Full-duplex Fast Ethernet offers 100 percent efficiency in both directions.');
+add('26. A network administrator configures the port security feature on a switch. The security policy specifies that each access port should allow up to two MAC addresses. When the maximum number of MAC addresses is reached, a frame with the unknown source MAC address is dropped and a notification is sent to the syslog server. Which security violation mode should be configured for each access port?', 'restrict');
+add('28. An administrator wants to use a network security auditing tool on a switch to verify which ports are not protected against a MAC flooding attack. For the audit to be successful, what important factor must the administrator consider?', ' the aging-out period of the MAC address table');
+add('29. Which two features on a Cisco Catalyst switch can be used to mitigate DHCP starvation and DHCP spoofing attacks?', 'port security', 'DHCP snooping');
+add('30. What is one difference between using Telnet or SSH to connect to a network device for management purposes?', ' Telnet sends a username and password in plain text, whereas SSH encrypts the username and password.');
+add('Refer to the exhibit. A network technician is troubleshooting connectivity issues in an Ethernet network with the command show interfaces fastEthernet 0/0. What conclusion can be drawn based on the partial output in the exhibit?', ' A malfunctioning NIC can cause frames to be transmitted that are longer than the allowed maximum length.');
+add('32. In which situation would a technician use the show interfaces switch command?', 'when packets are being dropped from a particular directly attached host');
+add('33. Which statement describes the port speed LED on the Cisco Catalyst 2960 switch?', ' If the LED is green, the port is operating at 100 Mb/s.');
+add('35. What is a function of the switch boot loader?', ' to provide an environment to operate in when the switch operating system cannot be found');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
