@@ -41,6 +41,44 @@ add('Which type of VLAN is used to designate which traffic is untagged when cros
 add('What happens to switch ports after the VLAN to which they are assigned is deleted', 'The ports stop communicating with the attached devices.');
 add('Which two modes does Cisco recommend when configuring a particular switch port?', 'trunk', 'access');
 
+//TEST4
+add('What type of IPv6 address is required as a minimum on IPv6 enabled interfaces?', 'link-local');
+add('In order for packets to be sent to a remote destination, what three pieces of information must be configured on a host?', 'default gateway', 'IP address', 'subnet mask');
+add('What two pieces of information are displayed in the output of the show ip interface brief command?', 'Layer 1 statuses', 'IP addresses');
+add('Which two items are used by a host device when performing an ANDing operation to determine if a destination address is on the same local network?', 'destination IP address', 'subnet mask');
+add('Refer to the exhibit. A network administrator issues the show ipv6 route command on R1. What two conclusions can be drawn from the routing table?', 'R1 does not know a route to any remote networks.', 'The interface Fa0/1 is configured with IPv6 address 2001:DB8:ACAD:A::12.');
+add('Refer to the exhibit. What is the purpose of the highlighted field in the line that is displayed from the show ip route command?', 'It indicates that this route was learned via EIGRP.');
+add('Which two statements correctly describe the concepts of administrative distance and metric?', 'Routes with the smallest metric to a destination indicate the best path.', 'Administrative distance refers to the trustworthiness of a particular route.');
+add('What are two functions of a router?', 'It determines the best path to send packets.', 'It connects multiple IP networks.');
+add('A packet moves from a host on one network to a device on a remote network within the same company. If NAT is not performed on the packet, which two items remain unchanged during the transfer of the packet from source to destination?', 'source IP address', 'destination IP address');
+add('Refer to the exhibit. PC1 attempts to connect to File_server1 and sends an ARP request to obtain a destination MAC address. Which MAC address will PC1 receive in the ARP reply?', 'the MAC address of the G0/0 interface on R1');
+add('A network administrator configures the interface fa0/0 on the router R1 with the command ip address 172.16.1.254 255.255.255.0. However, when the administrator issues the command show ip route, the routing table does not show the directly connected network. What is the possible cause of the problem?', 'The interface fa0/0 has not been activated.');
+add('Which command is used to configure an IPv6 address on a router interface so that the router will combine a manually specified network prefix with an automatically generated interface identifier?', 'ipv6 address ipv6-address/prefix-length eui-64');
+add('Fill in the blank. When a router receives a packet, it examines the destination address of the packet', 'routing');
+add('A network administrator configures a router by the command ip route 0.0.0.0 0.0.0.0 209.165.200.226. What is the purpose of this command?', 'to provide a route to forward packets for which there is no route in the routing table');
+add('Refer to the exhibit. A network administrator issues the show ipv6 route command on R1. Which two types of routes are displayed in the routing table?', 'directly connected network', 'local host route');
+add('What address changes as a packet travels across multiple Layer 3 Ethernet hops to its final destination?', 'source Layer 2 address');
+add('Refer to the exhibit. What will the router do with a packet that has a destination IP address of 192.168.12.227?', 'Send the packet out the Serial0/0/0 interface.');
+add('A network administrator is implementing dynamic routing protocols for a company. Which command can the administrator issue on a router to display the supported routing protocols?', 'Router(config)# router ?');
+add('Refer to the exhibit. A network administrator has configured R1 as shown. When the administrator checks the status of the serial interface, the interface is shown as being administratively down. What additional command must be entered on the serial interface of R1 to bring the interface up?', 'no shutdown');
+add('What is one feature that distinguishes routers from Layer 2 switches?', 'Routers support a variety of interface types. Switches typically support Ethernet interfaces.');
+add('Which statement describes a route that has been learned dynamically?', 'It is automatically updated and maintained by routing protocols.');
+add('Refer to the exhibit. A network administrator issues the show ip route command on R2. What two types of routes are installed in the routing table?', 'directly connected networks', 'routes that are learned through the EIGRP routing protocol');
+add('When a computer is pinging another computer for the first time, what type of message does it place on the network to determine the MAC address of the other device?', 'an ARP request');
+add('Which two network parameters are used by EIGRP as metrics to select the best path to reach a network?', 'bandwidth', 'delay');
+add('What route would have the lowest administrative distance?', 'a directly connected network');
+add('Which two parameters are used by EIGRP as metrics to select the best path to reach a network?', 'bandwidth', 'delay');
+add('What are two common types of static routes in routing tables?', 'a default static route', 'a static route to a specific network');
+add('Which software is used for a network administrator to make the initial router configuration securely?', 'terminal emulation client software');
+add('What is the significance of the Serial0/0/0', 'It is the interface on R1 used to send data that is destined for 10.1.1.0/24');
+add('PC A sends a request to Server B. What IPv4 address is used in the destination field in the packet as the packet leaves PC A?', '192.168.12.16');
+add('What command will enable a router to begin sending messages that allow it to configure a link-local address without using an IPv6 DHCP server?', 'the ipv6 unicast-routing command');
+add('What are two types of static routes in routing tables?', 'default static route', 'static route to specific network');
+add('what is a characteristic of an IPv4 interface on a Cisco IOS router?', 'it is a logical int internal to the router');
+add('What does R1 use as the MAC address of the destination when constructing the frame that will go from R1 to Server B?', 'If the destination MAC address that corresponds to the IPv4 address is not in the ARP cache, R1 sends an ARP request.');
+add('If PC1 is sending a packet to PC2 and routing has been configured between the two routers, what will R1 do with the Ethernet frame header attached by PC1?', 'remove the Ethernet header and configure a new Layer 2 header before sending it out S0/0/0');
+add('What is a characteristic of an IPv4 loopback interface on a Cisco IOS router?​', 'It is a logical interface internal to the router.');
+
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
 
