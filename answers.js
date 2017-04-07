@@ -37,7 +37,7 @@ add('What can be determined from the output that is shown?', 'Interface FastEthe
 add('Which two characteristics match extended range VLANs?', 'They are saved in the running-config file by default.', 'VLAN IDs exist between 1006 to 4094.');
 add('Match the IEEE 802.1Q standard VLAN tag field in the description. Place the options', 'User Priority – value that supports', 'Type – value for the tag', 'Canonical – identifier that', 'VLAN ID – VLAN number');
 add('Match the DTP mode with its function. options in', 'permanent nontrunking -', 'passively - dynamic auto', 'requiers - nonegotiate', 'actively - dynamic desirable', 'permanent trunking - trunk');
-add('Which type of VLAN is used to designate which traffic is untagged when crossing a trunk port', 'native')
+add('Which type of VLAN is used to designate which traffic is untagged when crossing a trunk port', 'native');
 add('What are three primary benefits of using VLANs?', 'security', 'improved IT staff efficiency', 'cost reduction');
 add('What happens to switch ports after the VLAN to which they are assigned is deleted', 'The ports stop communicating with the attached devices.');
 add('Which two modes does Cisco recommend when configuring a particular switch port?', 'trunk', 'access');
