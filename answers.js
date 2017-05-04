@@ -115,7 +115,7 @@ add('A router learns of multiple routes toward the same destination. Which value
 add('Which value in a routing table represents trustworthiness and is used by the router to determine which route to install into the routing table when there are multiple routes toward the same destination?', 'administrative distance');
 add('The network address 172.18.9.128 with netmask 255.255.255.128 is matched by which wildcard mask?', '0.0.0.127');
 add('Which three addresses could be used as the destination address for OSPFv3 messages? (Choose three.)', 'FF02::5', 'FF02::6', 'FE80::1');
-add('Refer to the exhibit. What is the OSPF cost to reach the West LAN 172.16.2.0/24 from East?​', '65');
+add('Refer to the exhibit. What is the OSPF cost to reach the West LAN 172.16.2.0/24 from East?', '65');
 //add('Refer to the exhibit. What is the OSPF cost to reach the R2 LAN 172.16.2.0/24 from R1?', '?');
 //add('A network administrator is configuring port security on a Cisco switch. The company security policy specifies that when a violation occurs, packets with unknown source addresses should be dropped and no notification should be sent. Which violation mode should be configured on the interfaces?', '?');
 add('A network administrator is configuring an ACL with the command access-list 10 permit 172.16.32.0 0.0.15.255. Which IPv4 address matches the ACE?', '172.16.47.254');
@@ -133,8 +133,26 @@ add('A network engineer has created a standard ACL to control SSH access to a ro
 add('A network administrator is configuring a new Cisco switch for remote management access. Which three items must be configured on the switch for the task? (Choose three.)', 'loopback address', 'default VLAN', 'IP address');
 add('A network administrator configures a router to provide stateful DHCPv6 operation. However, users report that workstations do not receive IPv6 addresses within the scope. Which configuration command should be checked to ensure that statefull DHCPv6 is implemented?', 'The dns-server line is included in the ipv6 dhcp pool section.');
 //add('Which characteristic describes cut-through switching?', '?');
+//112
 add('Refer to the exhibit. A company has an internal network of 172.16.25.0/24 for their employee workstations and a DMZ network of 172.16.12.0/24 to host servers. The company uses NAT when inside hosts connect to outside network. A network administrator issues the show ip nat translations command to check the NAT configurations. Which one of source IPv4 addresses is translated by R1 with PAT?', '172.16.25.35');
 
+add('Refer to the exhibit. What is the OSPF cost to reach the R2 LAN 172.16.2.0/24 from R1?', '65');
+//113
+add('A network administrator is configuring port security on a Cisco switch. The company security policy specifies that when a violation occurs, packets with unknown source addresses should be dropped and no notification should be sent. Which violation mode should be configured on the interfaces?', 'restrict');
+//115
+add('What are two reasons that will prevent two routers from forming an OSPFv2 adjacency? (Choose two.)', 'mismatched OSPF Hello or Dead timers', 'mismatched subnet masks on the link interfaces');
+//116
+add('Refer to the exhibit. The network administrator needs as many switch ports as possible for end devices and the business is using the most common type of inter-VLAN method. What type of inter-VLAN interconnectivity is best to use between the switch and the router if R1 routes for all VLANs?', 'one link between the switch and the router with the one switch port being configured in access mode');
+//117
+add('A part of the new security policy, all switches on the network are configured to automatically learn MAC addresses for each port. All running configurations are saved at the start and close of every business day. A severe thunderstorm causes an extended power outage several hours after the close of business. When the switches are brought back online, the dynamically learned MAC addresses are retained. Which port security configuration enabled this?', 'sticky secure MAC addresses');
+//118
+add('Refer to the exhibit. An ACL preventing FTP and HTTP access to the internal web server from all teaching assistants has been implemented in the Board office. The address of the web server is 172.20.1.100 and all teaching assistants are assigned addresses in the 172.21.1.0/24 network. After implementing the ACL, access to all servers is denied. What is the problem?', 'named ACLs requite the use of port numbers');
+//120
+add('A company security policy requires that all MAC addressing be dynamically learned and added to both the MAC address table and the running configuration on each switch. Which port security configuration will accomplish this?', 'sticky secure MAC addresses');
+//123
+add('which type of traffic is designed for a native VLAN?', 'untagged');
+//128
+add('Which characteristic describes cut-through switching?', 'Error-free fragments are forwarded, so switching accurs with lower latency.');
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
 
