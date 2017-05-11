@@ -153,6 +153,248 @@ add('A company security policy requires that all MAC addressing be dynamically l
 add('which type of traffic is designed for a native VLAN?', 'untagged');
 //128
 add('Which characteristic describes cut-through switching?', 'Error-free fragments are forwarded, so switching accurs with lower latency.');
+
+/*Final exam*/
+add('Which communication tool allows real-time collaboration?',
+    'instant messaging');
+add('A host is accessing a Web server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+    'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
+add('A home user is looking for an ISP connection that provides high speed digital transmission over regular phone lines. What ISP connection type should be used?',
+    'DSL');
+add('A company is expanding its business to other countries. All branch offices must remain connected to corporate headquarters at all times. Which network technology is required to support this requirement?',
+    'WAN');
+add('Refer to the exhibit. From which location did this router load the IOS?',
+    'flash memory');
+add('Which connection provides a secure CLI session with encryption to a Cisco network device?',
+    'an SSH connection');
+add('Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?',
+    'The administrator must first enter privileged EXEC mode before issuing the command.');
+add('An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?',
+    'to interrupt the ping process');
+add('What function does pressing the Tab key have when entering a command in IOS?',
+    'It completes the remainder of a partially typed word in a command.');
+add('Refer to the exhibit. An administrator wants to change the name of a brand new switch, using the hostname command as shown. What prompt will display after the command is issued?',
+    'Switch(config)#?');
+add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses Telnet to connect to the switch, which password is needed to access user EXEC mode?',
+    'linevtyin');
+add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
+    'The new configuration will be loaded if the switch is restarted.');
+add('Refer to the exhibit. Which action will be successful?',
+    'PC2 can send a ping to 192.168.1.1.');
+add('Which IPv4 address can be pinged to test the internal TCP/IP operation of a host?',
+    '127.0.0.1');
+add('What three application layer protocols are part of the TCP/IP protocol suite? (Choose three.)',
+    'DHCP','DNS','FTP');
+add('Which two protocols function at the internet layer? (Choose two.)',
+    'ICMP','IP');
+add('Which publicly available resources describe protocols, processes, and technologies for the Internet but do not give implementation details?',
+    'Request for Comments');
+add('Which address on a PC does not change, even if the PC is moved to a different network?',
+    'MAC address');
+add('What is the protocol that is used to discover a physical address from a known logical address and what message type does it use?',
+    'ARP, broadcast');
+add('What will happen if the default gateway address is incorrectly configured on a host?',
+    'The host cannot communicate with hosts in other networks.');
+add('What is an important function of the physical layer of the OSI model?',
+    'It encodes frames into electrical, optical, or radio wave signals.');
+add('Which procedure is used to reduce the effect of crosstalk in copper cables?',
+    'twisting opposing circuit wire pairs together');
+add('Which two statements describe the characteristics of fiber-optic cabling? (Choose two.)',
+    'Fiber-optic cabling does not conduct electricity.','Fiber-optic cabling is primarily used as backbone cabling.');
+add('What is contained in the trailer of a data-link frame?',
+    'error detection');
+add('What is the auto-MDIX feature on a switch',
+    'crossover Ethernet cable connection');
+add('Refer to the exhibit. A ping to PC3 is issued from PC0, PC1, and PC2 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
+    'just PC0 and PC1 MAC addresses');
+add('How does a Layer 3 switch differ from a Layer 2 switch?',
+    'An IP address can be assigned to a physical port of a Layer 3 switch. However, this is not supported in Layer 2 switches.');
+add('What is the purpose of the routing process?',
+    'to select the paths that are used to direct traffic to destination networks');
+add('Which technology provides a solution to IPv4 address depletion by allowing multiple devices to share one public IP address?',
+    'NAT');
+add('Refer to the exhibit. Consider the IP address configuration shown from PC1. What is a description of the default gateway address?',
+    'It is the IP address of the Router1 interface that connects the PC1 LAN to Router1.');
+add('Which of the following are primary functions of a router? (Choose two.)',
+    'packet switching','path selection');
+add('Which two statements correctly describe a router memory type and its contents? (Choose two.)',
+    'RAM is volatile and stores the running configuration.','ROM is nonvolatile and stores bootup information.');
+add('In which default order will a router search for startup configuration information?',
+    'NVRAM, TFTP, setup mode');
+add('What happens when part of an Internet VoIP transmission is not delivered to the destination?',
+    'The transmission continues without the missing portion.');
+add('Which three IP addresses are private ? (Choose three.)',
+    '10.172.168.1','172.20.4.4','192.168.5.254');
+add('How many bits make up the single IPv6 hextet :10CD:?',
+    '16');
+add('What is the effect of configuring the ipv6 unicast-routing command on a router?',
+    'to enable the router as an IPv6 router');
+add('Which group of IPv6 addresses cannot be allocated as a host source address?',
+    'FF00::/8');
+add('What is the purpose of ICMP messages?',
+    'to provide feedback of IP packet transmissions');
+add('Refer to the exhibit. A technician has configured a user workstation with the IP address and default subnet masks that are shown. Although the user can access all local LAN resources, the user cannot access any Internet sites by using either FQDN or IP addresses. Based upon the exhibit, what could account for this failure?',
+    'The default gateway address in incorrect.');
+add('Which subnet would include the address 192.168.1.96 as a usable host address?',
+    '192.168.1.64/26');
+add('A network administrator needs to monitor network traffic to and from servers in a data center. Which features of an IP addressing scheme should be applied to these devices?',
+    'predictable static IP addresses for easier identification');
+add('Refer to the exhibit. Which IP addressing scheme should be changed?',
+    'Site 2');
+add('Which two notations are useable nibble boundaries when subnetting in IPv6? (Choose two.)',
+    '/64','/68');
+add('A host PC has just booted and is attempting to lease an address through DHCP. Which two messages will the client typically broadcast on the network? (Choose two.)',
+    'DHCPDISCOVER','DHCPREQUEST');
+add('What is the purpose of the network security accounting function?',
+    'to keep track of the actions of a user');
+add('When applied to a router, which command would help mitigate brute-force password attacks against the router?',
+    'login block-for 60 attempts 5 within 60');
+add('A particular website does not appear to be responding on a Windows 7 computer. What command could the technician use to show any cached DNS entries for this web page?',
+    'ipconfig /displaydns');
+add('When the router prompts for an address or remote host name, what IP address should the administrator enter at the prompt?',
+    '192.168.11.252');
+add('What two preconfigured settings that affect security are found on most new wireless routers? (Choose two.)',
+    'broadcast SSID','default administrator password');
+add('Which type of wireless security generates dynamic encryption keys each time a client associates with an AP?',
+    'WPA');
+add('is a best-effort, connectionless application layer protocol that is used to transfer files.',
+    'TFTP');
+add('Which two components are necessary for a wireless client to be installed on a WLAN? (Choose two.)',
+    'wireless NIC','wireless client software');
+add('The prefix-length for the range of addresses is',
+    '/60 ');
+add('A host is accessing an FTP server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+    'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
+add('When is a dial-up connection used to connect to an ISP?',
+    'when a regular telephone line is used');
+add('On a school network, students are surfing the web, searching the library database, and attending an audio conference with their sister school in Japan. If network traffic is prioritized with QoS, how will the traffic be classified from highest priority to lowest priority?',
+    'audio conference, database, HTTP');
+add('During normal operation, from which location do most Cisco routers run the IOS?',
+    'RAM');
+add('Which connection provides a secure CLI session with encryption to a Cisco switch?',
+    'an SSH connection');
+add('Which keys act as a hot key combination that is used to interrupt an IOS process?',
+    'Ctrl-Shift-6');
+add('Refer to the exhibit. An administrator wants to change the name of a brand new switch, using the hostname command as shown. What prompt will display after the command is issued?',
+    'Switch(config)#?');
+add('After making configuration changes on a Cisco switch, a network administrator issues a copy running-config startup-config command. What is the result of issuing this command?',
+    'The new configuration will be loaded if the switch is restarted.');
+add('On which switch interface would an administrator configure an IP address so that the switch can be managed remotely?',
+    'VLAN 1');
+add('A technician uses the ping 127.0.0.1 command. What is the technician testing?',
+    'the TCP/IP stack on a network host');
+add('Which device should be used for enabling a host to communicate with another host on a different network?',
+    'router');
+add('A network technician is measuring the transfer of bits across the company backbone for a mission critical application. The technician notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)',
+    'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
+add('Which characteristics describe fiber optic cable? (Choose two.)',
+    'It is not affected by EMI or RFI.','It is the most expensive type of LAN cabling');
+add('What are two features of a physical, star network topology? (Choose two.)',
+    'It is straightforward to troubleshoot.','It is easy to add and remove end devices.');
+add('A frame is transmitted from one networking device to another. Why does the receiving device check the FCS field in the frame?',
+    'to check the frame for possible transmission errors');
+add('What will a Layer 2 switch do when the destination MAC address of a received frame is not in the MAC table?',
+    'It forwards the frame out of all ports except for the port at which the frame was received.');
+add('Which switching method has the lowest level of latency?',
+    'fast-forward');
+add('Which parameter does the router use to choose the path to the destination when there are multiple routes available?',
+    'the lower metric value that is associated with the destination network');
+add('Which two statements describe the functions or characteristics of ROM in a router? (Choose two.)',
+    'maintains instructions for POST diagnostics','stores bootstrap program');
+add('Which statement describes a characteristic of the Cisco router management ports?',
+    'A console port is not used for packet forwarding.');
+add('What happens when part of an Internet radio transmission is not delivered to the destination?',
+    'The transmission continues without the missing portion.');
+add('What is the dotted decimal representation of the IPv4 address 11001011.00000000.01110001.11010011?',
+    '203.0.113.211');
+add('Which three IP addresses are private ? (Choose three.)',
+    '10.20.30.1','172.30.5.3','192.168.5.5');
+add('What types of addresses make up the majority of addresses within the /8 block IPv4 bit space?',
+    'public addresses');
+add('Refer to the exhibit. What is the maximum TTL value that is used to reach the destination www.cisco.com?',
+    '13');
+add('A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? (Choose two.)',
+    '192.168.1.64/27','192.168.1.96/28');
+add('In a network that uses IPv4, what prefix would best fit a subnet containing 100 hosts?',
+    '/25');
+add('Which protocol supports rapid delivery of streaming media?',
+    'Real-Time Transport Protocol');
+add('Why would a network administrator use the tracert utility?',
+    'to identify where a packet was lost or delayed on a network');
+add('Refer to the exhibit. What is the significance of the asterisk (*) in the exhibited output?',
+    'The asterisk designates which file system is the default file system.');
+add('Which WLAN security protocol generates a new dynamic key each time a client establishes a connection with the AP?',
+    'WPA');
+add('Point-to-point communications where both devices can transmit and receive on the medium at the same time are known as',
+    'full-duplex');
+add('A host is accessing a Telnet server on a remote network. Which three functions are performed by intermediary network devices during this conversation? (Choose three.)',
+    'regenerating data signals','applying security settings to control the flow of data','notifying other devices when errors occur');
+add('Refer to the exhibit. Which area would most likely be an extranet for the company network that is shown?',
+    'area C');
+add('What is the purpose of having a converged network?',
+    'to reduce the cost of deploying and maintaining the communication infrastructure');
+add('Three office workers are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other office workers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?',
+    'audio conference, financial transactions, web page');
+add('During normal operation, from which location do most Cisco switches and routers run the IOS?',
+    'RAM');
+add('A network administrator is making changes to the configuration of a router. After making the changes and verifying the results, the administrator issues the copy running-config startup-config command. What will happen after this command executes?',
+    'The configuration will load when the router is restarted.');
+add('What information does the loopback test provide?',
+    'The TCP/IP stack on the device is working correctly.');
+add('What is a characteristic of the LLC sublayer?',
+    'It places information in the frame allowing multiple Layer 3 protocols to use the same network interface and media.');
+add('What method is used to manage contention-based access on a wireless network?',
+    'CSMA/CA');
+add('What happens when a switch receives a frame and the calculated CRC value is different than the value that is in the FCS field?',
+    'The switch drops the frame.');
+add('Which destination address is used in an ARP request frame?',
+    'FFFF.FFFF.FFFF');
+add('What is the auto-MDIX feature on a switch?',
+    'the automatic configuration of an interface for a straight-through or a crossover Ethernet cable connection');
+add('Which frame forwarding method receives the entire frame and performs a CRC check to detect errors before forwarding the frame?',
+    'store-and-forward switching');
+add('What are the two main components of Cisco Express Forwarding (CEF)? (Choose two.)',
+    'adjacency tables','forwarding information base (FIB)');
+add('Which statement describes the sequence of processes executed by a router when it receives a packet from a host to be delivered to a host on another network?',
+    'It de-encapsulates the packet, selects the appropriate path, and encapsulates the packet to forward it toward','the destination host.');
+add('Which technology provides a solution to IPv4 address depletion by allowing multiple devices to share one public IP address?',
+    'NAT');
+add('Refer to the exhibit. Router R1 has two interfaces that were configured with correct IP addresses and subnet masks. Why does the show ip route command output not display any information about the directly connected networks?',
+    'The no shutdown command was not issued on these interfaces.');
+add('What happens when part of an Internet television transmission is not delivered to the destination?',
+    'The transmission continues without the missing portion.');
+add('Which three statements characterize the transport layer protocols? (Choose three.)',
+    'TCP and UDP port numbers are used by application layer protocols.','TCP uses windowing and sequencing to provide reliable transfer of data.','TCP is a connection-oriented protocol. UDP is a connectionless protocol.');
+add('A user opens three browsers on the same PC to access www.cisco.com to search for certification course information. The Cisco web server sends a datagram as a reply to the request from one of the web browsers. Which information is used by the TCP/IP protocol stack in the PC to identify the destination web browser?',
+    'the destination port number');
+add('Which statement is true regarding the UDP client process during a session with a server?',
+    'Datagrams that arrive in a different order than that in which they were sent are not placed in order.');
+add('Which two components are configured via software in order for a PC to participate in a network environment? (Choose two.)',
+    'IP address','subnet mask');
+add('What are three characteristics of multicast transmission? (Choose three.)',
+    'A single packet can be sent to a group of hosts.','Multicast transmission can be used by routers to exchange routing information.','Routers will not forward multicast addresses in the range of 224.0.0.0 to 224.0.0.255.');
+add('Which two reasons generally make DHCP the preferred method of assigning IP addresses to hosts on large networks? (Choose two.)',
+    'It eliminates most address configuration errors.','It reduces the burden on network support staff.');
+add('What is the subnet address for the address 2001:DB8:BC15:A:12AB::1/64?',
+    '2001:DB8:BC15:A::0');
+add('Which two tasks are functions of the presentation layer? (Choose two.)',
+    'compression','encryption');
+add('What is the purpose of the network security authentication function?',
+    'to require users to prove who they are');
+add('Which type of wireless security makes use of dynamic encryption keys each time a client associates with an AP?',
+    'WPA');
+add('During data communications, a host may need to send a single message to a specific group of destination hosts simultaneously. This message is in the form of a message.',
+    'Multicast');
+add('Open the PT activity. Perform the tasks in the activity instructions and then fill in the blank. The Server0 message is',
+    'winner');
+add('A PC is configured to obtain an IP address automatically from network 192.168.1.0/24. The network administrator issues the arp –a command and notices an entry of 192.168.1.255 ff-ff-ff-ff-ff-ff. Which statement describes this entry?',
+    'This is a static map entry.');
+add('Which field in an IPv4 packet header will typically stay the same during its transmission?',
+    'Destination Address');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which IPv6 address is assigned to the Serial0/0/0 interface on RT2?',
+    '2001:db8:abc:5::1');
+
+
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
 
