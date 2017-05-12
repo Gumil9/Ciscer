@@ -393,6 +393,155 @@ add('Which field in an IPv4 packet header will typically stay the same during it
     'Destination Address');
 add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which IPv6 address is assigned to the Serial0/0/0 interface on RT2?',
     '2001:db8:abc:5::1');
+add('Three bank employees are using the corporate network. The first employee uses a web browser to view a company web page in order to read some announcements. The second employee accesses the corporate database to perform some financial transactions. The third employee participates in an important live audio conference with other corporate managers in branch offices. If QoS is implemented on this network, what will be the priorities from highest to lowest of the different data types?',
+    'audio conference, financial transactions, web page');
+add('Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator has already logged into a Telnet session on the switch, which password is needed to access privileged EXEC mode?',
+    'secretin');
+add('What are the three primary functions provided by Layer 2 data encapsulation? (Choose three.)',
+    'data link layer addressing','detection of errors through CRC calculations','delimiting groups of bits into frames');
+add('What must be configured to enable Cisco Express Forwarding (CEF) on most Cisco devices that perform Layer 3 switching?',
+    'CEF is enabled by default, so no configuration is necessary.');
+add('What is the purpose of adjacency tables as used in Cisco Express Forwarding (CEF)?',
+    'to maintain Layer 2 next-hop addresses');
+add('Which statement describes a characteristic of the network layer in the OSI model?',
+    'Its protocols specify the packet structure and processing used to carry the data from one host to another.');
+add('A user gets an IP address of 192.168.0.1 from the company network administrator. A friend of the user at a different company gets the same IP address on another PC. How can two PCs use the same IP address and still reach the Internet, send and receive email, and search the web?',
+    'ISPs use Network Address Translation to change a user IP address into an address that can be used on the Internet.');
+add('At a minimum, which address is required on IPv6-enabled interfaces?',
+    'link-local');
+add('Why does HTTP use TCP as the transport layer protocol?',
+    'because HTTP requires reliable delivery');
+add('What is the binary representation of 0xCA?',
+    '11001010');
+add('What is the valid most compressed format possible of the IPv6 address 2001:0DB8:0000:AB00:0000:0000:0000:1234?',
+    '2001:DB8:0:AB00::1234');
+add('Refer to the exhibit. What is the maximum TTL value that is used to reach the destination www.cisco.com?',
+    '13');
+add('What field content is used by ICMPv6 to determine that a packet has expired?',
+    'Hop Limit field');
+add('Which statement is true about variable-length subnet masking?',
+    'The size of each subnet may be different, depending on requirements.');
+add('Which firewall technique blocks incoming packets unless they are responses to internal requests?',
+    'stateful packet inspection');
+add('A network technician is investigating network connectivity from a PC to a remote host with the address 10.1.1.5. Which command issued on the PC will return to the technician the complete path to the remote host?',
+    'tracert 10.1.1.5');
+add('To prevent faulty network devices from carrying dangerous voltage levels, equipment must be correctly',
+    'grounded');
+add('A network engineer is measuring the transfer of bits across the company backbone for a mission critical database application. The engineer notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)',
+    'the amount of traffic that is currently crossing the network','the type of traffic that is crossing the network','the latency that is created by the number of network devices that the data is crossing');
+add('What is a possible hazard that can be caused by network cables in a fire?',
+    'The cable insulation could be flammable.');
+add('What device is commonly used to verify a UTP cable?',
+    'a cable tester');
+add('What needs to be checked when testing a UTP network cable?',
+    'wire map');
+add('Refer to the exhibit. A ping to PC2 is issued from PC0, PC1, and PC3 in this exact order. Which MAC addresses will be contained in the S1 MAC address table that is associated with the Fa0/1 port?',
+    'just PC0 and PC1 MAC addresses');
+add('Which function is provided by TCP?',
+    'detection of missing packets');
+add('What does a router use to determine where to send data it receives from the network?',
+    'a routing table');
+add('Which router interface should be used for direct remote access to the router via a modem?',
+    'an AUX port');
+add('A technician is configuring a router to allow for all forms of management access. As part of each different type of access, the technician is trying to type the command login. Which configuration mode should be entered to do this task?',
+    'any line configuration mode');
+add('Which three statements characterize the transport layer protocols? (Choose three.)',
+    'TCP and UDP port numbers are used by application layer protocols.','TCP uses windowing and sequencing to provide reliable transfer of data.','TCP is a connection-oriented protocol. UDP is a connectionless protocol.');
+add('Refer to the exhibit. A TCP segment from a server has been captured by Wireshark, which is running on a host. What acknowledgement number will the host return for the TCP segment that has been received?',
+    '306');
+add('Which statement is true about an interface that is configured with the IPv6 address command?',
+    'A link-local IPv6 address is automatically configured on the interface.');
+add('Refer to the exhibit. The network administrator for a small advertising company has chosen to use the 192.168.5.96/27 network for internal LAN addressing. As shown in the exhibit, a static IP address is assigned to the company web server. However, the web server cannot access the Internet. The administrator verifies that local workstations with IP addresses that are assigned by a DHCP server can access the Internet, and the web server is able to ping local workstations. Which component is incorrectly configured?',
+    'default gateway address');
+add('Refer to the exhibit. An administrator must send a message to everyone on the router A network. What is the broadcast address for network 172.16.16.0/22?',
+    '172.16.19.255');
+add('A network administrator is variably subnetting a given block of IPv4 addresses. Which combination of network addresses and prefix lengths will make the most efficient use of addresses when the need is for 2 subnets capable of supporting 10 hosts and 1 subnet that can support 6 hosts?',
+    '10.1.1.128/28','10.1.1.144/28','10.1.1.160/29');
+add('How many additional bits should be borrowed from a /26 subnet mask in order to create subnets for WAN links that need only 2 useable addresses?',
+    '4');
+add('A topology influences the type of network framing and media access control that will be used.',
+    'logical');
+add('Refer to the exhibit. The administrator configured the access to the console and the vty lines of a router. Which conclusion can be drawn from this configuration??',
+    'Because the IOS includes the login command on the vty lines by default, access to the device via Telnet will require authentication.');
+add('An administrator issued the service password-encryption command to apply encryption to the passwords configured for enable password, vty, and console lines. What will be the consequences if the administrator later issues the no service password-encryption command?',
+    'It will not reverse any encryption.');
+add('After making configuration changes, a network administrator issues a copy running-config startup-config command in a Cisco switch. What is the result of issuing this command?',
+    'The new configuration will be loaded if the switch is restarted.');
+add('What are two features of ARP? (Choose two.',
+    'If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast.','If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply.');
+add('What are two examples of the cut-through switching method? (Choose two.)',
+    'fast-forward switching','fragment-free switching');
+add('A network administrator is enabling services on a newly installed server. Which two statements describe how services are used on a server? (Choose two.)',
+    'A port is considered to be open when it has an active server application that is assigned to it.','Server security can be improved by closing ports that are associated with unused services.');
+add('Why does a Layer 3 device perform the ANDing process on a destination IP address and subnet mask?',
+    'to identify the network address of the destination network');
+add('Given the binary address of 11101100 00010001 00001100 00001010, which address does this represent in dotted decimal format?',
+    '236.17.12.10');
+add('A particular telnet site does not appear to be responding on a Windows 7 computer. What command could the technician use to show any cached DNS entries for this web page?',
+    'ipconfig /displaydns');
+add('Network devices come in two physical configurations. Devices that have expansion slots that provide the flexibility to add new modules have a configuration.',
+    'Modular');
+add('Refer to the exhibit. What is the maximum TIL value that is used to reach the destination www.cisco.com?',
+    '13');
+add('Which statement is true about DHCP operation?',
+    'When a device that is configured to use DHCP boots, the client broadcasts a DHCPDISCOVER message to identify any available DHCP servers on the networK.');
+add('Which type of wireless security is easily compromised?',
+    'WEP');
+add('A network administrator notices that the throughput on the network appears lower than expected when compared to the end-to-end network bandwidth. Which three factors can explain this difference? (Choose three.)',
+    'the amount of traffic','the type of traffic','the number and type of network devices that the data is crossing');
+add('A host PC is attempting to lease an address through DHCP. What message is sent by the server to the client know it is able to use the provided IP information?',
+    'DHCPOFFER');
+add('A network administrator is configuring access control to switch SW1. If the administrator uses console line to connect to the switch, which password is needed to access user EXEC mode?',
+    'lineconin');
+add('What is a characteristic of UTP cabling?',
+    'cancellation');
+add('How many bits would need to be borrowed if a network admin were given the IP addressing scheme of 172.16.0.0/16 and needed no more than 16 subnet with equal number of hosts?',
+    '4');
+add('It will give 4 options about ping, the correct one is:',
+    'The PC2 will be able to ping 192.168.1.1');
+add('Which statement best describes the operation of the File Transfer Protocol?',
+    'An FTP server uses a source port number of 20 and a randomly generated destination port number during the establishment of control traffic with an FTP client.');
+add('A client is establishing a TCP session with a server. How is the acknowledgment number in the response segment to the client determined?',
+    'The acknowledgment number field is modified by adding 1 to the randomly chosen initial sequence number in response to the client.');
+add('Why does layer 3 device perform the ANDing process on a destination IP and subnet Mask?',
+    'to identify network address of destination host;');
+add('There was also a question about if you activated service password encryption in the past and you prompt “no service password encryption” what password are modified ?',
+    'no password at all;');
+add('What type of communication rule would best describe CSMA/CD?',
+    'access method');
+add('What is the primary reason to subnet IPv6 prefixes?',
+    'to create a hierarchical Layer 3 network design');
+add('What type of IPv6 address is FE80::1?',
+    'link-local');
+add('Which statement describes data throughput?',
+    'It is the measure of the bits transferred across the media over a given period of time.');
+add('IPv4 multicast addresses are directly mapped to IEEE 802 (Ethernet) MAC addresses using the last of the 28 available bits in the IPv4 multicast group address.',
+    '4');
+add('How could a faulty network device create a source of hazard for a user? (Choose two.)',
+    'It could stop functioning.','It could explode.');
+add('What are three important considerations when planning the structure of an IP addressing scheme? (Choose three.)',
+    'preventing duplication of addresses','providing and controlling access','conserving addresses');
+add('What is the metric value that is used to reach the 10.1.1.0 network in the following routing table entry? D 10.1.1.0/24 [90/2170112] via 209.165.200.226, 00:00:05, Serial0/0/0',
+    '2170112');
+add('Which two services or protocols use the preferred UDP protocol for fast transmission and low overhead? (Choose two)',
+    'VoIP','DNS');
+add('What action does a DHCPv4 client take if it receives more than one DHCPOFFER from multiple DHCP servers?',
+    'It sends a DHCPREQUEST that identifies which lease offer the client is accepting.');
+add('To what legacy address class does the address 10.0.0.0 belong?',
+    'Class A');
+add('What type of communication medium is used with a wireless LAN connection?',
+    'microwave');
+add('Which method of IPv6 prefix assignment relies on the prefix contained in RA messages?',
+    'SLAAC');
+add('What is a characteristic of DNS?',
+    'DNS servers can cache recent queries to reduce DNS query traffic.');
+add('What is the prefix for the host address 2001:DB8:BC15:A:12AB::1/64?',
+    '2001:DB8:BC15:A');
+add('What are two services provided by the OSI network layer? (Choose two.)',
+    'encapsulating PDUs from the transport layer','routing packets toward the destination');
+add('A network administrator is upgrading a small business network to give high priority to real-time applications traffic. What two types of network services is the network administrator trying to accommodate? (Choose two.)',
+    'voice','video');
+
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
