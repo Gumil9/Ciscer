@@ -6,61 +6,63 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA3 Scaling Networks v6.0 Chapter 1
-add('What are two expected features of modern enterprise networks? (Choose two.)',
-    'support for critical applications',
-    'support for converged network traffic');
-add('What network design would contain the scope of disruptions on a network should a failure occur?',
-    'the deployment of distribution layer switches in pairs and the division of access layer switch connections between them');
-add('Which action should be taken when planning for redundancy on a hierarchical network design?',
-    'add alternate physical paths for data to traverse the network');
-add('Which devices exist in the failure domain when switch S3 loses power?',
-    'PC_3 and AP_2');
-add('Which design feature will limit the size of a failure domain in an enterprise network?',
-    'the use of the building switch block approach');
-add('A network administrator is planning redundant devices and cabling in a switched network to support high availability. Which benefit will implementing the Spanning Tree Protocol provide to this design?',
-    'Redundant paths can be available without causing logical Layer 2 loops.');
-add('What are two benefits of extending access layer connectivity to users through a wireless medium? (Choose two.)',
-    'increased flexibility',
-    'reduced costs');
-add('Which two features of enterprise class equipment assists an enterprise network in maintaining 99.999 percent up-time? (Choose two.)',
-    'failover capabilities',
-    'redundant power supplies');
-add('What capability is provided by the use of application-specific integrated circuits in Cisco multilayer switches?',
-    'forwarding of IP packets independent of the CPU');
-add('Which statement describes a characteristic of Cisco Meraki switches?',
-    'They are cloud-managed access switches that enable virtual stacking of switches.');
-add('In which situation would a network administrator install a Cisco Nexus Series or Cisco Catalyst 6500 Series switch to promote infrastructure scalability?',
-    'on a data center network to provide expansion and transport flexibility');
-add('Which statement describes a characteristic of Cisco Catalyst 2960 switches?',
-    'New Cisco Catalyst 2960-C switches support PoE pass-through.');
-add('What are three access layer switch features that are considered when designing a network? (Choose three.)',
-    'forwarding rate',
-    'port density',
-    'Power over Ethernet');
-add('What are two functions of a router? (Choose two.)',
-    'It connects multiple IP networks.',
-    'It determines the best path to send packets.');
-add('A network engineer is reviewing a network design that uses a fixed configuration enterprise router that supports both LAN and WAN connections. However, the engineer realizes that the router does not have enough interfaces to support growth and network expansion. Which type of device should be used as a replacement?',
-    'a modular router');
-add('When a Cisco IOS device is being selected or upgraded, which option indicates the capabilities of the Cisco IOS device?',
-    'feature set');
-add('Immediately after a router completes its boot sequence, the network administrator wants to check the routers configuration. From privileged EXEC mode, which of the following commands can the administrator use for this purpose? (Choose two.)',
-    'show startup-config',
-    'show running-config');
-add('Which command was issued on a Cisco switch that resulted in the exhibited output?',
-    'show port-security address');
-add('What is a characteristic of in-band device management?',
-    'It is used to monitor and make configuration changes to a network device over a network connection.');
-add('Which two requirements must always be met to use in-band management to configure a network device? (Choose two.)',
-    'at least one network interface that is connected and operational',
-    'Telnet, SSH, or HTTP access to the device');
-add('Which type of information is displayed by the show ip protocols command that is issued from a router command prompt?',
-    'the configured routing protocols and the networks that the router is advertising');
-add('A network technician needs to connect a PC to a Cisco network device for initial configuration. What is required to perform this device configuration?',
-    'Telnet access');
-add('Match the purpose to the related configuration item. (Not all options are used.)',
-    'id > host, sec > pass, con > ass, acc > rout');
+// CCNA3 Scaling Networks v6.0 Chapter 2
+add('What is a characteristic of VTP?',
+    'Switches in VTP transparent mode forward VTP advertisements.');
+add('Which two VTP parameters must be identical on all switches in the network in order to participate in the same VTP domain? (Choose two.)',
+    'VTP domain name',
+    'VTP domain password');
+add('Which two events will cause the VTP revision number on a VTP server to change? (Choose two.)',
+    'adding VLANs',
+    'changing the VTP domain name');
+add('Given the following configuration, which two statements are true? (Choose two.)',
+    'This switch can create, modify, and delete all VLANs within the Cisco domain.',
+    'This switch can send and receive advertisements from only the Cisco domain.');
+add('Where is the vlan.dat file stored on a switch?',
+    'in flash memory');
+add('A switch is participating in a VTP domain and configured as a VTP server. The switch needs to propagate VLAN 10 (used by the Manufacturing department) throughout the VTP domain, but does not have any directly connected hosts using that particular VLAN. Which configuration would satisfy this requirement?',
+    'vlan 10\nname Manufacturing\nexit');
+add('Which command should the network administrator implement to prevent the transfer of DTP frames between a Cisco switch and a non-Cisco switch?',
+    'S1(config-if)# switchport nonegotiate');
+add('Under which two occasions should an administrator disable DTP while managing a local area network? (Choose two.)',
+    'when connecting a Cisco switch to a non-Cisco switch',
+    'on links that should not be trunking');
+add('Which command displays the encapsulation type, the voice VLAN ID, and the access mode VLAN for the Fa0/1 interface?',
+    'show interfaces Fa0/1 switchport');
+add('Communication between the VLANs is not occurring. What could be the issue?',
+    'The Gi1/1 switch port is not in trunking mode.');
+add('A network administrator is configuring inter-VLAN routing. However, the communication between VLAN 10 and VLAN 20 fails. Based on the output of the show vlan command, what is the cause of the problem?',
+    'Gi1/1 and Gi1/2 are not assigned to their respective VLANs.');
+add('A network administrator is verifying the configuration of inter-VLAN routing. Users complain that PC2 cannot communicate with PC1. Based on the output, what is the possible cause of the problem?',
+    'The encapsulation dot1Q 5 command contains the wrong VLAN.');
+add('What happens to switch ports after the VLAN to which they are assigned is deleted?',
+    'The ports stop communicating with the attached devices.');
+add('After attempting to enter the configuration that is shown in router RTA, an administrator receives an error and users on VLAN 20 report that they are unable to reach users on VLAN 30. What is causing the problem?',
+    'RTA is using the same subnet for VLAN 20 and VLAN 30.');
+add('A router-on-a-stick configuration was implemented for VLANs 15, 30, and 45, according to the show running-config command output. PCs on VLAN 45 that are using the 172.16.45.0 /24 network are having trouble connecting to PCs on VLAN 30 in the 172.16.30.0 /24 network. Which error is most likely causing this problem?',
+    'There is an incorrect IP address configured on GigabitEthernet 0/0.30.');
+add('How are IP addressing designs affected by VLAN implementations?',
+    'Each VLAN must have a different network number.');
+add('Which three actions can cause problems with a VTP implementation? (Choose three.)',
+    'using a non-trunk link to connect switches',
+    'using non-Cisco switches',
+    'using lowercase on one switch and uppercase on another switch for domain names');
+add('The switch does the routing for the hosts that connect to VLAN 5. If the PC accesses a web server from the Internet, at what point will a VLAN number be added to the frame?',
+    'No VLAN number is added to the frame in this design.');
+add('How is traffic routed between multiple VLANs on a multilayer switch?',
+    'Traffic is routed via internal VLAN interfaces.');
+add('While configuring inter-VLAN routing on a multilayer switch, a network administrator issues the no switchport command on an interface that is connected to another switch. What is the purpose of this command?',
+    'to create a routed port for a single network');
+add('What is a disadvantage of using multilayer switches for inter-VLAN routing?',
+    'Multilayer switches are more expensive than router-on-a-stick implementations.');
+add('What is a characteristic of a routed port on a Layer 3 switch?',
+    'It is not assigned to a VLAN.');
+add('Fill in the blank.',
+    'running configuration');
+add('Which command is missing on the Layer 3 switch to restore the full connectivity between PC1 and the web server?',
+    'ip address 192.168.20.1 255.255.255.0');
+add('Match the DTP mode with its function. (Not all options are used.)',
+    'des > actively, auto > passively, noneg > requires, trunk > perm trunking');
 
 
 
@@ -71,7 +73,8 @@ add = prompts.add;
  * template:
  * add('helper label');
  */
-add('id > host');
-add('sec > pass');
-add('con > ass');
-add('acc > rout');
+
+add('des > actively');
+add('auto > passively');
+add('noneg > requires');
+add('trunk > perm trunking');
