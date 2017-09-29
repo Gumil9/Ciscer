@@ -66,6 +66,73 @@ add('Match the DTP mode with its function. (Not all options are used.)',
 
 
 
+// CCNA1 Introduction to Networks v6.0 Chapter 7
+add('How many bits are in an IPv4 address?',
+    '32');
+add('Which two parts are components of an IPv4 address? (Choose two.)',
+    'network portion',
+    'host portion');
+add('What does the IP address 172.17.4.250/24 represent?',
+    'host address');
+add('What is the purpose of the subnet mask in conjunction with an IP address?',
+    'to determine the subnet to which the host belongs');
+add('What subnet mask is represented by the slash notation /20?',
+    '255.255.240.0');
+add('A message is sent to all hosts on a remote network. Which type of message is it?',
+    'directed broadcast');
+add('What are three characteristics of multicast transmission? (Choose three.)',
+    'A single packet can be sent to a group of hosts.',
+    'Multicast transmission can be used by routers to exchange routing information.',
+    'The range of 224.0.0.0 to 224.0.0.255 is reserved to reach multicast groups on a local network.');
+add('Which three IP addresses are private ? (Choose three.)',
+    '10.1.1.1',
+    '172.16.4.4',
+    '192.168.5.5');
+add('Which two IPv4 to IPv6 transition techniques manage the interconnection of IPv6 domains? (Choose two.)',
+    'dual stack',
+    'tunneling');
+add('Which of these addresses is the shortest abbreviation for the IP address: 3FFE:1044:0000:0000:00AB:0000:0000:0057?',
+    '3FFE:1044:0:0:AB::57');
+add('What type of address is automatically assigned to an interface when IPv6 is enabled on that interface?',
+    'link-local');
+add('What are two types of IPv6 unicast addresses? (Choose two.)',
+    'loopback',
+    'link-local');
+add('What are three parts of an IPv6 global unicast address? (Choose three.)',
+    'a global routing prefix that is used to identify the network portion of the address that has been provided by an ISP',
+    'a subnet ID that is used to identify networks inside of the local enterprise site',
+    'an interface ID that is used to identify the local host on the network');
+add('An administrator wants to configure hosts to automatically assign IPv6 addresses to themselves by the use of Router Advertisement messages, but also to obtain the DNS server address from a DHCPv6 server. Which address assignment method should be configured?',
+    'stateless DHCPv6');
+add('Which protocol supports Stateless Address Autoconfiguration (SLAAC) for dynamic assignment of IPv6 addresses to a host?',
+    'ICMPv6');
+add('Which two things can be determined by using the ping command? (Choose two.)',
+    'the average time it takes a packet to reach the destination and for the response to return to the source',
+    'the destination device is reachable through the network');
+add('What is the purpose of ICMP messages?',
+    'to provide feedback of IP packet transmissions');
+add('What is indicated by a successful ping to the ::1 IPv6 address?',
+    'IP is properly installed on the host.');
+add('A user is executing a tracert to a remote device. At what point would a router, which is in the path to the destination device, stop forwarding the packet?',
+    'when the value in the TTL field reaches zero');
+add('What field content is used by ICMPv6 to determine that a packet has expired?',
+    'Hop Limit field');
+add('The decimal equivalent of the binary number 10010101 is',
+    '149');
+add('The binary equivalent of the decimal number 232 is',
+    '11101000');
+add('What is the decimal equivalent of the hex number 0x3F?',
+    '63');
+add('How many bits are in an IPv4 address?',
+    '169.254.1.5 -> a link-local address',
+    '192.0.2.123 -> a TEST-NET address',
+    '240.2.6.255 -> an experimental address',
+    '172.19.20.5 -> a private address',
+    '127.0.0.1 -> a loopback address');
+
+
+
+
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
 
