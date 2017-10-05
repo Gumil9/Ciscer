@@ -165,6 +165,9 @@ add('The HTTP message type used by the client to request data from the web serve
     'GET');
 add('Refer to the exhibit. What command was used to resolve a given host name by querying the name servers? NSLOOKUP',
     'NSLOOKUP');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which PC or PCs are sending FTP packets to the server?',
+    'PC_2');
+
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
@@ -192,3 +195,9 @@ add('P2P network > no dedicated server is required');
 add('P2P network > client and server roles are set on a per request basis');
 add('P2P app > requires a specific user interface');
 add('P2P app > a background service is required');
+
+add('DHCP > dynamically assigns IP address to clients');
+add('DNS > maps URLs to numerical addresses');
+add('IMAP > allows viewing of messages on email clients');
+add('HTTP -> displays web pages');
+add('SMTP -> sends email messages');
