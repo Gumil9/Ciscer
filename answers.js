@@ -225,7 +225,67 @@ add('Refer to the exhibit. What command was used to resolve a given host name by
 add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which PC or PCs are sending FTP packets to the server?',
     'PC_2');
 
+// CCNA1 Introduction to Networks v6.0 Chapter 11
+add('A newly hired network technician is given the task of ordering new hardware for a small business with a large growth forecast. Which primary factor should the technician be concerned with when choosing the new devices?',
+    'devices with support for modularity');
+add('Which network design consideration would be more important to a large corporation than to a small business?',
+    'redundancy');
+add('Which two traffic types require delay sensitive delivery? (Choose two.)', 
+    'voice',
+    'video');
+add('A network administrator for a small company is contemplating how to scale the network over the next three years to accommodate projected growth. Which three types of information should be used to plan for network growth? (Choose three.)',
+    'documentation of the current physical and logical topologies',
+    'analysis of the network traffic based on protocols, applications, and services used on the network',
+    'inventory of the devices that are currently used on the network');
+add('Which two statements describe how to assess traffic flow patterns and network traffic types using a protocol analyzer? (Choose two.)',
+    'Capture traffic during peak utilization times to get a good representation of the different traffic types.',
+    'Perform the capture on different network segments.');
+add('Some routers and switches in a wiring closet malfunctioned after an air conditioning unit failed. What type of threat does this situation describe?', 
+    'environmental');
+add('Which type of network threat is intended to prevent authorized users from accessing resources?',
+    'DoS attacks');
+add('Which two actions can be taken to prevent a successful network attack on an email server account? (Choose two.)', 
+    'Never send the password through the network in a clear text.',
+    'Limit the number of unsuccessful attempts to log in to the server.');
+add('Which firewall feature is used to ensure that packets coming into a network are legitimate responses initiated from internal hosts?', 
+    'stateful packet inspection');
+add('What is the purpose of the network security authentication function?',
+    'to require users to prove who they are');
+add('A network administrator is issuing the login block-for 180 attempts 2 within 30 command on a router. Which threat is the network administrator trying to prevent?',
+    'a user who is trying to guess a password to access the router');
+add('What is the purpose of using SSH to connect to a router?',
+    'It allows a secure remote connection to the router command line interface.');
+add('Which two steps are required before SSH can be enabled on a Cisco router? (Choose two.)',
+    'Give the router a host name and domain name.',
+    'Generate a set of secret keys to be used for encryption and decryption.');
+add('What is the purpose of issuing the commands cd nvram: then dir at the privilege exec mode of a router?', 
+    'to list the content of the NVRAM');
+add('Which command will backup the configuration that is stored in NVRAM to a TFTP server?',
+    'copy startup-config tftp');
+add('Refer to the exhibit. Baseline documentation for a small company had ping round trip time statistics of 36/97/132 between hosts H1 and H3. Today the network administrator checked connectivity by pinging between hosts H1 and H3 that resulted in a round trip time of 1458/2390/6066. What does this indicate to the network administrator?',
+    'Something is causing a time delay between the networks.');
+add('When should an administrator establish a network baseline?',
+    'at regular intervals over a period of time');
+add('Refer to the exhibit. An administrator is trying to troubleshoot connectivity between PC1 and PC2 and uses the tracert command from PC1 to do it. Based on the displayed output, where should the administrator begin troubleshooting?',
+    'R1');
+add('Which statement is true about CDP on a Cisco device?',
+    'CDP can be disabled globally or on a specific interface.');
+add('A network administrator for a small campus network has issued the show ip interface brief command on a switch. What is the administrator verifying with this command?', 
+    'the status of the switch interfaces and the address configured on interface vlan 1');
+add('A network technician issues the arp -d * command on a PC after the router that is connected to the LAN is reconfigured. What is the result after this command is issued?', 
+    'The ARP cache is cleared.');
+add('A network technician issues the C:\> tracert -6 www.cisco.com command on a Windows PC. What is the purpose of the -6 command option?',
+    'It forces the trace to use IPv6.');
+add('Which command should be used on a Cisco router or switch to allow log messages to be displayed on remotely connected sessions using Telnet or SSH?',
+    'terminal monitor');
 
+/* is the following right?? */
+add('VoIP defines the protocols and technologies that implement the transmission of voice data over an IP network',
+    'VoIP');
+add('The show file systems command provides information about the amount of free nvram and flash memory with the permissions for reading or writing data.',
+    'file systems');
+add('The show version command that is issued on a router is used to verify the value of the software configuration register.',
+    'show version');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -265,3 +325,9 @@ add('DNS > maps URLs to numerical addresses');
 add('IMAP > allows viewing of messages on email clients');
 add('HTTP -> displays web pages');
 add('SMTP -> sends email messages');
+
+// CCNA1 Introduction to Networks v6.0 Chapter 11
+add('installing virus code to destroy surveillance recordings for certain days > data loss');
+add('pretending to be someone else by using stolen personal information to apply for a credit card > identity theft');
+add('preventing userd from accessing a website by sending a large number of link requests in a short period > disruption of service');
+add('obtaining trade secret documents illegally > information theft');
