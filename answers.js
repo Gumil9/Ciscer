@@ -278,8 +278,6 @@ add('A network technician issues the C:\> tracert -6 www.cisco.com command on a 
     'It forces the trace to use IPv6.');
 add('Which command should be used on a Cisco router or switch to allow log messages to be displayed on remotely connected sessions using Telnet or SSH?',
     'terminal monitor');
-
-/* is the following right?? */
 add('VoIP defines the protocols and technologies that implement the transmission of voice data over an IP network',
     'VoIP');
 add('The show file systems command provides information about the amount of free nvram and flash memory with the permissions for reading or writing data.',
@@ -308,26 +306,26 @@ add('Fast > RSTP');
 add('IEEE > MSTP');
 
 
-// CCNA1 Introduction to Networks v6.0 Chapter 9
-add('source IP address > 192.168.1.2');
-add('destination IP address > 192.168.2.2');
-add('source port number > 2578');
-add('destination port number > 80');
+//CCNA1 Introduction to Networks v6.0 PT Final Exam
+add('HOST1/Rec124_1: 192.168.1.97 255.255.255.224, GW 192.168.1.126, 2001:DB8:ACAD:A::FF/64, GW FE80::1');
+add('HOST2/Op124_5:  192.168.1.98 255.255.255.224, GW 192.168.1.126, 2001:DB8:ACAD:A::15/64, GW FE80::1');
+add('HOST3/IT214_1:  192.168.1.145 255.255.255.240, GW 192.168.1.158, 2001:DB8:ACAD:B::FF/64, GW FE80::1');
+add('TFTP: 192.168.1.146 255.255.255.240, GW 192.168.1.158, 2001:DB8:ACAD:B::15/64, GW FE80::1');
 
-// CCNA1 Introduction to Networks v6.0 Chapter 10
-add('P2P network > no dedicated server is required');
-add('P2P network > client and server roles are set on a per request basis');
-add('P2P app > requires a specific user interface');
-add('P2P app > a background service is required');
+add('R:en/conf t/hostname Middle/enable secret class12345/service pass../banner motd $This is Router$');
+add('R:security passwords min-length 10/login block-for 120 attempts 2 within 30/no ip domain-lookup');
+add('R:ip domain-name ccnav6.com/crypto key generate rsa/1024');
+add('R:line con 0/pass cisco12345/login/logging synchronous/exec-timeout 60/exit');
+add('R:line vty 0 4/pass cisco12345/transport input ssh/login local/logging synchronous/exec-timeout 60/exit');
+add('R:line aux 0/pass cisco12345/login/logging synchronous/exec-timeout 60/exit');
+add('R:ip ssh version 2/ip ssh time-out 120/username netadmin privilege 15 secret Cisco_CCNA5');
+add('R:int g0/0/ip addr 192.168.1.126 255.255.255.224/description (First Floor/IT Department) LAN');
+add('R:ipv6 addr 2001:DB8:ACAD:A::1/64/ipv6 addr fe80::1 link-local/no shutdown/exit');
+add('R:int g0/1/ip addr 192.168.1.158 255.255.255.240/description (Second Floor/Administration) LAN');
+add('R:ipv6 addr 2001:DB8:ACAD:B::1/64/ipv6 address fe80::1 link-local/no shutdown/exit');
+add('R:ipv6 unicast-routing/exit/write/copy running-config tftp: 192.168.1.146');
+add('S:en/conf t/en secret class12345/serv pass../banner motd $Second Floor Switch$/no ip domain-lookup');
+add('S:line console 0/password cisco12345/login/logging synchronous/exec-timeout 60/exit');
+add('S:line vty 0 15/pass cisco12345/login/logging synchronous/exec-timeout 60/exit');
+add('S:int vlan 1/ip addr 192.168.1.157 255.255.255.240/no shutdown/ip default-gate 192.168.1.158/exit/write');
 
-add('DHCP > dynamically assigns IP address to clients');
-add('DNS > maps URLs to numerical addresses');
-add('IMAP > allows viewing of messages on email clients');
-add('HTTP -> displays web pages');
-add('SMTP -> sends email messages');
-
-// CCNA1 Introduction to Networks v6.0 Chapter 11
-add('installing virus code to destroy surveillance recordings for certain days > data loss');
-add('pretending to be someone else by using stolen personal information to apply for a credit card > identity theft');
-add('preventing userd from accessing a website by sending a large number of link requests in a short period > disruption of service');
-add('obtaining trade secret documents illegally > information theft');
