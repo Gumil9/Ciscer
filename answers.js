@@ -65,111 +65,107 @@ add('R1 and R2 could not establish an EIGRP adjacency. What is the problem?',
     'EIGRP is down on R1.');
 
 
-// CCNA2 Routing and Switching v6.0 Chapter 3
-add('Which dynamic routing protocol was developed to interconnect different Internet service providers?',
-    'BGP');
-add('Which routing protocol is limited to smaller network implementations because it does not accommodate growth for larger networks?',
-    'RIP');
-add('What two tasks do dynamic routing protocols perform? (Choose two.)',
-    'update and maintain routing tables',
-    'network discovery');
-add('When would it be more beneficial to use a dynamic routing protocol instead of static routing?',
-    'on a network where there is a lot of topology changes');
-add('When would it be more beneficial to use static routing instead of dynamic routing protocols?',
-    'on a network where dynamic updates would pose a security risk');
-add('What is a purpose of the network command when configuring RIPv2 as the routing protocol?',
-    'It identifies the interfaces that belong to a specified network.');
-add('A network administrator configures a static route on the edge router of a network to assign a gateway of last resort. How would a network administrator configure the edge router to automatically share this route within RIP?',
-    'Use the default-information originate command.');
-add('What is the purpose of the passive-interface command?',
-    'allows a router to receive routing updates on an interface but not send updates via that interface');
-add('Which route would be automatically created when a router interface is activated and configured with an IP address?',
-    'C 192.168.0.0/24 is directly connected, FastEthernet 0/0');
-add('Refer to the exhibit. Which two types of routes could be used to describe the 192.168.200.0/30 route? (Choose two.)',
-    'ultimate route',
-    'level 2 child route');
-add('What occurs next in the router lookup process after a router identifies a destination IP address and locates a matching level 1 parent route?',
-    'The level 2 child routes are examined.');
-add('Which route would be used to forward a packet with a source IP address of 192.168.10.1 and a destination IP address of 10.1.1.1?',
-    'O 10.1.1.0/24 [110/65] via 192.168.200.2, 00:01:20, Serial0/1/0');
-add('Which two requirements are used to determine if a route can be considered as an ultimate route in a router’s routing table? (Choose two.)',
-    'contain an exit interface',
-    'contain a next-hop IP address');
-add('What is a disadvantage of using dynamic routing protocols?',
-    'They send messages about network status insecurely across networks by default.');
-add('Which two statements are true regarding classless routing protocols? (Choose two.)',
-    'sends subnet mask information in routing updates',
-    'allows for use of both 192.168.1.0/30 and 192.168.1.16/28 subnets in the same topology');
-add('Refer to the exhibit. Based on the partial output from the show ip route command, what two facts can be determined about the RIP routing protocol? (Choose two.)',
-    'RIP version 2 is running on this router and its RIP neighbor.',
-    'The command no auto-summary has been used on the RIP neighbor router.');
-add('While configuring RIPv2 on an enterprise network, an engineer enters the command network 192.168.10.0 into router configuration mode. What is the result of entering this command?',
-    'The interface of the 192.168.10.0 network is sending only version 2 updates.');
-add('A destination route in the routing table is indicated with a code D. Which kind of route entry is this?',
-    'a route dynamically learned through the EIGRP routing protocol');
-add('Refer to the exhibit. Which interface will be the exit interface to forward a data packet with the destination IP address 172.16.0.66?',
-    'Serial0/0/1');
-add('Which type of route will require a router to perform a recursive lookup?',
-    'an ultimate route that is using a next hop IP address on a router that is not using CEF');
-add('Which route is the best match for a packet entering a router with a destination address of 10.16.0.2?',
-    'S 10.16.0.0/24 [1/0] via 192.168.0.9');
-add('A router is configured to participate in multiple routing protocol: RIP, EIGRP, and OSPF. The router must send a packet to network 192.168.14.0. Which route will be used to forward the traffic?',
-    'a 192.168.14.0/26 route that is learned via RIP');
-add('What is different between IPv6 routing table entries compared to IPv4 routing table entries?',
-    'By design IPv6 is classless so all routes are effectively level 1 ultimate routes.');
+// CCNA2 Routing and Switching v6.0 Chapter 5
+add('Which statement describes the port speed LED on the Cisco Catalyst 2960 switch?',
+    'If the LED is green, the port is operating at 100 Mb/s.');
+add('Which command is used to set the BOOT environment variable that defines where to find the IOS image file on a switch?',
+    'boot system');
+add('What is a function of the switch boot loader?',
+    'to provide an environment to operate in when the switch operating system cannot be found');
+add('Which interface is the default location that would contain the IP address used to manage a 24-port Ethernet switch?',
+    'VLAN 1');
+add('A production switch is reloaded and finishes with a Switch> prompt. What two facts can be determined? (Choose two.)',
+    'POST occurred normally.',
+    'A full version of the Cisco IOS was located and loaded.');
+add('Which two statements are true about using full-duplex Fast Ethernet? (Choose two.)',
+    'Performance is improved with bidirectional data flow.',
+    'Full-duplex Fast Ethernet offers 100 percent efficiency in both directions.');
+add('In which situation would a technician use the show interfaces switch command?',
+    'when packets are being dropped from a particular directly attached host');
+add('Refer to the exhibit. A network technician is troubleshooting connectivity issues in an Ethernet network with the command show interfaces fastEthernet 0/0. What conclusion can be drawn based on the partial output in the exhibit?',
+    'A malfunctioning NIC can cause frames to be transmitted that are longer than the allowed maximum length.');
+add('Refer to the exhibit. What media issue might exist on the link connected to Fa0/1 based on the show interface command?',
+    'There could be too much electrical interference and noise on the link.');
+add('If one end of an Ethernet connection is configured for full duplex and the other end of the connection is configured for half duplex, where would late collisions be observed?',
+    'on the half-duplex end of the connection');
+add('What is one difference between using Telnet or SSH to connect to a network device for management purposes?',
+    'Telnet sends a username and password in plain text, whereas SSH encrypts the username and password.');
+add('Refer to the exhibit. The network administrator wants to configure Switch1 to allow SSH connections and prohibit Telnet connections. How should the network administrator change the displayed configuration to satisfy the requirement?',
+    'Modify the transport input command.');
+add('What is the effect of using the switchport port-security command?',
+    'enables port security on an interface');
+add('Where are dynamically learned MAC addresses stored when sticky learning is enabled with the switchport port-security mac-address sticky command?',
+    'RAM');
+add('A network administrator configures the port security feature on a switch. The security policy specifies that each access port should allow up to two MAC addresses. When the maximum number of MAC addresses is reached, a frame with the unknown source MAC address is dropped and a notification is sent to the syslog server. Which security violation mode should be configured for each access port?',
+    'restrict');
+add('Which two statements are true regarding switch port security? (Choose two.)',
+    'Dynamically learned secure MAC addresses are lost when the switch reboots.',
+    'If fewer than the maximum number of MAC addresses for a port are configured statically, dynamically learned addresses are added to CAM until the maximum number is reached.');
+add('Which action will bring an error-disabled switch port back to an operational state?',
+    'Issue the shutdown and then no shutdown interface commands.');
+add('Refer to the exhibit. Port Fa0/2 has already been configured appropriately. The IP phone and PC work properly. Which switch configuration would be most appropriate for port Fa0/2 if the network administrator has the following goals?',
+    'SWA(config-if)# switchport port-security\
+    SWA(config-if)# switchport port-security maximum 2\
+    SWA(config-if)# switchport port-security mac-address sticky');
+add('Refer to the exhibit. What can be determined about port security from the information that is shown?',
+    'The port violation mode is the default for any port that has port security enabled.');
+add('Refer to the exhibit. Which event will take place if there is a port security violation on switch S1 interface Fa0/1?',
+    'Packets with unknown source addresses will be dropped.');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.',
+    'Do not use abbreviations.What is the missing command on S1? “ ip address 192.168.99.2 255.255.255.0 ”');
 
-
-// CCNA2 Routing and Switching v6.0 Chapter 4
-add('A network designer must provide a rationale to a customer for a design which will move an enterprise from a flat network topology to a hierarchical network topology. Which two features of the hierarchical design make it the better choice? (Choose two.)',
-    'easier to provide redundant links to ensure higher availability',
-    'simpler deployment for additional switch equipment');
-add('What is a collapsed core in a network design?',
-    'a combination of the functionality of the distribution and core layers');
-add('What is a definition of a two-tier LAN network design?',
-    'distribution and core layers collapsed into one tier, and the access layer on a separate tier');
-add('What is a basic function of the Cisco Borderless Architecture distribution layer?',
-    'aggregating Layer 3 routing boundaries');
-add('Which two previously independent technologies should a network administrator attempt to combine after choosing to upgrade to a converged network infrastructure? (Choose two.)',
-    'user data traffic',
-    'VoIP phone traffic');
-add('A local law firm is redesigning the company network so that all 20 employees can be connected to a LAN and to the Internet. The law firm would prefer a low cost and easy solution for the project. What type of switch should be selected?',
-    'fixed configuration');
-add('What are two advantages of modular switches over fixed-configuration switches? (Choose two.)',
-    'increased scalability',
-    'need for fewer power outlets');
-add('Which type of address does a switch use to build the MAC address table?',
-    'source MAC address');
-add('Which network device can be used to eliminate collisions on an Ethernet network?',
-    'switch');
-add('What two criteria are used by a Cisco LAN switch to decide how to forward Ethernet frames? (Choose two.)',
-    'ingress port',
-    'destination MAC address');
-add('Refer to the exhibit. Consider that the main power has just been restored. PC3 issues a broadcast IPv4 DHCP request. To which port will SW1 forward this request?​',
-    'to Fa0/1, Fa0/2, and Fa0/3 only');
-add('What is one function of a Layer 2 switch?',
-    'determines which interface is used to forward a frame based on the destination MAC address');
-add('Refer to the exhibit. How is a frame sent from PCA forwarded to PCC if the MAC address table on switch SW1 is empty?',
-    'SW1 floods the frame on all ports on SW1, excluding the port through which the frame entered the switch.');
-add('A small publishing company has a network design such that when a broadcast is sent on the LAN, 200 devices receive the transmitted broadcast. How can the network administrator reduce the number of devices that receive broadcast traffic?',
-    'Segment the LAN into smaller LANs and route between them.');
-add('Refer to the exhibit. How many broadcast domains are displayed?',
-    '8');
-add('Which solution would help a college alleviate network congestion due to collisions?',
-    'a high port density switch');
-add('Which network device can serve as a boundary to divide a Layer 2 broadcast domain?',
-    'router');
-add('What is the destination address in the header of a broadcast frame?',
-    'FF-FF-FF-FF-FF-FF');
-add('Which statement describes a result after multiple Cisco LAN switches are interconnected?',
-    'The broadcast domain expands to all switches.');
-add('What does the term “port density” represent for an Ethernet switch?',
-    'the number of available ports');
-add('What are two reasons a network administrator would segment a network with a Layer 2 switch? (Choose two.)',
-    'to enhance user bandwidth',
-    'to isolate traffic between segments');
-add('A converged network is one that uses the same infrastructure to carry voice, data, and video signals.',
-    'converged');
-
+// CCNA2 Routing and Switching v6.0 Chapter 6
+add('What are three primary benefits of using VLANs? (Choose three.)',
+    'security',
+    'cost reduction',
+    'improved IT staff efficiency');
+add('Which type of VLAN is used to designate which traffic is untagged when crossing a trunk port?',
+    'native');
+add('A network administrator is determining the best placement of VLAN trunk links. Which two types of point-to-point connections utilize VLAN trunking?​ (Choose two.)',
+    'between two switches that utilize multiple VLANs',
+    'between a switch and a server that has an 802.1Q NIC');
+add('What must the network administrator do to remove Fast Ethernet port fa0/1 from VLAN 2 and assign it to VLAN 3?',
+    'Enter the switchport access vlan 3 command in interface configuration mode.');
+add('When a Cisco switch receives untagged frames on a 802.1Q trunk port, which VLAN ID is the traffic switched to by default?',
+    'native VLAN ID');
+add('Port Fa0/11 on a switch is assigned to VLAN 30. If the command no switchport access vlan 30 is entered on the Fa0/11 interface, what will happen?',
+    'Port Fa0/11 will be returned to VLAN 1.');
+add('Which command is used to remove only VLAN 20 from a switch?',
+    'no vlan 20');
+add('What happens to a port that is associated with VLAN 10 when the administrator deletes VLAN 10 from the switch?',
+    'The port becomes inactive.');
+add('Which two characteristics match extended range VLANs? (Choose two.)',
+    'They are saved in the running-config file by default.',
+    'VLAN IDs exist between 1006 to 4094.');
+add('A Cisco switch currently allows traffic tagged with VLANs 10 and 20 across trunk port Fa0/5. What is the effect of issuing a switchport trunk allowed vlan 30 command on Fa0/5?',
+    'It allows only VLAN 30 on Fa0/5.');
+add('Refer to the exhibit. PC-A and PC-B are both in VLAN 60. PC-A is unable to communicate with PC-B. What is the problem?',
+    'The VLAN that is used by PC-A is not in the list of allowed VLANs on the trunk.');
+add('Refer to the exhibit. DLS1 is connected to another switch, DLS2, via a trunk link. A host that is connected to DLS1 is not able to communicate to a host that is connected to DLS2, even though they are both in VLAN 99. Which command should be added to Fa0/1 on DLS1 to correct the problem?',
+    'switchport trunk native vlan 66');
+add('What is a characteristic of legacy inter-VLAN routing?',
+    'The router requires one Ethernet link for each VLAN.');
+add('What is a disadvantage of using router-on-a-stick inter-VLAN routing?',
+    'does not scale well beyond 50 VLANs');
+add('Refer to the exhibit. Router RA receives a packet with a source address of 192.168.1.35 and a destination address of 192.168.1.85. What will the router do with this packet?',
+    'The router will forward the packet out interface FastEthernet 0/1.2.');
+add('Refer to the exhibit. In what switch mode should port G0/1 be assigned if Cisco best practices are being used?',
+    'trunk');
+add('A small college uses VLAN 10 for the classroom network and VLAN 20 for the office network. What is needed to enable communication between these two VLANs while using legacy inter-VLAN routing?',
+    'A router with at least two LAN interfaces should be used.');
+add('Refer to the exhibit. A network administrator needs to configure router-on-a-stick for the networks that are shown. How many subinterfaces will have to be created on the router if each VLAN that is shown is to be routed and each VLAN has its own subinterface?',
+    '4');
+add('When configuring a router as part of a router-on-a-stick inter-VLAN routing topology, where should the IP address be assigned?',
+    'to the subinterface');
+add('A high school uses VLAN15 for the laboratory network and VLAN30 for the faculty network. What is required to enable communication between these two VLANs while using the router-on-a-stick approach?',
+    'A switch with a port that is configured as a trunk is needed when connecting to the router.');
+add('Refer to the exhibit. A router-on-a-stick configuration was implemented for VLANs 15, 30, and 45, according to the show running-config command output. PCs on VLAN 45 that are using the 172.16.45.0 /24 network are having trouble connecting to PCs on VLAN 30 in the 172.16.30.0 /24 network. Which error is most likely causing this problem?​',
+    'There is an incorrect IP address configured on GigabitEthernet 0/0.30.');
+add('Fill in the blank. Use the full command syntax.\
+    The show vlan command displays the VLAN assignment for all ports as well as the existing VLANs on the switch.',
+    'show vlan');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.',
+    'PC-D, PC-E');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -179,21 +175,22 @@ add = prompts.add;
  * add('helper label');
  */
 
- // CCNA2 Routing and Switching v6.0 Chapter 3
- add('data structures > tables or databases that are stored in RAM');
- add('routing protocol messages > exchanges routing information and maintains accurate information about networks');
- add('algorithm > a finite list of steps used to determine the best path');
- add('static routing > "typically used on stub networks" and "less routing overhead"');
- add('dynamic routing > "new networkd are added automatically to the routing table" and "best choice for large networks"');
+ // CCNA2 Routing and Switching v6.0 Chapter 5
+ add('CPU regi. init -> st. 3');
+ add('execute POST -> st. 1');
+ add('flash file system.. -> st. 4');
+ add('load the boot..-> st. 2');
+ add('load the iOS-> st. 5');
+ add('transfer switch... -> st. 6');
+ add('Create a loc. user, Generate RSA.., Config a domain name..');
+ add('Use the login.., Use the transp.., Order does not..');
+ add('disable -> admin. down');
+ add('Layer 1 prob -> down/down');
+ add('Layer 2 prob. - up/down');
+ add('operaional -> up/up');
 
- // CCNA2 Routing and Switching v6.0 Chapter 4
- add('fkexibility < allows intelligent traffic load sharing by using all network resources');
- add('hierarchical < facilitates understanding the role of each device at every tier, simplifies deployment, operation, management, and reduces fault domains at every tier ');
- add('modularity < allows seamless network expansion and integrated service enablement on an on-demand basis');
- add('resiliency < satisfies user expectations for keeping the network always on');
-
- add('Access layer > "represents the network edge" and "provides network access to the user"');
- add('Distribution layer > "implements network access policy" and "establishes Layer 3 routing boundaries"');
- add('Core layer > "provides high-speed backbone connectivity" and "functions as an aggregator for all the campus blocks"');
- add('cut-throught > "appropriate for high perfomance..." and "forwarding process can..." and "may forward invalid frames"');
- add('store-and-forward > "error checking..." and "forwarding process only..." and "only forwards valid frames"');
+ // CCNA2 Routing and Switching v6.0 Chapter 6
+ add('User Priority -> value that supports..');
+ add('Type -> value for the tag');
+ add('Canonical Format.. -> identifer that enables..');
+ add('VLAN ID -> VLAN number');
