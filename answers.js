@@ -196,7 +196,7 @@ add('14:HQ:int g0/1.250|ip addr access-group INT-WEB out');
 add('15:MGMT/Neutron:en|conf t|hostname Mgmt/Neutron|no ip domain-lookup');
 add('16:MGMT:enable secret cisco|line con 0|pass cisco|login|line vty 0 15');
 add('17:MGMT:pass cisco|login|exit|serv pass|vlan 20|name Clerical|vlan40|name Acct');
-add('18:MGMT:vlan 60|name HR|vlan 88|name NetAdmin|exit|vlan 88|');
+add('18:MGMT:vlan 60|name HR|vlan 88|name NetAdmin|exit|int vlan 88|');
 add('19:MGMT:ip add 172.16.88.253 255.255.255.0|no shut|exit');
 add('20:MGMT:ip default-gateway 172.16.88.254|vtp domain School');
 add('21:MGMT:int g0/1|switchport mode trunk|int range f0/23-24|switchport mode trunk');
