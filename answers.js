@@ -6,49 +6,55 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA3 Scaling Networks v6.0 Chapter 8
-add('What is used to create the OSPF neighbor table?',
-    'adjacency database');
-add('Which OSPF component is identical in all routers in an OSPF area after convergence?',
-    'link-state database');
-add('Which OPSF packet contains the different types of link-state advertisements?',
-    'LSU');
-add('What happens immediately after two OSPF routers have exchanged hello packets and have formed a neighbor adjacency?',
-    'They exchange abbreviated lists of their LSDBs.');
-add('What will an OSPF router prefer to use first as a router ID?',
-    'any IP address that is configured using the router-id command');
-add('What are the two purposes of an OSPF router ID? (Choose two.)',
-    'to uniquely identify the router within the OSPF domain',
-    'to facilitate router participation in the election of the designated router');
-add('By default, what is the OSPF cost for any link with a bandwidth of 100 Mb/s or greater?',
-    '1');
-add('Which command should be used to check the OSPF process ID, the router ID, networks the router is advertising, the neighbors the router is receiving updates from, and the default administrative distance?',
-    'show ip protocols');
-add('What are two reasons that will prevent two routers from forming an OSPFv2 adjacency? (Choose two.)',
-    'mismatched OSPF Hello or Dead timers',
-    'mismatched subnet masks on the link interfaces');
-add('Which three addresses could be used as the destination address for OSPFv3 messages? (Choose three.)',
-    'FE80::1',
-    'FF02::5',
-    'FF02::6');
-add('A network administrator enters the command ipv6 router ospf 64 in global configuration mode. What is the result of this command?',
-    'The OSPFv3 process will be assigned an ID of 64.');
-add('When a network engineer is configuring OSPFv3 on a router, which command would the engineer issue immediately before configuring the router ID?',
-    'ipv6 router ospf 10');
-add('Single area OSPFv3 has been enabled on a router via the ipv6 router ospf 20 command. Which command will enable this OSPFv3 process on an interface of that router?',
-    'ipv6 ospf 20 area 0');
-add('What does a Cisco router use automatically to create link-local addresses on serial interfaces when OSPFv3 is implemented?',
-    'an Ethernet interface MAC address available on the router, the FE80::/10 prefix, and the EUI-64 process');
-add('Which command will verify that a router that is running OSPFv3 has formed an adjacency with other routers in its OSPF area?',
-    'show ipv6 ospf neighbor');
-add('Which command will provide information specific to OSPFv3 routes in the routing table?',
-    'show ipv6 route ospf');
-add('OSPF uses as a metric.',
-    'cost');
-add('The election of a DR and a BDR takes place on networks, such as Ethernet networks.',
-    'multiaccess');
-add('What message is displayed on http://www.ciscoville.com?',
-    'Completion!');
+// CCNA3 Scaling Networks v6.0 Chapter 9
+add('What are two reasons for creating an OSPF network with multiple areas? (Choose two.)',
+    'to reduce SPF calculations',
+    'to reduce use of memory and processor resources');
+add('What is used to facilitate hierarchical routing in OSPF?',
+    'the use of multiple areas');
+add('Which two statements correctly describe OSPF type 3 LSAs? (Choose two.)',
+    'Type 3 LSAs are generated without requiring a full SPF calculation.',
+    'Type 3 LSAs are used to update routes between OSPF areas.');
+add('Which characteristic describes both ABRs and ASBRs that are implemented in a multiarea OSPF network?',
+    'They are required to perform any summarization or redistribution tasks.');
+add('What type of OSPF LSA is originated by ASBR routers to advertise external routes?',
+    'type 5');
+add('What OSPF LSA type is used to inform routers of the router ID of the DR in each multiaccess network in an OSPF area?',
+    'type 2');
+add('Which two statements are correct? (Choose two.)',
+    'The routing table contains routes from multiple areas.',
+    'To reach network 192.168.1.0, traffic will exit via the Serial0/0/0 interface.');
+add('What routing table descriptor is used to identify OSPF summary networks that originate from an ABR?',
+    'IA');
+add('A network administrator is verifying a multi-area OSPF configuration by checking the routing table on a router in area 1. The administrator notices a route to a network that is connected to a router in area 2. Which code appears in front of this route in the routing table within area 1?',
+    'IA');
+add('What can be concluded about network 192.168.4.0 in the R2 routing table?',
+    'The network was learned from a router within the same area as R2.');
+add('Which three steps in the design and implementation of a multiarea OSPF network are considered planning steps? (Choose three.)',
+    'Define the OSPF parameters.',
+    'Gather the required parameters.',
+    'Define the network requirements.');
+add('Which two networks are part of the summary route 192.168.32.0/22? (Choose two.)',
+    '192.168.33.0/24',
+    '192.168.35.0/24');
+add('What is indicated by the O IA in the router output?',
+    'The route was learned from another area.');
+add('A network administrator has been asked to summarize the networks shown in the exhibit as part of a multiarea OSPF implementation. All addresses are using a subnet mask of 255.255.255.0. What is the correct summarization for these eight networks?',
+    '10.0.0.0 255.255.240.0');
+add('The network administrator has been asked to summarize the routes for a new OSPF area. The networks to be summarized are 172.16.8.0, 172.16.10.0, and 172.16.12.0 with subnet masks of 255.255.255.0 for each network. Which command should the administrator use to forward the summary route for area 15 into area 0?',
+    'area 15 range 172.16.8.0 255.255.248.0');
+add('OSPF type 2 LSA messages are only generated by the router to advertise routes in multiaccess networks.',
+    'designated');
+add('An ASBR generates type LSAs for each of its external routes and floods them into the area that it is connected to.',
+    '5');
+add('A type LSA identifies the ASBR and provides a route to it.',
+    '4');
+add('The command must be issued to configure R1 for multiarea OSPF.',
+    'network 192.168.10.128 0.0.0.127 area 1');
+add('Why are users in the OSPF network not able to access the Internet?',
+    'The network statement is misconfigured on router R1.');
+add('What is the missing command on router R2 to establish an adjacency between routers R1 and R3?',
+    'network 172.16.10.0 0.0.0.255 area 0');
 
 
 // CCNA2 Routing and Switching v6.0 Chapter 7
@@ -158,11 +164,9 @@ add = prompts.add;
  * add('helper label');
  */
 
-// CCNA3 Scaling Networks v6.0 Chapter 8
-add('1 > down, 2 > init, 3 > two-way, 4 > exstart, 5 > exchange, 6 > loading, 7 > full');
-add('update > advertise, database > compare, hello > establish, request > query');
-add('1 > configured, 2 > 172.16.1.1, 3 > 10.1.1.1, 4 > serial');
-add('BW > interface, Protocol > protocols, Neighbor > neighbor, Process > ospf');
+// CCNA3 Scaling Networks v6.0 Chapter 9
+add('internal > same, Area > multiple, backbone > backbone, Autonomous > non-OSPF');
+
 
 // CCNA2 Routing and Switching v6.0 Chapter 7
 add('192.168.15.65 255.255.255.240 ==> the first valid...');
