@@ -62,6 +62,111 @@ add('A network administrator is configuring multiarea OSPFv3 on the routers. The
     'Use the ipv6 ospf priority 10 command on the interface g0/2 of RT1.');
 
 
+// CCNA2 Routing and Switching v6.0 Chapter 9
+add('What is the primary purpose of NAT?',
+    'conserve IPv4 addresses');
+add('Which method is used by a PAT-enabled router to send incoming packets to the correct inside hosts?​',
+    'It uses the destination TCP or UDP port number on the incoming packet.');
+add('What are two benefits of NAT? (Choose two.)',
+    'It saves public IP addresses.',
+    'It adds a degree of privacy and security to a network.');
+add('What is a disadvantage of NAT?',
+    'There is no end-to-end addressing.');
+add('What is an advantage of deploying IPv4 NAT technology for internal hosts in an organization?',
+    'provides flexibility in designing the IPv4 addressing scheme');
+add('Refer to the exhibit. Which address or addresses represent the inside global address?',
+    '209.165.20.25');
+add('Refer to the exhibit. A technician is configuring R2 for static NAT to allow the client to access the web server. What is a possible reason that the client PC cannot access the web server?',
+    'Interface S0/0/0 should be identified as the outside NAT interface.');
+add('A network administrator configures the border router with the command R1(config)# ip nat inside source list 4 pool corp. What is required to be configured in order for this particular command to be functional?',
+    'a NAT pool named corp that defines the starting and ending public IP addresses');
+add('When dynamic NAT without overloading is being used, what happens if seven users attempt to access a public server on the Internet when only six addresses are available in the NAT pool?',
+    'The request to the server for the seventh user fails.');
+add('What is defined by the ip nat pool command when configuring dynamic NAT?',
+    'the pool of global address');
+add('Refer to the exhibit. What is the purpose of the command marked with an arrow shown in the partial configuration output of a Cisco broadband router?',
+    'defines which addresses can be translated');
+add('A network engineer has configured a router with the command ip nat inside source list 4 pool corp overload. Why did the engineer use the overload option?',
+    'The company has more private IP addresses than available public IP addresses.');
+add('What are two of the required steps to configure PAT? (Choose two.)',
+    'Define a pool of global addresses to be used for overload translation.',
+    'Identify the inside interface.');
+add('What is the major benefit of using NAT with Port Address Translation?',
+    'It allows many internal hosts to share the same public IPv4 address.');
+add('What is the purpose of port forwarding?',
+    'Port forwarding allows an external user to reach a service on a private IPv4 address that is located inside a LAN.');
+add('A network administrator is configuring a static NAT on the border router for a web server located in the DMZ network. The web server is configured to listen on TCP port 8080. The web server is paired with the internal IP address of 192.168.5.25 and the external IP address of 209.165.200.230. For easy access by hosts on the Internet, external users do not need to specify the port when visiting the web server. Which command will configure the static NAT?',
+    'R1(config)# ip nat inside source static tcp 192.168.5.25 8080 209.165.200.230 80');
+add('What is a characteristic of unique local addresses?',
+    'They allow sites to be combined without creating any address conflicts.');
+add('Which statement describes IPv6 ULAs?',
+    'They are not routable across the Internet.');
+add('Refer to the exhibit. Based on the output that is shown, what type of NAT has been implemented?',
+    'PAT using an external interface');
+add('Fill in the blank. Do not use abbreviations.\
+    NAT overload is also known as',
+    'Port Address Translation');
+
+// CCNA2 Routing and Switching v6.0 Chapter 10
+add('Beginning with the Cisco IOS Software Release 15.0, which license is a prerequisite for installing additional technology pack licenses?',
+    'IPBase');
+add('What is the major release number in the IOS image name c1900-universalk9-mz.SPA.152-3.T.bin?',
+    '15');
+add('Refer to the exhibit. What does the number 17:46:26.143 represent?',
+    'the time when the syslog message was issued');
+add('What statement describes a Cisco IOS image with the “universalk9_npe” designation for Cisco ISR G2 routers?',
+    'It is an IOS version that, at the request of some countries removes any strong cryptographic functionality');
+add('Refer to the exhibit. Routers R1 and R2 are connected via a serial link. One router is configured as the NTP master, and the other is an NTP client. Which two pieces of information can be obtained from the partial output of the show ntp associations detail command on R2? (Choose two.)',
+    'Router R1 is the master, and R2 is the client',
+    'The IP address of R1 is 192.168.1.2');
+add('A network administrator configures a router with the command sequence:R1(config)# boot system tftp://c1900-universalk9-mz.SPA.152-4.M3.bin R1(config)# boot system rom What is the effect of the command sequence?',
+    'The router will load IOS from the TFTP server. If the image fails to load. It will load the IOS image from ROM.');
+add('What is used as the default event logging destination for Cisco routers and switches?',
+    'console line');
+add('When a customer purchases a Cisco IOS 15.0 software package, what serves as the receipt for that customer and is used to obtain the license as well?',
+    'Product Activation Key');
+add('Refer to the exhibit. Which two conclusions can be drawn from the syslog message that was generated by the router? (Choose two.)',
+    'This message indicates that service timestamps have been configured',
+    'This message is a level 5 notification message');
+add('What code in the Cisco IOS 15 image filename c1900-universalk9-mz.SPA.153-3.M.bin indicates that the file is digitally signed by Cisco?',
+    'SPA');
+add('In addition to IPBase, what are the three technology packs that are shipped within the universal Cisco IOS Software Release 15 image? (Choose three.)',
+    'Security',
+    'DATA',
+    'Unified Communications');
+add('Which three software packages are available for Cisco IOS Release 15.0?',
+    'Unified Communications',
+    'DATA',
+    'Security');
+add('A network engineer is upgrading the Cisco IOS image on a 2900 series ISR. What command could the engineer use to verify the total amount of flash memory as well as how much flash memory is currently available?',
+    'show flashO:');
+add('A ping fails when performed from router R1 to directly connected router R2. The network administrator then proceeds to issue the show cdp neighbors command. Why would the network administrator issue this command if the ping failed between the two routers?',
+    'The network administrator wants to verify Layer 2 connectivity.');
+add('Refer to the exhibit. From what location have the syslog messages been retrieved?',
+    'router RAM');
+add('Which command is used to configure a one-time acceptance of the EULA for all Cisco IOS software packages and features?',
+    'license accept end user agreement');
+add('Which command would a network engineer use to find the unique device identifier of a Cisco router?',
+    'show license udi');
+add('Which syslog message type is accessible only to an administrator and only via the Cisco CLI?',
+    'debugging');
+add('The command ntp server 10.1.1.1 is issued on a router. What impact does this command have?',
+    'synchronizes the system clock with the time source with IP address 10.1 1 1');
+add('Which two statements are true about NTP servers in an enterprise network? (Choose two.)',
+    'NTP servers ensure an accurate time stamp on logging and debugging information',
+    'NTP servers at stratum 1 are directly connected to an authoritative time source');
+add('A network administrator has issued the logging trap 4 global configuration mode command. What is the result of this command?',
+    'The syslog client will send to the syslog server any event message that has a seventy level of 4 and lower');
+add('Which statement is true about CDP on a Cisco device?',
+    'CDP can be disabled globally or on a specific interface');
+add('Why would a network administrator issue the show cdp neigbors command on a router?',
+    'to display device ID and other information about directly connected Cisco devices.');
+add('Which protocol or service allows network administrators to receive system messages that are provided by network devices?',
+    'syslog');
+add('Which two conditions should the network administrator verify before attempting to upgrade a Cisco IOS image using a TFTP server? (Choose two.)',
+    'Verify that there is enough flash memory for the new Cisco IOS image using the show flash command',
+    'Verify connectivity between the router and TFTP server using the ping command');
+
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
 
@@ -72,6 +177,23 @@ add = prompts.add;
 
 // CCNA3 Scaling Networks v6.0 Chapter 10
 add('1 > interface, 2 > manually, 3 > loopback, 4 > physical');
+
+// CCNA2 Routing and Switching v6.0 Chapter 9
+add('step5 -> R1 replaces...');
+add('step2 -> R1 checks...');
+add('step 4 -> R1 selects...');
+add('step 1 -> The host sends...');
+add('step3 -> If there is no...');
+
+// CCNA2 Routing and Switching v6.0 Chapter 10
+add('universalk9 -> specifying...');
+add('1 -> minor release...');
+add('mz -> where the image...');
+add('c1900 -> platform on which..');
+add('m4 -> maintanece release');
+add('4 -> new feature release');
+add('bin -> file extension');
+add('15 ->  major release number');
 
 // CCNA2 Routing and Switching v6.0 RSE PT Assessment Part 1
 add('1:Main/HQ - the main router with many child switches.');
