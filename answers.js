@@ -406,16 +406,16 @@ add = prompts.add;
 add('1 > interface, 2 > manually, 3 > loopback, 4 > physical');
 
 // CCNA2 Routing and Switching v6.0 Final Exam
-add('flash->full oper; ROM->limited oper..; RAM->rout. tab..;NVRAM->startup..');
-add('resiliency->This provedis always-on..');
-add('hierarchical->Layers minim...');
-add('modularity->Each layer has...');
-add('flexibility->This shares the net...');
-add('data VLANs->configured to carry..');
-add('management VLAN->an IP address and...');
-add('default VLAN->all switch ports...');
-add('native VLAN->carries untagged....');
-add('Step3-none-st4-st2-st1');
+add('FE: flash->full oper;ROM->limited oper..; RAM->rout. tab..;NVRAM->startup..');
+add('FE: resiliency->This provedis always-on..');
+add('FE: hierarchical->Layers minim...');
+add('FE: modularity->Each layer has...');
+add('FE: flexibility->This shares the net...');
+add('FE: data VLANs->configured to carry..');
+add('FE: management VLAN->an IP address and...');
+add('FE: default VLAN->all switch ports...');
+add('FE: native VLAN->carries untagged....');
+add('FE: Step3-none-st4-st2-st1');
 
 // CCNA2 Routing and Switching v6.0 Chapter 9
 add('step5 -> R1 replaces...');
