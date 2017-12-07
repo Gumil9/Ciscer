@@ -486,11 +486,14 @@ add('Which two conditions should the network administrator verify before attempt
 add('Refer to the exhibit. Assuming that the routing tables are up to date and no ARP messages are needed, after a packet leaves H1, how many times is the L2 header rewritten in the path to H2?',
     '2');
 add('Refer to the exhibit. Which highlighted value represents a specific destination network in the routing table?',
-    '10.16.100.128');
+    '10.16.100.128',
+    '172.16.100.64 (CCNAv6)',
+    '172.16.100.128 (CCNA5)');
 add('Which type of static route is configured with a greater administrative distance to provide a backup route to a route learned from a dynamic routing protocol?',
     'floating static route');
 add('Refer to the exhibit. Which route was configured as a static route to a specific network using the next-hop address?',
-    'S 10.17.2.0/24 [1/0] via 10.16.2.2');
+    'S 10.17.2.0/24 [1/0] via 10.16.2.2',
+    'S 192.168.2.0/24 [1/0] via 172.16.2.2');
 add('What network prefix and prefix-length combination is used to create a default static route that will match any IPv6 destination?',
     '::/0');
 add('A router has used the OSPF protocol to learn a route to the 172.16.32.0/19 network. Which command will implement a backup floating static route to this network?',
@@ -632,8 +635,6 @@ add('What is the effect of configuring the ipv6 unicast-routing command on a rou
     'to enable the router as an IPv6 router');
 add('What is a characteristic of a static route that creates a gateway of last resort?',
     'It identifies the gateway IP address to which the router sends all IP packets for which it does not have a learned or static route');
-add('Refer to the exhibit. Which route was configured as a static route to a specific network using the next-hop address?',
-    'S 192.168.2.0/24 [1/0] via 172.16.2.2');
 add('Refer to the exhibit. Which command will properly configure an IPv6 static route on R2 that will allow traffic from PC2 to reach PC1 without any recursive lookups by router R2?',
     'R2(config)# ipv6 route 2001:db8:10:12::/64 S0/0/0');
 add('Which network design may be recommended for a small campus site that consists of a single building with a few users?',
@@ -655,13 +656,15 @@ add('Which two characteristics describe the native VLAN? (Choose two.)',
     'The native VLAN traffic will be untagged across the trunk link.',
     'The native VLAN provides a common identifier to both ends of a trunk.');
 add('Which type of traffic is designed for a native VLAN?',
-    'untagged');
+    'untagged (CCNAv6)',
+    'or tagged (CCNA5)');
 add('An administrator is trying to remove configurations from a switch. After using the command erase startup-config and reloading the switch, the administrator finds that VLANs 10 and 100 still exist on the switch. Why were these VLANs not removed?',
     'Because these VLANs are stored in a file that is called vlan.dat that is located in flash memory, this file must be manually deleted.');
 add('Refer to the exhibit. Inter-VLAN communication between VLAN 10, VLAN 20, and VLAN 30 is not successful. What is the problem?',
     'The switch interface FastEthernet0/1 is configured as an access interface and should be configured as a trunk interface.');
 add('A network administrator is configuring an ACL with the command access-list 10 permit 172.16.32.0 0.0.15.255. Which IPv4 address matches the ACE?',
-    '172.16.47.254');
+    '172.16.47.254 (CCNAv6)',
+    'OR 172.16.36.255 (CCNA5)');
 add('Refer to the exhibit. A PC at address 10.1.1.45 is unable to access the Internet. What is the most likely cause of the problem?',
     'The NAT pool has been exhausted.');
 add('A network administrator is verifying a configuration that involves network monitoring. What is the purpose of the global configuration command logging trap 4?',
@@ -671,11 +674,10 @@ add('What is indicated by the M in the Cisco IOS image name c1900-universalk9-mz
 add('Refer to the exhibit. A network engineer is preparing to upgrade the IOS system image on a Cisco 2901 router. Based on the output shown, how much space is available for the new image?',
     '221896413 bytes');
 add('Refer to the exhibit. Based on the exhibited configuration and output, why is VLAN 99 missing?',
-    'because the VLAN 99 has not been manually entered into the VLAN database with the vlan 99 command');
+    'because the VLAN 99 has not been manually entered into the VLAN database with the vlan 99 command',
+    'because VLAN 99 has not yet been created (CCNA5)');
 add('Refer to the exhibit. Assuming that the routing tables are up to date and no ARP messages are needed, after a packet leaves H1, how many times is the L2 header rewritten in the path to H3?',
     '2');
-add('Refer to the exhibit. Which highlighted value represents a specific destination network in the routing table?',
-    '172.16.100.64');
 add('On which two routers would a default static route be configured?',
     'stub router connection to the rest of the corporate or campus network',
     'edge router connection to the ISP');
@@ -690,7 +692,8 @@ add('Refer to the exhibit. All hosts and router interfaces are configured correc
 add('What caused the following error message to appear?01:11:12: %PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/8, putting Fa0/8 in err-disable state01:11:12: %PORT_SECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address 0011.a0d4.12a0 on port FastEthernet0/8.\n\n01:11:13: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to down\n\n01:11:14: %LINK-3-UPDOWN: Interface FastEthernet0/8, changed state to down',
     'Port security was enabled on the switch port, and an unauthorized connection was made on switch port Fa0/8.');
 add('Refer to the exhibit. A small business uses VLANs 2, 3, 4, and 5 between two switches that have a trunk link between them. What native VLAN should be used on the trunk if Cisco best practices are being implemented?',
-    '5');
+    '5 (CCNAv6)',
+    '6 (CCNA5)');
 add('Which statement describes a characteristic of the extended range VLANs that are created on a Cisco 2960 switch?',
     'They are not stored in the vlan.dat file.');
 add('A network administrator is using the router-on-a-stick method to configure inter-VLAN routing. Switch port Gi1/1 is used to connect to the router. Which command should be entered to prepare this port for the task?',
@@ -708,6 +711,8 @@ add('Refer to the exhibit.\n\nA company has an internal network of 172.16.25.0/2
     '172.16.25.35');
 add('What is the purpose of the Cisco PAK?',
     'It is a key for enabling an IOS feature set.');
+add('A network administrator is configuring port security on a Cisco switch. The company security policy specifies that when a violation occurs, packets with unknown source addresses should be dropped and no notification should be sent. Which violation mode should be configured on the interfaces?',
+    'protect');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
