@@ -79,3 +79,57 @@ add = prompts.add;
  */
 
 // CCNA4 v6.0 Chapter 3: PT Skills Assessment - SIC PPP, Routing, and Remote Access VPN
+add('1.Secure / Storage / OffSite Router');
+add('2.conf ter');
+add('3.int s0/0/0');
+add('4.encapsulation hdlc');
+
+add('5.HQ / Corp / Main Router');
+add('6.Password:cisco');
+add('7.HQ>en');
+add('8.Password: class');
+add('9.conf ter');
+add('10.username ISP_1 password cisco123');
+add('11.int s0/0/0');
+add('12.encapsulation ppp');
+add('13.ppp authentication chap');
+add('14.exit');
+
+add('15.router bgp 65530');
+add('16.network 10.1.1.0 mask 255.255.255.0');
+add('17.neighbor 209.165.200.242 remote-as 65500');
+add('18.exit');
+
+add('19.interface tunnel 1');
+add('20.ip address 192.168.1.1 255.255.255.248');
+add('21.tunnel source s0/0/0');
+add('22.tunnel destination 209.165.201.17');
+add('23.exit');
+
+add('24.router ospf 10');
+add('25.network 10.1.1.0 0.0.0.255 area 0');
+add('26.network 10.1.2.0 0.0.0.255 area 0');
+add('27.network 192.168.1.0 0.0.0.7 area 0');
+add('28.passive-interface g0/1');
+add('29.passive-interface g0/2');
+
+add('30.Branch / Remote / Backup');
+add('31.Password: cisco');
+add('32.Branch>en');
+add('33.Password: class');
+add('34.conf ter');
+add('35.router bgp 65532');
+add('36.network 10.2.1.0 mask 255.255.255.0');
+add('37.neighbor 209.165.201.18 remote-as 65500');
+add('38.exit ');
+
+add('39.interface tunnel 1');
+add('40.ip address 192.168.1.2 255.255.255.248');
+add('41.tunnel source s0/0/1');
+add('42.tunnel destination 209.165.200.241');
+add('43.exit');
+
+add('44.router ospf 10');
+add('45.network 10.2.1.0 0.0.0.255 area 0');
+add('46.network 192.168.1.0 0.0.0.7 area 0');
+add('47.passive-interface g0/1');
