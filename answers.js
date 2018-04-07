@@ -6,55 +6,61 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA4 v6.0 Chapter 6
-add('When QoS is implemented in a converged network, which two factors can be controlled to improve network performance for real-time traffic? (Choose two.)',
-    'delay',
-    'jitter');
-add('A network engineer performs a ping test and receives a value that shows the time it takes for a packet to travel from a source to a destination device and return. Which term describes the value?',
-    'latency');
-add('What are two characteristics of voice traffic? (Choose two.)',
-    'Dropped voice packets are not retransmitted.',
-    'Voice traffic latency should not exceed 150 ms.');
-add('How does a Cisco router using tail drop handle congestion when a traffic queue becomes full?',
-    'The router will drop any packet that arrives at the end of the queue.');
-add('For classifying packets into classes with CBWFQ, what is the purpose of configuring a maximum packet limit for a class?',
-    'to control the maximum number of packets allowed in a single queue');
-add('A network engineer is selecting a QoS method to control congestion on a VPN tunnel link between the headquarters site and a branch office. Which queuing method cannot be used to classify and control VPN traffic?',
-    'WFQ');
-add('An administrator has mastered the use of access control lists (ACLs) and wants to deploy QoS by defining different traffic classes through the use of ACLs. Which queuing method provides this functionality?',
-    'CBWFQ');
-add('Which queuing algorithm has only a single queue and treats all packets equally?',
-    'FIFO');
-add('A network administrator is deploying QoS with the ability to provide a special queue for voice traffic so that voice traffic is forwarded before network traffic in other queues. Which queuing method would be the best choice?',
-    'LLQ');
-add('What are two characteristics of DiffServ QoS model? (Choose two.)',
-    'can divide network traffic into classes based on business requirements',
-    'groups all TCP flows into a single class');
-add('What are two characteristics of the best-effort QoS model? (Choose two.)',
-    'It treats all network packets in the same way.',
-    'It does not provide a delivery guarantee for packets.');
-add('What role do network devices play in the IntServ QoS model?',
-    'Network devices ensure that resources are available before traffic is allowed to be sent by a host through the network.');
-add('Which QoS model is very resource intensive and provides the highest guarantee of QoS?',
-    'IntServ');
-add('In QoS models, which type of traffic is commonly provided the most preferential treatment over all other application traffic?',
-    'voice traffic');
-add('What are two approaches to prevent packet loss due to congestion on an interface? (Choose two.)',
-    'Increase link capacity.',
-    'Drop lower-priority packets.');
-add('What two fields are available in IPv4 and IPv6 headers to mark packets for QoS? (Choose two.)',
-    'Type of Service',
-    'Traffic Class');
-add('What is the benefit of deploying Layer 3 QoS marking across an enterprise network?',
-    'Layer 3 marking can carry the QoS information end-to-end.');
-add('Which QoS technology provides congestion avoidance by allowing TCP traffic to be throttled before buffers become full and tail drops occur?',
-    'weighted random early detection');
-add('As traffic is forwarded out an egress interface with QoS treatment, which congestion avoidance technique is used?',
-    'traffic policing');
-add('Which QoS model uses the DSCP bits to mark packets and provides 64 possible classes of service?',
-    'DiffServ');
-add('Which QoS technique retains excess packets in a separate queue for later transmission?',
-    'shaping');
+// CCNA4 v6.0 Chapter 7
+add('What is an example of an M2M connection in the IoT?',
+    'Sensors in a warehouse communicate with each other and send data to a server block in the cloud.');
+add('What is the term for the extension of the existing Internet structure to billions of connected devices?',
+    'IoT');
+add('Which statement describes the Cisco IoT System?',
+    'It is an infrastructure to manage large scale systems of very different endpoints and platforms.');
+add('Which three network models are described in the fog computing pillar of the Cisco IoT System? (Choose three.)',
+    'fog computing',
+    'client/server',
+    'cloud computing');
+add('Which IoT pillar extends cloud connectivity closer to the network edge?',
+    'fog computing pillar');
+add('Which cybersecurity solution is described in the security pillar of the Cisco IoT System to address the security of power plants and factory process lines?',
+    'operational technology specific security');
+add('Which cloud computing opportunity would provide the use of network hardware such as routers and switches for a particular company?',
+    'infrastructure as a service (IaaS)');
+add('What technology allows users to access data anywhere and at any time?',
+    'Cloud computing');
+add('The exhibit is not required to answer the question. The exhibit shows a fog covering trees on the side of a mountain.What statement describes Fog computing?',
+    'It creates a distributed computing infrastructure that provides services close to the network edge.');
+add('Which Cloud computing service would be best for a new organization that cannot afford physical servers and networking equipment and must purchase network services on-demand?',
+    'IaaS');
+add('Which cloud model provides services for a specific organization or entity?',
+    'a private cloud');
+add('How does virtualization help with disaster recovery within a data center?',
+    'support of live migration');
+add('What is a difference between the functions of Cloud computing and virtualization?',
+    'Cloud computing separates the application from the hardware whereas virtualization separates the OS from the underlying hardware.');
+add('Which two business and technical challenges does implementing virtualization within a data center help businesses to overcome? (Choose two.)',
+    'physical footprint',
+    'power and air conditioning');
+add('Which statement describes the concept of cloud computing?',
+    'separation of application from hardware');
+add('Which is a characteristic of a Type 2 hypervisor?',
+    'does not require management console software');
+add('Which is a characteristic of a Type 1 hypervisor?',
+    'installed directly on a server');
+add('How is the control plane modified to operate with network virtualization?',
+    'The control plane function is consolidated into a centralized controller.');
+add('Which technology virtualizes the network control plane and moves it to a centralized controller?',
+    'SDN');
+add('Which two layers of the OSI model are associated with SDN network control plane functions that make forwarding decisions? (Choose two.)',
+    'Layer 2',
+    'Layer 3');
+add('What pre-populates the FIB on Cisco devices that use CEF to process packets?',
+    'the routing table');
+add('Which type of hypervisor would most likely be used in a data center?',
+    'Type 1');
+add('What component is considered the brains of the ACI architecture and translates application policies?',
+    'the Application Policy Infrastructure Controller');
+add('In an IoT implementation, devices will be connected to a network to share the same infrastructure and to facilitate communications, analytics, and management.',
+    'converged');
+add('In a scenario where a user with a laptop running the Mac OS installs a Windows virtual OS instance, the user is implementing a Type hypervisor.',
+    '2');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -64,4 +70,4 @@ add = prompts.add;
  * add('helper label');
  */
 
-// CCNA4 v6.0 Chapter 6
+// CCNA4 v6.0 Chapter 7
