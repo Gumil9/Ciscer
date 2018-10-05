@@ -4976,14 +4976,18 @@ add('A network administrator would like to ensure that router R1 is always elect
     'R1(config-if)# ip address 192.168.1.100 255.255.255.0\nR1(config-if)# standby 1 ip 192.168.1.1\nR1(config-if)# standby 1 priority 255\nR1(config-if)# standby 1 preempt\nR1(config-if)# no shutdown');
 add('Fill in the blank.',
     'virtual');
-add('What are two reasons why the ping messages that are issued from Laptop0 towards Laptop1 are failing? (Choose two.)',
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. What are two reasons why the ping messages that are issued from Laptop0 towards Laptop1 are failing? (Choose two.)',
     'The channel group should be configured as a trunk on each switch.',
     'The two interfaces on each of the switches belong to different VLANs.');
+add('In FHRP terminology, what represents a set of routers that present the illusion of a single router to hosts?',
+    'virtual router');
+add('Which command must be used on SW2 to enable this EtherChannel?',
+    'SW2(config-if-range)# channel-group 1 mode desirable');
 
-add('Prop > Rapid');
-add('Cisco > PVST');
-add('Fast > RSTP');
-add('IEEE > MSTP');
+add('the list of ports > etherchannel port-channel');
+add('information about the status > interfaces fa0/2');
+add('information about the reliability > interfaces port-channel1');
+add('is used to check > etherchannel summary');
 
 
 // CCNA3 Scaling Networks v6.0 Chapter 5
