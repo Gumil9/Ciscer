@@ -6,64 +6,64 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA3 Scaling Networks v6.0 Chapter 4
-add('Which switching technology would allow each access layer switch link to be aggregated to provide more bandwidth between each Layer 2 switch and the Layer 3 switch?',
-    'EtherChannel');
-add('Which statement is true regarding the use of PAgP to create EtherChannels?',
-    'It is Cisco proprietary.');
-add('Which two protocols are used to implement EtherChannel? (Choose two.)',
-    'Port Aggregation Protocol',
-    'Link Aggregation Control Protocol');
-add('Which statement describes a characteristic of EtherChannel?',
-    'It is made by combining multiple physical links that are seen as one link between two switches.');
-add('Which statement describes an EtherChannel implementation?',
-    'A trunked port can be part of an EtherChannel bundle.');
-add('An EtherChannel link using LACP was formed between two switches, S1 and S2. While verifying the configuration, which mode combination could be utilized on both switches?',
-    'S1-passive and S2-active');
-add('What is an advantage of using LACP?',
-    'allows automatic formation of EtherChannel links');
-add('What is a best practice to use before beginning an EtherChannel implementation?',
-    'Shut down each of the affected interfaces.');
-add('Which PAgP mode combination will establish an EtherChannel?',
-    'switch 1 set to desirable; switch 2 set to desirable.');
-add('Which three options must match in order to establish an EtherChannel between two directly connected switches? (Choose three.)',
-    'VLAN memberships of the interfaces that are used for EtherChannel',
-   'speed of the interfaces that are used for EtherChannel',
-    'duplex settings of the interfaces that are used for EtherChannel');
-add('A network administrator is configuring an EtherChannel link between switches SW1 and SW2 by using the command SW1(config-if-range)# channel-group 1 mode passive. Which command must be used on SW2 to enable this EtherChannel?',
-    'SW2(config-if-range)# channel-group 1 mode active');
-add('An EtherChannel was configured between switches S1 and S2, but the interfaces do not form an EtherChannel. What is the problem?',
-    'The EtherChannel was not configured with the same allowed range of VLANs on each interface.');
-add('A network administrator has decided that an EtherChannel between ports 0/1 and 0/2 on switches S1 and S2 would help performance. After making the configuration, the administrator notices no performance gain. Based on the output that is shown, what two possible assumptions could a network administrator make? (Choose two.)',
-    'The EtherChannel bundle is not working.',
-    'One of the ports on S2 was not configured correctly.');
-add('A network administrator issued the show etherchannel summary command on the switch S1. What conclusion can be drawn?',
-    'The EtherChannel is not functional.');
-add('Based on the command output shown, what is the status of the EtherChannel?',
-    'The EtherChannel is in use and functional as indicated by the SU and P flags in the command output.');
-add('What is a requirement to configure a trunking EtherChannel between two switches?',
-    'The allowed range of VLANs must be the same on both switches.');
-add('What is the purpose of HSRP?',
-    'It provides a continuous network connection when a router fails.');
-add('Which nonproprietary protocol provides router redundancy for a group of routers which support IPv4 LANs?',
-    'VRRPv2');
-add('A network administrator configured routers R1 and R2 as part of HSRP group 1. After the routers have been reloaded, a user on Host1 complained of lack of connectivity to the Internet The network administrator issued the show standby brief command on both routers to verify the HSRP operations. In addition, the administrator observed the ARP table on Host1. Which entry should be seen in the ARP table on Host1 in order to gain connectivity to the Internet?',
-    'the virtual IP address and the virtual MAC address for the HSRP group 1');
-add('What statement is true about the output of the show standby command?',
-    'The router is currently forwarding packets.');
-add('A network engineer is troubleshooting host connectivity on a LAN that uses a first hop redundancy protocol. Which IPv4 gateway address should be configured on the host?',
-    '192.168.2.100');
-add('A network administrator would like to ensure that router R1 is always elected the active router for an HSRP group. Which set of commands would ensure the required results?',
-    'R1(config-if)# ip address 192.168.1.100 255.255.255.0\nR1(config-if)# standby 1 ip 192.168.1.1\nR1(config-if)# standby 1 priority 255\nR1(config-if)# standby 1 preempt\nR1(config-if)# no shutdown');
-add('Fill in the blank.',
-    'virtual');
-add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. What are two reasons why the ping messages that are issued from Laptop0 towards Laptop1 are failing? (Choose two.)',
-    'The channel group should be configured as a trunk on each switch.',
-    'The two interfaces on each of the switches belong to different VLANs.');
-add('In FHRP terminology, what represents a set of routers that present the illusion of a single router to hosts?',
-    'virtual router');
-add('Which command must be used on SW2 to enable this EtherChannel?',
-    'SW2(config-if-range)# channel-group 1 mode desirable');
+// CCNA3 Scaling Networks v6.0 Chapter 5
+add('Which dynamic routing protocol was developed as an exterior gateway protocol to interconnect different Internet providers?',
+    'BGP');
+add('In the context of routing protocols, what is a definition for time to convergence?',
+    'the amount of time for the routing tables to achieve a consistent state after a topology change');
+add('An OSPF enabled router is processing learned routes to select best paths to reach a destination network. What is the OSPF algorithm evaluating as the metric?',
+    'The cumulative bandwidth that is used along the routing path.');
+add('What is the difference between interior and exterior routing protocols?',
+    'Interior routing protocols are used to communicate within a single autonomous system. Exterior routing protocols are used to communicate between multiple autonomous systems.');
+add('What are two purposes of dynamic routing protocols? (Choose two.)',
+    'discover remote networks',
+    'select best path to destination networks');
+add('Which routing protocol is designed to use areas to scale large hierarchical networks?',
+    'OSPF');
+add('Which two routing protocols are classified as distance vector routing protocols? (Choose two.)',
+    'EIGRP',
+    'RIP');
+add('A network administrator has configured RIPv2 in the given topology. Which path would a packet take to get from the LAN that is connected to R1 to the LAN that is connected to R7?',
+    'R1–R2–R6–R7');
+add('Which routing protocol sends a routing update to neighboring routers every 30 seconds?',
+    'RIP');
+add('After a network topology change occurs, which distance vector routing protocol can send an update message directly to a single neighboring router without unnecessarily notifying other routers?',
+    'EIGRP');
+add('Which feature provides secure routing updates between RIPv2 neighbors?',
+    'routing protocol authentication');
+add('What is maintained within an EIGRP topology table?',
+    'all routes received from neighbors');
+add('A network administrator is researching routing protocols for implementation in a critical network infrastructure. Which protocol uses the DUAL algorithm to provide almost instantaneous convergence during a route failover?',
+    'EIGRP');
+add('OSPF is used in the network. Which path will be chosen by OSPF to send data packets from Net A to Net B?',
+    'R1, R3, R5, R7');
+add('What are two features of the OSPF routing protocol? (Choose two.)',
+    'calculates its metric using bandwidth',
+    'uses Dijkstra’s algorithm to build the SPF tree');
+add('Which two protocols are link-state routing protocols? (Choose two.)',
+    'OSPF',
+    'IS-IS');
+add('Which routing protocol uses link-state information to build a map of the topology for computing the best path to each destination network?',
+    'OSPF');
+add('Which two requirements are necessary before a router configured with a link-state routing protocol can build and send its link-state packets? (Choose two.)',
+    'The router has determined the costs associated with its active links.',
+    'The router has established its adjacencies.');
+add('What happens when two link-state routers stop receiving hello packets from neighbors?',
+    'They consider the neighbor to be unreachable and the adjacency is broken.');
+add('Which two events will trigger the sending of a link-state packet by a link-state routing protocol? (Choose two.)',
+    'a change in the topology',
+    'the initial startup of the routing protocol process');
+add('What is the first step taken by a newly configured OSPF router in the process of reaching a state of convergence?',
+    'It learns about directly connected links in an active state.');
+add('Which two components of an LSP enable an OSPF router to determine if the LSP that is received contains newer information than what is in the current OSPF router link-state database? (Choose two.)',
+    'sequence numbers',
+    'aging informatio');
+add('Which statement is an incorrect description of the OSPF protocol?',
+    'When compared with distance vector routing protocols, OSPF utilizes less memory and less CPU processing power.');
+add('What is a disadvantage of deploying OSPF in a large single area routing environment?',
+    'OSPF uses excessive LSP flooding.');
+add('What is the first step taken by a newly configured OSPF router in the process of reaching a state of convergence?',
+    'It learns about directly connected links in an active state.');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -73,7 +73,5 @@ add = prompts.add;
  * add('helper label');
  */
 
-add('the list of ports > etherchannel port-channel');
-add('information about the status > interfaces fa0/2');
-add('information about the reliability > interfaces port-channel1');
-add('is used to check > etherchannel summary');
+add('adv: event, building, fast');
+add('disadv: bandwidth, memory, CPU');
