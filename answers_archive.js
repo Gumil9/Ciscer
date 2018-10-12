@@ -4994,7 +4994,7 @@ add('is used to check > etherchannel summary');
 add('Which dynamic routing protocol was developed as an exterior gateway protocol to interconnect different Internet providers?',
     'BGP');
 add('In the context of routing protocols, what is a definition for time to convergence?',
-    'the capability to transport data, video, and voice over the same media');
+    'the amount of time for the routing tables to achieve a consistent state after a topology change');
 add('An OSPF enabled router is processing learned routes to select best paths to reach a destination network. What is the OSPF algorithm evaluating as the metric?',
     'The cumulative bandwidth that is used along the routing path.');
 add('What is the difference between interior and exterior routing protocols?',
@@ -5046,6 +5046,8 @@ add('Which statement is an incorrect description of the OSPF protocol?',
     'When compared with distance vector routing protocols, OSPF utilizes less memory and less CPU processing power.');
 add('What is a disadvantage of deploying OSPF in a large single area routing environment?',
     'OSPF uses excessive LSP flooding.');
+add('What is the first step taken by a newly configured OSPF router in the process of reaching a state of convergence?',
+    'It learns about directly connected links in an active state.');
 
 add('adv: event, building, fast');
 add('disadv: bandwidth, memory, CPU');
