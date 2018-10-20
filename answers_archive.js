@@ -5106,6 +5106,10 @@ add('In an EIGRP topology table, a route that is in a/an state will cause the Di
     'active');
 add('Which code is displayed on the web server?',
     'Complete');
+add('What protocol is use by EIGRP to deliver EIGRP packets to neighbors?',
+    'RTP');
+add('Which condition will cause DUAL to put an EIGRP route into the active state?',
+    'The successor is no longer available and there is no feasible successor.');
 
 // CCNA3 Scaling Networks v6.0 Chapter 6
 add('1 > eigrp, 2 > IPv4 on loopback, 3 > IPv4 on active');
