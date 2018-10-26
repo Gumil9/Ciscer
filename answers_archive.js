@@ -5172,6 +5172,10 @@ add('The command to propagate the default route from the router Border to the re
     'redistribute static');
 add('R1 and R2 could not establish an EIGRP adjacency. What is the problem?',
     'EIGRP is down on R1.');
+add('Which verification command would identify the specific interfaces on a router that were configured with the passive-interface command?',
+    'show ip protocols');
+add('What is the administrative distance of a static route that has been redistributed into EIGRP?',
+    '170');
 
 // CCNA3 Scaling Networks v6.0 Chapter 8
 add('What is used to create the OSPF neighbor table?',
