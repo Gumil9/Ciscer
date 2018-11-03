@@ -5220,6 +5220,10 @@ add('The election of a DR and a BDR takes place on networks, such as Ethernet ne
     'multiaccess');
 add('What message is displayed on http://www.ciscoville.com?',
     'Completion!');
+add('What is the metric that is used by OSPF?',
+    'cost');
+add('What function is performed by the OSPF designated router?',
+    'dissemination of LSAs');
 
 add('1 > down, 2 > init, 3 > two-way, 4 > exstart, 5 > exchange, 6 > loading, 7 > full');
 add('update > advertise, database > compare, hello > establish, request > query');
