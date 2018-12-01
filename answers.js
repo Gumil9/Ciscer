@@ -16,96 +16,80 @@ add = prompts.add;
  * add('helper label');
  */
 
-// CCNA3 v6.0 EIGRP Practice Skills Assessment
-add('CCNA3 v6.0 EIGRP Practice Skills Assessment');
+// CCNA3 v6.0 OSPF Practice Skills Assessment
+add('CCNA3 v6.0 OSPF Practice Skills Assessment');
 
-add('DataCenter/Ed_Dept Router = R1 = top-most');
+add('Administration = R0 = top & center');
 
-add('Clinic_10/Primary-2 Router = R2-2 = low & left');
-add('Hospital_1/Primary-1 Router = R2 = low & center');
-add('Hospital_2 / High_School Router = R3 = low & right');
+add('Science = R010 = middle & left');
+add('Technology = R020 = middle & right');
 
-add('Net_1 / Dist-1 Switch = S1 = top-most in switch triangle to the right');
-add('FL_1 Switch / Acc-1 Switch = S2 = left-most in switch triangle to the right');
-add('Fl_2 Switch / Acc-2 Switch = S3 = right-most in switch triangle to the right');
+add('Bio = R101 = low & left-most');
+add('Physics = R102 = low & left-center');
+add('CompSci = R201 = low & right-center');
+add('Electronics = R202 = low & right-most');
 
-add('PC-B = second from the left');
-
-add('PC-A = first from the left');
-add('PC-M = fourth from the left');
-
-add('Lets start!');
-add('DataCenter/Ed_Dept Router = R1 = top-most');
+add('Administration = R0');
 add('en | conf term | ip route 0.0.0.0 0.0.0.0 s0/1/0 | ipv6 unicast-routing | ipv6 route ::/0 s0/1/0');
-add('router eigrp 99 | network 192.168.100.8 0.0.0.3 | network 192.168.100.20 0.0.0.3 | eigrp router-id 1.1.1.1 | exit');
-add('ipv6 router eigrp 99 | eigrp router-id 1.1.1.1 | no shutdown | exit');
-add('int s0/0/0 | ipv6 eigrp 99 | int s0/0/1 | ipv6 eigrp 99 | int s0/1/0 | ipv6 eigrp 99 | int s0/0/0 | bandwidth 2000 | int s0/0/1 | bandwidth 2000 | exit');
-add('router eigrp 99 | redistribute static | exit | ipv6 router eigrp 99 | redistribute static | exit');
+add('router ospf 10 | network 10.10.10.0 0.0.0.3 area 0 | network 10.10.20.0 0.0.0.3 area 0');
+add('router-id 10.20.0.0 | do clear ip ospf process | yes | exit');
+add('int s0/0/0 | bandwidth 128000 | int s0/0/1 | bandwidth 128000 | exit');
+add('int s0/0/0 | ipv6 ospf 10 area 0 | int s0/0/1 | int s0/0/1 | exit');
+add('Ipv6 router ospf 10 | router-id 10.20.0.0 | do clear ipv6 ospf process | yes | exit');
+add('router ospf 10 | auto-cost reference-bandwidth 1000 | exit');
+add('router ospf 10 | default-information originate | exit | ipv6 router ospf 10 | default-information originate | exit');
+add('ipv6 router ospf 10 | auto-cost reference-bandwidth 1000');
 
-add('Clinic_10/Primary-2 Router = R2-2 = low & left');
-add('en | conf t | ip route 0.0.0.0 0.0.0.0 s0/0/0 | int g0/0 | standby 1 ip 10.1.0.1 | standby version 2');
+add('Science = R010');
+add('en | conf term | router ospf 10 | network 10.10.10.0 0.0.0.3 area 0 | network 172.16.10.0 0.0.0.3 area 10');
+add('network 172.16.10.4 0.0.0.3  area 10 | router-id 10.0.0.0 | do clear ip ospf process | yes | exit | ipv6 unicast-routing');
+add('Int s0/0/0 | Ipv6 ospf 10 area 0 | Int s0/0/1 | Ipv6 ospf 10 area 10 | Int s0/1/0 | Ipv6 ospf 10 area 10');
+add('int s0/0/0 | bandwidth 128000 | exit');
+add('ipv6 router ospf 10 | router-id 10.0.0.0 | do clear ipv6 ospf process | yes | exit');
+add('ipv6 router ospf 10 | auto-cost reference-bandwidth 1000 | exit');
+add('router ospf 10 | auto-cost reference-bandwidth 1000');
 
-add('Hospital_1/Primary-1 Router = R2 = low & center');
-add('en | conf t | router eigrp 99 | network 10.1.0.0 0.0.0.255 | network 192.168.100.8 0.0.0.3 | network 192.168.100.32 0.0.0.3 | eigrp router-id 2.2.2.2 | exit');
-add('ipv6 unicast-routing | ipv6 router eigrp 99 | eigrp router-id 2.2.2.2 | no shutdown | exit');
-add('int s0/0/1 | ipv6 eigrp 99 | int s0/0/0 | ipv6 eigrp 99 | int g0/0 | ipv6 eigrp 99 | exit');
-add('int s0/0/0 | bandwidth 2000 | exit | router eigrp 99 | passive-interface g0/0 | exit');
-add('int g0/0 | standby 1 ip 10.1.0.1 | standby 1 preempt | standby 1 priority 150 | standby version 2 | exit');
+add('Technology = R020');
+add('en | conf term | Router ospf 10 | network 10.10.20.0 0.0.0.3 area 0 | network 172.16.20.0 0.0.0.3 area 20 | network 172.16.20.4 0.0.0.3  area 20');
+add('router-id 20.0.0.0 | do clear ip ospf process | yes | exit | ipv6 unicast-routing');
+add('Int s0/0/0 | Ipv6 ospf 10 area 0 | Int s0/0/1 | Ipv6 ospf 10 area 20 | Int s0/1/0 | Ipv6 ospf 10 area 20 | int s0/0/0 | bandwidth 128000 | exit');
+add('Ipv6 router ospf 10 | router-id 20.0.0.0 | do clear ipv6 ospf process | yes | exit');
+add('router ospf 10 | auto-cost reference-bandwidth 1000 | exit | ipv6 router ospf 10 | auto-cost reference-bandwidth 1000');
 
-add('Hospital_2 / High_School Router = R3 = low & right');
-add('en | conf t | router eigrp 99 | network 10.10.0.0 0.0.0.255 | network 10.15.0.0 0.0.0.255 | network 10.20.0.0 0.0.0.255');
-add('network 192.168.100.20 0.0.0.3 | network 192.168.100.32 0.0.0.3 | eigrp router-id 3.3.3.3 | exit');
-add('ipv6 unicast-routing | ipv6 router eigrp 99 | eigrp router-id 3.3.3.3 | no shutdown | exit');
-add('int g0/0.10 | ipv6 eigrp 99 | int g0/0.15 | ipv6 eigrp 99 | int g0/0.20 | ipv6 eigrp 99 | exit');
-add('int s0/0/0 | ipv6 eigrp 99 | int s0/0/1 | ipv6 eigrp 99 | int s0/1/0 | ipv6 eigrp 99 | int s0/0/1 | bandwidth 2000 | exit');
-add('router eigrp 99 | passive-interface g0/0.10 | passive-interface g0/0.15 | passive-interface g0/0.20 | exit');
-add('int g0/0 | no shutdown | exit');
+add('Bio = R101');
+add('en | conf term | router ospf 10 | network 172.16.10.0 0.0.0.3 area 10 | network 192.168.11.0 0.0.0.255 area 10 | network 172.16.10.8 0.0.0.3  area 10');
+add('router-id 10.1.1.1 | do clear ip ospf process | yes | exit | ipv6 unicast-routing');
+add('int s0/0/0 | ipv6 ospf 10 area 10 | int g0/0 | ipv6 ospf 10 area 10 | int g0/1 | ipv6 ospf 10 area 10 | exit');
+add('ipv6 router ospf 10 | router-id 10.1.1.1 | do clear ipv6 ospf process | yes | exit | int g0/1 | ip ospf priority 255 | exit');
+add('router ospf 10 | passive-interface g0/0 | exit | router ospf 10 | auto-cost reference-bandwidth 1000 | exit');
+add('int g0/1 | ip ospf hello-interval 5 | ip ospf dead-interval 20 | exit | int g0/1 | ipv6 ospf priority 255 | exit');
+add('ipv6 router ospf 10 | passive-interface g0/0 | exit | int g0/1 | ipv6 ospf hello-interval 5 | ipv6 ospf dead-interval 20 | exit');
+add('ipv6 router ospf 10 | auto-cost reference-bandwidth 1000');
 
-add('Net_1 / Dist-1 Switch = S1 = top-most in switch triangle to the right');
-add('WARN: Change VTP domain and VTP Password to match your exam!');
-add('en | conf t | int range f0/3-4 | channel-group 1 mode active | int range f0/5-6 | channel-group 2 mode active | exit');
-add('int g0/1 | no shutdown | int g0/1 | switchport mode trunk | switchport trunk native vlan 99 | int g0/1 | switchport nonegotiate');
-add('int range f0/3-4 | switchport mode trunk | switchport trunk native vlan 99');
-add('int port-channel 1 | switchport mode trunk | switchport trunk native vlan 99 | switchport nonegotiate');
-add('int range f0/5-6 | switchport mode trunk | switchport trunk native vlan 99');
-add('int port-channel 2 | switchport mode trunk | switchport trunk native vlan 99 | switchport nonegotiate | exit');
-add('vtp mode server | WARN: change domain & password | vtp domain TownEd | vtp password TWE_123! | vtp version 2');
-add('spanning-tree mode rapid-pvst | spanning-tree vlan 10,15,20 priority 24576');
+add('Physics = R102');
+add('en | conf term | Router ospf 10 | network 172.16.10.4 0.0.0.3 area 10 | network 172.16.10.8 0.0.0.3 area 10 | network 192.168.12.0 0.0.0.255 area 10');
+add('router-id 10.2.2.2 | do clear ip ospf process | yes | exit | ipv6 unicast-routing');
+add('int s0/0/0 | ipv6 ospf 10 area 10 | int g0/0 | ipv6 ospf 10 area 10 | int g0/1 | ipv6 ospf 10 area 10');
+add('ipv6 router ospf 10 | router-id 10.2.2.2 | do clear ip ospf process | yes | exit');
+add('int g0/1 | ip ospf priority 200 | exit | router ospf 10 | passive-interface g0/0 | exit | router ospf 10 | auto-cost reference-bandwidth 1000 | exit');
+add('int g0/1 | ip ospf hello-interval 5 | ip ospf dead-interval 20 | exit | int g0/1 | ipv6 ospf priority 200 | exit');
+add('ipv6 router ospf 10 | passive-interface g0/0 | exit | int g0/1 | ipv6 ospf hello-interval 5 | ipv6 ospf dead-interval 20 | exit');
+add('ipv6 router ospf 10 | auto-cost reference-bandwidth 1000');
 
-add('FL_1 Switch / Acc-1 Switch = S2 = left-most in switch triangle to the right');
-add('WARN: Change VTP domain and VTP Password to match your exam!');
-add('en | conf t | int range f0/3-4 | channel-group 1 mode active | int range f0/1-2 | channel-group 3 mode active | exit');
-add('int range f0/3-4 | switchport mode trunk | switchport trunk native vlan 99');
-add('int port-channel 1 | switchport mode trunk | switchport trunk native vlan 99 | switchport nonegotiate');
-add('int range f0/1-2 | switchport mode trunk | switchport trunk native vlan 99');
-add('int port-channel 3 | switchport mode trunk | switchport trunk native vlan 99 | switchport nonegotiate | exit');
-add('vtp mode client | WARN: change domain & password | vtp domain TownEd | vtp password TWE_123! | vtp version 2');
-add('spanning-tree mode rapid-pvst | int range f0/10-24 | spanning-tree bpduguard enable | spanning-tree portfast');
+add('CompSci = R201');
+add('en | conf term | Router ospf 10 | network 172.16.20.0 0.0.0.3 area 20 | network 192.168.21.0 0.0.0.255 area 20');
+add('router-id 20.1.1.1 | do clear ip ospf process | yes | exit | ipv6 unicast-routing');
+add('int s0/0/0 | ipv6 ospf 10 area 20 | int g0/0 | ipv6 ospf 10 area 20 | exit');
+add('ipv6 router ospf 10 | router-id 20.1.1.1 | do clear ipv6 ospf process | yes | exit | router ospf 10 | passive-interface g0/0 | exit');
+add('ipv6 router ospf 10 | passive-interface g0/0 | exit | router ospf 10 | auto-cost reference-bandwidth 1000 | exit');
+add('ipv6 router ospf 10 | auto-cost reference-bandwidth 1000');
 
-add('Fl_2 Switch / Acc-2 Switch = S3 = right-most in switch triangle to the right');
-add('WARN: Change VTP domain and VTP Password to match your exam!');
-add('en | conf t | int range f0/5-6 | channel-group 2 mode active | int range f0/1-2 | channel-group 3 mode active | exit');
-add('int range f0/5-6 | switchport mode trunk | switchport trunk native vlan 99');
-add('int port-channel 2 | switchport mode trunk | switchport trunk native vlan 99 | switchport nonegotiate');
-add('int range f0/1-2 | switchport mode trunk | switchport trunk native vlan 99');
-add('int port-channel 3 | switchport mode trunk | switchport trunk native vlan 99 | switchport nonegotiate | exit');
-add('vtp mode client | WARN: change domain & password | vtp domain TownEd | vtp password TWE_123!');
-add('spanning-tree mode rapid-pvst | spanning-tree vlan 10,15,20 priority 28672');
-
-add('NOTE: you may need to add & delete a vlan on "Net_1 / Dist-1 Switch = S1 = top-most in switch triangle to the right" in order to update config');
-add('vlan 666 | no vlan 666');
-
-add('PC-B = second from the left');
-add('Desktop tab -> Command Prompt');
-add('Enter telnet 2001:DB8:E::1 | Authenticate your Telnet session with the password cisco | Move to privileged EXEC mode using the password admin');
-add('en | conf t | int g0/0 | no sh');
-
-add('PC-A = first from the left');
-add('Desktop tab -> IP configuration');
-add('Default Gateway 10.1.0.1');
-
-add('PC-M = fourth from the left');
-add('Desktop tab -> IP configuration');
-add('Default Gateway 10.1.0.1');
+add('Electronics = R202');
+add('en | term | Router ospf 10 | network 172.16.20.4 0.0.0.3 area 20 | network 192.168.22.0 0.0.0.255 area 20');
+add('router-id 20.2.2.2 | do clear ip ospf process | yes | exit | ipv6 unicast-routing');
+add('int s0/0/0 | ipv6 ospf 10 area 20 | int g0/0 | ipv6 ospf 10 area 20 | exit');
+add('ipv6 router ospf 10 | router-id 20.2.2.2 | do clear ipv6 ospf process | yes | exit');
+add('router ospf 10 | passive-interface g0/0 | exit | ipv6 router ospf 10 | passive-interface g0/0 | exit');
+add('router ospf 10 | auto-cost reference-bandwidth 1000 | exit | ipv6 router ospf 10 | auto-cost reference-bandwidth 1000');
 
 add('That is all!');
