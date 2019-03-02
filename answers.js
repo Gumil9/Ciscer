@@ -6,62 +6,58 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA4 v6.0 Chapter 1
-add('A small company with 10 employees uses a single LAN to share information between computers. Which type of connection to the Internet would be appropriate for this company?',
-    'a broadband service, such as DSL, through their local service provider');
-add('Which network scenario will require the use of a WAN?',
-    'Employees need to connect to the corporate email server through a VPN while traveling.');
-add('Which statement describes a characteristic of a WAN?',
-    'WAN networks are owned by service providers.');
-add('What are two common types of circuit-switched WAN technologies? (Choose two.)',
-    'ISDN',
-    'PSTN');
-add('Which two devices are needed when a digital leased line is used to provide a connection between the customer and the service provider? (Choose two.)',
-    'DSU',
-    'CSU');
-add('What is a requirement of a connectionless packet-switched network?',
-    'Full addressing information must be carried in each data packet.');
-add('What is an advantage of packet-switched technology over circuit-switched technology?',
-    'Packet-switched networks can efficiently use multiple routes inside a service provider network.');
-add('A new corporation needs a data network that must meet certain requirements. The network must provide a low cost connection to sales people dispersed over a large geographical area. Which two types of WAN infrastructure would meet the requirements? (Choose two.)',
-    'public infrastructure',
-    'Internet');
-add('What is a long distance fiber-optic media technology that supports both SONET and SDH, and assigns incoming optical signals to specific wavelengths of light?',
-    'DWDM');
-add('What are two common high-bandwidth fiber-optic media standards? (Choose two.)',
-    'SONET',
-    'SDH');
-add('Which WAN technology is cell-based and well suited to carry voice and video traffic?',
-    'ATM');
-add('Which two technologies use the PSTN network to provide an Internet connection? (Choose two.)',
-    'dialup',
-    'ISDN');
-add('A company needs to interconnect several branch offices across a metropolitan area. The network engineer is seeking a solution that provides high-speed converged traffic, including voice, video, and data on the same network infrastructure. The company also wants easy integration to their existing LAN infrastructure in their office locations. Which technology should be recommended?',
-    'Ethernet WAN');
-add('Which solution can provide Internet access to remote locations where no regular WAN services are available?',
-    'VSAT');
-add('Which WAN technology establishes a dedicated constant point-to-point connection between two sites?',
-    'leased lines');
-add('A customer needs a metropolitan area WAN connection that provides high-speed, dedicated bandwidth between two sites. Which type of WAN connection would best fulfill this need?',
-    'Ethernet WAN');
-add('Which feature is used when connecting to the Internet using DSL?',
-    'DSLAM');
-add('Which connectivity method would be best for a corporate employee who works from home two days a week, but needs secure access to internal corporate databases?',
-    'VPN');
-add('Which wireless technology provides Internet access through cellular networks?',
-    'LTE');
-add('A home user lives within 10 miles (16 kilometers) of the Internet provider network. Which type of technology provides high-speed broadband service with wireless access for this home user?',
-    'WiMAX');
-add('What is the recommended technology to use over a public WAN infrastructure when a branch office is connected to the corporate site?',
-    'VPN');
-add('What can cause a reduction in available bandwidth on a cable broadband connection?',
-    'number of subscribers');
-add('Which equipment is needed for an ISP to provide Internet connections through cable service?',
-    'CMTS');
-add('Which geographic scope requirement would be considered a distributed WAN scope?',
-    'many-to-many');
-add('A corporation is looking for a solution to connect multiple, newly established remote branch offices. Which consideration is important when selecting a private WAN connection rather than a public WAN connection?',
-    'data security and confidentiality during transmission');
+// CCNA4 v6.0 Chapter 2
+add('Which three are types of LCP frames used with PPP? (Choose three.)',
+    'link-establishment frames',
+    'link-termination frames',
+    'link-maintenance frames');
+add('Which command can be used to view the cable type that is attached to a serial interface?',
+    'Router(config)# show controllers');
+add('How does PPP interface with different network layer protocols?',
+    'by using separate NCPs');
+add('Which address is used in the Address field of a PPP frame?',
+    'a single byte of binary 11111111');
+add('Which field marks the beginning and end of an HDLC frame?',
+    'Flag');
+add('In which situation would the use of PAP be preferable to the use of CHAP?',
+    'when plain text passwords are needed to simulate login at the remote host');
+add('When configuring Multilink PPP, where is the IP address for the multilink bundle configured?',
+    'on a multilink interface');
+add('Based on the debug command output that is shown, which statement is true of the operation of PPP.',
+    'A PPP session was successfully established.');
+add('A network administrator is configuring the PPP link between the two routers. However, the PPP link cannot be established. Based on the partial output of the show running-config command, what is the cause of the problem?',
+    'The passwords do not match.');
+add('Which protocol will terminate the PPP link after the exchange of data is complete?',
+    'LCP');
+add('Which serial 0/0/0 interface state will be shown if no serial cable is attached to the router, but everything else has been correctly configured and turned on?',
+    'Serial 0/0/0 is down, line protocol is down');
+add('How much total bandwidth is provided by a T1 line?',
+    '1.544 Mb/s');
+add('A network engineer is monitoring an essential, but poor quality, PPP WAN link that periodically shuts down. An examination of the interface configurations shows that the ppp quality 90 command has been issued. What action could the engineer take to reduce the frequency with which the link shuts down?',
+    'Issue the command ppp quality 70.');
+add('A network engineer is troubleshooting the loss of MPEG video viewing quality as MPEG video files cross a PPP WAN link. What could be causing this loss of quality?',
+    'The compress command was used when PPP was configured on the interfaces.');
+add('Which PPP option can detect links that are in a looped-back condition?',
+    'Magic Number');
+add('A network engineer has issued the show interfaces serial 0/0/0 command on a router to examine the open NCPs on a PPP link to another router. The command output displays that the encapsulation is PPP and that the LCP is open. However, the IPV6CP NCP is not shown as open. What does the engineer need to configure to open the IPV6CP NCP on the link?',
+    'Configure an IPv6 address on each interface on the link.');
+add('Which three physical layer interfaces support PPP? (Choose three.)',
+    'synchronous serial',
+    'asynchronous serial',
+    'HSSI');
+add('What are three components of PPP? (Choose three.)',
+    'NCP',
+    'HDLC-like framing',
+    'LCP');
+add('A laptop is connected to an AP and is associated with the connection that is labeled A. The AP is connected to a switch and is associated with the connection that is labeled B. A PC is attached to the switch. The switch is connected to router RTA. The connection of the PC, through the switch, to RTA is associated with the connection that is labeled C. RTA is connected via a serial connection to the ISP and is associated with the connection labeled D.Refer to the exhibit. What type of Layer 2 encapsulation will be used for connection D on the basis of this configuration on a newly installed router:',
+    'HDLC');
+add('Which two statements describe a PPP connection between two Cisco routers? (Choose two.)',
+    'LCP tests the quality of the link.',
+    'LCP manages compression on the link.');
+add('Why is the serial link between router R1 and router R2 not operational?',
+    'In each case the expected username is not the same as the remote router hostname.');
+add('Which is an advantage of using PPP on a serial link instead of HDLC?',
+    'option for authentication');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -71,6 +67,7 @@ add = prompts.add;
  * add('helper label');
  */
 
-// CCNA4 v6.0 Chapter 1
-add('CPE > devices and inside, DCE > devices that provide, DTE > customer, local loop > a physical');
-add('set up > municipal, slow > satellite, phone > DSL, video > cable');
+// CCNA4 v6.0 Chapter 2
+add('max > max, auth > PAP, multi > load, comp > increase');
+add('1 > establish, 2 > determine, 3 > negotiate');
+add('1 > use LCP, 2 > calculate ID, 3 > calculate MD5, 4 > send ID, 5 > calculate hash, 6 > compare hash');
