@@ -79,6 +79,10 @@ add = prompts.add;
 
 // CCNA4 v6.0 Chapter 3: PT Skills Assessment - SIC PPP, Routing, and Remote Access VPN
 add('1.Secure / Storage / OffSite Router');
+add('User Access Verification');
+add('cisco  <~~~~Password is: cisco');
+add('en');
+add('class    <~~~~Password is: class');
 add('2.conf ter');
 add('3.int s0/0/0');
 add('4.encapsulation hdlc');
@@ -132,3 +136,5 @@ add('44.router ospf 10');
 add('45.network 10.2.1.0 0.0.0.255 area 0');
 add('46.network 192.168.1.0 0.0.0.7 area 0');
 add('47.passive-interface g0/1');
+
+
