@@ -6,68 +6,64 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA4 v6.0 Chapter 3
-add('Which broadband wireless technology is based on the 802.11 standard?',
-    'municipal Wi-Fi');
-add('What is the approximate distance limitation for providing a satisfactory ADSL service from the central office to a customer?',
-    '3.39 miles or 5.46 kilometers');
-add('What is a component of an ADSL connection that is located at the customer site?',
-    'CPE');
-add('What is the function of the DSLAM in a broadband DSL network?',
-    'multiplexes individual customer DSL connections into a single upstream link');
-add('Which broadband technology would be best for a small office that requires fast upstream connections?',
-    'fiber-to-the-home');
-add('What are two WAN connection enhancements that are achieved by implementing PPPoE? (Choose two.)',
-    'CHAP enables customer authentication and accounting.',
-    'PPP enables the ISP to assign an IP address to the customer WAN interface.');
-add('When PPPoE is configured on a customer router, which two commands must have the same value for the configuration to work? (Choose two.)',
-    'dialer pool 2',
-    'pppoe-client dial-pool-number 2');
-add('Why is the MTU for a PPPoE DSL configuration reduced from 1500 bytes to 1492?',
-    'to accommodate the PPPoE headers');
-add('What are two characteristics of a PPPoE configuration on a Cisco customer router? (Choose two.)',
-    'The Ethernet interface does not have an IP address.',
-    'The PPP configuration is on the dialer interface.');
-add('Where is PPPoE configured on a Cisco router?',
-    'on the dialer interface');
-add('How can the use of VPNs in the workplace contribute to lower operating costs?',
-    'VPNs can be used across broadband connections rather than dedicated WAN links.');
-add('How is “tunneling” accomplished in a VPN?',
-    'New headers from one or more VPN protocols encapsulate the original packets.');
-add('Which two statements describe a remote access VPN? (Choose two.)',
-    'It may require VPN client software on hosts.',
-    'It is used to connect individual hosts securely to a company network over the Internet.');
-add('Which is a requirement of a site-to-site VPN?',
-    'It requires a VPN gateway at each end of the tunnel to encrypt and decrypt traffic.');
-add('What functionality does mGRE provide to the DMVPN technology?',
-    'It allows the creation of dynamically allocated tunnels through a permanent tunnel source at the hub and dynamically allocated tunnel destinations at the spokes.');
-add('Which two scenarios are examples of remote access VPNs? (Choose two.)',
-    'An employee who is working from home uses VPN client software on a laptop in order to connect to the company network.',
-    'A mobile sales agent is connecting to the company network via the Internet connection at a hotel.');
-add('What solution can provide a VPN between site A and site B to support encapsulation of any Layer 3 protocol between the internal networks at each site?',
-    'a GRE tunnel');
-add('Which three statements are characteristics of generic routing encapsulation (GRE)? (Choose three.)',
-    'GRE does not have strong security mechanisms.',
-    'GRE is stateless.',
-    'GRE encapsulation supports any OSI Layer 3 protocol.');
-add('Which IP address is configured on the physical interface of the CORP router?',
-    '209.165.202.133');
-add('Which IP address would be configured on the tunnel interface of the destination router?',
-    '172.16.1.2');
-add('A tunnel was implemented between routers R1 and R2. Which two conclusions can be drawn from the R1 command output? (Choose two.)',
-    'The data that is sent across this tunnel is not secure.',
-    'A GRE tunnel is being used.');
-add('What is used by BGP to determine the best path to a destination?',
-    'attributes');
-add('What command specifies a BGP neighbor that has an IP address of 5.5.5.5/24 and that is in AS 500?',
-    '(config-router)# neighbor 5.5.5.5 remote-as 500');
-add('Multiple BGP processes can run on a router.',
-    'false');
-add('Which two configurations will allow router R1 to establish a neighbor relationship with router R2? (Choose two.)',
-    'R2(config)# router bgp 65002, R2(config-router)# network 192.168.20.0, R2(config-router)# neighbor 209.165.200.225 remote-as 65001',
-    'R1(config)# router bgp 65001, R1(config-router)# network 192.168.10.0, R1(config-router)# neighbor 209.165.200.226 remote-as 65002');
-add('What is the code displayed on the web page?',
-    'BGP is running!');
+// CCNA4 v6.0 Chapter 5
+add('What is the behavior of a switch as a result of a successful CAM table attack?',
+    'The switch will forward all received frames to all other ports.');
+add('What network attack seeks to create a DoS for clients by preventing them from being able to obtain a DHCP lease?',
+    'DHCP starvation');
+add('The exhibit shows a network consisting of a router, two switches, a DHCP client host, an attacker host, and a DHCP server. Switch S1 shows four interface connections: G0/1 to the DHCP client, G0/22 to switch S2, G0/24 to router R1, and G0/23 to the DHCP server. The attacker host is connected to switch S2.Refer to the exhibit. Which interface on switch S1 should be configured as a DHCP snooping trusted port to help mitigate DHCP spoofing attacks?',
+    'G0/23');
+add('When using 802.1X authentication, what device controls physical access to the network, based on the authentication status of the client?',
+    'the switch that the client is connected to');
+add('What device is considered a supplicant during the 802.1X authentication process?',
+    'the client that is requesting authentication');
+add('What is a drawback of the local database method of securing device access that can be solved by using AAA with centralized servers?',
+    'User accounts must be configured locally on each device, which is an unscalable authentication solution.');
+add('The exhibit shows a network topology. On the top, there are two routers, labeled R1 and R2. Under the two routers, there are two Layer 3 switches, labeled DS1 and DS2, . Under DS1 and DS2, there are three Layer 2 switches, labeled AS1, AS2, and AS3. Both R1 and R2 have two connections, one to DS1 and another to DS2. DS1 and DS2 each has three connections, one to AS1, one to AS2, and one to AS3. PC1 is connected on switch AS1 and PC2 is connected to switch AS2. There is a DHCP server connected on switch AS3.Refer to the exhibit. PC1 and PC2 should be able to obtain IP address assignments from the DHCP server. How many ports among switches should be assigned as trusted ports as part of the DHCP snooping configuration?',
+    '7');
+add('What protocol is used to encapsulate the EAP data between the authenticator and authentication server performing 802.1X authentication?',
+    'RADIUS');
+add('Which two protocols are used to provide server-based AAA authentication? (Choose two.)',
+    'RADIUS',
+    'TACACS+');
+add('Which protocol defines port-based authentication to restrict unauthorized hosts from connecting to the LAN through publicly accessible switch ports?',
+    '802.1x');
+add('What are three techniques for mitigating VLAN attacks? (Choose three.)',
+    'Enable trunking manually.',
+    'Disable DTP.',
+    'Set the native VLAN to an unused VLAN.');
+add('Which statement describes SNMP operation?',
+    'A set request is used by the NMS to change configuration variables in the agent device.');
+add('A network administrator is analyzing the features supported by the multiple versions of SNMP. What are two features that are supported by SNMPv3 but not by SNMPv1 or SNMPv2c? (Choose two.)',
+    'message encryption',
+    'message source validation');
+add('Which protocol or service can be configured to send unsolicited messages to alert the network administrator about a network event such as an extremely high CPU utilization on a router?',
+    'SNMP');
+add('What is the function of the MIB element as part of a network management system?',
+    'to store data about a device');
+add('Which SNMP version uses weak community string-based access control and supports bulk retrieval?',
+    'SNMPv2c');
+add('What are SNMP trap messages?',
+    'unsolicited messages that are sent by the SNMP agent and alert the NMS to a condition on the network');
+add('What can be concluded after the commands are entered?',
+    'If an interface comes up, a trap is sent to the server.');
+add('What can be concluded from the produced output?',
+    'An ACL was configured to restrict SNMP access to an SNMP manager.');
+add('A SNMP manager has IP address 172.16.1.120. The SNMP manager is unable to change configuration variables on the R1 SNMP agent. What could be the problem?',
+    'The SNMP agent is not configured for write access.');
+add('Router R1 was configured by a network administrator to use SNMP version 2. The following commands were issued: Why is the administrator not able to get any information from R1?',
+    'There is a problem with the ACL configuration.');
+add('A network administrator has issued the snmp-server user admin1 admin v3 encrypted auth md5 abc789 priv des 256 key99 command. What are two features of this command? (Choose two.)',
+    'It uses the MD5 authentication of the SNMP messages.',
+    'It adds a new user to the SNMP group.');
+add('Which statement describes the RSPAN VLAN?',
+    'The RSPAN VLAN must be the same on both the source and destination switch.');
+add('Which statement describes the function of the SPAN tool used in a Cisco switch?',
+    'It copies the traffic from one switch port and sends it to another switch port that is connected to a monitoring device.');
+add('Based on the output generated by the show monitor session 1 command, how will SPAN operate on the switch?',
+    'All traffic received on VLAN 10 or transmitted from VLAN 20 is forwarded to FastEthernet 0/1.');
+add('Which command or set of commands will configure SW_A to copy all traffic for the server to the packet analyzer?',
+    'Sw_A(config)# monitor session 5 source interface gi0/1, Sw_A(config)# monitor session 5 destination interface fa0/7');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
@@ -77,64 +73,4 @@ add = prompts.add;
  * add('helper label');
  */
 
-// CCNA4 v6.0 Chapter 3: PT Skills Assessment - SIC PPP, Routing, and Remote Access VPN
-add('1.Secure / Storage / OffSite Router');
-add('User Access Verification');
-add('cisco  <~~~~Password is: cisco');
-add('en');
-add('class    <~~~~Password is: class');
-add('2.conf ter');
-add('3.int s0/0/0');
-add('4.encapsulation hdlc');
-
-add('5.HQ / Corp / Main Router');
-add('6.Password:cisco');
-add('7.HQ>en');
-add('8.Password: class');
-add('9.conf ter');
-add('10.username ISP_1 password cisco123');
-add('11.int s0/0/0');
-add('12.encapsulation ppp');
-add('13.ppp authentication chap');
-add('14.exit');
-
-add('15.router bgp 65530');
-add('16.network 10.1.1.0 mask 255.255.255.0');
-add('17.neighbor 209.165.200.242 remote-as 65500');
-add('18.exit');
-
-add('19.interface tunnel 1');
-add('20.ip address 192.168.1.1 255.255.255.248');
-add('21.tunnel source s0/0/0');
-add('22.tunnel destination 209.165.201.17');
-add('23.exit');
-
-add('24.router ospf 10');
-add('25.network 10.1.1.0 0.0.0.255 area 0');
-add('26.network 10.1.2.0 0.0.0.255 area 0');
-add('27.network 192.168.1.0 0.0.0.7 area 0');
-add('28.passive-interface g0/1');
-add('29.passive-interface g0/2');
-
-add('30.Branch / Remote / Backup');
-add('31.Password: cisco');
-add('32.Branch>en');
-add('33.Password: class');
-add('34.conf ter');
-add('35.router bgp 65532');
-add('36.network 10.2.1.0 mask 255.255.255.0');
-add('37.neighbor 209.165.201.18 remote-as 65500');
-add('38.exit ');
-
-add('39.interface tunnel 1');
-add('40.ip address 192.168.1.2 255.255.255.248');
-add('41.tunnel source s0/0/1');
-add('42.tunnel destination 209.165.200.241');
-add('43.exit');
-
-add('44.router ospf 10');
-add('45.network 10.2.1.0 0.0.0.255 area 0');
-add('46.network 192.168.1.0 0.0.0.7 area 0');
-add('47.passive-interface g0/1');
-
-
+add('in a sybnet > 192.168.5.0 0.0.3.255, all IP > host, first valid > 192.168.15.65 255.255.255.240, subnetwork > 192.168.15.144 0.0.0.15, addresses > 192.168.3.64 0.0.0.7');
