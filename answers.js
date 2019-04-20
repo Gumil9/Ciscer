@@ -25,6 +25,10 @@ add('Which cloud computing opportunity would provide the use of network hardware
     'infrastructure as a service (IaaS)');
 add('What technology allows users to access data anywhere and at any time?',
     'Cloud computing');
+add('Which type of Hypervisor is implemented when a user with a laptop running the Mac OS installs a Windows virtual OS instance?',
+    'type 2');
+add('When preparing an IoT implementation, what type of network will devices be connected to in order to share the same infrastructure and facilitate communications, analytics, and management?',
+    'converged');
 add('The exhibit is not required to answer the question. The exhibit shows a fog covering trees on the side of a mountain.What statement describes Fog computing?',
     'It creates a distributed computing infrastructure that provides services close to the network edge.');
 add('Which Cloud computing service would be best for a new organization that cannot afford physical servers and networking equipment and must purchase network services on-demand?',
