@@ -6,65 +6,65 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA4 v6.0 Chapter 7
-add('What is an example of an M2M connection in the IoT?',
-    'Sensors in a warehouse communicate with each other and send data to a server block in the cloud.');
-add('What is the term for the extension of the existing Internet structure to billions of connected devices?',
-    'IoT');
-add('Which statement describes the Cisco IoT System?',
-    'It is an infrastructure to manage large scale systems of very different endpoints and platforms.');
-add('Which three network models are described in the fog computing pillar of the Cisco IoT System? (Choose three.)',
-    'fog computing',
-    'client/server',
-    'cloud computing');
-add('Which IoT pillar extends cloud connectivity closer to the network edge?',
-    'fog computing pillar');
-add('Which cybersecurity solution is described in the security pillar of the Cisco IoT System to address the security of power plants and factory process lines?',
-    'operational technology specific security');
-add('Which cloud computing opportunity would provide the use of network hardware such as routers and switches for a particular company?',
-    'infrastructure as a service (IaaS)');
-add('What technology allows users to access data anywhere and at any time?',
-    'Cloud computing');
-add('Which type of Hypervisor is implemented when a user with a laptop running the Mac OS installs a Windows virtual OS instance?',
-    'type 2');
-add('When preparing an IoT implementation, what type of network will devices be connected to in order to share the same infrastructure and facilitate communications, analytics, and management?',
-    'converged');
-add('The exhibit is not required to answer the question. The exhibit shows a fog covering trees on the side of a mountain.What statement describes Fog computing?',
-    'It creates a distributed computing infrastructure that provides services close to the network edge.');
-add('Which Cloud computing service would be best for a new organization that cannot afford physical servers and networking equipment and must purchase network services on-demand?',
-    'IaaS');
-add('Which cloud model provides services for a specific organization or entity?',
-    'a private cloud');
-add('How does virtualization help with disaster recovery within a data center?',
-    'support of live migration');
-add('What is a difference between the functions of Cloud computing and virtualization?',
-    'Cloud computing separates the application from the hardware whereas virtualization separates the OS from the underlying hardware.');
-add('Which two business and technical challenges does implementing virtualization within a data center help businesses to overcome? (Choose two.)',
-    'physical footprint',
-    'power and air conditioning');
-add('Which statement describes the concept of cloud computing?',
-    'separation of application from hardware');
-add('Which is a characteristic of a Type 2 hypervisor?',
-    'does not require management console software');
-add('Which is a characteristic of a Type 1 hypervisor?',
-    'installed directly on a server');
-add('How is the control plane modified to operate with network virtualization?',
-    'The control plane function is consolidated into a centralized controller.');
-add('Which technology virtualizes the network control plane and moves it to a centralized controller?',
-    'SDN');
-add('Which two layers of the OSI model are associated with SDN network control plane functions that make forwarding decisions? (Choose two.)',
-    'Layer 2',
-    'Layer 3');
-add('What pre-populates the FIB on Cisco devices that use CEF to process packets?',
-    'the routing table');
-add('Which type of hypervisor would most likely be used in a data center?',
-    'Type 1');
-add('What component is considered the brains of the ACI architecture and translates application policies?',
-    'the Application Policy Infrastructure Controller');
-add('In an IoT implementation, devices will be connected to a network to share the same infrastructure and to facilitate communications, analytics, and management.',
-    'converged');
-add('In a scenario where a user with a laptop running the Mac OS installs a Windows virtual OS instance, the user is implementing a Type hypervisor.',
-    '2');
+// CCNA4 v6.0 Chapter 8
+add('When should a network performance baseline be measured?',
+    'during normal work hours of an organization');
+add('What is a purpose of establishing a network baseline?',
+    'It creates a point of reference for future network evaluations.');
+add('Which three pieces of information are typically recorded in a logical topology diagram? (Choose three.)',
+    'static routes',
+    'routing protocols',
+    'IP address and prefix lengths');
+add('In which step of gathering symptoms does the network engineer determine if the problem is at the core, distribution, or access layer of the network?',
+    'Narrow the scope.');
+add('A team of engineers has identified a solution to a significant network problem. The proposed solution is likely to affect critical network infrastructure components. What should the team follow while implementing the solution to avoid interfering with other processes and infrastructure?',
+    'change-control procedures');
+add('What action occurs at stage 3 of the general troubleshooting process?',
+    'Correct the problem.');
+add('After which step in the network troubleshooting process would one of the layered troubleshooting methods be used?',
+    'gathering symptoms from suspect devices');
+add('A network technician is troubleshooting an email connection problem. Which question to the end-user will provide clear information to better define the problem?',
+    'When did you first notice your email problem?');
+add('A network engineer is troubleshooting a network problem and can successfully ping between two devices. However, Telnet between the same two devices does not work. Which OSI layers should the administrator investigate next?',
+    'from the network layer to the application layer');
+add('A network administrator is having issues with a newly installed network not appearing in other routers. At which layer of the OSI model is the network administrator going to start the troubleshooting process when using a top-down approach?',
+    'network');
+add('Which troubleshooting method begins by examining cable connections and wiring issues?',
+    'bottom-up');
+add('On the basis of the information presented, which two IP SLA related statements are true? (Choose two.)',
+    'IP SLA 99 will run forever unless explicitly disabled.',
+    'IP SLA 99 is sending echo requests every 10 seconds.');
+add('A company is setting up a web site with SSL technology to protect the authentication credentials required to access the web site. A network engineer needs to verify that the setup is correct and that the authentication is indeed encrypted. Which tool should be used?',
+    'protocol analyzer');
+add('Which category of software troubleshooting tools provides device-level monitoring, configuration, and fault-management?',
+    'network management system tools');
+add('Which two specialized troubleshooting tools can monitor the amount of traffic that passes through a switch? (Choose two.)',
+    'portable network analyzer',
+    'NAM');
+add('Which number represents the most severe level of syslog logging?',
+    '0');
+add('A user in a large office calls technical support to complain that a PC has suddenly lost connectivity to the network. The technician asks the caller to talk to nearby users to see if other machines are affected. The caller reports that several immediate neighbors in the same department have a similar problem and that they cannot ping each other. Those who are seated in other departments have connectivity. What should the technician check as the first step in troubleshooting the issue?',
+    'the status of the departmental workgroup switch in the wiring closet');
+add('A user reports that after an OS patch of the networking subsystem has been applied to a workstation, it performs very slowly when connecting to network resources. A network technician tests the link with a cable analyzer and notices that the workstation sends an excessive number of frames smaller than 64 bytes and also other meaningless frames. What is the possible cause of the problem?',
+    'corrupted NIC driver');
+add('An administrator is troubleshooting an Internet connectivity problem on a router. The output of the show interfaces gigabitethernet 0/0 command reveals higher than normal framing errors on the interface that connects to the Internet. At what layer of the OSI model is the problem likely occurring?',
+    'Layer 2');
+add('A group of Windows PCs in a new subnet has been added to an Ethernet network. When testing the connectivity, a technician finds that these PCs can access local network resources but not the Internet resources. To troubleshoot the problem, the technician wants to initially confirm the IP address and DNS configurations on the PCs, and also verify connectivity to the local router. Which three Windows CLI commands and utilities will provide the necessary information?',
+    'ping',
+    'nslookup',
+    'ipconfig');
+add('Users report that the new web site http://www.company1.biz cannot be accessed. The helpdesk technician checks and verifies that the web site can be accessed with http://www.company1.biz:90. Which layer in the TCP/IP model is involved in troubleshooting this issue?',
+    'transport');
+add('A networked PC is having trouble accessing the Internet, but can print to a local printer and ping other computers in the area. Other computers on the same network are not having any issues. What is the problem?',
+    'The PC has a missing or incorrect default gateway.');
+add('The newly configured ASBR that connects a company to the Internet has a default route configured and has the default-information originate command entered. Devices connected through this router can access the Internet. The problem is that no other OSPF routers have a default route in the routing table and no other users throughout the organization can access the Internet. What could be the problem?',
+    'The ASBR does not have an OSPF neighbor.');
+add('An internal corporate server can be accessed by internal PCs, but not by external Internet users that should have access. What could be the issue?',
+    'Static NAT has not been configured properly or at all.');
+add('Use the cache to verify IPv4 address to Layer 2 Ethernet address mappings on a host computer.',
+    'ARP');
+add('A user reports that PC0 cannot visit the web server www.server.com. Troubleshoot the network configuration to identify the problem. What is the cause of the problem?',
+    'A serial interface encapsulation is configured incorrectly.');
 
 /*Prompts for matching questions and Packet Tracer Labs*/
 add = prompts.add;
