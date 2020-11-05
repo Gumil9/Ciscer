@@ -93,4 +93,3 @@ add = prompts.add;
 add('1 - the switch adds the source MAC address... 2 - Because the destination is not known');
 add('type - a value for the tag protocol ID value; VLAN ID - a VLAN number; user priority - a value that supports; canonical format identifier - an identifier that enables');
 add('dynamic desirable- actively; dynamic auto - passively; nonegotiate - requires; trunk - permanent trunking');
-add('');
