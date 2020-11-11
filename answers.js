@@ -76,7 +76,7 @@ add('Refer to the exhibit. A network administrator is configuring inter-VLAN rou
 add('Which type of VLAN is used to designate which traffic is untagged when crossing a trunk port?', 'native');
 add('A network administrator issues the show vlan brief command while troubleshooting a user support ticket. What output will be displayed?', 'the VLAN assignment and membership for all switch ports');
 add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.', 'File Server');
-add('Match each DHCP message type with its description. (Not all options are used.)', 'DHCPACK - DHCP confirming'. 'DHCPREQUEST - client accepting', 'DHCPDISCOVER - client initiating', 'DHCPOFFER - DHCP responding');
+add('Match each DHCP message type with its description. (Not all options are used.)', 'DHCPACK - DHCP confirming', 'DHCPREQUEST - client accepting', 'DHCPDISCOVER - client initiating', 'DHCPOFFER - DHCP responding');
 add('What additional information is contained in the 12-bit extended system ID of a BPDU?', 'VLAN ID');
 add('During the implementation of Spanning Tree Protocol, all switches are rebooted by the network administrator. What is the first step of the spanning-tree election process?', 'All the switches send out BPDUs advertising themselves as the root bridge.');
 add('Which STP port role is adopted by a switch port if there is no other port with a lower cost to the root bridge?', 'root port');
