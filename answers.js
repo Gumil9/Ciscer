@@ -6,7 +6,7 @@ var add = tests.add;
  * add(question, answer0 [, answer1, ...]);
  */
 
-// CCNA4 v7.0 test modules 1-4
+// CCNA4 v7.0 2 sem test modules 1-6
 add('Which tasks can be accomplished by using the command history feature? (Choose two.)', 'Set the command history buffer size.', 'Recall previously entered commands.');
 add('What is the first action in the boot sequence when a switch is powered on?', 'load a power-on self-test program');
 add('What must an administrator have in order to reset a lost password on a router?', 'physical access to the router');
@@ -54,7 +54,7 @@ add('Refer to the exhibit. A router-on-a-stick configuration was implemented for
 add('What is a characteristic of a routed port on a Layer 3 switch?', 'It is not assigned to a VLAN.');
 add('Refer to the exhibit. A network administrator needs to configure router-on-a-stick for the networks that are shown. How many subinterfaces will have to be created on the router if each VLAN that is shown is to be routed and each VLAN has its own subinterface?', '4');
 add('A technician is configuring a new Cisco 2960 switch. What is the effect of issuing the BranchSw(config-if)# mdix auto command?', 'It automatically adjusts the port to allow device connections to use either a straight-through or a crossover cable.');
-add(' A technician is configuring a new Cisco 2960 switch. What is the effect of issuing the BranchSw(config-if)# ip address 172.18.33.88 255.255.255.0 command?', 'It applies an IPv4 address to the virtual interface.');
+add('A technician is configuring a new Cisco 2960 switch. What is the effect of issuing the BranchSw(config-if)# ip address 172.18.33.88 255.255.255.0 command?', 'It applies an IPv4 address to the virtual interface.');
 add('A technician is configuring a new Cisco 2960 switch. What is the effect of issuing the BranchSw# configure terminal command?', 'It enters the global configuration mode.');
 add('A technician is configuring a new Cisco 2960 switch. What is the effect of issuing the BranchSw(config-if)# shutdown command?', 'It disables a virtual or physical switch interface.');
 add('A technician is configuring a new Cisco 2960 switch. What is the effect of issuing the BranchSw(config-if)# ipv6 address 2001:db8:a2b4:88::1/64 command?', 'It applies an IPv6 address to the virtual interface.');
@@ -76,10 +76,59 @@ add('Refer to the exhibit. A network administrator is configuring inter-VLAN rou
 add('Which type of VLAN is used to designate which traffic is untagged when crossing a trunk port?', 'native');
 add('A network administrator issues the show vlan brief command while troubleshooting a user support ticket. What output will be displayed?', 'the VLAN assignment and membership for all switch ports');
 add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.', 'File Server');
-add('Match each DHCP message type with its description. (Not all options are used.)', 'DHCPACK - DHCP confirming', 'DHCPREQUEST - client accepting', 'DHCPDISCOVER - client initiating', 'DHCPOFFER - DHCP responding');
-
-
-
+add('Match each DHCP message type with its description. (Not all options are used.)', 'DHCPACK - DHCP confirming'. 'DHCPREQUEST - client accepting', 'DHCPDISCOVER - client initiating', 'DHCPOFFER - DHCP responding');
+add('What additional information is contained in the 12-bit extended system ID of a BPDU?', 'VLAN ID');
+add('During the implementation of Spanning Tree Protocol, all switches are rebooted by the network administrator. What is the first step of the spanning-tree election process?', 'All the switches send out BPDUs advertising themselves as the root bridge.');
+add('Which STP port role is adopted by a switch port if there is no other port with a lower cost to the root bridge?', 'root port');
+add('Which two concepts relate to a switch port that is intended to have only end devices attached and intended never to be used to connect to another switch? (Choose two.)', 'edge port', 'PortFast');
+add('Which three components are combined to form a bridge ID?', 'extended system ID', 'bridge priority', 'MAC address');
+add('In which two port states does a switch learn MAC addresses and process BPDUs in a PVST network? (Choose two.)', 'forwarding', 'learning');
+add('If no bridge priority is configured in PVST, which criteria is considered when electing the root bridge?', 'lowest MAC address');
+add('When the show spanning-tree vlan 33 command is issued on a switch, three ports are shown in the forwarding state. In which two port roles could these interfaces function while in the forwarding state? (Choose two.)', 'designated', 'root');
+add('What is the function of STP in a scalable network?', 'It disables redundant paths to eliminate Layer 2 loops.');
+add('What is a characteristic of spanning tree?', 'It is enabled by default on Cisco switches.');
+add('Which spanning tree standard supports only one root bridge so that traffic from all VLANs flows over the same path?', '802.1D');
+add('What is the purpose of the Spanning Tree Protocol (STP)?', 'prevents Layer 2 loops');
+add('What is the value used to determine which port on a non-root bridge will become a root port in a STP network?', 'the path cost');
+add('What are two drawbacks to turning spanning tree off and having multiple paths through the Layer 2 switch network? (Choose two.)', 'The MAC address table becomes unstable.', 'Broadcast frames are transmitted indefinitely.');
+add('A small company network has six interconnected Layer 2 switches. Currently all switches are using the default bridge priority value. Which value can be used to configure the bridge priority of one of the switches to ensure that it becomes the root bridge in this design?', '28672');
+add('Refer to the exhibit. The administrator tried to create an EtherChannel between S1 and the other two switches via the commands that are shown, but was unsuccessful. What is the problem?', 'Traffic cannot be sent to two different switches through the same EtherChannel link.');
+add('Which statement is true regarding the use of PAgP to create EtherChannels?', 'It is Cisco proprietary.');
+add('What are two requirements to be able to configure an EtherChannel between two switches? (Choose two.)', 'All the interfaces need to work at the same speed.', 'All the interfaces need to be working in the same duplex mode.');
+add('Refer to the exhibit. On the basis of the output that is shown, what can be determined about the EtherChannel bundle?', 'A Cisco proprietary protocol was used to negotiate the EtherChannel link.');
+add('Which two parameters must match on the ports of two switches to create a PAgP EtherChannel between the switches? (Choose two.)', 'speed', 'VLAN information');
+add('Refer to the exhibit. A network administrator is configuring an EtherChannel link between two switches, SW1 and SW2. Which statement describes the effect after the commands are issued on SW1 and SW2?', 'The EtherChannel fails to establish.');
+add('Refer to the exhibit. A network administrator is configuring an EtherChannel link between two switches, SW1 and SW2. However, the EtherChannel link fails to establish. What change in configuration would correct the problem?', 'Configure SW2 EtherChannel mode to desirable.');
+add('A network administrator configured an EtherChannel link with three interfaces between two switches. What is the result if one of the three interfaces is down?', 'The remaining two interfaces continue to load balance traffic.');
+add('A network administrator is configuring an EtherChannel link between switches SW1 and SW2 by using the command SW1(config-if-range)# channel-group 1 mode auto . Which command must be used on SW2 to enable this EtherChannel?', 'SW2(config-if-range)# channel-group 1 mode desirable');
+add('Which technology is an open protocol standard that allows switches to automatically bundle physical ports into a single logical link?', 'LACP');
+add('What is a requirement to configure a trunking EtherChannel between two switches?', 'The allowed range of VLANs must be the same on both switches.');
+add('What are two advantages of using LACP? (Choose two.)', 'It allows directly connected switches to negotiate an EtherChannel link.', 'It allows the use of multivendor devices.');
+add('A switch is configured to run STP. What term describes a non-root port that is permitted to forward traffic on the network?', 'designated port');
+add('What are two advantages of EtherChannel? (Choose two.)', 'Spanning Tree Protocol views the physical links in an EtherChannel as one logical connection.', 'Configuring the EtherChannel interface provides consistency in the configuration of the physical links.');
+add('Refer to the exhibit. What are the possible port roles for ports A, B, C, and D in this RSTP-enabled network?', 'alternate, designated, root, root');
+add('Refer to the exhibit. Which switching technology would allow each access layer switch link to be aggregated to provide more bandwidth between each Layer 2 switch and the Layer 3 switch?', 'EtherChannel');
+add('Refer to the exhibit. An administrator wants to form an EtherChannel between the two switches by using the Port Aggregation Protocol. If switch S1 is configured to be in auto mode, which mode should be configured on S2 to form the EtherChannel?', 'desirable');
+add('Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which set of configuration commands issued on SW1 will successfully complete the EtherChannel link between SW1 and SW2?', 'interface GigabitEthernet0/1, channel-group 1 mode desirable');
+add('A set of switches is being connected in a LAN topology. Which STP bridge priority value will make it least likely for the switch to be selected as the root?', '61440');
+add('In which two PVST+ port states are MAC addresses learned? (Choose two.)', 'learning', 'forwarding');
+add('Which port role is assigned to the switch port that has the lowest cost to reach the root bridge?', 'root port');
+add('A switch is configured to run STP. What term describes the switch port closest, in terms of overall cost, to the root bridge', 'root port');
+add('A switch is configured to run STP. What term describes a field used to specify a VLAN ID?', 'extended system ID');
+add('A switch is configured to run STP. What term describes the reference point for all path calculations?', 'root bridge');
+add('A switch is configured to run STP. What term describes a field that has a default value of 32,768 and is the initial deciding factor when electing a root bridge?', 'bridge priority');
+add('Which statement describes an EtherChannel implementation?', 'A trunked port can be part of an EtherChannel bundle.');
+add('Refer to the exhibit. A network administrator issued the show etherchannel summary command on the switch S1. What conclusion can be drawn?', 'The EtherChannel is not functional.');
+add('Which statement describes a characteristic of EtherChannel?', 'It is made by combining multiple physical links that are seen as one link between two switches.');
+add('Which two channel group modes would place an interface in a negotiating state using PAgP? (Choose two.)', 'desirable', 'auto');
+add('Which mode configuration setting would allow formation of an EtherChannel link between switches SW1 and SW2 without sending negotiation traffic?', 'SW1: on; SW2: on');
+add('Refer to the exhibit. An EtherChannel was configured between switches S1 and S2, but the interfaces do not form an EtherChannel. What is the problem?', 'The EtherChannel was not configured with the same allowed range of VLANs on each interface.');
+add('When EtherChannel is configured, which mode will force an interface into a port channel without exchanging aggregation protocol packets?', 'on');
+add('What are two load-balancing methods in the EtherChannel technology? (Choose two.)', 'source IP to destination IP', 'source MAC to destination MAC');
+add('Which protocol provides up to 16 instances of RSTP, combines many VLANs with the same physical and logical topology into a common RSTP instance, and provides support for PortFast, BPDU guard, BPDU filter, root guard, and loop guard?', 'MST');
+add('What is the outcome of a Layer 2 broadcast storm?', 'New traffic is discarded by the switch because it is unable to be processed.');
+add('Which two network design features require Spanning Tree Protocol (STP) to ensure correct network operation? (Choose two.)', 'redundant links between Layer 2 switches', 'removing single points of failure with multiple Layer 2 switches');
+add('A network administrator has configured an EtherChannel between two switches that are connected via four trunk links. If the physical interface for one of the trunk links changes to a down state, what happens to the EtherChannel?', 'The EtherChannel will remain functional.');
 
 
 /*Prompts for matching questions and Packet Tracer Labs*/
@@ -90,6 +139,8 @@ add = prompts.add;
  * add('helper label');
  */
 
-add('1 - the switch adds the source MAC address... 2 - Because the destination is not known');
-add('type - a value for the tag protocol ID value; VLAN ID - a VLAN number; user priority - a value that supports; canonical format identifier - an identifier that enables');
-add('dynamic desirable- actively; dynamic auto - passively; nonegotiate - requires; trunk - permanent trunking');
+add('1)1 - the switch adds the source MAC address... 2 - Because the destination is not known');
+add('2)type - a value for the tag protocol ID value; VLAN ID - a VLAN number; user priority - a value that supports; canonical format identifier - an identifier that enables');
+add('3)dynamic desirable- actively; dynamic auto - passively; nonegotiate - requires; trunk - permanent trunking');
+add('4)Rapid PVST+ - a Cisco; STP - the legacy; MSTP - a protocol');
+add('5)Proprietary - Rapid PVST+; Cisco - PVST+; Fast converging - RSTP; IEEE - MSTP');
